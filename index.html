@@ -43,6 +43,21 @@
       color: red;
       font-weight: bold;
     }
+    .checkbox-group {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 20px;
+    }
+    .checkbox-group label {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+    }
     .tag-selector {
       margin-bottom: 20px;
     }
@@ -65,19 +80,19 @@
     </select>
     <br><br>
     <label>選擇年份：</label>
-    <select id="yearTag" multiple>
-      <option value="all">全選</option>
-      <option value="110-2">110-2</option>
-      <option value="106-1">106-1</option>
-      <option value="104-2">104-2</option>
-    </select>
+    <div id="yearTag" class="checkbox-group">
+      <label><input type="checkbox" value="all" onchange="handleSelectAll('year')"> 全選</label><br>
+      <label><input type="checkbox" value="110-2"> 110-2</label><br>
+      <label><input type="checkbox" value="106-1"> 106-1</label><br>
+      <label><input type="checkbox" value="104-2"> 104-2</label><br>
+    </div>
     <label>選擇科目：</label>
-    <select id="subjectTag" multiple>
-      <option value="all">全選</option>
-      <option value="流行病學">流行病學</option>
-      <option value="病例對照研究">病例對照研究</option>
-      <option value="發生率">發生率</option>
-    </select>
+    <div id="subjectTag" class="checkbox-group">
+      <label><input type="checkbox" value="all" onchange="handleSelectAll('subject')"> 全選</label><br>
+      <label><input type="checkbox" value="流行病學"> 流行病學</label><br>
+      <label><input type="checkbox" value="病例對照研究"> 病例對照研究</label><br>
+      <label><input type="checkbox" value="發生率"> 發生率</label><br>
+    </div>
     <label> 題數：<input type="number" id="numQuestions" value="2" min="1" max="10"> </label>
     <button onclick="startQuiz()">產生題目</button>
   </div>
@@ -133,8 +148,23 @@
     let correct = 0;
 
     function getSelectedValues(selectId) {
-      const options = Array.from(document.getElementById(selectId).selectedOptions).map(o => o.value);
-      return options.includes("all") ? Array.from(document.getElementById(selectId).options).filter(o => o.value !== "all").map(o => o.value) : options;
+      const checkboxes = document.querySelectorAll(`#${selectId} input[type="checkbox"]:checked`);
+      const values = Array.from(checkboxes).map(cb => cb.value).filter(v => v !== 'all');
+      return values.length > 0 ? values : [];
+    }
+
+    function handleSelectAll(type) {
+      const groupId = type === 'year' ? 'yearTag' : 'subjectTag';
+      const allCheckbox = document.querySelector(`#${groupId} input[value="all"]`);
+      const otherCheckboxes = document.querySelectorAll(`#${groupId} input[type="checkbox"]:not([value="all"])`);
+      
+      if (allCheckbox.checked) {
+        // 如果勾選全選，則勾選所有其他選項
+        otherCheckboxes.forEach(cb => cb.checked = true);
+      } else {
+        // 如果取消全選，則取消所有其他選項
+        otherCheckboxes.forEach(cb => cb.checked = false);
+      }
     }
 
     function startQuiz() {
