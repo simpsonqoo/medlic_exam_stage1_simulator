@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>互動式測驗系統</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .question-block {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    .question-block h3 {
+      margin-top: 0;
+    }
+    .result {
+      margin-top: 30px;
+      font-weight: bold;
+      white-space: pre-wrap;
+    }
+    .explanation {
+      margin-top: 10px;
+      display: none;
+      color: #444;
+    }
+    .correct {
+      color: green;
+    }
+    .incorrect {
+      color: red;
+    }
+    .tag-selector {
+      margin-bottom: 20px;
+    }
+    #nextBtn {
+      margin-top: 20px;
+    }
+    select[multiple] {
+      height: 8em;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>互動式測驗系統</h1>
+  <div class="tag-selector">
+    <label>選擇模式：</label>
+    <select id="mode">
+      <option value="all">全部作答後顯示詳解</option>
+      <option value="step">一題一題作答並顯示詳解</option>
+    </select>
+    <br><br>
+    <label>選擇年份：</label>
+    <select id="yearTag" multiple>
+      <option value="all">全選</option>
+      <option value="110-2">110-2</option>
+      <option value="106-1">106-1</option>
+      <option value="104-2">104-2</option>
+    </select>
+    <label>選擇科目：</label>
+    <select id="subjectTag" multiple>
+      <option value="all">全選</option>
+      <option value="流行病學">流行病學</option>
+      <option value="病例對照研究">病例對照研究</option>
+      <option value="發生率">發生率</option>
+    </select>
+    <label> 題數：<input type="number" id="numQuestions" value="2" min="1" max="10"> </label>
+    <button onclick="startQuiz()">產生題目</button>
+  </div>
+
+  <div id="quiz"></div>
+  <button id="submitBtn" onclick="submitQuiz()">提交測驗</button>
+  <button id="nextBtn" onclick="nextQuestion()" style="display:none">下一題</button>
+  <div class="result" id="result"></div>
+
+  <script>
+    const questions = [
+      {
+        question: "某分析流行病學研究...匹配的最主要目的為何？",
+        options: {
+          A: "避免干擾",
+          B: "增加樣本的異質性",
+          C: "提高研究結果的外推性",
+          D: "降低樣本的不回應率"
+        },
+        answer: "A",
+        explanation: "匹配的最主要目的是避免干擾，也就是控制混淆變項的影響。",
+        tags: ["110-2", "流行病學"]
+      },
+      {
+        question: "利用配對方式選擇病例對照研究，下列何者錯誤？",
+        options: {
+          A: "需事先決定干擾因子",
+          B: "可降低已知干擾因子的影響",
+          C: "無法控制配對因子之干擾作用",
+          D: "需做配對分析"
+        },
+        answer: "C",
+        explanation: "配對設計恰恰是為了控制配對因子的干擾作用而設計的。",
+        tags: ["106-1", "病例對照研究"]
+      },
+      {
+        question: "下列那一項因素不會造成某慢性疾病的發生率產生變動？",
+        options: {
+          A: "潛伏期",
+          B: "疾病診斷技術",
+          C: "環境因素",
+          D: "生活習慣",
+          E: "送分"
+        },
+        answer: "E",
+        explanation: "送分題，無需鑽研。",
+        tags: ["104-2", "發生率"]
+      }
+    ];
+
+    let quiz = [];
+    let currentQuestion = 0;
+    let correct = 0;
+
+    function getSelectedValues(selectId) {
+      const options = Array.from(document.getElementById(selectId).selectedOptions).map(o => o.value);
+      return options.includes("all") ? Array.from(document.getElementById(selectId).options).filter(o => o.value !== "all").map(o => o.value) : options;
+    }
+
+    function startQuiz() {
+      const selectedYears = getSelectedValues('yearTag');
+      const selectedSubjects = getSelectedValues('subjectTag');
+      const selectedTags = selectedYears.concat(selectedSubjects);
+
+      const num = parseInt(document.getElementById('numQuestions').value);
+      const filtered = questions.filter(q => q.tags.some(tag => selectedTags.includes(tag)));
+
+      if (filtered.length === 0) {
+        alert('沒有符合條件的題目，請重新選擇年份或科目');
+        return;
+      }
+
+      quiz = filtered.sort(() => Math.random() - 0.5).slice(0, num);
+      currentQuestion = 0;
+      correct = 0;
+
+      const mode = document.getElementById('mode').value;
+      document.getElementById('result').innerText = '';
+      document.getElementById('quiz').innerHTML = '';
+
+      if (mode === 'step') {
+        document.getElementById('submitBtn').style.display = 'none';
+        document.getElementById('nextBtn').style.display = 'none';
+        showQuestion(currentQuestion);
+      } else {
+        document.getElementById('submitBtn').style.display = 'inline';
+        document.getElementById('nextBtn').style.display = 'none';
+        showAllQuestions();
+      }
+    }
+
+    function showQuestion(i) {
+      const quizDiv = document.getElementById('quiz');
+      quizDiv.innerHTML = '';
+      const q = quiz[i];
+      const qBlock = document.createElement('div');
+      qBlock.className = 'question-block';
+      qBlock.innerHTML = `
+        <h3>第 ${i + 1} 題</h3>
+        <p>${q.question}</p>
+        ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`).join('')}
+        <div class="explanation" id="explanation${i}">${q.explanation}</div>
+        <button onclick="checkStep(${i})">提交答案</button>
+      `;
+      quizDiv.appendChild(qBlock);
+    }
+
+    function checkStep(i) {
+      const chosen = document.querySelector(`input[name='q${i}']:checked`);
+      const explanation = document.getElementById(`explanation${i}`);
+      if (!explanation.dataset.answered) {
+        explanation.dataset.answered = "true";
+        quiz[i].userAnswer = chosen ? chosen.value : null;
+        if (chosen && chosen.value === quiz[i].answer) {
+          explanation.classList.add('correct');
+          correct++;
+          quiz[i].isCorrect = true;
+        } else {
+          explanation.classList.add('incorrect');
+          quiz[i].isCorrect = false;
+        }
+      }
+      explanation.style.display = 'block';
+      const isLast = currentQuestion >= quiz.length - 1;
+      document.getElementById('nextBtn').style.display = isLast ? 'none' : 'inline';
+      if (isLast) {
+        const total = quiz.length;
+        const wrong = total - correct;
+        let summary = `總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分\n\n`;
+        summary += `【答題詳情】\n`;
+        quiz.forEach((q, idx) => {
+          summary += `第 ${idx + 1} 題：${q.question}\n`;
+          summary += `你的答案：${q.userAnswer || "未作答"}（${q.userAnswer === q.answer ? '正確' : '錯誤'}）\n`;
+          summary += `正確答案：${q.answer}\n`;
+          summary += `詳解：${q.explanation}\n\n`;
+        });
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerText = summary;
+      }
+    }
+
+    function nextQuestion() {
+      currentQuestion++;
+      if (currentQuestion < quiz.length) {
+        showQuestion(currentQuestion);
+      } else {
+        const total = quiz.length;
+        const wrong = total - correct;
+        let summary = `總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分\n\n`;
+        summary += `【答題詳情】\n`;
+        quiz.forEach((q, idx) => {
+          summary += `第 ${idx + 1} 題：${q.question}\n`;
+          summary += `你的答案：${q.userAnswer || "未作答"}（${q.userAnswer === q.answer ? '正確' : '錯誤'}）\n`;
+          summary += `正確答案：${q.answer}\n`;
+          summary += `詳解：${q.explanation}\n\n`;
+        });
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerText = summary;
+      }
+    }
+
+    function showAllQuestions() {
+      const quizDiv = document.getElementById('quiz');
+      quizDiv.innerHTML = '';
+      quiz.forEach((q, i) => {
+        const qBlock = document.createElement('div');
+        qBlock.className = 'question-block';
+        qBlock.innerHTML = `
+          <h3>第 ${i + 1} 題</h3>
+          <p>${q.question}</p>
+          ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`).join('')}
+          <div class="explanation" id="explanation${i}">${q.explanation}</div>
+        `;
+        quizDiv.appendChild(qBlock);
+      });
+    }
+
+    function submitQuiz() {
+      quiz.forEach((q, i) => {
+        const chosen = document.querySelector(`input[name='q${i}']:checked`);
+        const explanation = document.getElementById(`explanation${i}`);
+        explanation.style.display = 'block';
+        if (chosen && chosen.value === q.answer) {
+          explanation.classList.add('correct');
+          correct++;
+        } else {
+          explanation.classList.add('incorrect');
+        }
+      });
+      const total = quiz.length;
+      const wrong = total - correct;
+      let summary = `總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分`;
+      document.getElementById('result').innerText = summary;
+    }
+  </script>
+</body>
+</html>
