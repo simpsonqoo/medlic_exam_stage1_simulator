@@ -61,8 +61,9 @@
     .tag-selector {
       margin-bottom: 20px;
     }
-    #nextBtn {
+    #nextBtn, #earlySubmitBtn {
       margin-top: 20px;
+      margin-right: 10px;
     }
     select[multiple] {
       height: 8em;
@@ -97,11 +98,40 @@
     .tag.subject {
       background-color: #dc3545;
     }
+    .progress-info {
+      background: #e9ecef;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .step-mode-controls {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .step-mode-controls button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    #earlySubmitBtn {
+      background-color: #ffc107;
+      color: #212529;
+      border: 1px solid #ffc107;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #earlySubmitBtn:hover {
+      background-color: #e0a800;
+    }
+    .hidden {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
   <h1>互動式測驗系統</h1>
-  <div class="tag-selector">
+  <div class="tag-selector" id="setupSection">
     <label>選擇模式：</label>
     <select id="mode">
       <option value="all">全部作答後顯示詳解</option>
@@ -144,9 +174,22 @@
     <button onclick="startQuiz()">產生題目</button>
   </div>
 
+  <!-- 步驟模式的進度顯示 -->
+  <div class="progress-info hidden" id="progressInfo">
+    <strong>進度：第 <span id="currentQuestionNum">1</span> 題 / 共 <span id="totalQuestions">0</span> 題</strong>
+  </div>
+
   <div id="quiz"></div>
-  <button id="submitBtn" onclick="submitQuiz()">提交測驗</button>
-  <button id="nextBtn" onclick="nextQuestion()" style="display:none">下一題</button>
+  
+  <!-- 一般模式的提交按鈕 -->
+  <button id="submitBtn" onclick="submitQuiz()" class="hidden">提交測驗</button>
+  
+  <!-- 步驟模式的控制按鈕 -->
+  <div class="step-mode-controls hidden" id="stepControls">
+    <button id="nextBtn" onclick="nextQuestion()" style="display:none">下一題</button>
+    <button id="earlySubmitBtn" onclick="earlySubmit()" style="display:none">提早交卷</button>
+  </div>
+  
   <div class="result" id="result"></div>
 
   <script>
@@ -193,6 +236,7 @@
     let quiz = [];
     let currentQuestion = 0;
     let correct = 0;
+    let isStepMode = false;
 
     // 定義已知的年份和科目標籤
     const yearTags = ["110-2", "106-1", "104-2"];
@@ -363,16 +407,30 @@
       correct = 0;
 
       const mode = document.getElementById('mode').value;
+      isStepMode = mode === 'step';
+      
       document.getElementById('result').innerText = '';
       document.getElementById('quiz').innerHTML = '';
 
-      if (mode === 'step') {
-        document.getElementById('submitBtn').style.display = 'none';
-        document.getElementById('nextBtn').style.display = 'none';
+      // 隱藏設定區域
+      document.getElementById('setupSection').classList.add('hidden');
+
+      if (isStepMode) {
+        // 顯示進度條和步驟控制按鈕
+        document.getElementById('progressInfo').classList.remove('hidden');
+        document.getElementById('stepControls').classList.remove('hidden');
+        document.getElementById('submitBtn').classList.add('hidden');
+        
+        // 更新總題數顯示
+        document.getElementById('totalQuestions').innerText = quiz.length;
+        
         showQuestion(currentQuestion);
       } else {
-        document.getElementById('submitBtn').style.display = 'inline';
-        document.getElementById('nextBtn').style.display = 'none';
+        // 隱藏進度條和步驟控制按鈕
+        document.getElementById('progressInfo').classList.add('hidden');
+        document.getElementById('stepControls').classList.add('hidden');
+        document.getElementById('submitBtn').classList.remove('hidden');
+        
         showAllQuestions();
       }
     }
@@ -381,6 +439,10 @@
       const quizDiv = document.getElementById('quiz');
       quizDiv.innerHTML = '';
       const q = quiz[i];
+      
+      // 更新進度顯示
+      document.getElementById('currentQuestionNum').innerText = i + 1;
+      
       const qBlock = document.createElement('div');
       qBlock.className = 'question-block';
       qBlock.innerHTML = `
@@ -391,6 +453,9 @@
         <button id="submitAnswerBtn${i}" onclick="checkStep(${i})">提交答案</button>
       `;
       quizDiv.appendChild(qBlock);
+      
+      // 顯示提早交卷按鈕
+      document.getElementById('earlySubmitBtn').style.display = 'inline';
     }
 
     function checkStep(i) {
@@ -428,7 +493,8 @@
           // 不是最後一題，顯示下一題按鈕
           document.getElementById('nextBtn').style.display = 'inline';
         } else {
-          // 是最後一題，延遲顯示最終結果
+          // 是最後一題，隱藏提早交卷按鈕，延遲顯示最終結果
+          document.getElementById('earlySubmitBtn').style.display = 'none';
           setTimeout(() => {
             showFinalResults();
           }, 1000);
@@ -447,7 +513,43 @@
       }
     }
 
+    function earlySubmit() {
+      const remainingQuestions = quiz.length - currentQuestion - 1;
+      const confirmSubmit = confirm(`確定要提早交卷嗎？\n\n目前進度：第 ${currentQuestion + 1} 題 / 共 ${quiz.length} 題\n剩餘題數：${remainingQuestions} 題\n\n未作答的題目將計為錯誤。`);
+      
+      if (confirmSubmit) {
+        // 處理當前題目（如果還沒提交答案的話）
+        const currentExplanation = document.getElementById(`explanation${currentQuestion}`);
+        if (currentExplanation && !currentExplanation.dataset.answered) {
+          // 當前題目還沒提交，檢查是否有選擇答案
+          const chosen = document.querySelector(`input[name='q${currentQuestion}']:checked`);
+          quiz[currentQuestion].userAnswer = chosen ? chosen.value : null;
+          
+          if (chosen && chosen.value === quiz[currentQuestion].answer) {
+            quiz[currentQuestion].isCorrect = true;
+            correct++;
+          } else {
+            quiz[currentQuestion].isCorrect = false;
+          }
+        }
+        
+        // 標記未開始的題目為未作答
+        for (let i = currentQuestion + 1; i < quiz.length; i++) {
+          quiz[i].userAnswer = null;
+          quiz[i].isCorrect = false;
+        }
+        
+        // 直接顯示最終結果
+        showFinalResults();
+      }
+    }
+
     function showFinalResults() {
+      // 隱藏所有控制按鈕和進度條
+      document.getElementById('stepControls').classList.add('hidden');
+      document.getElementById('progressInfo').classList.add('hidden');
+      document.getElementById('quiz').innerHTML = '';
+      
       const total = quiz.length;
       const wrong = total - correct;
       let summary = `總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分\n\n`;
@@ -483,10 +585,36 @@ ${'-'.repeat(30)}
 `;
       });
       
-      htmlSummary += '</div>';
+      htmlSummary += `</div>
+      <br>
+      <button onclick="resetQuiz()" style="padding: 10px 20px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">重新開始</button>`;
       
       const resultDiv = document.getElementById('result');
       resultDiv.innerHTML = htmlSummary;
+    }
+
+    function resetQuiz() {
+      // 重置所有變數
+      quiz = [];
+      currentQuestion = 0;
+      correct = 0;
+      isStepMode = false;
+      
+      // 顯示設定區域
+      document.getElementById('setupSection').classList.remove('hidden');
+      
+      // 隱藏其他區域
+      document.getElementById('progressInfo').classList.add('hidden');
+      document.getElementById('stepControls').classList.add('hidden');
+      document.getElementById('submitBtn').classList.add('hidden');
+      
+      // 清空內容
+      document.getElementById('quiz').innerHTML = '';
+      document.getElementById('result').innerHTML = '';
+      
+      // 重置按鈕狀態
+      document.getElementById('nextBtn').style.display = 'none';
+      document.getElementById('earlySubmitBtn').style.display = 'none';
     }
 
     function showAllQuestions() {
@@ -523,6 +651,9 @@ ${'-'.repeat(30)}
           explanation.innerHTML = `<span class="result-incorrect">✗ 錯誤！</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${chosen ? chosen.value + '. ' + q.options[chosen.value] : '未作答'}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
         }
       });
+      
+      // 隱藏提交按鈕
+      document.getElementById('submitBtn').classList.add('hidden');
       
       // 延遲顯示最終結果，讓用戶先看到各題解答
       setTimeout(() => {
