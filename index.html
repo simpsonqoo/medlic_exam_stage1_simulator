@@ -138,6 +138,12 @@
       <option value="step">一題一題作答並顯示詳解</option>
     </select>
     <br><br>
+    <label>出題順序：</label>
+    <select id="questionOrder">
+      <option value="random">隨機順序</option>
+      <option value="sequential">照原始順序</option>
+    </select>
+    <br><br>
     <label>選擇年份：</label>
     <div id="yearTag" class="checkbox-group">
       <label><input type="checkbox" value="all" onchange="handleSelectAll('year')"> 全選</label><br>
@@ -396,11 +402,24 @@
         return;
       }
 
-      // 最終隨機排序（除非是全選模式已經隨機過了）
-      if (!isAllSelected) {
-        quiz = finalQuiz.sort(() => Math.random() - 0.5);
+      // 根據選擇的出題順序來決定是否隨機排序
+      const questionOrder = document.getElementById('questionOrder').value;
+      
+      if (questionOrder === 'random') {
+        // 隨機排序
+        if (!isAllSelected) {
+          quiz = finalQuiz.sort(() => Math.random() - 0.5);
+        } else {
+          quiz = finalQuiz; // 全選模式已經隨機過了
+        }
       } else {
-        quiz = finalQuiz;
+        // 照原始順序（按照 questions 陣列中的順序）
+        // 先找出所有選中題目在原陣列中的索引，然後按索引排序
+        quiz = finalQuiz.sort((a, b) => {
+          const indexA = questions.findIndex(q => q.question === a.question);
+          const indexB = questions.findIndex(q => q.question === b.question);
+          return indexA - indexB;
+        });
       }
       
       currentQuestion = 0;
