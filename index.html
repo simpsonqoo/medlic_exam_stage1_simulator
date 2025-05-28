@@ -439,6 +439,8 @@
     function nextQuestion() {
       currentQuestion++;
       if (currentQuestion < quiz.length) {
+        // 隱藏下一題按鈕，直到新題目提交答案後才會再次顯示
+        document.getElementById('nextBtn').style.display = 'none';
         showQuestion(currentQuestion);
       } else {
         showFinalResults();
