@@ -35,6 +35,14 @@
     .incorrect {
       color: red;
     }
+    .result-correct {
+      color: green;
+      font-weight: bold;
+    }
+    .result-incorrect {
+      color: red;
+      font-weight: bold;
+    }
     .tag-selector {
       margin-bottom: 20px;
     }
@@ -172,7 +180,7 @@
         <p>${q.question}</p>
         ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`).join('')}
         <div class="explanation" id="explanation${i}">${q.explanation}</div>
-        <button onclick="checkStep(${i})">提交答案</button>
+        <button id="submitAnswerBtn${i}" onclick="checkStep(${i})">提交答案</button>
       `;
       quizDiv.appendChild(qBlock);
     }
@@ -180,34 +188,38 @@
     function checkStep(i) {
       const chosen = document.querySelector(`input[name='q${i}']:checked`);
       const explanation = document.getElementById(`explanation${i}`);
+      const submitBtn = document.getElementById(`submitAnswerBtn${i}`);
+      
       if (!explanation.dataset.answered) {
         explanation.dataset.answered = "true";
         quiz[i].userAnswer = chosen ? chosen.value : null;
+        
+        let explanationText = '';
         if (chosen && chosen.value === quiz[i].answer) {
           explanation.classList.add('correct');
           correct++;
           quiz[i].isCorrect = true;
+          explanationText = `✓ 正確！\n正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}\n詳解：${quiz[i].explanation}`;
         } else {
           explanation.classList.add('incorrect');
           quiz[i].isCorrect = false;
+          explanationText = `✗ 錯誤！\n你的答案：${chosen ? chosen.value + '. ' + quiz[i].options[chosen.value] : '未作答'}\n正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}\n詳解：${quiz[i].explanation}`;
         }
+        explanation.innerHTML = explanationText.replace(/\n/g, '<br>');
+        
+        // 隱藏提交答案按鈕
+        submitBtn.style.display = 'none';
       }
+      
       explanation.style.display = 'block';
       const isLast = currentQuestion >= quiz.length - 1;
       document.getElementById('nextBtn').style.display = isLast ? 'none' : 'inline';
+      
       if (isLast) {
-        const total = quiz.length;
-        const wrong = total - correct;
-        let summary = `總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分\n\n`;
-        summary += `【答題詳情】\n`;
-        quiz.forEach((q, idx) => {
-          summary += `第 ${idx + 1} 題：${q.question}\n`;
-          summary += `你的答案：${q.userAnswer || "未作答"}（${q.userAnswer === q.answer ? '正確' : '錯誤'}）\n`;
-          summary += `正確答案：${q.answer}\n`;
-          summary += `詳解：${q.explanation}\n\n`;
-        });
-        const resultDiv = document.getElementById('result');
-        resultDiv.innerText = summary;
+        // 延遲顯示最終結果，讓用戶先看到最後一題的解答
+        setTimeout(() => {
+          showFinalResults();
+        }, 1000);
       }
     }
 
@@ -216,19 +228,49 @@
       if (currentQuestion < quiz.length) {
         showQuestion(currentQuestion);
       } else {
-        const total = quiz.length;
-        const wrong = total - correct;
-        let summary = `總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分\n\n`;
-        summary += `【答題詳情】\n`;
-        quiz.forEach((q, idx) => {
-          summary += `第 ${idx + 1} 題：${q.question}\n`;
-          summary += `你的答案：${q.userAnswer || "未作答"}（${q.userAnswer === q.answer ? '正確' : '錯誤'}）\n`;
-          summary += `正確答案：${q.answer}\n`;
-          summary += `詳解：${q.explanation}\n\n`;
-        });
-        const resultDiv = document.getElementById('result');
-        resultDiv.innerText = summary;
+        showFinalResults();
       }
+    }
+
+    function showFinalResults() {
+      const total = quiz.length;
+      const wrong = total - correct;
+      let summary = `總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分\n\n`;
+      summary += `【詳細答題結果】\n`;
+      summary += `${'='.repeat(50)}\n\n`;
+      
+      let htmlSummary = `<div style="white-space: pre-wrap; font-family: monospace;">總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分
+
+【詳細答題結果】
+${'='.repeat(50)}
+
+`;
+      
+      quiz.forEach((q, idx) => {
+        const isCorrect = q.userAnswer === q.answer;
+        const resultText = isCorrect ? '✓ 正確' : '✗ 錯誤';
+        const resultClass = isCorrect ? 'result-correct' : 'result-incorrect';
+        
+        htmlSummary += `第 ${idx + 1} 題：${q.question}
+選項：
+`;
+        Object.entries(q.options).forEach(([key, value]) => {
+          htmlSummary += `  ${key}. ${value}
+`;
+        });
+        htmlSummary += `你的答案：${q.userAnswer ? q.userAnswer + '. ' + q.options[q.userAnswer] : "未作答"}
+正確答案：${q.answer}. ${q.options[q.answer]}
+結果：<span class="${resultClass}">${resultText}</span>
+詳解：${q.explanation}
+${'-'.repeat(30)}
+
+`;
+      });
+      
+      htmlSummary += '</div>';
+      
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = htmlSummary;
     }
 
     function showAllQuestions() {
@@ -248,21 +290,28 @@
     }
 
     function submitQuiz() {
+      correct = 0; // 重置計數器
       quiz.forEach((q, i) => {
         const chosen = document.querySelector(`input[name='q${i}']:checked`);
         const explanation = document.getElementById(`explanation${i}`);
         explanation.style.display = 'block';
+        
+        q.userAnswer = chosen ? chosen.value : null;
+        
         if (chosen && chosen.value === q.answer) {
           explanation.classList.add('correct');
+          explanation.innerHTML = `<span class="result-correct">✓ 正確！</span><br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
           correct++;
         } else {
           explanation.classList.add('incorrect');
+          explanation.innerHTML = `<span class="result-incorrect">✗ 錯誤！</span><br>你的答案：${chosen ? chosen.value + '. ' + q.options[chosen.value] : '未作答'}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
         }
       });
-      const total = quiz.length;
-      const wrong = total - correct;
-      let summary = `總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分`;
-      document.getElementById('result').innerText = summary;
+      
+      // 延遲顯示最終結果，讓用戶先看到各題解答
+      setTimeout(() => {
+        showFinalResults();
+      }, 1000);
     }
   </script>
 </body>
