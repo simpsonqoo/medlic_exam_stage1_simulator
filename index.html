@@ -184,24 +184,6 @@
       border-radius: 5px;
       display: none;
     }
-    #generateBtn {
-      padding: 25px 40px;
-      font-size: 22px;
-      font-weight: bold;
-      background-color: #87CEEB;
-      color: #000;
-      border: 2px solid #4682B4;
-      border-radius: 12px;
-      cursor: pointer;
-      min-width: 150px;
-      height: fit-content;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    #generateBtn:hover {
-      background-color: #4682B4;
-      color: white;
-    }
   </style>
 </head>
 <body>
@@ -219,143 +201,135 @@
       <option value="sequential">照原始順序</option>
     </select>
     <br><br>
-    <label>選擇年份和科目：</label>
-<div style="display: flex; gap: 20px; align-items: flex-start;">
-  <!-- 年份選擇區域 -->
-  <div style="display: flex; gap: 20px;">
-    <div id="yearTag1" class="checkbox-group">
-      <strong>第一階段</strong><br>
-      <label><input type="checkbox" value="all1" onchange="handleSelectAll('year1')"> 全選</label><br>
-      <label><input type="checkbox" value="114-1(一)"> 114-1(一)</label><br>
-      <label><input type="checkbox" value="113-2(一)"> 113-2(一)</label><br>
-      <label><input type="checkbox" value="113-1(一)"> 113-1(一)</label><br>
-      <label><input type="checkbox" value="112-2(一)"> 112-2(一)</label><br>
-      <label><input type="checkbox" value="112-1(一)"> 112-1(一)</label><br>
-      <label><input type="checkbox" value="111-2(一)"> 111-2(一)</label><br>
-      <label><input type="checkbox" value="111-1(一)"> 111-1(一)</label><br>
-      <label><input type="checkbox" value="110-2(一)"> 110-2(一)</label><br>
-      <label><input type="checkbox" value="110-1(一)"> 110-1(一)</label><br>
-      <label><input type="checkbox" value="109-2(一)"> 109-2(一)</label><br>
-      <label><input type="checkbox" value="109-1(一)"> 109-1(一)</label><br>
-      <label><input type="checkbox" value="108-2(一)"> 108-2(一)</label><br>
-      <label><input type="checkbox" value="108-1(一)"> 108-1(一)</label><br>
-      <label><input type="checkbox" value="107-2(一)"> 107-2(一)</label><br>
-      <label><input type="checkbox" value="107-1(一)"> 107-1(一)</label><br>
-      <label><input type="checkbox" value="106-2(一)"> 106-2(一)</label><br>
-      <label><input type="checkbox" value="106-1(一)"> 106-1(一)</label><br>
-      <label><input type="checkbox" value="105-2(一)"> 105-2(一)</label><br>
-      <label><input type="checkbox" value="105-1(一)"> 105-1(一)</label><br>
-      <label><input type="checkbox" value="104-2(一)"> 104-2(一)</label><br>
-      <label><input type="checkbox" value="104-1(一)"> 104-1(一)</label><br>
-    </div>
-    <div id="yearTag2" class="checkbox-group">
-      <strong>第二階段</strong><br>
-      <label><input type="checkbox" value="all2" onchange="handleSelectAll('year2')"> 全選</label><br>
-      <label><input type="checkbox" value="114-1(二)"> 114-1(二)</label><br>
-      <label><input type="checkbox" value="113-2(二)"> 113-2(二)</label><br>
-      <label><input type="checkbox" value="113-1(二)"> 113-1(二)</label><br>
-      <label><input type="checkbox" value="112-2(二)"> 112-2(二)</label><br>
-      <label><input type="checkbox" value="112-1(二)"> 112-1(二)</label><br>
-      <label><input type="checkbox" value="111-2(二)"> 111-2(二)</label><br>
-      <label><input type="checkbox" value="111-1(二)"> 111-1(二)</label><br>
-      <label><input type="checkbox" value="110-2(二)"> 110-2(二)</label><br>
-      <label><input type="checkbox" value="110-1(二)"> 110-1(二)</label><br>
-      <label><input type="checkbox" value="109-2(二)"> 109-2(二)</label><br>
-      <label><input type="checkbox" value="109-1(二)"> 109-1(二)</label><br>
-      <label><input type="checkbox" value="108-2(二)"> 108-2(二)</label><br>
-      <label><input type="checkbox" value="108-1(二)"> 108-1(二)</label><br>
-      <label><input type="checkbox" value="107-2(二)"> 107-2(二)</label><br>
-      <label><input type="checkbox" value="107-1(二)"> 107-1(二)</label><br>
-      <label><input type="checkbox" value="106-2(二)"> 106-2(二)</label><br>
-      <label><input type="checkbox" value="106-1(二)"> 106-1(二)</label><br>
-      <label><input type="checkbox" value="105-2(二)"> 105-2(二)</label><br>
-      <label><input type="checkbox" value="105-1(二)"> 105-1(二)</label><br>
-      <label><input type="checkbox" value="104-2(二)"> 104-2(二)</label><br>
-      <label><input type="checkbox" value="104-1(二)"> 104-1(二)</label><br>
-    </div>
+    <label>選擇年份：</label>
+<div style="display: flex; gap: 20px;">
+  <div id="yearTag1" class="checkbox-group">
+    <strong>第一階段</strong><br>
+    <label><input type="checkbox" value="all1" onchange="handleSelectAll('year1')"> 全選</label><br>
+    <label><input type="checkbox" value="114-1(一)"> 114-1(一)</label><br>
+    <label><input type="checkbox" value="113-2(一)"> 113-2(一)</label><br>
+    <label><input type="checkbox" value="113-1(一)"> 113-1(一)</label><br>
+    <label><input type="checkbox" value="112-2(一)"> 112-2(一)</label><br>
+    <label><input type="checkbox" value="112-1(一)"> 112-1(一)</label><br>
+    <label><input type="checkbox" value="111-2(一)"> 111-2(一)</label><br>
+    <label><input type="checkbox" value="111-1(一)"> 111-1(一)</label><br>
+    <label><input type="checkbox" value="110-2(一)"> 110-2(一)</label><br>
+    <label><input type="checkbox" value="110-1(一)"> 110-1(一)</label><br>
+    <label><input type="checkbox" value="109-2(一)"> 109-2(一)</label><br>
+    <label><input type="checkbox" value="109-1(一)"> 109-1(一)</label><br>
+    <label><input type="checkbox" value="108-2(一)"> 108-2(一)</label><br>
+    <label><input type="checkbox" value="108-1(一)"> 108-1(一)</label><br>
+    <label><input type="checkbox" value="107-2(一)"> 107-2(一)</label><br>
+    <label><input type="checkbox" value="107-1(一)"> 107-1(一)</label><br>
+    <label><input type="checkbox" value="106-2(一)"> 106-2(一)</label><br>
+    <label><input type="checkbox" value="106-1(一)"> 106-1(一)</label><br>
+    <label><input type="checkbox" value="105-2(一)"> 105-2(一)</label><br>
+    <label><input type="checkbox" value="105-1(一)"> 105-1(一)</label><br>
+    <label><input type="checkbox" value="104-2(一)"> 104-2(一)</label><br>
+    <label><input type="checkbox" value="104-1(一)"> 104-1(一)</label><br>
   </div>
-  
-  <!-- 科目選擇區域 -->
-  <div id="subjectTag" class="checkbox-group">
-    <strong>選擇科目</strong><br>
-    <label><input type="checkbox" value="all" onchange="handleSelectAll('subject')"> 全選</label>
-    <div class="subject-count" id="count-all-subjects" style="display:none;">
-      總題數：<input type="number" value="5" min="1" max="20">
-    </div>
-    <br>
-    <label>
-      <input type="checkbox" value="解剖" onchange="toggleSubjectCount(this)"> 解剖
-      <div class="subject-count" id="count-解剖">
-        題數：<input type="number" value="1" min="1" max="10">
-      </div>
-    </label><br>
-    <label>
-      <input type="checkbox" value="胚胎" onchange="toggleSubjectCount(this)"> 胚胎
-      <div class="subject-count" id="count-胚胎">
-        題數：<input type="number" value="1" min="1" max="10">
-      </div>
-    </label><br>
-    <label>
-      <input type="checkbox" value="組織" onchange="toggleSubjectCount(this)"> 組織
-      <div class="subject-count" id="count-組織">
-        題數：<input type="number" value="1" min="1" max="10">
-      </div>
-    </label><br>
-    <label>
-      <input type="checkbox" value="生理" onchange="toggleSubjectCount(this)"> 生理
-      <div class="subject-count" id="count-生理">
-        題數：<input type="number" value="1" min="1" max="10">
-      </div>
-    </label><br>
-    <label>
-      <input type="checkbox" value="生化" onchange="toggleSubjectCount(this)"> 生化
-      <div class="subject-count" id="count-生化">
-        題數：<input type="number" value="1" min="1" max="10">
-      </div>
-    </label><br>
-    <label>
-      <input type="checkbox" value="微生物" onchange="toggleSubjectCount(this)"> 微生物
-      <div class="subject-count" id="count-微生物">
-        題數：<input type="number" value="1" min="1" max="10">
-      </div>
-    </label><br>
-    <label>
-      <input type="checkbox" value="免疫" onchange="toggleSubjectCount(this)"> 免疫
-      <div class="subject-count" id="count-免疫">
-        題數：<input type="number" value="1" min="1" max="10">
-      </div>
-    </label><br>
-    <label>
-      <input type="checkbox" value="寄生蟲" onchange="toggleSubjectCount(this)"> 寄生蟲
-      <div class="subject-count" id="count-寄生蟲">
-        題數：<input type="number" value="1" min="1" max="10">
-      </div>
-    </label><br>
-    <label>
-      <input type="checkbox" value="公衛" onchange="toggleSubjectCount(this)"> 公衛
-      <div class="subject-count" id="count-公衛">
-        題數：<input type="number" value="1" min="1" max="10">
-      </div>
-    </label><br>
-    <label>
-      <input type="checkbox" value="藥理" onchange="toggleSubjectCount(this)"> 藥理
-      <div class="subject-count" id="count-藥理">
-        題數：<input type="number" value="1" min="1" max="10">
-      </div>
-    </label><br>
-    <label>
-      <input type="checkbox" value="病理" onchange="toggleSubjectCount(this)"> 病理
-      <div class="subject-count" id="count-病理">
-        題數：<input type="number" value="1" min="1" max="10">
-      </div>
-    </label><br>
-  </div>
-  
-  <!-- 產生題目按鈕 -->
-  <div style="display: flex; align-items: flex-start; margin-top: 20px;">
-    <button onclick="startQuiz()" id="generateBtn">產生題目</button>
+  <div id="yearTag2" class="checkbox-group">
+    <strong>第二階段</strong><br>
+    <label><input type="checkbox" value="all2" onchange="handleSelectAll('year2')"> 全選</label><br>
+    <label><input type="checkbox" value="114-1(二)"> 114-1(二)</label><br>
+    <label><input type="checkbox" value="113-2(二)"> 113-2(二)</label><br>
+    <label><input type="checkbox" value="113-1(二)"> 113-1(二)</label><br>
+    <label><input type="checkbox" value="112-2(二)"> 112-2(二)</label><br>
+    <label><input type="checkbox" value="112-1(二)"> 112-1(二)</label><br>
+    <label><input type="checkbox" value="111-2(二)"> 111-2(二)</label><br>
+    <label><input type="checkbox" value="111-1(二)"> 111-1(二)</label><br>
+    <label><input type="checkbox" value="110-2(二)"> 110-2(二)</label><br>
+    <label><input type="checkbox" value="110-1(二)"> 110-1(二)</label><br>
+    <label><input type="checkbox" value="109-2(二)"> 109-2(二)</label><br>
+    <label><input type="checkbox" value="109-1(二)"> 109-1(二)</label><br>
+    <label><input type="checkbox" value="108-2(二)"> 108-2(二)</label><br>
+    <label><input type="checkbox" value="108-1(二)"> 108-1(二)</label><br>
+    <label><input type="checkbox" value="107-2(二)"> 107-2(二)</label><br>
+    <label><input type="checkbox" value="107-1(二)"> 107-1(二)</label><br>
+    <label><input type="checkbox" value="106-2(二)"> 106-2(二)</label><br>
+    <label><input type="checkbox" value="106-1(二)"> 106-1(二)</label><br>
+    <label><input type="checkbox" value="105-2(二)"> 105-2(二)</label><br>
+    <label><input type="checkbox" value="105-1(二)"> 105-1(二)</label><br>
+    <label><input type="checkbox" value="104-2(二)"> 104-2(二)</label><br>
+    <label><input type="checkbox" value="104-1(二)"> 104-1(二)</label><br>
   </div>
 </div>
+    <label>選擇科目：</label>
+<div id="subjectTag" class="checkbox-group">
+  <label><input type="checkbox" value="all" onchange="handleSelectAll('subject')"> 全選</label>
+  <div class="subject-count" id="count-all-subjects" style="display:none;">
+    總題數：<input type="number" value="5" min="1" max="20">
+  </div>
+  <br>
+  <label>
+    <input type="checkbox" value="解剖" onchange="toggleSubjectCount(this)"> 解剖
+    <div class="subject-count" id="count-解剖">
+      題數：<input type="number" value="1" min="1" max="10">
+    </div>
+  </label><br>
+  <label>
+    <input type="checkbox" value="胚胎" onchange="toggleSubjectCount(this)"> 胚胎
+    <div class="subject-count" id="count-胚胎">
+      題數：<input type="number" value="1" min="1" max="10">
+    </div>
+  </label><br>
+  <label>
+    <input type="checkbox" value="組織" onchange="toggleSubjectCount(this)"> 組織
+    <div class="subject-count" id="count-組織">
+      題數：<input type="number" value="1" min="1" max="10">
+    </div>
+  </label><br>
+  <label>
+    <input type="checkbox" value="生理" onchange="toggleSubjectCount(this)"> 生理
+    <div class="subject-count" id="count-生理">
+      題數：<input type="number" value="1" min="1" max="10">
+    </div>
+  </label><br>
+  <label>
+    <input type="checkbox" value="生化" onchange="toggleSubjectCount(this)"> 生化
+    <div class="subject-count" id="count-生化">
+      題數：<input type="number" value="1" min="1" max="10">
+    </div>
+  </label><br>
+  <label>
+    <input type="checkbox" value="微生物" onchange="toggleSubjectCount(this)"> 微生物
+    <div class="subject-count" id="count-微生物">
+      題數：<input type="number" value="1" min="1" max="10">
+    </div>
+  </label><br>
+  <label>
+    <input type="checkbox" value="免疫" onchange="toggleSubjectCount(this)"> 免疫
+    <div class="subject-count" id="count-免疫">
+      題數：<input type="number" value="1" min="1" max="10">
+    </div>
+  </label><br>
+  <label>
+    <input type="checkbox" value="寄生蟲" onchange="toggleSubjectCount(this)"> 寄生蟲
+    <div class="subject-count" id="count-寄生蟲">
+      題數：<input type="number" value="1" min="1" max="10">
+    </div>
+  </label><br>
+  <label>
+    <input type="checkbox" value="公衛" onchange="toggleSubjectCount(this)"> 公衛
+    <div class="subject-count" id="count-公衛">
+      題數：<input type="number" value="1" min="1" max="10">
+    </div>
+  </label><br>
+  <label>
+    <input type="checkbox" value="藥理" onchange="toggleSubjectCount(this)"> 藥理
+    <div class="subject-count" id="count-藥理">
+      題數：<input type="number" value="1" min="1" max="10">
+    </div>
+  </label><br>
+  <label>
+    <input type="checkbox" value="病理" onchange="toggleSubjectCount(this)"> 病理
+    <div class="subject-count" id="count-病理">
+      題數：<input type="number" value="1" min="1" max="10">
+    </div>
+  </label><br>
+</div>
+    <button onclick="startQuiz()">產生題目</button>
+  </div>
 
   <!-- 步驟模式的進度顯示 -->
   <div class="progress-info hidden" id="progressInfo">
