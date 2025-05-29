@@ -1,73 +1,855 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <title>KMU 國考測驗系統</title>
+  <meta charset="UTF-8">
+  <title>醫師一階國考測驗系統 created and maintained by KMU BM112 陳君豪</title>
   <style>
     body {
       font-family: sans-serif;
       padding: 20px;
+      background-color: #f9f9f9;
     }
-    .question {
+    .question-block {
+      background: #fff;
       border: 1px solid #ccc;
       padding: 15px;
       margin-bottom: 20px;
       border-radius: 8px;
     }
-    .answer {
+    .question-block h3 {
+      margin-top: 0;
+    }
+    .result {
+      margin-top: 30px;
       font-weight: bold;
+      white-space: pre-wrap;
+    }
+    .explanation {
+      margin-top: 10px;
+      display: none;
+      color: #444;
+    }
+    .correct {
       color: green;
+    }
+    .incorrect {
+      color: red;
+    }
+    .result-correct {
+      color: green;
+      font-weight: bold;
+    }
+    .result-incorrect {
+      color: red;
+      font-weight: bold;
+    }
+    .checkbox-group {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 20px;
+    }
+    .checkbox-group label {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    .tag-selector {
+      margin-bottom: 20px;
+    }
+    #nextBtn, #earlySubmitBtn {
+      margin-top: 20px;
+      margin-right: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .submit-answer-btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .submit-answer-btn:hover {
+      background-color: #0056b3;
+    }
+    #nextBtn {
+      background-color: #28a745;
+      color: white;
+      border: 1px solid #28a745;
+    }
+    #nextBtn:hover {
+      background-color: #218838;
+    }
+    select[multiple] {
+      height: 8em;
+      width: 200px;
+    }
+    .subject-count {
+      margin-left: 20px;
+      margin-top: 5px;
+      display: none;
+    }
+    .subject-count input {
+      width: 50px;
+      margin-left: 5px;
+    }
+    .question-tags {
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .tag {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 2px 8px;
+      margin: 0 2px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: normal;
+    }
+    .tag.year {
+      background-color: #28a745;
+    }
+    .tag.subject {
+      background-color: #dc3545;
+    }
+    .progress-info {
+      background: #e9ecef;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .step-mode-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .step-mode-content {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .step-mode .question-block {
+      margin-bottom: 0;
+    }
+    .step-mode .progress-info {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .step-mode-controls {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .step-mode-controls button {
+      margin: 0 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+    #earlySubmitBtn {
+      background-color: #ffc107;
+      color: #212529;
+      border: 1px solid #ffc107;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #earlySubmitBtn:hover {
+      background-color: #e0a800;
+    }
+    .hidden {
+      display: none !important;
+    }
+    .warning-message {
+      background-color: #fff3cd;
+      border: 1px solid #ffeaa7;
+      color: #856404;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      display: none;
     }
   </style>
 </head>
 <body>
-  <h1>KMU 國考測驗系統</h1>
-  <label for="fileSelect">選擇題庫：</label>
-  <select id="fileSelect">
-    <option value="exam/108-1(一).json">108-1(一)</option>
-    <option value="exam/113-2(一).json">113-2(一)</option>
-    <!-- 可持續新增其他題庫路徑 -->
-  </select>
-  <button onclick="loadQuestions()">載入題庫</button>
+  <h1>醫師一階國考測驗系統 created and maintained by KMU BM112 陳君豪</h1>
+  <div class="tag-selector" id="setupSection">
+    <label>選擇模式：</label>
+    <select id="mode">
+      <option value="all">全部作答後顯示詳解</option>
+      <option value="step">一題一題作答並顯示詳解</option>
+    </select>
+    <br><br>
+    <label>出題順序：</label>
+    <select id="questionOrder">
+      <option value="random">隨機順序</option>
+      <option value="sequential">照原始順序</option>
+    </select>
+    <br><br>
+    <label>選擇年份：</label>
+    <div id="yearTag" class="checkbox-group">
+      <label><input type="checkbox" value="all" onchange="handleSelectAll('year')"> 全選</label><br>
+      <label><input type="checkbox" value="110-2"> 110-2</label><br>
+      <label><input type="checkbox" value="106-1"> 106-1</label><br>
+      <label><input type="checkbox" value="104-2"> 104-2</label><br>
+    </div>
+    <label>選擇科目：</label>
+    <div id="subjectTag" class="checkbox-group">
+      <label><input type="checkbox" value="all" onchange="handleSelectAll('subject')"> 全選</label>
+      <div class="subject-count" id="count-all-subjects" style="display:none;">
+        總題數：<input type="number" value="5" min="1" max="20">
+      </div>
+      <br>
+      <label>
+        <input type="checkbox" value="流行病學" onchange="toggleSubjectCount(this)"> 流行病學
+        <div class="subject-count" id="count-流行病學">
+          題數：<input type="number" value="1" min="1" max="10">
+        </div>
+      </label><br>
+      <label>
+        <input type="checkbox" value="病例對照研究" onchange="toggleSubjectCount(this)"> 病例對照研究
+        <div class="subject-count" id="count-病例對照研究">
+          題數：<input type="number" value="1" min="1" max="10">
+        </div>
+      </label><br>
+      <label>
+        <input type="checkbox" value="發生率" onchange="toggleSubjectCount(this)"> 發生率
+        <div class="subject-count" id="count-發生率">
+          題數：<input type="number" value="1" min="1" max="10">
+        </div>
+      </label><br>
+    </div>
+    <button onclick="startQuiz()">產生題目</button>
+  </div>
 
-  <div id="questionContainer"></div>
+  <!-- 步驟模式的進度顯示 -->
+  <div class="progress-info hidden" id="progressInfo">
+    <strong>進度：第 <span id="currentQuestionNum">1</span> 題 / 共 <span id="totalQuestions">0</span> 題</strong>
+  </div>
+
+  <div id="quiz"></div>
+  
+  <!-- 一般模式的提交按鈕 -->
+  <button id="submitBtn" onclick="submitQuiz()" class="hidden">提交測驗</button>
+  
+  <!-- 步驟模式的控制按鈕 -->
+  <div class="step-mode-controls hidden" id="stepControls">
+    <button id="nextBtn" onclick="nextQuestion()" style="display:none">下一題</button>
+    <button id="earlySubmitBtn" onclick="earlySubmit()" style="display:none">提早交卷</button>
+  </div>
+  
+  <div class="result" id="result"></div>
 
   <script>
-    async function loadQuestions() {
-      const file = document.getElementById("fileSelect").value;
-      try {
-        const res = await fetch(file);
-        const data = await res.json();
-        renderQuestions(data);
-      } catch (err) {
-        document.getElementById("questionContainer").innerHTML = "<p style='color:red;'>無法載入題庫，請確認路徑與 GitHub Pages 設定。</p>";
-        console.error(err);
+    const questions = [
+      {
+        question: "某分析流行病學研究...匹配的最主要目的為何？",
+        options: {
+          A: "避免干擾",
+          B: "增加樣本的異質性",
+          C: "提高研究結果的外推性",
+          D: "降低樣本的不回應率"
+        },
+        answer: "A",
+        explanation: "匹配的最主要目的是避免干擾，也就是控制混淆變項的影響。",
+        tags: ["110-2", "流行病學"]
+      },
+      {
+        question: "利用配對方式選擇病例對照研究，下列何者錯誤？",
+        options: {
+          A: "需事先決定干擾因子",
+          B: "可降低已知干擾因子的影響",
+          C: "無法控制配對因子之干擾作用",
+          D: "需做配對分析"
+        },
+        answer: "C",
+        explanation: "配對設計恰恰是為了控制配對因子的干擾作用而設計的。",
+        tags: ["106-1", "病例對照研究"]
+      },
+      {
+        question: "下列那一項因素不會造成某慢性疾病的發生率產生變動？",
+        options: {
+          A: "潛伏期",
+          B: "疾病診斷技術",
+          C: "環境因素",
+          D: "生活習慣",
+          E: "送分"
+        },
+        answer: "E",
+        explanation: "送分題，無需鑽研。",
+        tags: ["104-2", "發生率"]
+      }
+    ];
+
+    let quiz = [];
+    let currentQuestion = 0;
+    let correct = 0;
+    let isStepMode = false;
+    let canUseSpacebar = false; // 控制是否可以使用空白鍵
+    let hasWarned = false; // 追蹤是否已經警告過未選擇選項
+
+    // 定義已知的年份和科目標籤
+    const yearTags = ["110-2", "106-1", "104-2"];
+    const subjectTags = ["流行病學", "病例對照研究", "發生率"];
+
+    // 添加鍵盤事件監聽器
+    document.addEventListener('keydown', function(event) {
+      // 只在步驟模式下啟用鍵盤功能
+      if (!isStepMode || !canUseSpacebar) return;
+      
+      if (event.code === 'Space' || event.key === ' ') {
+        event.preventDefault(); // 防止頁面滾動
+        
+        // 檢查當前狀態
+        const submitBtn = document.getElementById(`submitAnswerBtn${currentQuestion}`);
+        const nextBtn = document.getElementById('nextBtn');
+        
+        if (submitBtn && submitBtn.style.display !== 'none') {
+          // 如果提交答案按鈕可見，按空白鍵等同於提交答案
+          checkStep(currentQuestion);
+        } else if (nextBtn && nextBtn.style.display !== 'none') {
+          // 如果下一題按鈕可見，按空白鍵等同於下一題
+          nextQuestion();
+        }
+      }
+      
+      // 方向鍵選擇選項（只在尚未提交答案時有效）
+      const submitBtn = document.getElementById(`submitAnswerBtn${currentQuestion}`);
+      if (submitBtn && submitBtn.style.display !== 'none') {
+        let optionToSelect = null;
+        
+        switch(event.code) {
+          case 'ArrowUp':
+            optionToSelect = 'A';
+            break;
+          case 'ArrowLeft':
+            optionToSelect = 'B';
+            break;
+          case 'ArrowDown':
+            optionToSelect = 'C';
+            break;
+          case 'ArrowRight':
+            optionToSelect = 'D';
+            break;
+        }
+        
+        if (optionToSelect) {
+          event.preventDefault(); // 防止頁面滾動
+          const radio = document.querySelector(`input[name='q${currentQuestion}'][value='${optionToSelect}']`);
+          if (radio) {
+            radio.checked = true;
+          }
+        }
+      }
+    });
+
+    function getSelectedValues(selectId) {
+      const checkboxes = document.querySelectorAll(`#${selectId} input[type="checkbox"]:checked`);
+      const values = Array.from(checkboxes).map(cb => cb.value).filter(v => v !== 'all');
+      return values.length > 0 ? values : [];
+    }
+
+    function handleSelectAll(type) {
+      const groupId = type === 'year' ? 'yearTag' : 'subjectTag';
+      const allCheckbox = document.querySelector(`#${groupId} input[value="all"]`);
+      const otherCheckboxes = document.querySelectorAll(`#${groupId} input[type="checkbox"]:not([value="all"])`);
+      
+      if (type === 'subject') {
+        const allSubjectsCount = document.getElementById('count-all-subjects');
+        
+        if (allCheckbox.checked) {
+          // 如果勾選全選，則勾選所有其他選項，但隱藏個別題數輸入框
+          otherCheckboxes.forEach(cb => {
+            cb.checked = true;
+            const countDiv = document.getElementById(`count-${cb.value}`);
+            countDiv.style.display = 'none';
+          });
+          // 顯示總題數輸入框
+          allSubjectsCount.style.display = 'block';
+        } else {
+          // 如果取消全選，則取消所有其他選項
+          otherCheckboxes.forEach(cb => {
+            cb.checked = false;
+            const countDiv = document.getElementById(`count-${cb.value}`);
+            countDiv.style.display = 'none';
+          });
+          // 隱藏總題數輸入框
+          allSubjectsCount.style.display = 'none';
+        }
+      } else {
+        // 年份的處理保持原樣
+        if (allCheckbox.checked) {
+          otherCheckboxes.forEach(cb => cb.checked = true);
+        } else {
+          otherCheckboxes.forEach(cb => cb.checked = false);
+        }
       }
     }
 
-    function renderQuestions(questions) {
-      const container = document.getElementById("questionContainer");
-      container.innerHTML = "";
+    function toggleSubjectCount(checkbox) {
+      const subject = checkbox.value;
+      const countDiv = document.getElementById(`count-${subject}`);
+      const allCheckbox = document.querySelector('#subjectTag input[value="all"]');
+      const allSubjectsCount = document.getElementById('count-all-subjects');
+      
+      if (checkbox.checked) {
+        // 如果不是全選狀態，顯示個別題數輸入框
+        if (!allCheckbox.checked) {
+          countDiv.style.display = 'block';
+        }
+      } else {
+        countDiv.style.display = 'none';
+        // 取消全選狀態
+        allCheckbox.checked = false;
+        allSubjectsCount.style.display = 'none';
+      }
+      
+      // 檢查是否需要更新全選狀態
+      updateAllSelectStatus('subject');
+    }
 
-      questions.forEach(q => {
-        const el = document.createElement("div");
-        el.className = "question";
-        el.innerHTML = `
-          <p><strong>題號 ${q.id}</strong></p>
-          <p>${q.question.replace(/\n/g, "<br>")}</p>
-          <ul>
-            <li>A. ${q.options.A}</li>
-            <li>B. ${q.options.B}</li>
-            <li>C. ${q.options.C}</li>
-            <li>D. ${q.options.D}</li>
-            ${q.options.E ? `<li>E. ${q.options.E}</li>` : ""}
-          </ul>
-          <p class="answer">正確答案：${Array.isArray(q.answer) ? q.answer.join(", ") : q.answer}</p>
-          <p><em>詳解：</em><br>${q.explanation.replace(/\n/g, "<br>")}</p>
-          <p><small>Tags: ${q.tags.join(", ")}</small></p>
-        `;
-        container.appendChild(el);
+    function updateAllSelectStatus(type) {
+      if (type === 'subject') {
+        const allCheckbox = document.querySelector('#subjectTag input[value="all"]');
+        const otherCheckboxes = document.querySelectorAll('#subjectTag input[type="checkbox"]:not([value="all"])');
+        const checkedCount = Array.from(otherCheckboxes).filter(cb => cb.checked).length;
+        
+        // 只有在手動勾選所有科目時才自動勾選全選（但不觸發全選邏輯）
+        if (checkedCount === otherCheckboxes.length && checkedCount > 0) {
+          // 不自動切換到全選模式，保持個別設定模式
+        } else if (checkedCount === 0) {
+          allCheckbox.checked = false;
+          document.getElementById('count-all-subjects').style.display = 'none';
+        }
+      } else {
+        const groupId = 'yearTag';
+        const allCheckbox = document.querySelector(`#${groupId} input[value="all"]`);
+        const otherCheckboxes = document.querySelectorAll(`#${groupId} input[type="checkbox"]:not([value="all"])`);
+        const checkedCount = Array.from(otherCheckboxes).filter(cb => cb.checked).length;
+        
+        allCheckbox.checked = checkedCount === otherCheckboxes.length;
+      }
+    }
+
+    function formatTags(tags) {
+      return tags.map(tag => {
+        const isYear = yearTags.includes(tag);
+        const tagClass = isYear ? 'tag year' : 'tag subject';
+        return `<span class="${tagClass}">${tag}</span>`;
+      }).join(' ');
+    }
+
+    function startQuiz() {
+      const selectedYears = getSelectedValues('yearTag');
+      const selectedSubjects = getSelectedValues('subjectTag');
+      const isAllSelected = document.querySelector('#subjectTag input[value="all"]').checked;
+      
+      if (selectedYears.length === 0) {
+        alert('請至少選擇一個年份');
+        return;
+      }
+      
+      if (selectedSubjects.length === 0) {
+        alert('請至少選擇一個科目');
+        return;
+      }
+
+      // 根據年份和科目篩選題目
+      const filteredByYear = questions.filter(q => q.tags.some(tag => selectedYears.includes(tag)));
+      
+      let finalQuiz = [];
+      
+      if (isAllSelected) {
+        // 全選模式：從所有科目中隨機選取指定數量的題目
+        const totalCount = parseInt(document.querySelector('#count-all-subjects input').value) || 5;
+        const allSubjectQuestions = filteredByYear.filter(q => q.tags.some(tag => selectedSubjects.includes(tag)));
+        
+        if (allSubjectQuestions.length === 0) {
+          alert('沒有符合條件的題目，請重新選擇年份或科目');
+          return;
+        }
+        
+        // 隨機選取指定數量的題目
+        const shuffled = allSubjectQuestions.sort(() => Math.random() - 0.5);
+        finalQuiz = shuffled.slice(0, Math.min(totalCount, allSubjectQuestions.length));
+        
+      } else {
+        // 個別科目模式：根據每個科目設定的題數選取題目
+        selectedSubjects.forEach(subject => {
+          const countInput = document.querySelector(`#count-${subject} input`);
+          const subjectCount = parseInt(countInput.value) || 1;
+          const subjectQuestions = filteredByYear.filter(q => q.tags.includes(subject));
+          
+          if (subjectQuestions.length === 0) {
+            console.warn(`沒有找到 ${subject} 相關的題目`);
+            return;
+          }
+          
+          // 隨機選取指定數量的題目
+          const shuffled = subjectQuestions.sort(() => Math.random() - 0.5);
+          const selected = shuffled.slice(0, Math.min(subjectCount, subjectQuestions.length));
+          finalQuiz = finalQuiz.concat(selected);
+        });
+      }
+
+      if (finalQuiz.length === 0) {
+        alert('沒有符合條件的題目，請重新選擇年份或科目');
+        return;
+      }
+
+      // 根據選擇的出題順序來決定是否隨機排序
+      const questionOrder = document.getElementById('questionOrder').value;
+      
+      if (questionOrder === 'random') {
+        // 隨機排序
+        if (!isAllSelected) {
+          quiz = finalQuiz.sort(() => Math.random() - 0.5);
+        } else {
+          quiz = finalQuiz; // 全選模式已經隨機過了
+        }
+      } else {
+        // 照原始順序（按照 questions 陣列中的順序）
+        // 先找出所有選中題目在原陣列中的索引，然後按索引排序
+        quiz = finalQuiz.sort((a, b) => {
+          const indexA = questions.findIndex(q => q.question === a.question);
+          const indexB = questions.findIndex(q => q.question === b.question);
+          return indexA - indexB;
+        });
+      }
+      
+      currentQuestion = 0;
+      correct = 0;
+
+      const mode = document.getElementById('mode').value;
+      isStepMode = mode === 'step';
+      
+      document.getElementById('result').innerText = '';
+      document.getElementById('quiz').innerHTML = '';
+
+      // 隱藏設定區域
+      document.getElementById('setupSection').classList.add('hidden');
+
+      if (isStepMode) {
+        // 顯示進度條和步驟控制按鈕
+        document.getElementById('progressInfo').classList.remove('hidden');
+        document.getElementById('stepControls').classList.remove('hidden');
+        document.getElementById('submitBtn').classList.add('hidden');
+        
+        // 更新總題數顯示
+        document.getElementById('totalQuestions').innerText = quiz.length;
+        
+        // 啟用空白鍵功能
+        canUseSpacebar = true;
+        
+        showQuestion(currentQuestion);
+      } else {
+        // 隱藏進度條和步驟控制按鈕
+        document.getElementById('progressInfo').classList.add('hidden');
+        document.getElementById('stepControls').classList.add('hidden');
+        document.getElementById('submitBtn').classList.remove('hidden');
+        
+        // 停用空白鍵功能
+        canUseSpacebar = false;
+        
+        showAllQuestions();
+      }
+    }
+
+    function showQuestion(i) {
+      const quizDiv = document.getElementById('quiz');
+      quizDiv.innerHTML = '';
+      const q = quiz[i];
+      
+      // 重置警告狀態（每題開始時重置）
+      hasWarned = false;
+      
+      // 更新進度顯示
+      document.getElementById('currentQuestionNum').innerText = i + 1;
+      
+      const qBlock = document.createElement('div');
+      qBlock.className = 'question-block';
+      qBlock.innerHTML = `
+        <h3>第 ${i + 1} 題</h3>
+        <p>${q.question}</p>
+        ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`).join('')}
+        <div class="warning-message" id="warning${i}">⚠️ 請先選擇一個選項再提交答案！</div>
+        <div class="explanation" id="explanation${i}">${q.explanation}</div>
+        <button id="submitAnswerBtn${i}" class="submit-answer-btn" onclick="checkStep(${i})">提交答案</button>
+      `;
+      quizDiv.appendChild(qBlock);
+      
+      // 顯示提早交卷按鈕
+      document.getElementById('earlySubmitBtn').style.display = 'inline';
+    }
+
+    function checkStep(i) {
+      const chosen = document.querySelector(`input[name='q${i}']:checked`);
+      const explanation = document.getElementById(`explanation${i}`);
+      const submitBtn = document.getElementById(`submitAnswerBtn${i}`);
+      const warningMsg = document.getElementById(`warning${i}`);
+      
+      // 檢查是否有選擇選項
+      if (!chosen) {
+        if (!hasWarned) {
+          // 第一次警告，顯示警告訊息
+          warningMsg.style.display = 'block';
+          hasWarned = true;
+          return;
+        }
+        // 第二次提交，隱藏警告訊息並允許繼續（視為未作答）
+        warningMsg.style.display = 'none';
+      }
+      
+      if (!explanation.dataset.answered) {
+        explanation.dataset.answered = "true";
+        quiz[i].userAnswer = chosen ? chosen.value : null;
+        
+        // 檢查是否為五個選項的題目（送分題）
+        const optionCount = Object.keys(quiz[i].options).length;
+        const isBonusQuestion = optionCount === 5;
+        
+        let explanationText = '';
+        if (isBonusQuestion && chosen) {
+          // 五個選項的題目，有選就對
+          explanation.classList.add('correct');
+          correct++;
+          quiz[i].isCorrect = true;
+          explanationText = `✓ 正確！（送分題）\n標籤：${formatTags(quiz[i].tags)}\n你的答案：${chosen.value}. ${quiz[i].options[chosen.value]}\n正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}\n詳解：${quiz[i].explanation}`;
+        } else if (chosen && chosen.value === quiz[i].answer) {
+          explanation.classList.add('correct');
+          correct++;
+          quiz[i].isCorrect = true;
+          explanationText = `✓ 正確！\n標籤：${formatTags(quiz[i].tags)}\n正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}\n詳解：${quiz[i].explanation}`;
+        } else {
+          explanation.classList.add('incorrect');
+          quiz[i].isCorrect = false;
+          explanationText = `✗ 錯誤！\n標籤：${formatTags(quiz[i].tags)}\n你的答案：${chosen ? chosen.value + '. ' + quiz[i].options[chosen.value] : '未作答'}\n正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}\n詳解：${quiz[i].explanation}`;
+        }
+        explanation.innerHTML = explanationText.replace(/\n/g, '<br>');
+        
+        // 隱藏提交答案按鈕
+        submitBtn.style.display = 'none';
+        
+        // 顯示詳解
+        explanation.style.display = 'block';
+        
+        // 判斷是否為最後一題
+        const isLast = currentQuestion >= quiz.length - 1;
+        
+        if (!isLast) {
+          // 不是最後一題，顯示下一題按鈕
+          document.getElementById('nextBtn').style.display = 'inline';
+        } else {
+          // 是最後一題，隱藏提早交卷按鈕，延遲顯示最終結果
+          document.getElementById('earlySubmitBtn').style.display = 'none';
+          setTimeout(() => {
+            showFinalResults();
+          }, 1000);
+        }
+      }
+    }
+
+    function nextQuestion() {
+      currentQuestion++;
+      if (currentQuestion < quiz.length) {
+        // 隱藏下一題按鈕，直到新題目提交答案後才會再次顯示
+        document.getElementById('nextBtn').style.display = 'none';
+        showQuestion(currentQuestion);
+      } else {
+        showFinalResults();
+      }
+    }
+
+    function earlySubmit() {
+      const remainingQuestions = quiz.length - currentQuestion - 1;
+      const confirmSubmit = confirm(`確定要提早交卷嗎？\n\n目前進度：第 ${currentQuestion + 1} 題 / 共 ${quiz.length} 題\n剩餘題數：${remainingQuestions} 題\n\n未作答的題目將計為錯誤。`);
+      
+      if (confirmSubmit) {
+        // 處理當前題目（如果還沒提交答案的話）
+        const currentExplanation = document.getElementById(`explanation${currentQuestion}`);
+        if (currentExplanation && !currentExplanation.dataset.answered) {
+          // 當前題目還沒提交，檢查是否有選擇答案
+          const chosen = document.querySelector(`input[name='q${currentQuestion}']:checked`);
+          quiz[currentQuestion].userAnswer = chosen ? chosen.value : null;
+          
+          if (chosen && chosen.value === quiz[currentQuestion].answer) {
+            quiz[currentQuestion].isCorrect = true;
+            correct++;
+          } else {
+            quiz[currentQuestion].isCorrect = false;
+          }
+        }
+        
+        // 標記未開始的題目為未作答
+        for (let i = currentQuestion + 1; i < quiz.length; i++) {
+          quiz[i].userAnswer = null;
+          quiz[i].isCorrect = false;
+        }
+        
+        // 直接顯示最終結果
+        showFinalResults();
+      }
+    }
+
+    function showFinalResults() {
+      // 停用空白鍵功能
+      canUseSpacebar = false;
+      
+      // 隱藏所有控制按鈕和進度條
+      document.getElementById('stepControls').classList.add('hidden');
+      document.getElementById('progressInfo').classList.add('hidden');
+      document.getElementById('quiz').innerHTML = '';
+      
+      const total = quiz.length;
+      const wrong = total - correct;
+      let summary = `總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分\n\n`;
+      summary += `【詳細答題結果】\n`;
+      summary += `${'='.repeat(50)}\n\n`;
+      
+      let htmlSummary = `<div style="white-space: pre-wrap; font-family: monospace;">總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分
+
+【詳細答題結果】
+${'='.repeat(50)}
+
+`;
+      
+      quiz.forEach((q, idx) => {
+        // 檢查是否為五個選項的題目（送分題）
+        const optionCount = Object.keys(q.options).length;
+        const isBonusQuestion = optionCount === 5;
+        
+        let isCorrect;
+        if (isBonusQuestion && q.userAnswer) {
+          // 送分題：有作答就是正確
+          isCorrect = true;
+        } else {
+          // 一般題目：答案要符合
+          isCorrect = q.userAnswer === q.answer;
+        }
+        
+        const resultText = isCorrect ? (isBonusQuestion ? '✓ 正確（送分題）' : '✓ 正確') : '✗ 錯誤';
+        const resultClass = isCorrect ? 'result-correct' : 'result-incorrect';
+        
+        htmlSummary += `第 ${idx + 1} 題：${q.question}
+標籤：${formatTags(q.tags)}
+選項：
+`;
+        Object.entries(q.options).forEach(([key, value]) => {
+          htmlSummary += `  ${key}. ${value}
+`;
+        });
+        htmlSummary += `你的答案：${q.userAnswer ? q.userAnswer + '. ' + q.options[q.userAnswer] : "未作答"}
+正確答案：${q.answer}. ${q.options[q.answer]}
+結果：<span class="${resultClass}">${resultText}</span>
+詳解：${q.explanation}
+${'-'.repeat(30)}
+
+`;
       });
+      
+      htmlSummary += `</div>
+      <br>
+      <button onclick="resetQuiz()" style="padding: 10px 20px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">重新開始</button>`;
+      
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = htmlSummary;
+    }
+
+    function resetQuiz() {
+      // 重置所有變數
+      quiz = [];
+      currentQuestion = 0;
+      correct = 0;
+      isStepMode = false;
+      canUseSpacebar = false;
+      hasWarned = false;
+      
+      // 顯示設定區域
+      document.getElementById('setupSection').classList.remove('hidden');
+      
+      // 隱藏其他區域
+      document.getElementById('progressInfo').classList.add('hidden');
+      document.getElementById('stepControls').classList.add('hidden');
+      document.getElementById('submitBtn').classList.add('hidden');
+      
+      // 清空內容
+      document.getElementById('quiz').innerHTML = '';
+      document.getElementById('result').innerHTML = '';
+      
+      // 重置按鈕狀態
+      document.getElementById('nextBtn').style.display = 'none';
+      document.getElementById('earlySubmitBtn').style.display = 'none';
+    }
+
+    function showAllQuestions() {
+      const quizDiv = document.getElementById('quiz');
+      quizDiv.innerHTML = '';
+      quiz.forEach((q, i) => {
+        const qBlock = document.createElement('div');
+        qBlock.className = 'question-block';
+        qBlock.innerHTML = `
+          <h3>第 ${i + 1} 題</h3>
+          <p>${q.question}</p>
+          ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`).join('')}
+          <div class="explanation" id="explanation${i}">${q.explanation}</div>
+        `;
+        quizDiv.appendChild(qBlock);
+      });
+    }
+
+    function submitQuiz() {
+      correct = 0; // 重置計數器
+      quiz.forEach((q, i) => {
+        const chosen = document.querySelector(`input[name='q${i}']:checked`);
+        const explanation = document.getElementById(`explanation${i}`);
+        explanation.style.display = 'block';
+        
+        q.userAnswer = chosen ? chosen.value : null;
+        
+        // 檢查是否為五個選項的題目（送分題）
+        const optionCount = Object.keys(q.options).length;
+        const isBonusQuestion = optionCount === 5;
+        
+        if (isBonusQuestion && chosen) {
+          // 五個選項的題目，有選就對
+          explanation.classList.add('correct');
+          explanation.innerHTML = `<span class="result-correct">✓ 正確！（送分題）</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${chosen.value}. ${q.options[chosen.value]}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
+          correct++;
+          q.isCorrect = true; // 標記為正確，用於最終結果顯示
+        } else if (chosen && chosen.value === q.answer) {
+          explanation.classList.add('correct');
+          explanation.innerHTML = `<span class="result-correct">✓ 正確！</span><br>標籤：${formatTags(q.tags)}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
+          correct++;
+          q.isCorrect = true;
+        } else {
+          explanation.classList.add('incorrect');
+          explanation.innerHTML = `<span class="result-incorrect">✗ 錯誤！</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${chosen ? chosen.value + '. ' + q.options[chosen.value] : '未作答'}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
+          q.isCorrect = false;
+        }
+      });
+      
+      // 隱藏提交按鈕
+      document.getElementById('submitBtn').classList.add('hidden');
+      
+      // 延遲顯示最終結果，讓用戶先看到各題解答
+      setTimeout(() => {
+        showFinalResults();
+      }, 1000);
     }
   </script>
 </body>
