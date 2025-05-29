@@ -28642,32 +28642,8 @@
        }
      });
    }
- } else {
-   // 取消勾選時清除對應科目
-   if (type === '一') {
-     const subjects = ['解剖', '胚胎', '組織', '生理', '生化'];
-     subjects.forEach(subject => {
-       const subjectCheckbox = document.querySelector(`input[value="${subject}"]`);
-       const countInput = document.querySelector(`#count-${subject} input`);
-       if (subjectCheckbox) {
-         subjectCheckbox.checked = false;
-         document.getElementById(`count-${subject}`).style.display = 'none';
-         if (countInput) countInput.value = 1;
-       }
-     });
-   } else if (type === '二') {
-     const subjects = ['微生物', '免疫', '寄生蟲', '公衛', '藥理', '病理'];
-     subjects.forEach(subject => {
-       const subjectCheckbox = document.querySelector(`input[value="${subject}"]`);
-       const countInput = document.querySelector(`#count-${subject} input`);
-       if (subjectCheckbox) {
-         subjectCheckbox.checked = false;
-         document.getElementById(`count-${subject}`).style.display = 'none';
-         if (countInput) countInput.value = 1;
-       }
-     });
-   }
  }
+ // 移除了 else 區塊中的取消勾選邏輯
 }
 
     function updateAllSelectStatus(type) {
