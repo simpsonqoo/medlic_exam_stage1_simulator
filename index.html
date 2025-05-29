@@ -184,28 +184,11 @@
       border-radius: 5px;
       display: none;
     }
-    .loading {
-      text-align: center;
-      padding: 20px;
-      font-style: italic;
-      color: #666;
-    }
-    .error-message {
-      background-color: #f8d7da;
-      border: 1px solid #f5c6cb;
-      color: #721c24;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-    }
   </style>
 </head>
 <body>
   <h1>醫師一階國考測驗系統 created and maintained by KMU BM112 陳君豪</h1>
-  
-  <div class="loading" id="loadingMessage">正在載入題庫...</div>
-  
-  <div class="tag-selector hidden" id="setupSection">
+  <div class="tag-selector" id="setupSection">
     <label>選擇模式：</label>
     <select id="mode">
       <option value="all">全部作答後顯示詳解</option>
@@ -221,14 +204,35 @@
     <label>選擇年份：</label>
     <div id="yearTag" class="checkbox-group">
       <label><input type="checkbox" value="all" onchange="handleSelectAll('year')"> 全選</label><br>
+      <label><input type="checkbox" value="110-2"> 110-2</label><br>
+      <label><input type="checkbox" value="106-1"> 106-1</label><br>
+      <label><input type="checkbox" value="104-2"> 104-2</label><br>
     </div>
     <label>選擇科目：</label>
     <div id="subjectTag" class="checkbox-group">
       <label><input type="checkbox" value="all" onchange="handleSelectAll('subject')"> 全選</label>
       <div class="subject-count" id="count-all-subjects" style="display:none;">
-        總題數：<input type="number" value="5" min="1" max="50">
+        總題數：<input type="number" value="5" min="1" max="20">
       </div>
       <br>
+      <label>
+        <input type="checkbox" value="流行病學" onchange="toggleSubjectCount(this)"> 流行病學
+        <div class="subject-count" id="count-流行病學">
+          題數：<input type="number" value="1" min="1" max="10">
+        </div>
+      </label><br>
+      <label>
+        <input type="checkbox" value="病例對照研究" onchange="toggleSubjectCount(this)"> 病例對照研究
+        <div class="subject-count" id="count-病例對照研究">
+          題數：<input type="number" value="1" min="1" max="10">
+        </div>
+      </label><br>
+      <label>
+        <input type="checkbox" value="發生率" onchange="toggleSubjectCount(this)"> 發生率
+        <div class="subject-count" id="count-發生率">
+          題數：<input type="number" value="1" min="1" max="10">
+        </div>
+      </label><br>
     </div>
     <button onclick="startQuiz()">產生題目</button>
   </div>
@@ -252,182 +256,79 @@
   <div class="result" id="result"></div>
 
   <script>
-    let allQuestions = [];
+    const questions = [
+      {
+        question: "某分析流行病學研究...匹配的最主要目的為何？",
+        options: {
+          A: "避免干擾",
+          B: "增加樣本的異質性",
+          C: "提高研究結果的外推性",
+          D: "降低樣本的不回應率"
+        },
+        answer: "A",
+        explanation: "匹配的最主要目的是避免干擾，也就是控制混淆變項的影響。",
+        tags: ["110-2", "流行病學"]
+      },
+      {
+        question: "利用配對方式選擇病例對照研究，下列何者錯誤？",
+        options: {
+          A: "需事先決定干擾因子",
+          B: "可降低已知干擾因子的影響",
+          C: "無法控制配對因子之干擾作用",
+          D: "需做配對分析"
+        },
+        answer: "C",
+        explanation: "配對設計恰恰是為了控制配對因子的干擾作用而設計的。",
+        tags: ["106-1", "病例對照研究"]
+      },
+      {
+        question: "下列那一項因素不會造成某慢性疾病的發生率產生變動？",
+        options: {
+          A: "潛伏期",
+          B: "疾病診斷技術",
+          C: "環境因素",
+          D: "生活習慣",
+          E: "送分"
+        },
+        answer: "E",
+        explanation: "送分題，無需鑽研。",
+        tags: ["104-2", "發生率"]
+      }
+    ];
+
     let quiz = [];
     let currentQuestion = 0;
     let correct = 0;
     let isStepMode = false;
-    let canUseSpacebar = false;
-    let hasWarned = false;
-    let yearTags = [];
-    let subjectTags = [];
+    let canUseSpacebar = false; // 控制是否可以使用空白鍵
+    let hasWarned = false; // 追蹤是否已經警告過未選擇選項
 
-    // 題庫文件路徑配置
-    const testBankPaths = [
-      'Test_bank/醫學(一)',
-      'Test_bank/醫學(二)'
-    ];
-
-    // 頁面載入時初始化
-    window.addEventListener('DOMContentLoaded', async function() {
-      await loadAllQuestions();
-    });
-
-    // 載入所有題目
-    async function loadAllQuestions() {
-      try {
-        const loadingMessage = document.getElementById('loadingMessage');
-        loadingMessage.textContent = '正在載入題庫...';
-        
-        allQuestions = [];
-        
-        // 嘗試載入預定義的文件
-        const knownFiles = [
-          'Test_bank/醫學(一)/113-1(一).json',
-          // 可以在這裡添加更多已知的文件路徑
-          // 'Test_bank/醫學(一)/其他文件.json',
-          // 'Test_bank/醫學(二)/文件名.json',
-        ];
-        
-        for (const filePath of knownFiles) {
-          try {
-            await loadQuestionsFromFile(filePath);
-          } catch (error) {
-            console.warn(`無法載入文件 ${filePath}:`, error);
-          }
-        }
-        
-        if (allQuestions.length === 0) {
-          // 如果沒有載入到任何題目，顯示錯誤訊息
-          loadingMessage.innerHTML = `
-            <div class="error-message">
-              <strong>無法載入題庫！</strong><br>
-              請確認以下事項：<br>
-              1. 在同一目錄下建立 Test_bank 資料夾<br>
-              2. 在 Test_bank 下建立 醫學(一) 和 醫學(二) 資料夾<br>
-              3. 將題目的 JSON 文件放入對應資料夾中<br>
-              4. 使用本地伺服器運行此頁面（如 Live Server）
-            </div>
-          `;
-          return;
-        }
-        
-        // 提取年份和科目標籤
-        extractTags();
-        
-        // 建立選項界面
-        buildTagSelectors();
-        
-        // 隱藏載入訊息，顯示設定界面
-        loadingMessage.classList.add('hidden');
-        document.getElementById('setupSection').classList.remove('hidden');
-        
-        console.log(`成功載入 ${allQuestions.length} 題`);
-        
-      } catch (error) {
-        console.error('載入題庫時發生錯誤:', error);
-        document.getElementById('loadingMessage').innerHTML = `
-          <div class="error-message">
-            載入題庫時發生錯誤：${error.message}<br>
-            請檢查文件路徑和格式是否正確。
-          </div>
-        `;
-      }
-    }
-
-    // 從單一文件載入題目
-    async function loadQuestionsFromFile(filePath) {
-      try {
-        const response = await fetch(filePath);
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
-        
-        const text = await response.text();
-        const questions = JSON.parse(text);
-        
-        if (Array.isArray(questions)) {
-          allQuestions.push(...questions);
-          console.log(`從 ${filePath} 載入了 ${questions.length} 題`);
-        }
-      } catch (error) {
-        console.warn(`載入 ${filePath} 失敗:`, error);
-        throw error;
-      }
-    }
-
-    // 提取所有年份和科目標籤
-    function extractTags() {
-      const yearSet = new Set();
-      const subjectSet = new Set();
-      
-      allQuestions.forEach(q => {
-        if (q.tags && Array.isArray(q.tags)) {
-          q.tags.forEach(tag => {
-            // 判斷是否為年份標籤（格式如：113-1(一)、110-2等）
-            if (/^\d{3}-\d/.test(tag)) {
-              yearSet.add(tag);
-            } else {
-              subjectSet.add(tag);
-            }
-          });
-        }
-      });
-      
-      yearTags = Array.from(yearSet).sort();
-      subjectTags = Array.from(subjectSet).sort();
-    }
-
-    // 建立標籤選擇器
-    function buildTagSelectors() {
-      const yearDiv = document.getElementById('yearTag');
-      const subjectDiv = document.getElementById('subjectTag');
-      
-      // 建立年份選項
-      let yearHTML = '<label><input type="checkbox" value="all" onchange="handleSelectAll(\'year\')"> 全選</label><br>';
-      yearTags.forEach(tag => {
-        yearHTML += `<label><input type="checkbox" value="${tag}"> ${tag}</label><br>`;
-      });
-      yearDiv.innerHTML = yearHTML;
-      
-      // 建立科目選項
-      let subjectHTML = `
-        <label><input type="checkbox" value="all" onchange="handleSelectAll('subject')"> 全選</label>
-        <div class="subject-count" id="count-all-subjects" style="display:none;">
-          總題數：<input type="number" value="5" min="1" max="50">
-        </div>
-        <br>
-      `;
-      subjectTags.forEach(tag => {
-        subjectHTML += `
-          <label>
-            <input type="checkbox" value="${tag}" onchange="toggleSubjectCount(this)"> ${tag}
-            <div class="subject-count" id="count-${tag}">
-              題數：<input type="number" value="1" min="1" max="20">
-            </div>
-          </label><br>
-        `;
-      });
-      subjectDiv.innerHTML = subjectHTML;
-    }
+    // 定義已知的年份和科目標籤
+    const yearTags = ["110-2", "106-1", "104-2"];
+    const subjectTags = ["流行病學", "病例對照研究", "發生率"];
 
     // 添加鍵盤事件監聽器
     document.addEventListener('keydown', function(event) {
+      // 只在步驟模式下啟用鍵盤功能
       if (!isStepMode || !canUseSpacebar) return;
       
       if (event.code === 'Space' || event.key === ' ') {
-        event.preventDefault();
+        event.preventDefault(); // 防止頁面滾動
         
+        // 檢查當前狀態
         const submitBtn = document.getElementById(`submitAnswerBtn${currentQuestion}`);
         const nextBtn = document.getElementById('nextBtn');
         
         if (submitBtn && submitBtn.style.display !== 'none') {
+          // 如果提交答案按鈕可見，按空白鍵等同於提交答案
           checkStep(currentQuestion);
         } else if (nextBtn && nextBtn.style.display !== 'none') {
+          // 如果下一題按鈕可見，按空白鍵等同於下一題
           nextQuestion();
         }
       }
       
+      // 方向鍵選擇選項（只在尚未提交答案時有效）
       const submitBtn = document.getElementById(`submitAnswerBtn${currentQuestion}`);
       if (submitBtn && submitBtn.style.display !== 'none') {
         let optionToSelect = null;
@@ -448,7 +349,7 @@
         }
         
         if (optionToSelect) {
-          event.preventDefault();
+          event.preventDefault(); // 防止頁面滾動
           const radio = document.querySelector(`input[name='q${currentQuestion}'][value='${optionToSelect}']`);
           if (radio) {
             radio.checked = true;
@@ -472,21 +373,26 @@
         const allSubjectsCount = document.getElementById('count-all-subjects');
         
         if (allCheckbox.checked) {
+          // 如果勾選全選，則勾選所有其他選項，但隱藏個別題數輸入框
           otherCheckboxes.forEach(cb => {
             cb.checked = true;
             const countDiv = document.getElementById(`count-${cb.value}`);
-            if (countDiv) countDiv.style.display = 'none';
+            countDiv.style.display = 'none';
           });
+          // 顯示總題數輸入框
           allSubjectsCount.style.display = 'block';
         } else {
+          // 如果取消全選，則取消所有其他選項
           otherCheckboxes.forEach(cb => {
             cb.checked = false;
             const countDiv = document.getElementById(`count-${cb.value}`);
-            if (countDiv) countDiv.style.display = 'none';
+            countDiv.style.display = 'none';
           });
+          // 隱藏總題數輸入框
           allSubjectsCount.style.display = 'none';
         }
       } else {
+        // 年份的處理保持原樣
         if (allCheckbox.checked) {
           otherCheckboxes.forEach(cb => cb.checked = true);
         } else {
@@ -502,15 +408,18 @@
       const allSubjectsCount = document.getElementById('count-all-subjects');
       
       if (checkbox.checked) {
-        if (!allCheckbox.checked && countDiv) {
+        // 如果不是全選狀態，顯示個別題數輸入框
+        if (!allCheckbox.checked) {
           countDiv.style.display = 'block';
         }
       } else {
-        if (countDiv) countDiv.style.display = 'none';
+        countDiv.style.display = 'none';
+        // 取消全選狀態
         allCheckbox.checked = false;
         allSubjectsCount.style.display = 'none';
       }
       
+      // 檢查是否需要更新全選狀態
       updateAllSelectStatus('subject');
     }
 
@@ -520,7 +429,10 @@
         const otherCheckboxes = document.querySelectorAll('#subjectTag input[type="checkbox"]:not([value="all"])');
         const checkedCount = Array.from(otherCheckboxes).filter(cb => cb.checked).length;
         
-        if (checkedCount === 0) {
+        // 只有在手動勾選所有科目時才自動勾選全選（但不觸發全選邏輯）
+        if (checkedCount === otherCheckboxes.length && checkedCount > 0) {
+          // 不自動切換到全選模式，保持個別設定模式
+        } else if (checkedCount === 0) {
           allCheckbox.checked = false;
           document.getElementById('count-all-subjects').style.display = 'none';
         }
@@ -558,18 +470,14 @@
       }
 
       // 根據年份和科目篩選題目
-      const filteredByYear = allQuestions.filter(q => 
-        q.tags && q.tags.some(tag => selectedYears.includes(tag))
-      );
+      const filteredByYear = questions.filter(q => q.tags.some(tag => selectedYears.includes(tag)));
       
       let finalQuiz = [];
       
       if (isAllSelected) {
         // 全選模式：從所有科目中隨機選取指定數量的題目
         const totalCount = parseInt(document.querySelector('#count-all-subjects input').value) || 5;
-        const allSubjectQuestions = filteredByYear.filter(q => 
-          q.tags && q.tags.some(tag => selectedSubjects.includes(tag))
-        );
+        const allSubjectQuestions = filteredByYear.filter(q => q.tags.some(tag => selectedSubjects.includes(tag)));
         
         if (allSubjectQuestions.length === 0) {
           alert('沒有符合條件的題目，請重新選擇年份或科目');
@@ -584,10 +492,8 @@
         // 個別科目模式：根據每個科目設定的題數選取題目
         selectedSubjects.forEach(subject => {
           const countInput = document.querySelector(`#count-${subject} input`);
-          const subjectCount = parseInt(countInput ? countInput.value : 1) || 1;
-          const subjectQuestions = filteredByYear.filter(q => 
-            q.tags && q.tags.includes(subject)
-          );
+          const subjectCount = parseInt(countInput.value) || 1;
+          const subjectQuestions = filteredByYear.filter(q => q.tags.includes(subject));
           
           if (subjectQuestions.length === 0) {
             console.warn(`沒有找到 ${subject} 相關的題目`);
@@ -610,17 +516,19 @@
       const questionOrder = document.getElementById('questionOrder').value;
       
       if (questionOrder === 'random') {
+        // 隨機排序
         if (!isAllSelected) {
           quiz = finalQuiz.sort(() => Math.random() - 0.5);
         } else {
-          quiz = finalQuiz;
+          quiz = finalQuiz; // 全選模式已經隨機過了
         }
       } else {
-        // 照原始順序（按照題目ID排序）
+        // 照原始順序（按照 questions 陣列中的順序）
+        // 先找出所有選中題目在原陣列中的索引，然後按索引排序
         quiz = finalQuiz.sort((a, b) => {
-          const idA = a.id || 0;
-          const idB = b.id || 0;
-          return idA - idB;
+          const indexA = questions.findIndex(q => q.question === a.question);
+          const indexB = questions.findIndex(q => q.question === b.question);
+          return indexA - indexB;
         });
       }
       
@@ -667,7 +575,7 @@
       quizDiv.innerHTML = '';
       const q = quiz[i];
       
-      // 重置警告狀態
+      // 重置警告狀態（每題開始時重置）
       hasWarned = false;
       
       // 更新進度顯示
@@ -675,30 +583,12 @@
       
       const qBlock = document.createElement('div');
       qBlock.className = 'question-block';
-      
-      // 處理選項
-      let optionsHTML = '';
-      if (q.options) {
-        if (typeof q.options === 'object') {
-          // 物件格式的選項
-          optionsHTML = Object.entries(q.options).map(([key, value]) => 
-            `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`
-          ).join('');
-        } else if (Array.isArray(q.options)) {
-          // 陣列格式的選項
-          const optionKeys = ['A', 'B', 'C', 'D', 'E'];
-          optionsHTML = q.options.map((option, index) => 
-            `<label><input type="radio" name="q${i}" value="${optionKeys[index]}"> ${optionKeys[index]}. ${option}</label><br>`
-          ).join('');
-        }
-      }
-      
       qBlock.innerHTML = `
-        <h3>第 ${i + 1} 題 ${q.qid ? `(${q.qid})` : ''}</h3>
+        <h3>第 ${i + 1} 題</h3>
         <p>${q.question}</p>
-        ${optionsHTML}
+        ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`).join('')}
         <div class="warning-message" id="warning${i}">⚠️ 請先選擇一個選項再提交答案！</div>
-        <div class="explanation" id="explanation${i}">${q.explanation || ''}</div>
+        <div class="explanation" id="explanation${i}">${q.explanation}</div>
         <button id="submitAnswerBtn${i}" class="submit-answer-btn" onclick="checkStep(${i})">提交答案</button>
       `;
       quizDiv.appendChild(qBlock);
@@ -716,10 +606,12 @@
       // 檢查是否有選擇選項
       if (!chosen) {
         if (!hasWarned) {
+          // 第一次警告，顯示警告訊息
           warningMsg.style.display = 'block';
           hasWarned = true;
           return;
         }
+        // 第二次提交，隱藏警告訊息並允許繼續（視為未作答）
         warningMsg.style.display = 'none';
       }
       
@@ -728,14 +620,7 @@
         quiz[i].userAnswer = chosen ? chosen.value : null;
         
         // 檢查是否為五個選項的題目（送分題）
-        let optionCount = 0;
-        if (quiz[i].options) {
-          if (typeof quiz[i].options === 'object') {
-            optionCount = Object.keys(quiz[i].options).length;
-          } else if (Array.isArray(quiz[i].options)) {
-            optionCount = quiz[i].options.length;
-          }
-        }
+        const optionCount = Object.keys(quiz[i].options).length;
         const isBonusQuestion = optionCount === 5;
         
         let explanationText = '';
@@ -744,16 +629,16 @@
           explanation.classList.add('correct');
           correct++;
           quiz[i].isCorrect = true;
-          explanationText = `✓ 正確！（送分題）\n標籤：${formatTags(quiz[i].tags || [])}\n你的答案：${chosen.value}. ${getOptionText(quiz[i], chosen.value)}\n正確答案：${quiz[i].answer}. ${getOptionText(quiz[i], quiz[i].answer)}\n詳解：${quiz[i].explanation || ''}`;
+          explanationText = `✓ 正確！（送分題）\n標籤：${formatTags(quiz[i].tags)}\n你的答案：${chosen.value}. ${quiz[i].options[chosen.value]}\n正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}\n詳解：${quiz[i].explanation}`;
         } else if (chosen && chosen.value === quiz[i].answer) {
           explanation.classList.add('correct');
           correct++;
           quiz[i].isCorrect = true;
-          explanationText = `✓ 正確！\n標籤：${formatTags(quiz[i].tags || [])}\n正確答案：${quiz[i].answer}. ${getOptionText(quiz[i], quiz[i].answer)}\n詳解：${quiz[i].explanation || ''}`;
+          explanationText = `✓ 正確！\n標籤：${formatTags(quiz[i].tags)}\n正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}\n詳解：${quiz[i].explanation}`;
         } else {
           explanation.classList.add('incorrect');
           quiz[i].isCorrect = false;
-          explanationText = `✗ 錯誤！\n標籤：${formatTags(quiz[i].tags || [])}\n你的答案：${chosen ? chosen.value + '. ' + getOptionText(quiz[i], chosen.value) : '未作答'}\n正確答案：${quiz[i].answer}. ${getOptionText(quiz[i], quiz[i].answer)}\n詳解：${quiz[i].explanation || ''}`;
+          explanationText = `✗ 錯誤！\n標籤：${formatTags(quiz[i].tags)}\n你的答案：${chosen ? chosen.value + '. ' + quiz[i].options[chosen.value] : '未作答'}\n正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}\n詳解：${quiz[i].explanation}`;
         }
         explanation.innerHTML = explanationText.replace(/\n/g, '<br>');
         
@@ -777,20 +662,6 @@
           }, 1000);
         }
       }
-    }
-
-    // 取得選項文字的輔助函數
-    function getOptionText(question, optionKey) {
-      if (!question.options || !optionKey) return '';
-      
-      if (typeof question.options === 'object') {
-        return question.options[optionKey] || '';
-      } else if (Array.isArray(question.options)) {
-        const optionKeys = ['A', 'B', 'C', 'D', 'E'];
-        const index = optionKeys.indexOf(optionKey);
-        return index >= 0 ? question.options[index] : '';
-      }
-      return '';
     }
 
     function nextQuestion() {
@@ -859,14 +730,7 @@ ${'='.repeat(50)}
       
       quiz.forEach((q, idx) => {
         // 檢查是否為五個選項的題目（送分題）
-        let optionCount = 0;
-        if (q.options) {
-          if (typeof q.options === 'object') {
-            optionCount = Object.keys(q.options).length;
-          } else if (Array.isArray(q.options)) {
-            optionCount = q.options.length;
-          }
-        }
+        const optionCount = Object.keys(q.options).length;
         const isBonusQuestion = optionCount === 5;
         
         let isCorrect;
@@ -881,31 +745,18 @@ ${'='.repeat(50)}
         const resultText = isCorrect ? (isBonusQuestion ? '✓ 正確（送分題）' : '✓ 正確') : '✗ 錯誤';
         const resultClass = isCorrect ? 'result-correct' : 'result-incorrect';
         
-        htmlSummary += `第 ${idx + 1} 題${q.qid ? ` (${q.qid})` : ''}：${q.question}
-標籤：${formatTags(q.tags || [])}
+        htmlSummary += `第 ${idx + 1} 題：${q.question}
+標籤：${formatTags(q.tags)}
 選項：
 `;
-        
-        // 顯示選項
-        if (q.options) {
-          if (typeof q.options === 'object') {
-            Object.entries(q.options).forEach(([key, value]) => {
-              htmlSummary += `  ${key}. ${value}
+        Object.entries(q.options).forEach(([key, value]) => {
+          htmlSummary += `  ${key}. ${value}
 `;
-            });
-          } else if (Array.isArray(q.options)) {
-            const optionKeys = ['A', 'B', 'C', 'D', 'E'];
-            q.options.forEach((option, index) => {
-              htmlSummary += `  ${optionKeys[index]}. ${option}
-`;
-            });
-          }
-        }
-        
-        htmlSummary += `你的答案：${q.userAnswer ? q.userAnswer + '. ' + getOptionText(q, q.userAnswer) : "未作答"}
-正確答案：${q.answer}. ${getOptionText(q, q.answer)}
+        });
+        htmlSummary += `你的答案：${q.userAnswer ? q.userAnswer + '. ' + q.options[q.userAnswer] : "未作答"}
+正確答案：${q.answer}. ${q.options[q.answer]}
 結果：<span class="${resultClass}">${resultText}</span>
-詳解：${q.explanation || ''}
+詳解：${q.explanation}
 ${'-'.repeat(30)}
 
 `;
@@ -951,29 +802,11 @@ ${'-'.repeat(30)}
       quiz.forEach((q, i) => {
         const qBlock = document.createElement('div');
         qBlock.className = 'question-block';
-        
-        // 處理選項
-        let optionsHTML = '';
-        if (q.options) {
-          if (typeof q.options === 'object') {
-            // 物件格式的選項
-            optionsHTML = Object.entries(q.options).map(([key, value]) => 
-              `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`
-            ).join('');
-          } else if (Array.isArray(q.options)) {
-            // 陣列格式的選項
-            const optionKeys = ['A', 'B', 'C', 'D', 'E'];
-            optionsHTML = q.options.map((option, index) => 
-              `<label><input type="radio" name="q${i}" value="${optionKeys[index]}"> ${optionKeys[index]}. ${option}</label><br>`
-            ).join('');
-          }
-        }
-        
         qBlock.innerHTML = `
-          <h3>第 ${i + 1} 題 ${q.qid ? `(${q.qid})` : ''}</h3>
+          <h3>第 ${i + 1} 題</h3>
           <p>${q.question}</p>
-          ${optionsHTML}
-          <div class="explanation" id="explanation${i}">${q.explanation || ''}</div>
+          ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`).join('')}
+          <div class="explanation" id="explanation${i}">${q.explanation}</div>
         `;
         quizDiv.appendChild(qBlock);
       });
@@ -989,30 +822,23 @@ ${'-'.repeat(30)}
         q.userAnswer = chosen ? chosen.value : null;
         
         // 檢查是否為五個選項的題目（送分題）
-        let optionCount = 0;
-        if (q.options) {
-          if (typeof q.options === 'object') {
-            optionCount = Object.keys(q.options).length;
-          } else if (Array.isArray(q.options)) {
-            optionCount = q.options.length;
-          }
-        }
+        const optionCount = Object.keys(q.options).length;
         const isBonusQuestion = optionCount === 5;
         
         if (isBonusQuestion && chosen) {
           // 五個選項的題目，有選就對
           explanation.classList.add('correct');
-          explanation.innerHTML = `<span class="result-correct">✓ 正確！（送分題）</span><br>標籤：${formatTags(q.tags || [])}<br>你的答案：${chosen.value}. ${getOptionText(q, chosen.value)}<br>正確答案：${q.answer}. ${getOptionText(q, q.answer)}<br>詳解：${q.explanation || ''}`;
+          explanation.innerHTML = `<span class="result-correct">✓ 正確！（送分題）</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${chosen.value}. ${q.options[chosen.value]}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
           correct++;
           q.isCorrect = true; // 標記為正確，用於最終結果顯示
         } else if (chosen && chosen.value === q.answer) {
           explanation.classList.add('correct');
-          explanation.innerHTML = `<span class="result-correct">✓ 正確！</span><br>標籤：${formatTags(q.tags || [])}<br>正確答案：${q.answer}. ${getOptionText(q, q.answer)}<br>詳解：${q.explanation || ''}`;
+          explanation.innerHTML = `<span class="result-correct">✓ 正確！</span><br>標籤：${formatTags(q.tags)}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
           correct++;
           q.isCorrect = true;
         } else {
           explanation.classList.add('incorrect');
-          explanation.innerHTML = `<span class="result-incorrect">✗ 錯誤！</span><br>標籤：${formatTags(q.tags || [])}<br>你的答案：${chosen ? chosen.value + '. ' + getOptionText(q, chosen.value) : '未作答'}<br>正確答案：${q.answer}. ${getOptionText(q, q.answer)}<br>詳解：${q.explanation || ''}`;
+          explanation.innerHTML = `<span class="result-incorrect">✗ 錯誤！</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${chosen ? chosen.value + '. ' + q.options[chosen.value] : '未作答'}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
           q.isCorrect = false;
         }
       });
