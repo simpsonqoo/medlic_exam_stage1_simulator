@@ -64,6 +64,31 @@
     #nextBtn, #earlySubmitBtn {
       margin-top: 20px;
       margin-right: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .submit-answer-btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .submit-answer-btn:hover {
+      background-color: #0056b3;
+    }
+    #nextBtn {
+      background-color: #28a745;
+      color: white;
+      border: 1px solid #28a745;
+    }
+    #nextBtn:hover {
+      background-color: #218838;
     }
     select[multiple] {
       height: 8em;
@@ -111,7 +136,7 @@
     }
     .step-mode-controls button {
       margin: 0 10px;
-      padding: 10px 20px;
+      padding: 12px 24px;
       font-size: 16px;
     }
     #earlySubmitBtn {
@@ -126,6 +151,15 @@
     }
     .hidden {
       display: none !important;
+    }
+    .warning-message {
+      background-color: #fff3cd;
+      border: 1px solid #ffeaa7;
+      color: #856404;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      display: none;
     }
   </style>
 </head>
@@ -243,10 +277,63 @@
     let currentQuestion = 0;
     let correct = 0;
     let isStepMode = false;
+    let canUseSpacebar = false; // 控制是否可以使用空白鍵
+    let hasWarned = false; // 追蹤是否已經警告過未選擇選項
 
     // 定義已知的年份和科目標籤
     const yearTags = ["110-2", "106-1", "104-2"];
     const subjectTags = ["流行病學", "病例對照研究", "發生率"];
+
+    // 添加鍵盤事件監聽器
+    document.addEventListener('keydown', function(event) {
+      // 只在步驟模式下啟用鍵盤功能
+      if (!isStepMode || !canUseSpacebar) return;
+      
+      if (event.code === 'Space' || event.key === ' ') {
+        event.preventDefault(); // 防止頁面滾動
+        
+        // 檢查當前狀態
+        const submitBtn = document.getElementById(`submitAnswerBtn${currentQuestion}`);
+        const nextBtn = document.getElementById('nextBtn');
+        
+        if (submitBtn && submitBtn.style.display !== 'none') {
+          // 如果提交答案按鈕可見，按空白鍵等同於提交答案
+          checkStep(currentQuestion);
+        } else if (nextBtn && nextBtn.style.display !== 'none') {
+          // 如果下一題按鈕可見，按空白鍵等同於下一題
+          nextQuestion();
+        }
+      }
+      
+      // 方向鍵選擇選項（只在尚未提交答案時有效）
+      const submitBtn = document.getElementById(`submitAnswerBtn${currentQuestion}`);
+      if (submitBtn && submitBtn.style.display !== 'none') {
+        let optionToSelect = null;
+        
+        switch(event.code) {
+          case 'ArrowUp':
+            optionToSelect = 'A';
+            break;
+          case 'ArrowLeft':
+            optionToSelect = 'B';
+            break;
+          case 'ArrowDown':
+            optionToSelect = 'C';
+            break;
+          case 'ArrowRight':
+            optionToSelect = 'D';
+            break;
+        }
+        
+        if (optionToSelect) {
+          event.preventDefault(); // 防止頁面滾動
+          const radio = document.querySelector(`input[name='q${currentQuestion}'][value='${optionToSelect}']`);
+          if (radio) {
+            radio.checked = true;
+          }
+        }
+      }
+    });
 
     function getSelectedValues(selectId) {
       const checkboxes = document.querySelectorAll(`#${selectId} input[type="checkbox"]:checked`);
@@ -443,12 +530,18 @@
         // 更新總題數顯示
         document.getElementById('totalQuestions').innerText = quiz.length;
         
+        // 啟用空白鍵功能
+        canUseSpacebar = true;
+        
         showQuestion(currentQuestion);
       } else {
         // 隱藏進度條和步驟控制按鈕
         document.getElementById('progressInfo').classList.add('hidden');
         document.getElementById('stepControls').classList.add('hidden');
         document.getElementById('submitBtn').classList.remove('hidden');
+        
+        // 停用空白鍵功能
+        canUseSpacebar = false;
         
         showAllQuestions();
       }
@@ -459,6 +552,9 @@
       quizDiv.innerHTML = '';
       const q = quiz[i];
       
+      // 重置警告狀態（每題開始時重置）
+      hasWarned = false;
+      
       // 更新進度顯示
       document.getElementById('currentQuestionNum').innerText = i + 1;
       
@@ -468,8 +564,9 @@
         <h3>第 ${i + 1} 題</h3>
         <p>${q.question}</p>
         ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`).join('')}
+        <div class="warning-message" id="warning${i}">⚠️ 請先選擇一個選項再提交答案！</div>
         <div class="explanation" id="explanation${i}">${q.explanation}</div>
-        <button id="submitAnswerBtn${i}" onclick="checkStep(${i})">提交答案</button>
+        <button id="submitAnswerBtn${i}" class="submit-answer-btn" onclick="checkStep(${i})">提交答案</button>
       `;
       quizDiv.appendChild(qBlock);
       
@@ -481,13 +578,36 @@
       const chosen = document.querySelector(`input[name='q${i}']:checked`);
       const explanation = document.getElementById(`explanation${i}`);
       const submitBtn = document.getElementById(`submitAnswerBtn${i}`);
+      const warningMsg = document.getElementById(`warning${i}`);
+      
+      // 檢查是否有選擇選項
+      if (!chosen) {
+        if (!hasWarned) {
+          // 第一次警告，顯示警告訊息
+          warningMsg.style.display = 'block';
+          hasWarned = true;
+          return;
+        }
+        // 第二次提交，隱藏警告訊息並允許繼續（視為未作答）
+        warningMsg.style.display = 'none';
+      }
       
       if (!explanation.dataset.answered) {
         explanation.dataset.answered = "true";
         quiz[i].userAnswer = chosen ? chosen.value : null;
         
+        // 檢查是否為五個選項的題目（送分題）
+        const optionCount = Object.keys(quiz[i].options).length;
+        const isBonusQuestion = optionCount === 5;
+        
         let explanationText = '';
-        if (chosen && chosen.value === quiz[i].answer) {
+        if (isBonusQuestion && chosen) {
+          // 五個選項的題目，有選就對
+          explanation.classList.add('correct');
+          correct++;
+          quiz[i].isCorrect = true;
+          explanationText = `✓ 正確！（送分題）\n標籤：${formatTags(quiz[i].tags)}\n你的答案：${chosen.value}. ${quiz[i].options[chosen.value]}\n正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}\n詳解：${quiz[i].explanation}`;
+        } else if (chosen && chosen.value === quiz[i].answer) {
           explanation.classList.add('correct');
           correct++;
           quiz[i].isCorrect = true;
@@ -564,6 +684,9 @@
     }
 
     function showFinalResults() {
+      // 停用空白鍵功能
+      canUseSpacebar = false;
+      
       // 隱藏所有控制按鈕和進度條
       document.getElementById('stepControls').classList.add('hidden');
       document.getElementById('progressInfo').classList.add('hidden');
@@ -583,8 +706,20 @@ ${'='.repeat(50)}
 `;
       
       quiz.forEach((q, idx) => {
-        const isCorrect = q.userAnswer === q.answer;
-        const resultText = isCorrect ? '✓ 正確' : '✗ 錯誤';
+        // 檢查是否為五個選項的題目（送分題）
+        const optionCount = Object.keys(q.options).length;
+        const isBonusQuestion = optionCount === 5;
+        
+        let isCorrect;
+        if (isBonusQuestion && q.userAnswer) {
+          // 送分題：有作答就是正確
+          isCorrect = true;
+        } else {
+          // 一般題目：答案要符合
+          isCorrect = q.userAnswer === q.answer;
+        }
+        
+        const resultText = isCorrect ? (isBonusQuestion ? '✓ 正確（送分題）' : '✓ 正確') : '✗ 錯誤';
         const resultClass = isCorrect ? 'result-correct' : 'result-incorrect';
         
         htmlSummary += `第 ${idx + 1} 題：${q.question}
@@ -618,6 +753,8 @@ ${'-'.repeat(30)}
       currentQuestion = 0;
       correct = 0;
       isStepMode = false;
+      canUseSpacebar = false;
+      hasWarned = false;
       
       // 顯示設定區域
       document.getElementById('setupSection').classList.remove('hidden');
@@ -661,13 +798,25 @@ ${'-'.repeat(30)}
         
         q.userAnswer = chosen ? chosen.value : null;
         
-        if (chosen && chosen.value === q.answer) {
+        // 檢查是否為五個選項的題目（送分題）
+        const optionCount = Object.keys(q.options).length;
+        const isBonusQuestion = optionCount === 5;
+        
+        if (isBonusQuestion && chosen) {
+          // 五個選項的題目，有選就對
+          explanation.classList.add('correct');
+          explanation.innerHTML = `<span class="result-correct">✓ 正確！（送分題）</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${chosen.value}. ${q.options[chosen.value]}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
+          correct++;
+          q.isCorrect = true; // 標記為正確，用於最終結果顯示
+        } else if (chosen && chosen.value === q.answer) {
           explanation.classList.add('correct');
           explanation.innerHTML = `<span class="result-correct">✓ 正確！</span><br>標籤：${formatTags(q.tags)}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
           correct++;
+          q.isCorrect = true;
         } else {
           explanation.classList.add('incorrect');
           explanation.innerHTML = `<span class="result-incorrect">✗ 錯誤！</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${chosen ? chosen.value + '. ' + q.options[chosen.value] : '未作答'}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
+          q.isCorrect = false;
         }
       });
       
