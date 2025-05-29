@@ -28706,12 +28706,17 @@
       const selectedSubjects = getSelectedValues('subjectTag');
       const isAllSelected = document.querySelector('#subjectTag input[value="all"]').checked;
       
+      // 移除模擬試題選項，只保留實際科目
+      const actualSubjects = selectedSubjects.filter(subject => 
+        !subject.includes('模擬試題')
+      );
+      
       if (selectedYears.length === 0) {
         alert('請至少選擇一個年份');
         return;
       }
       
-      if (selectedSubjects.length === 0) {
+      if (actualSubjects.length === 0) {
         alert('請至少選擇一個科目');
         return;
       }
@@ -28724,7 +28729,7 @@
       if (isAllSelected) {
         // 全選模式：從所有科目中隨機選取指定數量的題目
         const totalCount = parseInt(document.querySelector('#count-all-subjects input').value) || 5;
-        const allSubjectQuestions = filteredByYear.filter(q => q.tags.some(tag => selectedSubjects.includes(tag)));
+        const allSubjectQuestions = filteredByYear.filter(q => q.tags.some(tag => actualSubjects.includes(tag)));
         
         if (allSubjectQuestions.length === 0) {
           alert('沒有符合條件的題目，請重新選擇年份或科目');
@@ -28737,7 +28742,7 @@
         
       } else {
         // 個別科目模式：根據每個科目設定的題數選取題目
-        selectedSubjects.forEach(subject => {
+        actualSubjects.forEach(subject => {
           const countInput = document.querySelector(`#count-${subject} input`);
           const subjectCount = parseInt(countInput.value) || 1;
           const subjectQuestions = filteredByYear.filter(q => q.tags.includes(subject));
