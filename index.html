@@ -352,6 +352,9 @@
       <div class="subject-section">
         <div id="subjectTag" class="checkbox-group">
           <strong>選擇科目</strong><br>
+          <label><input type="checkbox" value="醫師(一)模擬試題" onchange="selectMockExam(this, '一')"> 醫師(一)模擬試題<br>(解剖31題、胚胎5題、組織10題、生理27題、生化27題)</label><br>
+          <label><input type="checkbox" value="醫師(二)模擬試題" onchange="selectMockExam(this, '二')"> 醫師(二)模擬試題<br>(微生物17題、免疫11題、寄生蟲7題、公衛15題、藥理25題、病理25題)</label><br>
+          <br>
           <label><input type="checkbox" value="all" onchange="handleSelectAll('subject')"> 全選</label>
           <div class="subject-count" id="count-all-subjects" style="display:none;">
             總題數：<input type="number" value="5" min="1" max="20">
@@ -28553,10 +28556,10 @@
       otherCheckboxes.forEach(cb => cb.checked = false);
     }
   } else if (type === 'subject') {
-    // 原有的科目處理邏輯保持不變
+    // 修改科目處理邏輯，排除模擬試題選項
     const groupId = 'subjectTag';
     const allCheckbox = document.querySelector(`#${groupId} input[value="all"]`);
-    const otherCheckboxes = document.querySelectorAll(`#${groupId} input[type="checkbox"]:not([value="all"])`);
+    const otherCheckboxes = document.querySelectorAll(`#${groupId} input[type="checkbox"]:not([value="all"]):not([value="醫師(一)模擬試題"]):not([value="醫師(二)模擬試題"])`);
     const allSubjectsCount = document.getElementById('count-all-subjects');
     
     if (allCheckbox.checked) {
@@ -28599,10 +28602,78 @@
       updateAllSelectStatus('subject');
     }
 
+    function selectMockExam(checkbox, type) {
+ if (checkbox.checked) {
+   if (type === '一') {
+     // 選擇醫師(一)科目並設定題數
+     const subjects = [
+       {name: '解剖', count: 31},
+       {name: '胚胎', count: 5},
+       {name: '組織', count: 10},
+       {name: '生理', count: 27},
+       {name: '生化', count: 27}
+     ];
+     subjects.forEach(subject => {
+       const subjectCheckbox = document.querySelector(`input[value="${subject.name}"]`);
+       const countInput = document.querySelector(`#count-${subject.name} input`);
+       if (subjectCheckbox) {
+         subjectCheckbox.checked = true;
+         document.getElementById(`count-${subject.name}`).style.display = 'block';
+         if (countInput) countInput.value = subject.count;
+       }
+     });
+   } else if (type === '二') {
+     // 選擇醫師(二)科目並設定題數
+     const subjects = [
+       {name: '微生物', count: 17},
+       {name: '免疫', count: 11},
+       {name: '寄生蟲', count: 7},
+       {name: '公衛', count: 15},
+       {name: '藥理', count: 25},
+       {name: '病理', count: 25}
+     ];
+     subjects.forEach(subject => {
+       const subjectCheckbox = document.querySelector(`input[value="${subject.name}"]`);
+       const countInput = document.querySelector(`#count-${subject.name} input`);
+       if (subjectCheckbox) {
+         subjectCheckbox.checked = true;
+         document.getElementById(`count-${subject.name}`).style.display = 'block';
+         if (countInput) countInput.value = subject.count;
+       }
+     });
+   }
+ } else {
+   // 取消勾選時清除對應科目
+   if (type === '一') {
+     const subjects = ['解剖', '胚胎', '組織', '生理', '生化'];
+     subjects.forEach(subject => {
+       const subjectCheckbox = document.querySelector(`input[value="${subject}"]`);
+       const countInput = document.querySelector(`#count-${subject} input`);
+       if (subjectCheckbox) {
+         subjectCheckbox.checked = false;
+         document.getElementById(`count-${subject}`).style.display = 'none';
+         if (countInput) countInput.value = 1;
+       }
+     });
+   } else if (type === '二') {
+     const subjects = ['微生物', '免疫', '寄生蟲', '公衛', '藥理', '病理'];
+     subjects.forEach(subject => {
+       const subjectCheckbox = document.querySelector(`input[value="${subject}"]`);
+       const countInput = document.querySelector(`#count-${subject} input`);
+       if (subjectCheckbox) {
+         subjectCheckbox.checked = false;
+         document.getElementById(`count-${subject}`).style.display = 'none';
+         if (countInput) countInput.value = 1;
+       }
+     });
+   }
+ }
+}
+
     function updateAllSelectStatus(type) {
       if (type === 'subject') {
         const allCheckbox = document.querySelector('#subjectTag input[value="all"]');
-        const otherCheckboxes = document.querySelectorAll('#subjectTag input[type="checkbox"]:not([value="all"])');
+        const otherCheckboxes = document.querySelectorAll('#subjectTag input[type="checkbox"]:not([value="all"]):not([value="醫師(一)模擬試題"]):not([value="醫師(二)模擬試題"])');
         const checkedCount = Array.from(otherCheckboxes).filter(cb => cb.checked).length;
         
         // 只有在手動勾選所有科目時才自動勾選全選（但不觸發全選邏輯）
