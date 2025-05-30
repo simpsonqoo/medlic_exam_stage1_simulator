@@ -34593,25 +34593,52 @@
       
       const qBlock = document.createElement('div');
       qBlock.className = 'question-block';
+      
+      // 檢查是否已經回答過這題
+      const isAnswered = q.userAnswer !== undefined;
+      
       qBlock.innerHTML = `
         <h3>第 ${i + 1} 題</h3>
         <p>${q.question}</p>
-        ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`).join('')}
+        ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}" ${isAnswered && q.userAnswer === key ? 'checked' : ''} ${isAnswered ? 'disabled' : ''}> ${key}. ${value}</label><br>`).join('')}
         <div class="warning-message" id="warning${i}">⚠️ 請先選擇一個選項再提交答案！</div>
         <div class="explanation" id="explanation${i}">${q.explanation}</div>
-        <button id="submitAnswerBtn${i}" class="submit-answer-btn" onclick="checkStep(${i})">提交答案</button>
+        <button id="submitAnswerBtn${i}" class="submit-answer-btn" onclick="checkStep(${i})" ${isAnswered ? 'style="display:none"' : ''}>提交答案</button>
       `;
       quizDiv.appendChild(qBlock);
       
-      // 顯示提早交卷按鈕
-      document.getElementById('earlySubmitBtn').style.display = 'inline';
-      
-      // 控制回上題按鈕顯示
-      if (i > 0) {
-        document.getElementById('prevBtn').style.display = 'inline';
-      } else {
-        document.getElementById('prevBtn').style.display = 'none';
+      // 如果已經回答過，顯示詳解
+      if (isAnswered) {
+        const explanation = document.getElementById(`explanation${i}`);
+        explanation.dataset.answered = "true";
+        
+        // 重新生成詳解內容
+        const optionCount = Object.keys(q.options).length;
+        const isBonusQuestion = optionCount === 5;
+        
+        // 清除之前的樣式類別
+        explanation.classList.remove('correct', 'incorrect');
+        
+        let explanationText = '';
+        if (isBonusQuestion && q.userAnswer) {
+          explanation.classList.add('correct');
+          explanationText = `✓ 正確！（送分題）\n標籤：${formatTags(q.tags)}\n你的答案：${q.userAnswer}. ${q.options[q.userAnswer]}\n正確答案：${q.answer}. ${q.options[q.answer]}\n詳解：${q.explanation}`;
+        } else if (q.userAnswer && q.userAnswer === q.answer) {
+          explanation.classList.add('correct');
+          explanationText = `✓ 正確！\n標籤：${formatTags(q.tags)}\n正確答案：${q.answer}. ${q.options[q.answer]}\n詳解：${q.explanation}`;
+        } else {
+          explanation.classList.add('incorrect');
+          explanationText = `✗ 錯誤！\n標籤：${formatTags(q.tags)}\n你的答案：${q.userAnswer ? q.userAnswer + '. ' + q.options[q.userAnswer] : '未作答'}\n正確答案：${q.answer}. ${q.options[q.answer]}\n詳解：${q.explanation}`;
+        }
+        explanation.innerHTML = explanationText.replace(/\n/g, '<br>');
+        explanation.style.display = 'block';
+        
+        // 重置警告狀態，因為已經是回答過的題目
+        hasWarned = false;
       }
+      
+      // 更新按鈕顯示狀態
+      updateButtonDisplay();
     }
 
     function checkStep(i) {
@@ -34631,6 +34658,12 @@
         // 第二次提交，隱藏警告訊息並允許繼續（視為未作答）
         warningMsg.style.display = 'none';
       }
+      
+      // 鎖定所有選項，防止修改答案
+      const allOptions = document.querySelectorAll(`input[name='q${i}']`);
+      allOptions.forEach(option => {
+        option.disabled = true;
+      });
       
       if (!explanation.dataset.answered) {
         explanation.dataset.answered = "true";
@@ -34669,8 +34702,8 @@
         const isLast = currentQuestion >= quiz.length - 1;
         
         if (!isLast) {
-          // 不是最後一題，顯示下一題按鈕
-          document.getElementById('nextBtn').style.display = 'inline';
+          // 不是最後一題，更新按鈕顯示
+          updateButtonDisplay();
         } else {
           // 是最後一題，隱藏提早交卷按鈕，延遲顯示最終結果
           document.getElementById('earlySubmitBtn').style.display = 'none';
@@ -34686,25 +34719,54 @@
         currentQuestion--;
         showQuestion(currentQuestion);
         
-        // 如果回到第一題，隱藏回上題按鈕
-        if (currentQuestion === 0) {
-          document.getElementById('prevBtn').style.display = 'none';
-        }
-        
-        // 隱藏下一題按鈕和提早交卷按鈕，讓用戶重新作答
-        document.getElementById('nextBtn').style.display = 'none';
-        document.getElementById('earlySubmitBtn').style.display = 'inline';
+        // 更新按鈕顯示狀態
+        updateButtonDisplay();
       }
     }
 
     function nextQuestion() {
       currentQuestion++;
       if (currentQuestion < quiz.length) {
-        // 隱藏下一題按鈕，直到新題目提交答案後才會再次顯示
-        document.getElementById('nextBtn').style.display = 'none';
         showQuestion(currentQuestion);
+        // 更新按鈕顯示狀態
+        updateButtonDisplay();
       } else {
         showFinalResults();
+      }
+    }
+
+    function updateButtonDisplay() {
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const earlySubmitBtn = document.getElementById('earlySubmitBtn');
+      
+      // 控制回上題按鈕顯示
+      if (currentQuestion > 0) {
+        prevBtn.style.display = 'inline';
+      } else {
+        prevBtn.style.display = 'none';
+      }
+      
+      // 控制下一題按鈕顯示 - 根據當前題目是否已回答和是否為最後一題
+      const isAnswered = quiz[currentQuestion].userAnswer !== undefined;
+      const isLastQuestion = currentQuestion >= quiz.length - 1;
+      
+      if (isAnswered && !isLastQuestion) {
+        nextBtn.style.display = 'inline';
+        // 當下一題按鈕顯示時，調整按鈕順序
+        if (currentQuestion > 0) {
+          // 將回上題按鈕放在下一題按鈕前面
+          nextBtn.parentNode.insertBefore(prevBtn, nextBtn);
+        }
+      } else {
+        nextBtn.style.display = 'none';
+      }
+      
+      // 提早交卷按鈕顯示邏輯
+      if (isLastQuestion && isAnswered) {
+        earlySubmitBtn.style.display = 'none';
+      } else {
+        earlySubmitBtn.style.display = 'inline';
       }
     }
 
