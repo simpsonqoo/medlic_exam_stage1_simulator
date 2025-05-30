@@ -132,6 +132,23 @@
     #nextBtn:hover {
       background-color: #218838;
     }
+    
+    #prevBtn {
+      background-color: #6c757d;
+      color: white;
+      border: 1px solid #6c757d;
+      margin-top: 20px;
+      margin-right: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    
+    #prevBtn:hover {
+      background-color: #545b62;
+    }
+    
     select[multiple] {
       height: 8em;
       width: 200px;
@@ -499,6 +516,7 @@
   
   <!-- 步驟模式的控制按鈕 -->
   <div class="step-mode-controls hidden" id="stepControls">
+    <button id="prevBtn" onclick="prevQuestion()" style="display:none">回上題</button>
     <button id="nextBtn" onclick="nextQuestion()" style="display:none">下一題</button>
     <button id="earlySubmitBtn" onclick="earlySubmit()" style="display:none">提早交卷</button>
   </div>
@@ -34145,6 +34163,15 @@
         }
       }
       
+      // 新增：Backspace 鍵回上題
+      if (event.code === 'Backspace' || event.key === 'Backspace') {
+        event.preventDefault(); // 防止瀏覽器後退
+        const prevBtn = document.getElementById('prevBtn');
+        if (prevBtn && prevBtn.style.display !== 'none') {
+          prevQuestion();
+        }
+      }
+      
       // 方向鍵選擇選項（只在尚未提交答案時有效）
       const submitBtn = document.getElementById(`submitAnswerBtn${currentQuestion}`);
       if (submitBtn && submitBtn.style.display !== 'none') {
@@ -34578,6 +34605,13 @@
       
       // 顯示提早交卷按鈕
       document.getElementById('earlySubmitBtn').style.display = 'inline';
+      
+      // 控制回上題按鈕顯示
+      if (i > 0) {
+        document.getElementById('prevBtn').style.display = 'inline';
+      } else {
+        document.getElementById('prevBtn').style.display = 'none';
+      }
     }
 
     function checkStep(i) {
@@ -34644,6 +34678,22 @@
             showFinalResults();
           }, 1000);
         }
+      }
+    }
+    
+    function prevQuestion() {
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        showQuestion(currentQuestion);
+        
+        // 如果回到第一題，隱藏回上題按鈕
+        if (currentQuestion === 0) {
+          document.getElementById('prevBtn').style.display = 'none';
+        }
+        
+        // 隱藏下一題按鈕和提早交卷按鈕，讓用戶重新作答
+        document.getElementById('nextBtn').style.display = 'none';
+        document.getElementById('earlySubmitBtn').style.display = 'inline';
       }
     }
 
