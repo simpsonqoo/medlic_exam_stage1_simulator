@@ -9,6 +9,29 @@
       padding: 20px;
       background-color: #f9f9f9;
     }
+    
+    /* 新增：標題容器樣式 */
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .header-container h1 {
+      margin: 0;
+      flex-grow: 1;
+    }
+    
+    .author-info {
+      color: #666;
+      font-size: 14px;
+      margin: 0;
+      white-space: nowrap;
+    }
+    
     .question-block {
       background: #fff;
       border: 1px solid #ccc;
@@ -294,17 +317,12 @@
   </style>
 </head>
 <body>
-  <div style="display: flex; align-items: center; width: 100%; margin-bottom: 15px;">
-    <div style="flex: 1; text-align: left;">
-      <h1 style="margin: 0;">醫師一階國考測驗系統</h1>
-    </div>
-    <div style="flex: 1.5; text-align: center;">
-      <p style="margin: 0; color: #666;">created and maintained by KMU BM112 陳君豪</p>
-    </div>
+  <div class="header-container" id="headerSection">
+    <h1>醫師一階國考測驗系統</h1>
+    <p class="author-info">created and maintained by KMU BM112 陳君豪</p>
   </div>
-
-  <div class="tag-selector" id="setupSection">
-    <label>選擇模式：</label>
+<div class="tag-selector" id="setupSection">
+  <label>選擇模式：</label>
     <select id="mode">
       <option value="step">一題一題作答並顯示詳解</option>
       <option value="all">全部作答後顯示詳解</option>
@@ -30105,129 +30123,130 @@
     }
 
     function startQuiz() {
-      const selectedYears = getSelectedValues('yearTag');
-      const selectedSubjects = getSelectedValues('subjectTag');
-      const isAllSelected = document.querySelector('#subjectTag input[value="all"]').checked;
-      
-      // 移除模擬試題選項，只保留實際科目
-      const actualSubjects = selectedSubjects.filter(subject => 
-        !subject.includes('模擬試題')
-      );
-      
-      if (selectedYears.length === 0) {
-        alert('請至少選擇一個年份');
-        return;
-      }
-      
-      if (actualSubjects.length === 0) {
-        alert('請至少選擇一個科目');
-        return;
-      }
+  const selectedYears = getSelectedValues('yearTag');
+  const selectedSubjects = getSelectedValues('subjectTag');
+  const isAllSelected = document.querySelector('#subjectTag input[value="all"]').checked;
+  
+  // 移除模擬試題選項，只保留實際科目
+  const actualSubjects = selectedSubjects.filter(subject => 
+    !subject.includes('模擬試題')
+  );
+  
+  if (selectedYears.length === 0) {
+    alert('請至少選擇一個年份');
+    return;
+  }
+  
+  if (actualSubjects.length === 0) {
+    alert('請至少選擇一個科目');
+    return;
+  }
 
-      // 根據年份和科目篩選題目
-      const filteredByYear = questions.filter(q => q.tags.some(tag => selectedYears.includes(tag)));
-      
-      let finalQuiz = [];
-      
-      if (isAllSelected) {
-        // 全選模式：從所有科目中隨機選取指定數量的題目
-        const totalCount = parseInt(document.querySelector('#count-all-subjects input').value) || 5;
-        const allSubjectQuestions = filteredByYear.filter(q => q.tags.some(tag => actualSubjects.includes(tag)));
-        
-        if (allSubjectQuestions.length === 0) {
-          alert('沒有符合條件的題目，請重新選擇年份或科目');
-          return;
-        }
-        
-        // 隨機選取指定數量的題目
-        const shuffled = allSubjectQuestions.sort(() => Math.random() - 0.5);
-        finalQuiz = shuffled.slice(0, Math.min(totalCount, allSubjectQuestions.length));
-        
-      } else {
-        // 個別科目模式：根據每個科目設定的題數選取題目
-        actualSubjects.forEach(subject => {
-          const countInput = document.querySelector(`#count-${subject} input`);
-          const subjectCount = parseInt(countInput.value) || 1;
-          const subjectQuestions = filteredByYear.filter(q => q.tags.includes(subject));
-          
-          if (subjectQuestions.length === 0) {
-            console.warn(`沒有找到 ${subject} 相關的題目`);
-            return;
-          }
-          
-          // 隨機選取指定數量的題目
-          const shuffled = subjectQuestions.sort(() => Math.random() - 0.5);
-          const selected = shuffled.slice(0, Math.min(subjectCount, subjectQuestions.length));
-          finalQuiz = finalQuiz.concat(selected);
-        });
-      }
-
-      if (finalQuiz.length === 0) {
-        alert('沒有符合條件的題目，請重新選擇年份或科目');
-        return;
-      }
-
-      // 根據選擇的出題順序來決定是否隨機排序
-      const questionOrder = document.getElementById('questionOrder').value;
-      
-      if (questionOrder === 'random') {
-        // 按照科目順序排列，同一科目內隨機
-        const subjectOrder = ['解剖', '胚胎', '組織', '生理', '生化', '微生物', '免疫', '寄生蟲', '公衛', '藥理', '病理'];
-        
-        quiz = [];
-        subjectOrder.forEach(subject => {
-          const subjectQuestions = finalQuiz.filter(q => q.tags.includes(subject));
-          // 同一科目內隨機排序
-          const shuffledSubjectQuestions = subjectQuestions.sort(() => Math.random() - 0.5);
-          quiz = quiz.concat(shuffledSubjectQuestions);
-        });
-      } else {
-        // 照原始順序（按照 questions 陣列中的順序）
-        // 先找出所有選中題目在原陣列中的索引，然後按索引排序
-        quiz = finalQuiz.sort((a, b) => {
-          const indexA = questions.findIndex(q => q.question === a.question);
-          const indexB = questions.findIndex(q => q.question === b.question);
-          return indexA - indexB;
-        });
-      }
-      
-      currentQuestion = 0;
-      correct = 0;
-
-      const mode = document.getElementById('mode').value;
-      isStepMode = mode === 'step';
-      
-      document.getElementById('result').innerText = '';
-      document.getElementById('quiz').innerHTML = '';
-
-      // 隱藏設定區域
-      document.getElementById('setupSection').classList.add('hidden');
-
-      if (isStepMode) {
-        // 顯示進度條和步驟控制按鈕
-        document.getElementById('progressInfo').classList.remove('hidden');
-        document.getElementById('stepControls').classList.remove('hidden');
-        document.getElementById('submitBtn').classList.add('hidden');
-        
-        // 更新總題數顯示
-        document.getElementById('totalQuestions').innerText = quiz.length;
-        
-        // 啟用空白鍵功能
-        canUseSpacebar = true;
-        
-        showQuestion(currentQuestion);
-      } else {
-        // 隱藏進度條和步驟控制按鈕
-        document.getElementById('progressInfo').classList.add('hidden');
-        document.getElementById('stepControls').classList.add('hidden');
-        document.getElementById('submitBtn').classList.remove('hidden');
-        
-        // 停用空白鍵功能
-        canUseSpacebar = false;
-        
-        showAllQuestions();
-      }
+  // 根據年份和科目篩選題目
+  const filteredByYear = questions.filter(q => q.tags.some(tag => selectedYears.includes(tag)));
+  
+  let finalQuiz = [];
+  
+  if (isAllSelected) {
+    // 全選模式：從所有科目中隨機選取指定數量的題目
+    const totalCount = parseInt(document.querySelector('#count-all-subjects input').value) || 5;
+    const allSubjectQuestions = filteredByYear.filter(q => q.tags.some(tag => actualSubjects.includes(tag)));
+    
+    if (allSubjectQuestions.length === 0) {
+      alert('沒有符合條件的題目，請重新選擇年份或科目');
+      return;
     }
+    
+    // 隨機選取指定數量的題目
+    const shuffled = allSubjectQuestions.sort(() => Math.random() - 0.5);
+    finalQuiz = shuffled.slice(0, Math.min(totalCount, allSubjectQuestions.length));
+    
+  } else {
+    // 個別科目模式：根據每個科目設定的題數選取題目
+    actualSubjects.forEach(subject => {
+      const countInput = document.querySelector(`#count-${subject} input`);
+      const subjectCount = parseInt(countInput.value) || 1;
+      const subjectQuestions = filteredByYear.filter(q => q.tags.includes(subject));
+      
+      if (subjectQuestions.length === 0) {
+        console.warn(`沒有找到 ${subject} 相關的題目`);
+        return;
+      }
+      
+      // 隨機選取指定數量的題目
+      const shuffled = subjectQuestions.sort(() => Math.random() - 0.5);
+      const selected = shuffled.slice(0, Math.min(subjectCount, subjectQuestions.length));
+      finalQuiz = finalQuiz.concat(selected);
+    });
+  }
+
+  if (finalQuiz.length === 0) {
+    alert('沒有符合條件的題目，請重新選擇年份或科目');
+    return;
+  }
+
+  // 根據選擇的出題順序來決定是否隨機排序
+  const questionOrder = document.getElementById('questionOrder').value;
+  
+  if (questionOrder === 'random') {
+    // 按照科目順序排列，同一科目內隨機
+    const subjectOrder = ['解剖', '胚胎', '組織', '生理', '生化', '微生物', '免疫', '寄生蟲', '公衛', '藥理', '病理'];
+    
+    quiz = [];
+    subjectOrder.forEach(subject => {
+      const subjectQuestions = finalQuiz.filter(q => q.tags.includes(subject));
+      // 同一科目內隨機排序
+      const shuffledSubjectQuestions = subjectQuestions.sort(() => Math.random() - 0.5);
+      quiz = quiz.concat(shuffledSubjectQuestions);
+    });
+  } else {
+    // 照原始順序（按照 questions 陣列中的順序）
+    // 先找出所有選中題目在原陣列中的索引，然後按索引排序
+    quiz = finalQuiz.sort((a, b) => {
+      const indexA = questions.findIndex(q => q.question === a.question);
+      const indexB = questions.findIndex(q => q.question === b.question);
+      return indexA - indexB;
+    });
+  }
+  
+  currentQuestion = 0;
+  correct = 0;
+
+  const mode = document.getElementById('mode').value;
+  isStepMode = mode === 'step';
+  
+  document.getElementById('result').innerText = '';
+  document.getElementById('quiz').innerHTML = '';
+
+  // 隱藏設定區域和標題區域
+  document.getElementById('setupSection').classList.add('hidden');
+  document.getElementById('headerSection').classList.add('hidden');
+
+  if (isStepMode) {
+    // 顯示進度條和步驟控制按鈕
+    document.getElementById('progressInfo').classList.remove('hidden');
+    document.getElementById('stepControls').classList.remove('hidden');
+    document.getElementById('submitBtn').classList.add('hidden');
+    
+    // 更新總題數顯示
+    document.getElementById('totalQuestions').innerText = quiz.length;
+    
+    // 啟用空白鍵功能
+    canUseSpacebar = true;
+    
+    showQuestion(currentQuestion);
+  } else {
+    // 隱藏進度條和步驟控制按鈕
+    document.getElementById('progressInfo').classList.add('hidden');
+    document.getElementById('stepControls').classList.add('hidden');
+    document.getElementById('submitBtn').classList.remove('hidden');
+    
+    // 停用空白鍵功能
+    canUseSpacebar = false;
+    
+    showAllQuestions();
+  }
+}
 
     function showQuestion(i) {
       const quizDiv = document.getElementById('quiz');
@@ -30430,30 +30449,31 @@ ${'-'.repeat(30)}
     }
 
     function resetQuiz() {
-      // 重置所有變數
-      quiz = [];
-      currentQuestion = 0;
-      correct = 0;
-      isStepMode = false;
-      canUseSpacebar = false;
-      hasWarned = false;
-      
-      // 顯示設定區域
-      document.getElementById('setupSection').classList.remove('hidden');
-      
-      // 隱藏其他區域
-      document.getElementById('progressInfo').classList.add('hidden');
-      document.getElementById('stepControls').classList.add('hidden');
-      document.getElementById('submitBtn').classList.add('hidden');
-      
-      // 清空內容
-      document.getElementById('quiz').innerHTML = '';
-      document.getElementById('result').innerHTML = '';
-      
-      // 重置按鈕狀態
-      document.getElementById('nextBtn').style.display = 'none';
-      document.getElementById('earlySubmitBtn').style.display = 'none';
-    }
+  // 重置所有變數
+  quiz = [];
+  currentQuestion = 0;
+  correct = 0;
+  isStepMode = false;
+  canUseSpacebar = false;
+  hasWarned = false;
+  
+  // 顯示設定區域和標題區域
+  document.getElementById('setupSection').classList.remove('hidden');
+  document.getElementById('headerSection').classList.remove('hidden');
+  
+  // 隱藏其他區域
+  document.getElementById('progressInfo').classList.add('hidden');
+  document.getElementById('stepControls').classList.add('hidden');
+  document.getElementById('submitBtn').classList.add('hidden');
+  
+  // 清空內容
+  document.getElementById('quiz').innerHTML = '';
+  document.getElementById('result').innerHTML = '';
+  
+  // 重置按鈕狀態
+  document.getElementById('nextBtn').style.display = 'none';
+  document.getElementById('earlySubmitBtn').style.display = 'none';
+}
 
     function showAllQuestions() {
       const quizDiv = document.getElementById('quiz');
