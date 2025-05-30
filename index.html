@@ -597,8 +597,8 @@
           <div class="custom-confirm-box">
             <div class="custom-confirm-message">${message}</div>
             <div class="custom-confirm-buttons">
-              <button class="custom-confirm-btn custom-confirm-cancel" onclick="handleConfirmResponse(false)">取消</button>
               <button class="custom-confirm-btn custom-confirm-ok" onclick="handleConfirmResponse(true)">確定</button>
+              <button class="custom-confirm-btn custom-confirm-cancel" onclick="handleConfirmResponse(false)">取消</button>
             </div>
           </div>
         `;
@@ -34556,7 +34556,7 @@
       }).join(' ');
     }
 
-    function startQuiz() {
+    async function startQuiz() {
   const selectedYears = getSelectedValues('yearTag');
   const selectedSubjects = getSelectedValues('subjectTag');
   const isAllSelected = document.querySelector('#subjectTag input[value="all"]').checked;
@@ -34591,10 +34591,46 @@
       return;
     }
     
-    finalQuiz = selectQuestionsByGroup(allSubjectQuestions, totalCount);
+    // 檢查題庫是否足夠
+    if (allSubjectQuestions.length < totalCount) {
+      const confirmUseAll = await customConfirm(`題庫數量不足！<br><br>您要求的題數：${totalCount} 題<br>實際題庫數量：${allSubjectQuestions.length} 題<br><br>是否使用所有 ${allSubjectQuestions.length} 題進行測驗？`);
+      
+      if (!confirmUseAll) {
+        return;
+      }
+      finalQuiz = groupQuestionsByGroupId(allSubjectQuestions);
+    } else {
+      finalQuiz = selectQuestionsByGroup(allSubjectQuestions, totalCount);
+    }
     
   } else {
     // 個別科目模式：根據每個科目和 group_id 選取題目
+    let insufficientSubjects = [];
+    
+    // 先檢查所有科目的題庫數量
+    for (const subject of actualSubjects) {
+      const countInput = document.querySelector(`#count-${subject} input`);
+      const subjectCount = parseInt(countInput.value) || 1;
+      const subjectQuestions = filteredByYear.filter(q => q.tags.includes(subject));
+      
+      if (subjectQuestions.length === 0) {
+        insufficientSubjects.push(`${subject}：0 題（要求 ${subjectCount} 題）`);
+      } else if (subjectQuestions.length < subjectCount) {
+        insufficientSubjects.push(`${subject}：${subjectQuestions.length} 題（要求 ${subjectCount} 題）`);
+      }
+    }
+    
+    // 如果有題庫不足的科目，顯示提醒
+    if (insufficientSubjects.length > 0) {
+      const confirmMessage = `以下科目題庫數量不足：<br><br>${insufficientSubjects.join('<br>')}<br><br>是否使用現有題目進行測驗？`;
+      const confirmUseAvailable = await customConfirm(confirmMessage);
+      
+      if (!confirmUseAvailable) {
+        return;
+      }
+    }
+    
+    // 實際選取題目
     actualSubjects.forEach(subject => {
       const countInput = document.querySelector(`#count-${subject} input`);
       const subjectCount = parseInt(countInput.value) || 1;
@@ -34605,8 +34641,14 @@
         return;
       }
       
-      const selected = selectQuestionsByGroup(subjectQuestions, subjectCount);
-      finalQuiz = finalQuiz.concat(selected);
+      // 如果題庫不足，使用所有題目；否則按原邏輯選取
+      if (subjectQuestions.length < subjectCount) {
+        const selected = groupQuestionsByGroupId(subjectQuestions);
+        finalQuiz = finalQuiz.concat(selected);
+      } else {
+        const selected = selectQuestionsByGroup(subjectQuestions, subjectCount);
+        finalQuiz = finalQuiz.concat(selected);
+      }
     });
   }
 
