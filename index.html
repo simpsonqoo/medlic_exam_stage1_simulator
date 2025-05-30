@@ -275,10 +275,17 @@
   </style>
 </head>
 <body>
-  <h1>醫師一階國考測驗系統</h1>
-<div class="tag-selector" id="setupSection">
-  <p style="text-align: center; color: #666; margin-bottom: 15px;">created and maintained by KMU BM112 陳君豪</p>
-  <label>選擇模式：</label>
+  <div style="display: flex; align-items: center; width: 100%; margin-bottom: 15px;">
+    <div style="flex: 1; text-align: left;">
+      <h1 style="margin: 0;">醫師一階國考測驗系統</h1>
+    </div>
+    <div style="flex: 1.5; text-align: center;">
+      <p style="margin: 0; color: #666;">created and maintained by KMU BM112 陳君豪</p>
+    </div>
+  </div>
+
+  <div class="tag-selector" id="setupSection">
+    <label>選擇模式：</label>
     <select id="mode">
       <option value="step">一題一題作答並顯示詳解</option>
       <option value="all">全部作答後顯示詳解</option>
@@ -30145,12 +30152,16 @@
       const questionOrder = document.getElementById('questionOrder').value;
       
       if (questionOrder === 'random') {
-        // 隨機排序
-        if (!isAllSelected) {
-          quiz = finalQuiz.sort(() => Math.random() - 0.5);
-        } else {
-          quiz = finalQuiz; // 全選模式已經隨機過了
-        }
+        // 按照科目順序排列，同一科目內隨機
+        const subjectOrder = ['解剖', '胚胎', '組織', '生理', '生化', '微生物', '免疫', '寄生蟲', '公衛', '藥理', '病理'];
+        
+        quiz = [];
+        subjectOrder.forEach(subject => {
+          const subjectQuestions = finalQuiz.filter(q => q.tags.includes(subject));
+          // 同一科目內隨機排序
+          const shuffledSubjectQuestions = subjectQuestions.sort(() => Math.random() - 0.5);
+          quiz = quiz.concat(shuffledSubjectQuestions);
+        });
       } else {
         // 照原始順序（按照 questions 陣列中的順序）
         // 先找出所有選中題目在原陣列中的索引，然後按索引排序
