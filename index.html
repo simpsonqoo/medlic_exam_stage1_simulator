@@ -532,6 +532,36 @@
         max-height: 200px;
       }
     }
+
+    /* 错题切换按钮样式 */
+    .wrong-answers-toggle {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .wrong-answers-toggle:hover {
+      background-color: #c82333;
+    }
+
+    .wrong-answers-toggle.show-all {
+      background-color: #28a745;
+    }
+
+    .wrong-answers-toggle.show-all:hover {
+      background-color: #218838;
+    }
+
+    /* 错题显示状态下的样式 */
+    .question-result.hidden {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
@@ -38600,6 +38630,8 @@
     let isStepMode = false;
     let canUseSpacebar = false; // 控制是否可以使用空白鍵
     let hasWarned = false; // 追蹤是否已經警告過未選擇選項
+    let showingWrongAnswersOnly = false;
+    let wrongQuestionIndices = [];
 
     // 定義已知的年份和科目標籤
     const yearTags = ["114-1(一)", "113-2(一)", "113-1(一)", "112-2(一)", "112-1(一)", "111-2(一)", "111-1(一)", "110-2(一)", "110-1(一)", "109-2(一)", "109-1(一)", "108-2(一)", "108-1(一)", "107-2(一)", "107-1(一)", "106-2(一)", "106-1(一)", "105-2(一)", "105-1(一)", "104-2(一)", "104-1(一)", "114-1(二)", "113-2(二)", "113-1(二)", "112-2(二)", "112-1(二)", "111-2(二)", "111-1(二)", "110-2(二)", "110-1(二)", "109-2(二)", "109-1(二)", "108-2(二)", "108-1(二)", "107-2(二)", "107-1(二)", "106-2(二)", "106-1(二)", "105-2(二)", "105-1(二)", "104-2(二)", "104-1(二)"];
@@ -39337,18 +39369,15 @@
       document.getElementById('progressInfo').classList.add('hidden');
       document.getElementById('quiz').innerHTML = '';
       
+      // 重置错题显示状态
+      showingWrongAnswersOnly = false;
+      wrongQuestionIndices = [];
+      
       const total = quiz.length;
       const wrong = total - correct;
-      let summary = `總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分\n\n`;
-      summary += `【詳細答題結果】\n`;
-      summary += `${'='.repeat(50)}\n\n`;
       
-      let htmlSummary = `<div style="white-space: pre-wrap; font-family: monospace;">總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分
-
-【詳細答題結果】
-${'='.repeat(50)}
-
-`;
+      // 构建详细结果并记录错题索引
+      let detailedResults = '';
       
       quiz.forEach((q, idx) => {
         // 檢查是否為五個選項的題目（送分題）
@@ -39364,32 +39393,74 @@ ${'='.repeat(50)}
           isCorrect = q.userAnswer === q.answer;
         }
         
+        // 如果答错了，记录索引
+        if (!isCorrect) {
+          wrongQuestionIndices.push(idx);
+        }
+        
         const resultText = isCorrect ? (isBonusQuestion ? '✓ 正確（送分題）' : '✓ 正確') : '✗ 錯誤';
         const resultClass = isCorrect ? 'result-correct' : 'result-incorrect';
         
-        htmlSummary += `第 ${idx + 1} 題：${q.question}
-標籤：${formatTags(q.tags)}
-選項：
-`;
+        let questionResult = `第 ${idx + 1} 題：${q.question}\n標籤：${formatTags(q.tags)}\n選項：\n`;
         Object.entries(q.options).forEach(([key, value]) => {
-          htmlSummary += `  ${key}. ${value}
-`;
+          questionResult += `  ${key}. ${value}\n`;
         });
-        htmlSummary += `你的答案：${q.userAnswer ? q.userAnswer + '. ' + q.options[q.userAnswer] : "未作答"}
-正確答案：${q.answer}. ${q.options[q.answer]}
-結果：<span class="${resultClass}">${resultText}</span>
-詳解：${q.explanation}
-${'-'.repeat(30)}
-
-`;
+        questionResult += `你的答案：${q.userAnswer ? q.userAnswer + '. ' + q.options[q.userAnswer] : "未作答"}\n正確答案：${q.answer}. ${q.options[q.answer]}\n結果：<span class="${resultClass}">${resultText}</span>\n詳解：${q.explanation}\n${'-'.repeat(30)}\n\n`;
+        
+        // 给每个题目结果添加包装div，用于显示/隐藏控制
+        detailedResults += `<div class="question-result" data-question-index="${idx}" data-is-correct="${isCorrect}">${questionResult}</div>`;
       });
       
-      htmlSummary += `</div>
-      <br>
-      <button onclick="resetQuiz()" style="padding: 10px 20px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">重新開始</button>`;
+      // 开始构建HTML内容，错题切换按钮放在最前面
+      let htmlSummary = '';
+      
+      // 添加错题切换按钮（只有当有错题时才显示）
+      if (wrongQuestionIndices.length > 0) {
+        htmlSummary += `<button id="wrongAnswersToggle" class="wrong-answers-toggle" onclick="toggleWrongAnswers()">只顯示錯題 (${wrongQuestionIndices.length} 題)</button><br><br>`;
+      }
+      
+      // 添加统计信息和详细结果
+      htmlSummary += `<div style="white-space: pre-wrap; font-family: monospace;">總共 ${total} 題，正確 ${correct} 題，錯誤 ${wrong} 題，得分：${Math.round((correct / total) * 100)} 分\n\n【詳細答題結果】\n${'='.repeat(50)}\n\n`;
+      
+      htmlSummary += detailedResults + `</div><br>`;
+      
+      // 添加重新开始按钮
+      htmlSummary += `<button onclick="resetQuiz()" style="padding: 10px 20px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">重新開始</button>`;
       
       const resultDiv = document.getElementById('result');
       resultDiv.innerHTML = htmlSummary;
+    }
+
+
+    function toggleWrongAnswers() {
+      const toggleBtn = document.getElementById('wrongAnswersToggle');
+      const questionResults = document.querySelectorAll('.question-result');
+      
+      if (!showingWrongAnswersOnly) {
+        // 切换到只显示错题模式
+        showingWrongAnswersOnly = true;
+        toggleBtn.textContent = `顯示全部題目 (共 ${quiz.length} 題)`;
+        toggleBtn.classList.add('show-all');
+        
+        // 隐藏所有正确的题目
+        questionResults.forEach(result => {
+          const isCorrect = result.dataset.isCorrect === 'true';
+          if (isCorrect) {
+            result.classList.add('hidden');
+          }
+        });
+        
+      } else {
+        // 切换回显示全部题目模式
+        showingWrongAnswersOnly = false;
+        toggleBtn.textContent = `只顯示錯題 (${wrongQuestionIndices.length} 題)`;
+        toggleBtn.classList.remove('show-all');
+        
+        // 显示所有题目
+        questionResults.forEach(result => {
+          result.classList.remove('hidden');
+        });
+      }
     }
 
     function resetQuiz() {
@@ -39400,6 +39471,8 @@ ${'-'.repeat(30)}
   isStepMode = false;
   canUseSpacebar = false;
   hasWarned = false;
+  showingWrongAnswersOnly = false;
+  wrongQuestionIndices = [];
   
   // 顯示設定區域和標題區域
   document.getElementById('setupSection').classList.remove('hidden');
