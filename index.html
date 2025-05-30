@@ -50,13 +50,17 @@
     .explanation {
       margin-top: 10px;
       display: none;
-      color: #444;
+      color: #333;
     }
     .correct {
       color: green;
     }
     .incorrect {
       color: red;
+    }
+    .explanation.correct,
+    .explanation.incorrect {
+      color: #333 !important;
     }
     .result-correct {
       color: green;
@@ -34771,13 +34775,13 @@
         let explanationText = '';
         if (isBonusQuestion && q.userAnswer) {
           explanation.classList.add('correct');
-          explanationText = `✓ 正確！（送分題）\n標籤：${formatTags(q.tags)}\n你的答案：${q.userAnswer}. ${q.options[q.userAnswer]}\n正確答案：${q.answer}. ${q.options[q.answer]}\n詳解：${q.explanation}`;
+          explanationText = `<span class="result-correct">✓ 正確！（送分題）</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${q.userAnswer}. ${q.options[q.userAnswer]}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
         } else if (q.userAnswer && q.userAnswer === q.answer) {
           explanation.classList.add('correct');
-          explanationText = `✓ 正確！\n標籤：${formatTags(q.tags)}\n正確答案：${q.answer}. ${q.options[q.answer]}\n詳解：${q.explanation}`;
+          explanationText = `<span class="result-correct">✓ 正確！</span><br>標籤：${formatTags(q.tags)}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
         } else {
           explanation.classList.add('incorrect');
-          explanationText = `✗ 錯誤！\n標籤：${formatTags(q.tags)}\n你的答案：${q.userAnswer ? q.userAnswer + '. ' + q.options[q.userAnswer] : '未作答'}\n正確答案：${q.answer}. ${q.options[q.answer]}\n詳解：${q.explanation}`;
+          explanationText = `<span class="result-incorrect">✗ 錯誤！</span><br>標籤：${formatTags(q.tags)}<br>你的答案：${q.userAnswer ? q.userAnswer + '. ' + q.options[q.userAnswer] : '未作答'}<br>正確答案：${q.answer}. ${q.options[q.answer]}<br>詳解：${q.explanation}`;
         }
         explanation.innerHTML = explanationText.replace(/\n/g, '<br>');
         explanation.style.display = 'block';
@@ -34828,16 +34832,16 @@
           explanation.classList.add('correct');
           correct++;
           quiz[i].isCorrect = true;
-          explanationText = `✓ 正確！（送分題）\n標籤：${formatTags(quiz[i].tags)}\n你的答案：${chosen.value}. ${quiz[i].options[chosen.value]}\n正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}\n詳解：${quiz[i].explanation}`;
+          explanationText = `<span class="result-correct">✓ 正確！（送分題）</span><br>標籤：${formatTags(quiz[i].tags)}<br>你的答案：${chosen.value}. ${quiz[i].options[chosen.value]}<br>正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}<br>詳解：${quiz[i].explanation}`;
         } else if (chosen && chosen.value === quiz[i].answer) {
           explanation.classList.add('correct');
           correct++;
           quiz[i].isCorrect = true;
-          explanationText = `✓ 正確！\n標籤：${formatTags(quiz[i].tags)}\n正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}\n詳解：${quiz[i].explanation}`;
+          explanationText = `<span class="result-correct">✓ 正確！</span><br>標籤：${formatTags(quiz[i].tags)}<br>正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}<br>詳解：${quiz[i].explanation}`;
         } else {
           explanation.classList.add('incorrect');
           quiz[i].isCorrect = false;
-          explanationText = `✗ 錯誤！\n標籤：${formatTags(quiz[i].tags)}\n你的答案：${chosen ? chosen.value + '. ' + quiz[i].options[chosen.value] : '未作答'}\n正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}\n詳解：${quiz[i].explanation}`;
+          explanationText = `<span class="result-incorrect">✗ 錯誤！</span><br>標籤：${formatTags(quiz[i].tags)}<br>你的答案：${chosen ? chosen.value + '. ' + quiz[i].options[chosen.value] : '未作答'}<br>正確答案：${quiz[i].answer}. ${quiz[i].options[quiz[i].answer]}<br>詳解：${quiz[i].explanation}`;
         }
         explanation.innerHTML = explanationText.replace(/\n/g, '<br>');
         
