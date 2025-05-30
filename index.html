@@ -359,8 +359,8 @@
       <div class="subject-section">
         <div id="subjectTag" class="checkbox-group">
           <strong>選擇科目</strong><br>
-          <label><input type="checkbox" value="醫師(一)模擬試題" onchange="selectMockExam(this, '一')"> 醫師(一)模擬試題<br>(解剖31題、胚胎5題、組織10題、生理27題、生化27題)</label><br>
-          <label><input type="checkbox" value="醫師(二)模擬試題" onchange="selectMockExam(this, '二')"> 醫師(二)模擬試題<br>(微生物17題、免疫11題、寄生蟲7題、公衛15題、藥理25題、病理25題)</label><br>
+          <label><input type="checkbox" value="醫學(一)模擬試題" onchange="selectMockExam(this, '一')"> 醫學(一)模擬試題<br>(解剖31題、胚胎5題、組織10題、生理27題、生化27題)</label><br>
+          <label><input type="checkbox" value="醫學(二)模擬試題" onchange="selectMockExam(this, '二')"> 醫學(二)模擬試題<br>(微生物17題、免疫11題、寄生蟲7題、公衛15題、藥理25題、病理25題)</label><br>
           <br>
           <label><input type="checkbox" value="all" onchange="handleSelectAll('subject')"> 全選</label>
           <div class="subject-count" id="count-all-subjects" style="display:none;">
@@ -29967,7 +29967,7 @@
     // 修改科目處理邏輯，排除模擬試題選項
     const groupId = 'subjectTag';
     const allCheckbox = document.querySelector(`#${groupId} input[value="all"]`);
-    const otherCheckboxes = document.querySelectorAll(`#${groupId} input[type="checkbox"]:not([value="all"]):not([value="醫師(一)模擬試題"]):not([value="醫師(二)模擬試題"])`);
+    const otherCheckboxes = document.querySelectorAll(`#${groupId} input[type="checkbox"]:not([value="all"]):not([value="醫學(一)模擬試題"]):not([value="醫學(二)模擬試題"])`);
     const allSubjectsCount = document.getElementById('count-all-subjects');
     
     if (allCheckbox.checked) {
@@ -30057,7 +30057,7 @@
     function updateAllSelectStatus(type) {
       if (type === 'subject') {
         const allCheckbox = document.querySelector('#subjectTag input[value="all"]');
-        const otherCheckboxes = document.querySelectorAll('#subjectTag input[type="checkbox"]:not([value="all"]):not([value="醫師(一)模擬試題"]):not([value="醫師(二)模擬試題"])');
+        const otherCheckboxes = document.querySelectorAll('#subjectTag input[type="checkbox"]:not([value="all"]):not([value="醫學(一)模擬試題"]):not([value="醫學(二)模擬試題"])');
         const checkedCount = Array.from(otherCheckboxes).filter(cb => cb.checked).length;
         
         // 只有在手動勾選所有科目時才自動勾選全選（但不觸發全選邏輯）
