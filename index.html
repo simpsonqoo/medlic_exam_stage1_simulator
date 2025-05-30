@@ -339,6 +339,69 @@
    width: 200px;
  }
 }
+
+/* 自定義確認對話框樣式 */
+.custom-confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.custom-confirm-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.custom-confirm-message {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.custom-confirm-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.custom-confirm-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 80px;
+}
+
+.custom-confirm-cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+.custom-confirm-ok {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.custom-confirm-cancel:hover {
+  background-color: #545b62;
+}
+
+.custom-confirm-ok:hover {
+  background-color: #e0a800;
+}
   </style>
 </head>
 <body>
@@ -524,6 +587,41 @@
   <div class="result" id="result"></div>
 
   <script>
+// 自定義確認對話框函數
+    function customConfirm(message) {
+      return new Promise((resolve) => {
+        // 創建對話框HTML
+        const overlay = document.createElement('div');
+        overlay.className = 'custom-confirm-overlay';
+        overlay.innerHTML = `
+          <div class="custom-confirm-box">
+            <div class="custom-confirm-message">${message}</div>
+            <div class="custom-confirm-buttons">
+              <button class="custom-confirm-btn custom-confirm-cancel" onclick="handleConfirmResponse(false)">取消</button>
+              <button class="custom-confirm-btn custom-confirm-ok" onclick="handleConfirmResponse(true)">確定</button>
+            </div>
+          </div>
+        `;
+        
+        // 添加到頁面
+        document.body.appendChild(overlay);
+        
+        // 全域變數來處理回應
+        window.confirmResolve = resolve;
+      });
+    }
+
+    // 處理確認對話框回應
+    function handleConfirmResponse(result) {
+      const overlay = document.querySelector('.custom-confirm-overlay');
+      if (overlay) {
+        overlay.remove();
+      }
+      if (window.confirmResolve) {
+        window.confirmResolve(result);
+        window.confirmResolve = null;
+      }
+    }
     const questions = [
   {
     question: "肺炎鏈球菌（Streptococcus pneumoniae）對青黴素（penicillin）產生抗性之原因，主要為下列何者？",
@@ -34779,9 +34877,9 @@
       }
     }
 
-    function earlySubmit() {
+    async function earlySubmit() {
       const remainingQuestions = quiz.length - currentQuestion - 1;
-      const confirmSubmit = confirm(`確定要提早交卷嗎？\n\n目前進度：第 ${currentQuestion + 1} 題 / 共 ${quiz.length} 題\n剩餘題數：${remainingQuestions} 題\n\n未作答的題目將計為錯誤。`);
+      const confirmSubmit = await customConfirm(`確定要提早交卷嗎？<br><br>目前進度：第 ${currentQuestion + 1} 題 / 共 ${quiz.length} 題<br>剩餘題數：${remainingQuestions} 題<br><br>未作答的題目將計為錯誤。`);
       
       if (confirmSubmit) {
         // 處理當前題目（如果還沒提交答案的話）
@@ -34908,7 +35006,7 @@ ${'-'.repeat(30)}
         const qBlock = document.createElement('div');
         qBlock.className = 'question-block';
         qBlock.innerHTML = `
-          <h3>第 ${i + 1} 題</h3>
+          <h3>第 ${i + 1} 題 <span class="question-tags">${formatTags(q.tags)}</span></h3>
           <p>${q.question}</p>
           ${Object.entries(q.options).map(([key, value]) => `<label><input type="radio" name="q${i}" value="${key}"> ${key}. ${value}</label><br>`).join('')}
           <div class="explanation" id="explanation${i}">${q.explanation}</div>
