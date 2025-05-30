@@ -11245,7 +11245,7 @@
     },
     {
       id: 1164,
-      question: "相較於正常換氣（normal ventilation），過度換氣（hyperventilation）時可見：①肺泡內氧分壓（ ）顯著 上升 ②肺泡內二氧化碳分壓（ ）顯著下降 ③體動脈血中二氧化碳總含量（total content of CO2）顯著 下降",
+      question: "相較於正常換氣（normal ventilation），過度換氣（hyperventilation）時可見：①肺泡內氧分壓（PO2）顯著 上升 ②肺泡內二氧化碳分壓（PCO2）顯著下降 ③體動脈血中二氧化碳總含量（total content of CO2）顯著 下降",
       options: {"A": "僅①②", "B": "僅②③", "C": "僅①③", "D": "①②③"},
       answer: "D",
       explanation: "過度換氣會導致過多CO2排出，同時增加O2攝取，三個現象都會發生。\n(A) 錯誤，不只①②發生，③也會發生\n(B) 錯誤，不只②③發生，①也會發生\n(C) 錯誤，不只①③發生，②也會發生\n(D) 正確，過度換氣時：①肺泡內氧分壓顯著上升，②肺泡內二氧化碳分壓顯著下降，③體動脈血中二氧化碳總含量顯著下降，三個現象都會出現",
@@ -16191,9 +16191,6 @@
       answer: "A",
       explanation: "視野缺損的類型可以幫助定位視覺通路的損傷部位。左視徑損傷會造成右側同側性偏盲，即雙眼右側視野缺損。\n(A) 正確，左視徑（left optic tract）損傷會造成右側同側性偏盲（right homonymous hemianopia）\n(B) 錯誤，視交叉（optic chiasm）損傷通常造成雙顳側偏盲\n(C) 錯誤，右視神經（right optic nerve）損傷會造成右眼完全失明\n(D) 錯誤，右外膝狀核（right lateral geniculate nucleus）損傷也會造成左側同側性偏盲，但題目描述的是右側視野缺損",
       tags: ["111-2(一)", "解剖"],
-      "images": [
-        "./image/111-2-1-13.jpg"
-      ],
       group_id: "group_1705"
     },
     {
@@ -16338,9 +16335,6 @@
       answer: "D",
       explanation: "根據椎骨的形態特徵可以判斷其在脊柱中的位置。通過觀察椎體大小、橫突形態和棘突特徵，可以確定甲、乙、丙三個椎骨的排列順序。\n(A) 錯誤，不符合脊柱由頭端往尾端的解剖排列\n(B) 錯誤，不符合脊柱由頭端往尾端的解剖排列\n(C) 錯誤，不符合脊柱由頭端往尾端的解剖排列\n(D) 正確，在脊柱由頭端往尾端的排列順序為丙→甲→乙",
       tags: ["111-2(一)", "解剖"],
-      "images": [
-        "./image/111-2-1-29.jpg"
-      ],
       group_id: "group_1721"
     },
     {
@@ -38726,7 +38720,7 @@
       return selectedQuestions;
     }
 
-    function groupQuestionsByGroupId(questions) {
+    function groupQuestionsByGroupId(questions, keepOriginalOrder = false) {
       // 按 group_id 分組
       const groupMap = new Map();
       
@@ -38742,11 +38736,23 @@
       let result = [];
       const groups = Array.from(groupMap.values());
       
-      // 隨機排列各組的順序
-      const shuffledGroups = groups.sort(() => Math.random() - 0.5);
+      let finalGroups;
+      if (keepOriginalOrder) {
+        // 保持原始順序：按照每組第一個題目在原始questions陣列中的位置排序
+        finalGroups = groups.sort((groupA, groupB) => {
+          const firstQuestionA = groupA[0];
+          const firstQuestionB = groupB[0];
+          const indexA = questions.findIndex(q => q.question === firstQuestionA.question);
+          const indexB = questions.findIndex(q => q.question === firstQuestionB.question);
+          return indexA - indexB;
+        });
+      } else {
+        // 隨機排列各組的順序
+        finalGroups = groups.sort(() => Math.random() - 0.5);
+      }
       
       // 將各組依序加入，保持組內題目連續
-      shuffledGroups.forEach(group => {
+      finalGroups.forEach(group => {
         result = result.concat(group);
       });
       
@@ -38952,7 +38958,7 @@
       if (!confirmUseAll) {
         return;
       }
-      finalQuiz = groupQuestionsByGroupId(allSubjectQuestions);
+      finalQuiz = groupQuestionsByGroupId(allSubjectQuestions, false);
     } else {
       finalQuiz = selectQuestionsByGroup(allSubjectQuestions, totalCount);
     }
@@ -38997,7 +39003,7 @@
       
       // 如果題庫不足，使用所有題目；否則按原邏輯選取
       if (subjectQuestions.length < subjectCount) {
-        const selected = groupQuestionsByGroupId(subjectQuestions);
+        const selected = groupQuestionsByGroupId(subjectQuestions, false);
         finalQuiz = finalQuiz.concat(selected);
       } else {
         const selected = selectQuestionsByGroup(subjectQuestions, subjectCount);
@@ -39022,7 +39028,7 @@
     subjectOrder.forEach(subject => {
       const subjectQuestions = finalQuiz.filter(q => q.tags.includes(subject));
       // 按 group_id 分組並保持組內順序
-      const groupedQuestions = groupQuestionsByGroupId(subjectQuestions);
+      const groupedQuestions = groupQuestionsByGroupId(subjectQuestions, false);
       quiz = quiz.concat(groupedQuestions);
     });
   } else {
@@ -39039,7 +39045,7 @@
         return indexA - indexB;
       });
       // 按 group_id 分組並保持組內順序
-      const groupedQuestions = groupQuestionsByGroupId(sortedSubjectQuestions);
+      const groupedQuestions = groupQuestionsByGroupId(sortedSubjectQuestions, true);
       quiz = quiz.concat(groupedQuestions);
     });
   }
