@@ -406,6 +406,80 @@
 .custom-confirm-ok:hover {
   background-color: #e0a800;
 }
+
+    /* 視覺化選擇按鈕樣式 - 統一空心/實心效果 */
+    .visual-checkbox {
+      display: inline-block;
+      padding: 10px 16px;
+      margin: 4px;
+      background-color: transparent;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      user-select: none;
+      font-size: 14px;
+      font-weight: 500;
+      color: #007bff;
+      min-height: 20px;
+      box-sizing: border-box;
+    }
+
+    .visual-checkbox:hover {
+      border-color: #0056b3;
+      color: #0056b3;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0,123,255,0.2);
+    }
+
+    /* 選中狀態 - 實心，確保文字清晰可見 */
+    .visual-checkbox.selected {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: white;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(0,123,255,0.3);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .visual-checkbox.selected:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+      color: white;
+    }
+
+    /* 隱藏原始checkbox */
+    .visual-checkbox input[type="checkbox"] {
+      display: none;
+    }
+
+    /* 確保題數輸入框在視覺按鈕內正常顯示 */
+    .visual-checkbox .subject-count {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      font-size: 12px;
+    }
+
+    .visual-checkbox.selected .subject-count {
+      color: white;
+      border-top-color: rgba(255,255,255,0.5);
+    }
+
+    .visual-checkbox .subject-count input {
+      background-color: rgba(255,255,255,0.9);
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 2px 6px;
+      margin-left: 5px;
+      color: #333;
+      width: 50px;
+    }
+
+    .visual-checkbox.selected .subject-count input {
+      background-color: white;
+      border-color: #dee2e6;
+    }
   </style>
 </head>
 <body>
@@ -433,54 +507,54 @@
       <div class="year-section">
         <div id="yearTag1" class="checkbox-group">
           <strong>醫學(一)</strong><br>
-          <label><input type="checkbox" value="all1" onchange="handleSelectAll('year1')"> 全選</label><br>
-          <label><input type="checkbox" value="114-1(一)"> 114-1(一)</label><br>
-          <label><input type="checkbox" value="113-2(一)"> 113-2(一)</label><br>
-          <label><input type="checkbox" value="113-1(一)"> 113-1(一)</label><br>
-          <label><input type="checkbox" value="112-2(一)"> 112-2(一)</label><br>
-          <label><input type="checkbox" value="112-1(一)"> 112-1(一)</label><br>
-          <label><input type="checkbox" value="111-2(一)"> 111-2(一)</label><br>
-          <label><input type="checkbox" value="111-1(一)"> 111-1(一)</label><br>
-          <label><input type="checkbox" value="110-2(一)"> 110-2(一)</label><br>
-          <label><input type="checkbox" value="110-1(一)"> 110-1(一)</label><br>
-          <label><input type="checkbox" value="109-2(一)"> 109-2(一)</label><br>
-          <label><input type="checkbox" value="109-1(一)"> 109-1(一)</label><br>
-          <label><input type="checkbox" value="108-2(一)"> 108-2(一)</label><br>
-          <label><input type="checkbox" value="108-1(一)"> 108-1(一)</label><br>
-          <label><input type="checkbox" value="107-2(一)"> 107-2(一)</label><br>
-          <label><input type="checkbox" value="107-1(一)"> 107-1(一)</label><br>
-          <label><input type="checkbox" value="106-2(一)"> 106-2(一)</label><br>
-          <label><input type="checkbox" value="106-1(一)"> 106-1(一)</label><br>
-          <label><input type="checkbox" value="105-2(一)"> 105-2(一)</label><br>
-          <label><input type="checkbox" value="105-1(一)"> 105-1(一)</label><br>
-          <label><input type="checkbox" value="104-2(一)"> 104-2(一)</label><br>
-          <label><input type="checkbox" value="104-1(一)"> 104-1(一)</label><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="all1" onchange="handleSelectAll('year1')">全選</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114-1(一)">114-1(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="113-2(一)">113-2(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="113-1(一)">113-1(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="112-2(一)">112-2(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="112-1(一)">112-1(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="111-2(一)">111-2(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="111-1(一)">111-1(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="110-2(一)">110-2(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="110-1(一)">110-1(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="109-2(一)">109-2(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="109-1(一)">109-1(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="108-2(一)">108-2(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="108-1(一)">108-1(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="107-2(一)">107-2(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="107-1(一)">107-1(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="106-2(一)">106-2(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="106-1(一)">106-1(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="105-2(一)">105-2(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="105-1(一)">105-1(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="104-2(一)">104-2(一)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="104-1(一)">104-1(一)</div><br>
         </div>
         
         <div id="yearTag2" class="checkbox-group">
           <strong>醫學(二)</strong><br>
-          <label><input type="checkbox" value="all2" onchange="handleSelectAll('year2')"> 全選</label><br>
-          <label><input type="checkbox" value="114-1(二)"> 114-1(二)</label><br>
-          <label><input type="checkbox" value="113-2(二)"> 113-2(二)</label><br>
-          <label><input type="checkbox" value="113-1(二)"> 113-1(二)</label><br>
-          <label><input type="checkbox" value="112-2(二)"> 112-2(二)</label><br>
-          <label><input type="checkbox" value="112-1(二)"> 112-1(二)</label><br>
-          <label><input type="checkbox" value="111-2(二)"> 111-2(二)</label><br>
-          <label><input type="checkbox" value="111-1(二)"> 111-1(二)</label><br>
-          <label><input type="checkbox" value="110-2(二)"> 110-2(二)</label><br>
-          <label><input type="checkbox" value="110-1(二)"> 110-1(二)</label><br>
-          <label><input type="checkbox" value="109-2(二)"> 109-2(二)</label><br>
-          <label><input type="checkbox" value="109-1(二)"> 109-1(二)</label><br>
-          <label><input type="checkbox" value="108-2(二)"> 108-2(二)</label><br>
-          <label><input type="checkbox" value="108-1(二)"> 108-1(二)</label><br>
-          <label><input type="checkbox" value="107-2(二)"> 107-2(二)</label><br>
-          <label><input type="checkbox" value="107-1(二)"> 107-1(二)</label><br>
-          <label><input type="checkbox" value="106-2(二)"> 106-2(二)</label><br>
-          <label><input type="checkbox" value="106-1(二)"> 106-1(二)</label><br>
-          <label><input type="checkbox" value="105-2(二)"> 105-2(二)</label><br>
-          <label><input type="checkbox" value="105-1(二)"> 105-1(二)</label><br>
-          <label><input type="checkbox" value="104-2(二)"> 104-2(二)</label><br>
-          <label><input type="checkbox" value="104-1(二)"> 104-1(二)</label><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="all2" onchange="handleSelectAll('year2')">全選</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114-1(二)">114-1(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="113-2(二)">113-2(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="113-1(二)">113-1(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="112-2(二)">112-2(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="112-1(二)">112-1(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="111-2(二)">111-2(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="111-1(二)">111-1(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="110-2(二)">110-2(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="110-1(二)">110-1(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="109-2(二)">109-2(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="109-1(二)">109-1(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="108-2(二)">108-2(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="108-1(二)">108-1(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="107-2(二)">107-2(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="107-1(二)">107-1(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="106-2(二)">106-2(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="106-1(二)">106-1(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="105-2(二)">105-2(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="105-1(二)">105-1(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="104-2(二)">104-2(二)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="104-1(二)">104-1(二)</div><br>
         </div>
       </div>
       
@@ -488,80 +562,47 @@
       <div class="subject-section">
         <div id="subjectTag" class="checkbox-group">
           <strong>選擇科目</strong><br>
-          <label><input type="checkbox" value="醫學(一)模擬試題" onchange="selectMockExam(this, '一')"> 醫學(一)模擬試題<br>(解剖31題、胚胎5題、組織10題、生理27題、生化27題)</label><br>
-          <label><input type="checkbox" value="醫學(二)模擬試題" onchange="selectMockExam(this, '二')"> 醫學(二)模擬試題<br>(微生物17題、免疫11題、寄生蟲7題、公衛15題、藥理25題、病理25題)</label><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="醫學(一)模擬試題" onchange="selectMockExam(this, '一')">醫學(一)模擬試題<br>(解剖31題、胚胎5題、組織10題、生理27題、生化27題)</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="醫學(二)模擬試題" onchange="selectMockExam(this, '二')">醫學(二)模擬試題<br>(微生物17題、免疫11題、寄生蟲7題、公衛15題、藥理25題、病理25題)</div><br>
           <br>
-          <label><input type="checkbox" value="all" onchange="handleSelectAll('subject')"> 全選</label>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="all" onchange="handleSelectAll('subject')">全選</div>
           <div class="subject-count" id="count-all-subjects" style="display:none;">
             總題數：<input type="number" value="5" min="1" max="20">
           </div>
           <br>
-          <label>
-            <input type="checkbox" value="解剖" onchange="toggleSubjectCount(this)"> 解剖
-            <div class="subject-count" id="count-解剖">
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="解剖" onchange="toggleSubjectCount(this)">解剖<div class="subject-count" id="count-解剖">
               題數：<input type="number" value="1" min="1" max="10">
-            </div>
-          </label><br>
-          <label>
-            <input type="checkbox" value="胚胎" onchange="toggleSubjectCount(this)"> 胚胎
-            <div class="subject-count" id="count-胚胎">
+            </div></div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="胚胎" onchange="toggleSubjectCount(this)">胚胎<div class="subject-count" id="count-胚胎">
               題數：<input type="number" value="1" min="1" max="10">
-            </div>
-          </label><br>
-          <label>
-            <input type="checkbox" value="組織" onchange="toggleSubjectCount(this)"> 組織
-            <div class="subject-count" id="count-組織">
+            </div></div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="組織" onchange="toggleSubjectCount(this)">組織<div class="subject-count" id="count-組織">
               題數：<input type="number" value="1" min="1" max="10">
-            </div>
-          </label><br>
-          <label>
-            <input type="checkbox" value="生理" onchange="toggleSubjectCount(this)"> 生理
-            <div class="subject-count" id="count-生理">
+            </div></div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="生理" onchange="toggleSubjectCount(this)">生理<div class="subject-count" id="count-生理">
               題數：<input type="number" value="1" min="1" max="10">
-            </div>
-          </label><br>
-          <label>
-            <input type="checkbox" value="生化" onchange="toggleSubjectCount(this)"> 生化
-            <div class="subject-count" id="count-生化">
+            </div></div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="生化" onchange="toggleSubjectCount(this)">生化<div class="subject-count" id="count-生化">
               題數：<input type="number" value="1" min="1" max="10">
-            </div>
-          </label><br>
-          <label>
-            <input type="checkbox" value="微生物" onchange="toggleSubjectCount(this)"> 微生物
-            <div class="subject-count" id="count-微生物">
+            </div></div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="微生物" onchange="toggleSubjectCount(this)">微生物<div class="subject-count" id="count-微生物">
               題數：<input type="number" value="1" min="1" max="10">
-            </div>
-          </label><br>
-          <label>
-            <input type="checkbox" value="免疫" onchange="toggleSubjectCount(this)"> 免疫
-            <div class="subject-count" id="count-免疫">
+            </div></div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="免疫" onchange="toggleSubjectCount(this)">免疫<div class="subject-count" id="count-免疫">
               題數：<input type="number" value="1" min="1" max="10">
-            </div>
-          </label><br>
-          <label>
-            <input type="checkbox" value="寄生蟲" onchange="toggleSubjectCount(this)"> 寄生蟲
-            <div class="subject-count" id="count-寄生蟲">
+            </div></div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="寄生蟲" onchange="toggleSubjectCount(this)">寄生蟲<div class="subject-count" id="count-寄生蟲">
               題數：<input type="number" value="1" min="1" max="10">
-            </div>
-          </label><br>
-          <label>
-            <input type="checkbox" value="公衛" onchange="toggleSubjectCount(this)"> 公衛
-            <div class="subject-count" id="count-公衛">
+            </div></div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="公衛" onchange="toggleSubjectCount(this)">公衛<div class="subject-count" id="count-公衛">
               題數：<input type="number" value="1" min="1" max="10">
-            </div>
-          </label><br>
-          <label>
-            <input type="checkbox" value="藥理" onchange="toggleSubjectCount(this)"> 藥理
-            <div class="subject-count" id="count-藥理">
+            </div></div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="藥理" onchange="toggleSubjectCount(this)">藥理<div class="subject-count" id="count-藥理">
               題數：<input type="number" value="1" min="1" max="10">
-            </div>
-          </label><br>
-          <label>
-            <input type="checkbox" value="病理" onchange="toggleSubjectCount(this)"> 病理
-            <div class="subject-count" id="count-病理">
+            </div></div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="病理" onchange="toggleSubjectCount(this)">病理<div class="subject-count" id="count-病理">
               題數：<input type="number" value="1" min="1" max="10">
-            </div>
-          </label><br>
+            </div></div><br>
         </div>
       </div>
       
@@ -591,6 +632,62 @@
   <div class="result" id="result"></div>
 
   <script>
+    // 視覺化checkbox切換函數
+    function toggleVisualCheckbox(element) {
+      // 檢查點擊是否在輸入框上，如果是則不處理
+      if (event.target.tagName === 'INPUT' && event.target.type === 'number') {
+        return;
+      }
+      
+      const checkbox = element.querySelector('input[type="checkbox"]');
+      const isCurrentlyChecked = checkbox.checked;
+      
+      // 切換checkbox狀態
+      checkbox.checked = !isCurrentlyChecked;
+      
+      // 更新視覺樣式
+      updateSingleVisualStyle(element);
+      
+      // 觸發原有的onchange事件
+      if (checkbox.onchange) {
+        checkbox.onchange();
+      }
+      
+      // 處理特殊情況
+      const value = checkbox.value;
+      if (value === 'all1') {
+        setTimeout(() => updateVisualStyles(), 10);
+      } else if (value === 'all2') {
+        setTimeout(() => updateVisualStyles(), 10);
+      } else if (value === 'all') {
+        setTimeout(() => updateVisualStyles(), 10);
+      } else if (value === '醫學(一)模擬試題') {
+        setTimeout(() => updateVisualStyles(), 10);
+      } else if (value === '醫學(二)模擬試題') {
+        setTimeout(() => updateVisualStyles(), 10);
+      } else if (subjectTags.includes(value)) {
+        // toggleSubjectCount函數已經在onchange中處理
+      }
+    }
+
+    // 更新單個按鈕的視覺樣式
+    function updateSingleVisualStyle(element) {
+      const checkbox = element.querySelector('input[type="checkbox"]');
+      if (checkbox.checked) {
+        element.classList.add('selected');
+      } else {
+        element.classList.remove('selected');
+      }
+    }
+
+    // 更新所有視覺樣式的輔助函數
+    function updateVisualStyles() {
+      document.querySelectorAll('.visual-checkbox').forEach(element => {
+        updateSingleVisualStyle(element);
+      });
+    }
+
+
 // 自定義確認對話框函數
     function customConfirm(message) {
       return new Promise((resolve) => {
@@ -35038,6 +35135,9 @@ ${'-'.repeat(30)}
   // 重置按鈕狀態
   document.getElementById('nextBtn').style.display = 'none';
   document.getElementById('earlySubmitBtn').style.display = 'none';
+  
+  // 重置視覺樣式
+  setTimeout(() => updateVisualStyles(), 50);
 }
 
     function showAllQuestions() {
@@ -35095,6 +35195,11 @@ ${'-'.repeat(30)}
         showFinalResults();
       }, 1000);
     }
-  </script>
+  
+    // 頁面加載完成後初始化視覺樣式
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(() => updateVisualStyles(), 50);
+    });
+</script>
 </body>
 </html>
