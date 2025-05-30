@@ -34532,13 +34532,22 @@
       quiz = quiz.concat(groupedQuestions);
     });
   } else {
-    // 照原始順序，但保持 group_id 連續
-    const sortedQuestions = finalQuiz.sort((a, b) => {
-      const indexA = questions.findIndex(q => q.question === a.question);
-      const indexB = questions.findIndex(q => q.question === b.question);
-      return indexA - indexB;
+    // 照原始順序，但按指定科目順序排列，保持 group_id 連續
+    const subjectOrder = ['解剖', '胚胎', '組織', '生理', '生化', '微生物', '免疫', '寄生蟲', '公衛', '藥理', '病理'];
+    
+    quiz = [];
+    subjectOrder.forEach(subject => {
+      const subjectQuestions = finalQuiz.filter(q => q.tags.includes(subject));
+      // 按原始題目順序排序
+      const sortedSubjectQuestions = subjectQuestions.sort((a, b) => {
+        const indexA = questions.findIndex(q => q.question === a.question);
+        const indexB = questions.findIndex(q => q.question === b.question);
+        return indexA - indexB;
+      });
+      // 按 group_id 分組並保持組內順序
+      const groupedQuestions = groupQuestionsByGroupId(sortedSubjectQuestions);
+      quiz = quiz.concat(groupedQuestions);
     });
-    quiz = groupQuestionsByGroupId(sortedQuestions);
   }
   
   currentQuestion = 0;
