@@ -39494,36 +39494,126 @@
     }
 
     function resetQuiz() {
-  // 重置所有變數
-  quiz = [];
-  currentQuestion = 0;
-  correct = 0;
-  isStepMode = false;
-  canUseSpacebar = false;
-  hasWarned = false;
-  showingWrongAnswersOnly = false;
-  wrongQuestionIndices = [];
-  
-  // 顯示設定區域和標題區域
-  document.getElementById('setupSection').classList.remove('hidden');
-  document.getElementById('headerSection').classList.remove('hidden');
-  
-  // 隱藏其他區域
-  document.getElementById('progressInfo').classList.add('hidden');
-  document.getElementById('stepControls').classList.add('hidden');
-  document.getElementById('submitBtn').classList.add('hidden');
-  
-  // 清空內容
-  document.getElementById('quiz').innerHTML = '';
-  document.getElementById('result').innerHTML = '';
-  
-  // 重置按鈕狀態
-  document.getElementById('nextBtn').style.display = 'none';
-  document.getElementById('earlySubmitBtn').style.display = 'none';
-  
-  // 重置視覺樣式
-  setTimeout(() => updateVisualStyles(), 50);
-}
+      // 完全重置所有變數到初始狀態
+      quiz = [];
+      currentQuestion = 0;
+      correct = 0;
+      isStepMode = false;
+      canUseSpacebar = false;
+      hasWarned = false;
+      showingWrongAnswersOnly = false;
+      wrongQuestionIndices = [];
+      
+      // 清除所有 radio button 的選擇和disabled狀態
+      document.querySelectorAll('input[type="radio"]').forEach(radio => {
+        radio.checked = false;
+        radio.disabled = false;
+      });
+      
+      // 完全重置所有 checkbox 到初始未選擇狀態
+      document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+        checkbox.checked = false;
+      });
+      
+      // 重置所有題數輸入框的值為初始預設值
+      document.querySelectorAll('.subject-count input[type="number"]').forEach(input => {
+        // 根據不同科目設定預設值
+        input.value = '1';
+      });
+      
+      // 隱藏所有題數輸入框（回到初始狀態）
+      document.querySelectorAll('.subject-count').forEach(countDiv => {
+        countDiv.style.display = 'none';
+      });
+      
+      // 重置下拉選單為預設值（第一個選項）
+      document.getElementById('mode').selectedIndex = 0;
+      document.getElementById('questionOrder').selectedIndex = 0;
+      
+      // 清除所有警告訊息
+      document.querySelectorAll('.warning-message').forEach(warning => {
+        warning.style.display = 'none';
+      });
+      
+      // 完全清除所有詳解內容和狀態
+      document.querySelectorAll('.explanation').forEach(explanation => {
+        explanation.style.display = 'none';
+        explanation.classList.remove('correct', 'incorrect');
+        explanation.innerHTML = '';
+        if (explanation.dataset.answered) {
+          delete explanation.dataset.answered;
+        }
+      });
+      
+      // 重置所有視覺化按鈕到未選擇狀態
+      document.querySelectorAll('.visual-checkbox').forEach(element => {
+        element.classList.remove('selected');
+      });
+      
+      // 重新顯示設定區域和標題區域（回到主頁面狀態）
+      document.getElementById('setupSection').classList.remove('hidden');
+      document.getElementById('headerSection').classList.remove('hidden');
+      
+      // 隱藏所有測驗相關區域
+      document.getElementById('progressInfo').classList.add('hidden');
+      document.getElementById('stepControls').classList.add('hidden');
+      document.getElementById('submitBtn').classList.add('hidden');
+      
+      // 完全清空測驗內容和結果
+      document.getElementById('quiz').innerHTML = '';
+      document.getElementById('result').innerHTML = '';
+      
+      // 重置所有按鈕狀態到初始狀態
+      document.getElementById('nextBtn').style.display = 'none';
+      document.getElementById('prevBtn').style.display = 'none';
+      document.getElementById('earlySubmitBtn').style.display = 'none';
+      
+      // 清除進度顯示，回到初始值
+      document.getElementById('currentQuestionNum').innerText = '1';
+      document.getElementById('totalQuestions').innerText = '0';
+      
+      // 重置quiz陣列中每個題目的用戶答案和正確性標記
+      if (questions && questions.length > 0) {
+        questions.forEach(q => {
+          if (q.userAnswer !== undefined) delete q.userAnswer;
+          if (q.isCorrect !== undefined) delete q.isCorrect;
+        });
+      }
+      
+      // 清除任何殘留的樣式類別
+      document.querySelectorAll('.question-block').forEach(block => {
+        block.remove();
+      });
+      
+      // 移除任何動態添加的元素
+      document.querySelectorAll('.question-result').forEach(result => {
+        result.remove();
+      });
+      
+      // 移除錯題切換按鈕等動態元素
+      const wrongToggle = document.getElementById('wrongAnswersToggle');
+      if (wrongToggle) {
+        wrongToggle.remove();
+      }
+      
+      // 重新啟用所有表單元素
+      document.querySelectorAll('select, input, button').forEach(element => {
+        element.disabled = false;
+      });
+      
+      // 確保視覺樣式在短暫延遲後更新，完全回到初始狀態
+      setTimeout(() => {
+        updateVisualStyles();
+        // 確保頁面滾動到頂部
+        window.scrollTo(0, 0);
+        console.log('測驗系統已完全重置到初始主頁面狀態');
+      }, 50);
+      
+      // 確保沒有任何遺留的事件監聽器或狀態
+      hasWarned = false;
+      showingWrongAnswersOnly = false;
+      wrongQuestionIndices = [];
+    }
 
     function showAllQuestions() {
       const quizDiv = document.getElementById('quiz');
