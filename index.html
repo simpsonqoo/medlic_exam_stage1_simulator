@@ -562,7 +562,667 @@
     .question-result.hidden {
       display: none !important;
     }
-  </style>
+    /* 答題記錄管理樣式 */
+    .record-management {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    
+    .record-section {
+      margin-bottom: 15px;
+      padding: 15px;
+      background: white;
+      border-radius: 5px;
+      border: 1px solid #e9ecef;
+    }
+    
+    .record-section h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #495057;
+    }
+    
+    .file-input-wrapper {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    
+    .file-input {
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+    
+    .file-input-btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .file-input-btn:hover {
+      background-color: #0056b3;
+    }
+    
+    .download-record-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-right: 10px;
+    }
+    
+    .download-record-btn:hover {
+      background-color: #218838;
+    }
+    
+    .record-status {
+      margin-top: 10px;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    .record-status.success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    
+    .record-status.error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    
+    .record-status.info {
+      background-color: #d1ecf1;
+      color: #0c5460;
+      border: 1px solid #bee5eb;
+    }
+    
+    .record-stats {
+      background: #e7f3ff;
+      border: 1px solid #b8daff;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* 緊湊左右分割布局 */
+    .record-management {
+      display: flex;
+      gap: 15px;
+      margin: 15px 0;
+      padding: 15px;
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 6px;
+    }
+    
+    .record-section {
+      flex: 1;
+      min-width: 0; /* 防止 flex 項目溢出 */
+    }
+    
+    .record-section h3 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      color: #495057;
+    }
+    
+    /* 檔案輸入區域 */
+    .file-input-wrapper {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      margin-bottom: 8px;
+    }
+    
+    .file-input {
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+    
+    .file-input-btn {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: background-color 0.3s ease;
+      min-width: 100px;
+    }
+    
+    .file-input-btn:hover {
+      background-color: #0056b3;
+    }
+    
+    /* 下載按鈕容器 */
+    .download-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    /* 目前作答記錄按鈕 - 綠色 */
+    .current-record-btn {
+      padding: 8px 16px;
+      font-size: 13px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      white-space: nowrap;
+      min-width: 120px;
+      text-align: center;
+    }
+    
+    .current-record-btn:hover {
+      background-color: #218838;
+    }
+    
+    /* 歷史完整記錄按鈕 - 藍色 */
+    .history-record-btn {
+      padding: 8px 16px;
+      font-size: 13px;
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      min-width: 120px;
+      text-align: center;
+    }
+    
+    .history-record-btn:not(:disabled) {
+      background-color: #007bff;
+    }
+    
+    .history-record-btn:not(:disabled):hover {
+      background-color: #0056b3;
+    }
+    
+    .history-record-btn:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+    
+    /* 狀態提示 */
+    .record-status {
+      font-size: 12px;
+      padding: 6px 8px;
+      border-radius: 3px;
+      margin-top: 5px;
+    }
+    
+    .record-status.success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    
+    .record-status.error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    
+    .record-status.info {
+      background-color: #d1ecf1;
+      color: #0c5460;
+      border: 1px solid #bee5eb;
+    }
+    
+    /* 手機版優化 */
+    @media (max-width: 480px) {
+      .record-management {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+      }
+      
+      .download-buttons {
+        flex-direction: row;
+        gap: 8px;
+      }
+      
+      .current-record-btn, .history-record-btn {
+        flex: 1;
+        min-width: 80px;
+        font-size: 12px;
+        padding: 6px 8px;
+      }
+    }
+  
+    /* 視覺化功能樣式 */
+    .visualization-btn {
+      padding: 8px 16px;
+      font-size: 13px;
+      background-color: #17a2b8;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      min-width: 120px;
+      text-align: center;
+    }
+    
+    .visualization-btn:hover {
+      background-color: #138496;
+      transform: translateY(-1px);
+    }
+    
+    .visualization-btn:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    /* 視覺化彈出視窗樣式 */
+    .visualization-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .visualization-content {
+      background: white;
+      border-radius: 12px;
+      width: 98%;
+      max-width: 1800px;
+      height: 90%;
+      max-height: 800px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    .visualization-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .visualization-header h2 {
+      margin: 0;
+      font-size: 1.8em;
+      font-weight: 300;
+    }
+
+    .close-visualization {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+
+    .close-visualization:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .visualization-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      background-color: #f5f7fa;
+    }
+
+    .exam-section {
+      background: white;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .exam-header {
+      background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+
+    .exam-header.medicine-2 {
+      background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    }
+
+    .year-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
+    }
+
+    .year-column {
+      border-right: 1px solid #e1e8ed;
+      min-height: 300px;
+    }
+
+    .year-column:last-child {
+      border-right: none;
+    }
+
+    .year-header {
+      background-color: #f8f9fa;
+      padding: 12px 15px;
+      text-align: center;
+      font-weight: 600;
+      color: #495057;
+      border-bottom: 2px solid #e1e8ed;
+      font-size: 0.95em;
+    }
+
+    .questions-container {
+      padding: 10px;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+
+    .question-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 8px;
+      margin-bottom: 2px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      font-size: 0.85em;
+    }
+
+    .question-row:hover {
+      background-color: #f8f9fa;
+    }
+
+    .question-number {
+      font-weight: 500;
+      color: #495057;
+      min-width: 50px;
+      font-size: 0.8em;
+    }
+
+    .answer-history {
+      display: flex;
+      gap: 2px;
+      align-items: center;
+    }
+
+    .answer-symbol {
+      font-size: 1em;
+      line-height: 1;
+    }
+
+    .correct-symbol {
+      color: #28a745;
+    }
+
+    .incorrect-symbol {
+      color: #dc3545;
+    }
+
+    .empty-state {
+      text-align: center;
+      color: #6c757d;
+      font-style: italic;
+      padding: 50px 20px;
+    }
+
+
+
+    /* 響應式設計 */
+    @media (max-width: 1400px) {
+      .year-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    
+    @media (max-width: 1100px) {
+      .year-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    @media (max-width: 900px) {
+      .year-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .visualization-content {
+        width: 98%;
+        height: 95%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .year-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .visualization-content {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+      }
+      
+      .questions-container {
+        max-height: 350px;
+      }
+    }
+
+    /* 自訂滾動條 */
+    .questions-container::-webkit-scrollbar,
+    .visualization-body::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .questions-container::-webkit-scrollbar-track,
+    .visualization-body::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 3px;
+    }
+
+    .questions-container::-webkit-scrollbar-thumb,
+    .visualization-body::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 3px;
+    }
+
+    .questions-container::-webkit-scrollbar-thumb:hover,
+    .visualization-body::-webkit-scrollbar-thumb:hover {
+      background: #a8a8a8;
+    }
+
+  
+    /* 首頁記錄管理區域樣式 */
+    .homepage-record-section {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .homepage-record-section h3 {
+      margin: 0 0 15px 0;
+      color: #495057;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    
+    .homepage-record-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .homepage-file-input-wrapper {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    .homepage-file-input {
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+    
+    .homepage-file-btn {
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 160px;
+      justify-content: center;
+    }
+    
+    .homepage-file-btn:hover {
+      background-color: #0056b3;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+    }
+    
+    .homepage-visualization-btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: #17a2b8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 160px;
+      justify-content: center;
+    }
+    
+    .homepage-visualization-btn:hover:not(:disabled) {
+      background-color: #138496;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(23,162,184,0.3);
+    }
+    
+    .homepage-visualization-btn:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+      opacity: 0.7;
+      transform: none;
+      box-shadow: none;
+    }
+    
+    .homepage-record-status {
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin-top: 5px;
+      display: inline-block;
+    }
+    
+    .homepage-record-status.success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    
+    .homepage-record-status.error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    
+    .homepage-record-status.info {
+      background-color: #d1ecf1;
+      color: #0c5460;
+      border: 1px solid #bee5eb;
+    }
+    
+    .homepage-divider {
+      height: 2px;
+      background: linear-gradient(to right, #dee2e6, #6c757d, #dee2e6);
+      margin: 25px 0;
+      border: none;
+    }
+    
+    /* 手機版優化 */
+    @media (max-width: 600px) {
+      .homepage-record-buttons {
+        flex-direction: column;
+        gap: 12px;
+      }
+      
+      .homepage-file-btn,
+      .homepage-visualization-btn {
+        width: 100%;
+        max-width: 200px;
+      }
+    }
+</style>
 </head>
 <body>
   <div class="header-container" id="headerSection">
@@ -570,6 +1230,25 @@
     <p class="author-info">created and maintained by KMU BM112 陳君豪</p>
   </div>
 <div class="tag-selector" id="setupSection">
+
+  <!-- 首頁記錄檔管理區域 -->
+  <div class="homepage-record-section" id="homepageRecordSection">
+    <h3>📊 答題記錄管理</h3>
+    <div class="homepage-record-buttons">
+      <div class="homepage-file-input-wrapper">
+        <input type="file" accept=".json" class="homepage-file-input" onchange="loadHomepageRecord(this.files[0])">
+        <button class="homepage-file-btn">
+          📂 載入記錄檔
+        </button>
+      </div>
+      <button id="homepageVisualizationBtn" class="homepage-visualization-btn" onclick="openHomepageVisualization()" disabled>
+        📊 視覺化分析
+      </button>
+    </div>
+    <div class="homepage-record-status info" id="homepageRecordStatus">尚未載入記錄檔案</div>
+  </div>
+  
+  <hr class="homepage-divider">
   <label>選擇模式：</label>
     <select id="mode">
       <option value="step">一題一題作答並顯示詳解</option>
@@ -38704,6 +39383,285 @@
     let hasWarned = false; // 追蹤是否已經警告過未選擇選項
     let showingWrongAnswersOnly = false;
     let wrongQuestionIndices = [];
+    // 答題記錄相關變數
+    let userProgress = {
+      metadata: {
+        version: "1.0",
+        lastUpdated: null,
+        totalAttempted: 0
+      }
+    };  // 儲存每個題目ID對應的答題記錄陣列
+    let hasLoadedProgress = false;  // 是否已載入記錄
+    // 記錄檔更新相關變數
+    let loadedFileName = '';  // 載入的檔案名稱
+
+    // 載入答題記錄
+    function loadUserProgress(file) {
+      if (!file) return;
+      
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const loadedProgress = JSON.parse(e.target.result);
+          
+          // 驗證檔案格式
+          if (!loadedProgress.metadata) {
+            throw new Error("檔案格式不正確，缺少metadata");
+          }
+          
+          // 智慧合併策略：自動合併載入記錄和當前測驗結果
+          let mergedCount = 0;
+          let newCount = 0;
+          
+          Object.keys(loadedProgress).forEach(key => {
+            if (key !== 'metadata') {
+              const questionId = parseInt(key);
+              if (!isNaN(questionId) && Array.isArray(loadedProgress[key])) {
+                if (userProgress[questionId] && Array.isArray(userProgress[questionId])) {
+                  // 如果當前已有該題目的記錄，合併：舊記錄在前 + 當前結果在後
+                  const oldRecords = [...loadedProgress[key]];
+                  const currentRecords = [...userProgress[questionId]];
+                  userProgress[questionId] = [...oldRecords, ...currentRecords];
+                  mergedCount++;
+                } else {
+                  // 如果當前沒有該題目的記錄，直接使用載入的記錄
+                  userProgress[questionId] = [...loadedProgress[key]];
+                  newCount++;
+                }
+              }
+            }
+          });
+          
+          // 更新 metadata
+          if (!userProgress.metadata) {
+            userProgress.metadata = {
+              version: "1.0",
+              lastUpdated: null,
+              totalAttempted: 0
+            };
+          }
+          userProgress.metadata.version = loadedProgress.metadata.version || "1.0";
+          userProgress.metadata.lastUpdated = new Date().toISOString();
+          userProgress.metadata.totalAttempted = Object.keys(userProgress).filter(key => key !== 'metadata').length;
+          
+          hasLoadedProgress = true;
+          
+          // 記住檔案名稱（移除副檔名和可能的更新標記）
+          loadedFileName = file.name.replace(/\.json$/, '').replace(/_updated_[\d\-T]+$/, '');
+          
+          // 啟用歷史記錄下載按鈕
+          updateHistoryButtonState();
+          
+          // 顯示合併結果（簡化版本）
+          let statusMessage = `載入成功！`;
+          if (mergedCount > 0 || newCount > 0) {
+            statusMessage += ` 總計 ${Object.keys(userProgress).length - 1} 題記錄`;
+          }
+          
+          updateRecordStatus('success', statusMessage);
+          
+          // 更新視覺化按鈕狀態
+          setTimeout(() => {
+            updateVisualizationButtonState();
+          }, 100);
+          
+        } catch (error) {
+          console.error("載入檔案錯誤:", error);
+          updateRecordStatus('error', "檔案格式錯誤");
+          // 載入失敗時重置狀態
+          loadedFileName = '';
+          hasLoadedProgress = false;
+          updateHistoryButtonState();
+          
+          // 載入失敗時也要更新視覺化按鈕狀態
+          setTimeout(() => {
+            updateVisualizationButtonState();
+          }, 100);
+        }
+      };
+      
+      reader.readAsText(file);
+    }
+
+    // 更新記錄狀態顯示
+    function updateRecordStatus(type, message) {
+      const statusElement = document.getElementById('recordStatus');
+      if (statusElement) {
+        statusElement.textContent = message;
+        statusElement.className = `record-status ${type}`;
+      }
+    }
+
+    
+
+    // 記錄當前測驗結果
+    function recordCurrentTest() {
+      let recordedCount = 0;
+      
+      quiz.forEach((q, index) => {
+        // 只記錄實際作答的題目
+        if (!q.userAnswer) {
+          return; // 跳過未作答的題目
+        }
+        
+        // 確定答題結果
+        let result;
+        const optionCount = Object.keys(q.options).length;
+        const isBonusQuestion = optionCount === 5;
+        
+        if (isBonusQuestion) {
+          result = 1; // 送分題，有答就對
+        } else {
+          result = q.userAnswer === q.answer ? 1 : 0; // 正確=1, 錯誤=0
+        }
+        
+        // 初始化該題目的記錄陣列（如果不存在）
+        if (!userProgress[q.id]) {
+          userProgress[q.id] = [];
+        }
+        
+        // 追加這次的答題結果到已存在的記錄陣列
+        userProgress[q.id].push(result);
+        recordedCount++;
+      });
+      
+      // 更新元數據
+      if (!userProgress.metadata) {
+        userProgress.metadata = {
+          version: "1.0",
+          lastUpdated: null,
+          totalAttempted: 0
+        };
+      }
+      userProgress.metadata.lastUpdated = new Date().toISOString();
+      userProgress.metadata.totalAttempted = Object.keys(userProgress).filter(key => key !== 'metadata').length;
+      
+      // 更新視覺化按鈕狀態
+      setTimeout(() => {
+        updateVisualizationButtonState();
+      }, 100);
+      
+      console.log(`已記錄 ${recordedCount} 題的答題結果`);
+    }
+
+    // 下載目前作答記錄
+    function downloadCurrentProgress() {
+      // 只下載當次測驗的記錄，不包含載入的歷史記錄
+      let currentTestProgress = {
+        metadata: {
+          version: "1.0",
+          lastUpdated: new Date().toISOString(),
+          totalAttempted: 0
+        }
+      };
+      
+      // 收集當次測驗的記錄
+      let currentTestCount = 0;
+      quiz.forEach(q => {
+        if (q.userAnswer) {
+          // 只收集當次作答的題目
+          const optionCount = Object.keys(q.options).length;
+          const isBonusQuestion = optionCount === 5;
+          let result;
+          
+          if (isBonusQuestion) {
+            result = 1; // 送分題，有答就對
+          } else {
+            result = q.userAnswer === q.answer ? 1 : 0; // 正確=1, 錯誤=0
+          }
+          
+          currentTestProgress[q.id] = [result];
+          currentTestCount++;
+        }
+      });
+      
+      if (currentTestCount === 0) {
+        updateRecordStatus('error', '沒有目前作答記錄');
+        return;
+      }
+      
+      currentTestProgress.metadata.totalAttempted = currentTestCount;
+      
+      const dataStr = JSON.stringify(currentTestProgress, null, 2);
+      const blob = new Blob([dataStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      
+      const link = document.createElement('a');
+      link.href = url;
+      const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, '-');
+      link.download = `答題記錄_${timestamp}.json`;
+      link.click();
+      
+      URL.revokeObjectURL(url);
+      updateRecordStatus('success', `目前記錄已下載`);
+    }
+
+
+    // 歷史記錄下載按鈕狀態控制
+    function updateHistoryButtonState() {
+      const historyBtn = document.getElementById('historyRecordBtn');
+      
+      if (!historyBtn) return;
+      
+      if (!hasLoadedProgress || !loadedFileName) {
+        // 未載入記錄檔狀態
+        historyBtn.disabled = true;
+        historyBtn.style.backgroundColor = '#6c757d';
+        historyBtn.style.cursor = 'not-allowed';
+      } else {
+        // 已載入記錄檔狀態 - 可重複使用
+        historyBtn.disabled = false;
+        historyBtn.style.backgroundColor = '#007bff';
+        historyBtn.style.cursor = 'pointer';
+      }
+    }
+    
+    // 下載歷史完整記錄
+    function downloadHistoryProgress() {
+      if (!hasLoadedProgress || !loadedFileName) {
+        updateRecordStatus('error', '沒有歷史記錄檔');
+        return;
+      }
+      
+      const recordCount = Object.keys(userProgress).filter(key => key !== 'metadata').length;
+      
+      if (recordCount === 0) {
+        updateRecordStatus('error', '沒有歷史記錄');
+        return;
+      }
+      
+      // 下載完整的 userProgress（包含載入的歷史記錄 + 當前測驗結果）
+      const dataStr = JSON.stringify(userProgress, null, 2);
+      const blob = new Blob([dataStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      
+      const link = document.createElement('a');
+      link.href = url;
+      const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, '-');
+      link.download = `${loadedFileName}_updated_${timestamp}.json`;
+      link.click();
+      
+      URL.revokeObjectURL(url);
+      
+      updateRecordStatus('success', `歷史記錄已下載`);
+    }
+
+    // 取得題目的歷史記錄
+    function getQuestionHistory(questionId) {
+      return userProgress[questionId] || [];
+    }
+
+    // 計算題目的正確率
+    function calculateQuestionAccuracy(questionId) {
+      const attempts = getQuestionHistory(questionId);
+      if (attempts.length === 0) return null;
+      
+      const answeredAttempts = attempts.filter(result => result !== -1);
+      if (answeredAttempts.length === 0) return null;
+      
+      const correctAttempts = answeredAttempts.filter(result => result === 1);
+      return (correctAttempts.length / answeredAttempts.length) * 100;
+    }
 
     // 定義已知的年份和科目標籤
     const yearTags = ["114-1(一)", "113-2(一)", "113-1(一)", "112-2(一)", "112-1(一)", "111-2(一)", "111-1(一)", "110-2(一)", "110-1(一)", "109-2(一)", "109-1(一)", "108-2(一)", "108-1(一)", "107-2(一)", "107-1(一)", "106-2(一)", "106-1(一)", "105-2(一)", "105-1(一)", "104-2(一)", "104-1(一)", "114-1(二)", "113-2(二)", "113-1(二)", "112-2(二)", "112-1(二)", "111-2(二)", "111-1(二)", "110-2(二)", "110-1(二)", "109-2(二)", "109-1(二)", "108-2(二)", "108-1(二)", "107-2(二)", "107-1(二)", "106-2(二)", "106-1(二)", "105-2(二)", "105-1(二)", "104-2(二)", "104-1(二)"];
@@ -39038,6 +39996,12 @@
     }
 
     async function startQuiz() {
+  // 隱藏首頁記錄區域
+  const homepageSection = document.getElementById('homepageRecordSection');
+  if (homepageSection) {
+    homepageSection.style.display = 'none';
+  }
+  
   const selectedYears = getSelectedValues('yearTag');
   const selectedSubjects = getSelectedValues('subjectTag');
   const isAllSelected = document.querySelector('#subjectTag input[value="all"]').checked;
@@ -39433,7 +40397,10 @@
     }
 
     function showFinalResults() {
-      // 停用空白鍵功能
+      // 記錄當前測驗結果
+  recordCurrentTest();
+  
+  // 停用空白鍵功能
       canUseSpacebar = false;
       
       // 隱藏所有控制按鈕和進度條
@@ -39485,6 +40452,42 @@
       
       // 开始构建HTML内容，错题切换按钮放在最前面
       let htmlSummary = '';
+  
+  // 添加答題記錄管理區域到結果頁面
+  let recordManagementHTML = `
+    <div class="record-management">
+      <div class="record-section">
+        <h3>📂 載入記錄</h3>
+        <div class="file-input-wrapper">
+          <input type="file" accept=".json" class="file-input" onchange="loadUserProgress(this.files[0])">
+          <button class="file-input-btn">選擇記錄檔</button>
+        </div>
+        <div class="record-status info" id="recordStatus">尚未載入記錄檔案</div>
+      </div>
+      
+      <div class="record-section">
+        <h3>💾 下載記錄</h3>
+        <div class="download-buttons">
+          <button class="current-record-btn" onclick="downloadCurrentProgress()">下載目前作答記錄</button>
+          <button id="historyRecordBtn" class="history-record-btn" onclick="downloadHistoryProgress()" disabled>下載歷史完整記錄</button>
+        </div>
+      </div>
+      
+      <div class="record-section">
+        <h3>📊 視覺化分析</h3>
+        <div class="download-buttons">
+          <button id="visualizationBtn" class="visualization-btn" onclick="openVisualization()" disabled>答題狀況視覺化</button>
+        </div>
+      </div>
+    </div>
+  `;
+  
+  htmlSummary = recordManagementHTML + htmlSummary;
+      
+      // 測驗完成後初始化歷史記錄下載按鈕狀態
+      setTimeout(() => {
+        updateHistoryButtonState();
+      }, 100);
       
       // 添加错题切换按钮（只有当有错题时才显示）
       if (wrongQuestionIndices.length > 0) {
@@ -39536,8 +40539,17 @@
     }
 
     function resetQuiz() {
+      // 保存首頁記錄狀態
+      const savedHomepageState = { ...homepageRecordState };
+      const savedUserProgress = { ...userProgress };
+      const savedHasLoadedProgress = hasLoadedProgress;
+      const savedLoadedFileName = loadedFileName;
+      
       // 完全重置所有變數到初始狀態
-      quiz = [];
+      // 重置測驗相關變數（保留答題記錄和載入狀態）
+  // userProgress、hasLoadedProgress、loadedFileName 保持不變
+  
+  quiz = [];
       currentQuestion = 0;
       correct = 0;
       isStepMode = false;
@@ -39655,6 +40667,28 @@
       hasWarned = false;
       showingWrongAnswersOnly = false;
       wrongQuestionIndices = [];
+      
+      // 恢復首頁記錄狀態
+      homepageRecordState = savedHomepageState;
+      userProgress = savedUserProgress;
+      hasLoadedProgress = savedHasLoadedProgress;
+      loadedFileName = savedLoadedFileName;
+      
+      // 恢復UI狀態
+      setTimeout(() => {
+        if (homepageRecordState.hasLoaded) {
+          updateHomepageRecordStatus('success', `✅ 已載入：${homepageRecordState.fileName}.json (${homepageRecordState.recordCount} 題記錄)`);
+        } else {
+          updateHomepageRecordStatus('info', '尚未載入記錄檔案');
+        }
+        updateHomepageVisualizationButton();
+        
+        // 確保首頁記錄區域顯示
+        const homepageSection = document.getElementById('homepageRecordSection');
+        if (homepageSection) {
+          homepageSection.style.display = 'block';
+        }
+      }, 100);
     }
 
     function showAllQuestions() {
@@ -39751,11 +40785,332 @@
       imageHTML += '</div>';
       return imageHTML;
     }
-  </script>
+  
+    // ========== 視覺化功能相關 ==========
+    
+    // 題目ID解析函數
+    function parseQuestionId(questionId) {
+      const idStr = questionId.toString().padStart(7, '0');
+      
+      const year = parseInt(idStr.substring(0, 3));
+      const term = parseInt(idStr.substring(3, 4));
+      const examType = parseInt(idStr.substring(4, 5));
+      const questionNum = parseInt(idStr.substring(5, 7));
+      
+      const examName = examType === 1 ? '一' : '二';
+      const displayQuestionNum = questionNum === 0 ? 100 : questionNum;
+      
+      return {
+        year: year,
+        term: term,
+        examType: examName,
+        questionNumber: displayQuestionNum,
+        fullName: `${year}-${term}(${examName})`
+      };
+    }
+
+    // 生成年度列表
+    function generateYearList() {
+      const years = [];
+      // 114年只有114-1
+      years.push({
+        year: 114,
+        term: 1,
+        medicine1: "114-1(一)",
+        medicine2: "114-1(二)"
+      });
+      
+      // 113-104年每年都有期1和期2
+      for (let year = 113; year >= 104; year--) {
+        years.push({
+          year: year,
+          term: 2,
+          medicine1: `${year}-2(一)`,
+          medicine2: `${year}-2(二)`
+        });
+        years.push({
+          year: year,
+          term: 1,
+          medicine1: `${year}-1(一)`,
+          medicine2: `${year}-1(二)`
+        });
+      }
+      
+      return years; // 總共21份考卷
+    }
+
+    // 更新視覺化按鈕狀態
+    function updateVisualizationButtonState() {
+      const visualizationBtn = document.getElementById('visualizationBtn');
+      
+      if (!visualizationBtn) return;
+      
+      // 檢查是否有答題記錄
+      const hasRecords = userProgress && Object.keys(userProgress).filter(key => key !== 'metadata').length > 0;
+      
+      if (hasRecords) {
+        visualizationBtn.disabled = false;
+        visualizationBtn.style.backgroundColor = '#17a2b8';
+        visualizationBtn.style.cursor = 'pointer';
+      } else {
+        visualizationBtn.disabled = true;
+        visualizationBtn.style.backgroundColor = '#6c757d';
+        visualizationBtn.style.cursor = 'not-allowed';
+      }
+    }
+
+    // 開啟視覺化視窗
+    function openVisualization() {
+      if (!userProgress || Object.keys(userProgress).filter(key => key !== 'metadata').length === 0) {
+        alert('沒有可視覺化的答題記錄');
+        return;
+      }
+      
+      processVisualizationData();
+      document.getElementById('visualizationModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // 防止背景滾動
+    }
+
+    // 關閉視覺化視窗
+    function closeVisualization() {
+      document.getElementById('visualizationModal').style.display = 'none';
+      document.body.style.overflow = 'auto'; // 恢復背景滾動
+    }
+
+    // ESC鍵關閉視覺化視窗
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeVisualization();
+      }
+    });
+
+    // 處理視覺化數據
+    function processVisualizationData() {
+      // 移除metadata
+      const questionData = { ...userProgress };
+      delete questionData.metadata;
+
+      // 解析所有題目
+      const parsedQuestions = {};
+      Object.keys(questionData).forEach(questionId => {
+        const parsed = parseQuestionId(questionId);
+        const key = `${parsed.year}-${parsed.term}(${parsed.examType})`;
+        
+        if (!parsedQuestions[key]) {
+          parsedQuestions[key] = {};
+        }
+        
+        parsedQuestions[key][parsed.questionNumber] = questionData[questionId];
+      });
+
+      // 生成視覺化（移除統計資訊）
+      generateVisualizationDisplay(parsedQuestions);
+    }
+
+
+
+    // 生成視覺化顯示
+    function generateVisualizationDisplay(parsedQuestions) {
+      const container = document.getElementById('visualizationContent');
+      const yearList = generateYearList();
+      
+      // 分離醫學(一)和醫學(二)
+      const medicine1Years = yearList.map(y => y.medicine1);
+      const medicine2Years = yearList.map(y => y.medicine2);
+
+      let html = '';
+
+      // 醫學(一)部分
+      html += generateVisualizationExamSection('醫學(一)', medicine1Years, parsedQuestions);
+      
+      // 醫學(二)部分
+      html += generateVisualizationExamSection('醫學(二)', medicine2Years, parsedQuestions, true);
+
+      container.innerHTML = html;
+    }
+
+    // 生成考試科目區塊
+    function generateVisualizationExamSection(title, years, parsedQuestions, isMedicine2 = false) {
+      let html = `
+        <div class="exam-section">
+          <div class="exam-header ${isMedicine2 ? 'medicine-2' : ''}">${title} 試卷</div>
+          <div class="year-grid">
+      `;
+
+      years.forEach(yearName => {
+        html += `
+          <div class="year-column">
+            <div class="year-header">${yearName}</div>
+            <div class="questions-container">
+        `;
+
+        const questionsForYear = parsedQuestions[yearName] || {};
+        
+        if (Object.keys(questionsForYear).length === 0) {
+          html += '<div class="empty-state">暫無答題記錄</div>';
+        } else {
+          // 生成1-100題
+          for (let i = 1; i <= 100; i++) {
+            const attempts = questionsForYear[i] || [];
+            html += generateVisualizationQuestionRow(i, attempts);
+          }
+        }
+
+        html += `
+            </div>
+          </div>
+        `;
+      });
+
+      html += `
+          </div>
+        </div>
+      `;
+
+      return html;
+    }
+
+    // 生成題目行
+    function generateVisualizationQuestionRow(questionNum, attempts) {
+      let answerHistory = '';
+      
+      if (attempts.length === 0) {
+        answerHistory = '<span style="color: #dee2e6;">—</span>';
+      } else {
+        attempts.forEach(attempt => {
+          if (attempt === 1) {
+            answerHistory += '<span class="answer-symbol correct-symbol">✅</span>';
+          } else if (attempt === 0) {
+            answerHistory += '<span class="answer-symbol incorrect-symbol">❌</span>';
+          }
+        });
+      }
+
+      return `
+        <div class="question-row">
+          <span class="question-number">題${questionNum}:</span>
+          <div class="answer-history">${answerHistory}</div>
+        </div>
+      `;
+    }
+
+
+
+  
+    // ========== 首頁記錄檔管理功能 ==========
+    
+    // 首頁記錄檔狀態
+    let homepageRecordState = {
+      hasLoaded: false,
+      fileName: '',
+      recordCount: 0
+    };
+    
+    // 載入首頁記錄檔 - 直接調用 loadUserProgress 並更新首頁狀態
+    function loadHomepageRecord(file) {
+      if (!file) return;
+      
+      // 直接調用原始的 loadUserProgress 函數
+      loadUserProgress(file);
+      
+      // 額外的首頁狀態更新
+      setTimeout(() => {
+        if (hasLoadedProgress && loadedFileName) {
+          // 更新首頁記錄狀態
+          const recordCount = Object.keys(userProgress).filter(key => key !== 'metadata').length;
+          homepageRecordState = {
+            hasLoaded: true,
+            fileName: loadedFileName,
+            recordCount: recordCount
+          };
+          
+          updateHomepageRecordStatus('success', `✅ 已載入：${loadedFileName}.json (${recordCount} 題記錄)`);
+        } else {
+          // 載入失敗
+          homepageRecordState = {
+            hasLoaded: false,
+            fileName: '',
+            recordCount: 0
+          };
+          updateHomepageRecordStatus('error', "❌ 檔案格式錯誤，請選擇正確的記錄檔");
+        }
+        
+        updateHomepageVisualizationButton();
+      }, 200);
+    }
+    
+    // 更新首頁記錄狀態顯示
+    function updateHomepageRecordStatus(type, message) {
+      const statusElement = document.getElementById('homepageRecordStatus');
+      if (statusElement) {
+        statusElement.textContent = message;
+        statusElement.className = `homepage-record-status ${type}`;
+      }
+    }
+    
+    // 更新首頁視覺化按鈕狀態
+    function updateHomepageVisualizationButton() {
+      const btn = document.getElementById('homepageVisualizationBtn');
+      if (!btn) return;
+      
+      const hasRecords = homepageRecordState.hasLoaded || 
+                        (userProgress && Object.keys(userProgress).filter(key => key !== 'metadata').length > 0);
+      
+      btn.disabled = !hasRecords;
+      
+      if (hasRecords) {
+        btn.style.backgroundColor = '#17a2b8';
+        btn.style.cursor = 'pointer';
+      } else {
+        btn.style.backgroundColor = '#6c757d';
+        btn.style.cursor = 'not-allowed';
+      }
+    }
+    
+    // 開啟首頁視覺化
+    function openHomepageVisualization() {
+      if (!userProgress || Object.keys(userProgress).filter(key => key !== 'metadata').length === 0) {
+        updateHomepageRecordStatus('error', '❌ 沒有可視覺化的答題記錄');
+        return;
+      }
+      
+      // 重用現有的視覺化功能
+      processVisualizationData();
+      document.getElementById('visualizationModal').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    
+
+    
+    // 頁面載入完成後初始化首頁功能
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(() => {
+        updateHomepageVisualizationButton();
+        updateVisualizationButtonState();
+      }, 100);
+    });
+
+</script>
 
   <!-- 圖片放大顯示覆蓋層 -->
   <div class="image-overlay" id="imageOverlay" onclick="closeImageOverlay()">
     <img id="overlayImage" src="" alt="放大圖片">
   </div>
+
+  <!-- 視覺化彈出視窗 -->
+  <div class="visualization-modal" id="visualizationModal">
+    <div class="visualization-content">
+      <div class="visualization-header">
+        <h2>📊 答題狀況視覺化分析</h2>
+        <button class="close-visualization" onclick="closeVisualization()">✕</button>
+      </div>
+      <div class="visualization-body" id="visualizationBody">
+        <div id="visualizationContent">
+          <!-- 視覺化內容將在這裡動態生成 -->
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
