@@ -562,109 +562,6 @@
     .question-result.hidden {
       display: none !important;
     }
-    /* 答題記錄管理樣式 */
-    .record-management {
-      background: #f8f9fa;
-      border: 1px solid #dee2e6;
-      border-radius: 8px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-    
-    .record-section {
-      margin-bottom: 15px;
-      padding: 15px;
-      background: white;
-      border-radius: 5px;
-      border: 1px solid #e9ecef;
-    }
-    
-    .record-section h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      color: #495057;
-    }
-    
-    .file-input-wrapper {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-      margin-right: 10px;
-    }
-    
-    .file-input {
-      position: absolute;
-      opacity: 0;
-      width: 100%;
-      height: 100%;
-      cursor: pointer;
-    }
-    
-    .file-input-btn {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: background-color 0.3s ease;
-    }
-    
-    .file-input-btn:hover {
-      background-color: #0056b3;
-    }
-    
-    .download-record-btn {
-      padding: 10px 20px;
-      font-size: 14px;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      margin-right: 10px;
-    }
-    
-    .download-record-btn:hover {
-      background-color: #218838;
-    }
-    
-    .record-status {
-      margin-top: 10px;
-      padding: 8px 12px;
-      border-radius: 4px;
-      font-size: 14px;
-    }
-    
-    .record-status.success {
-      background-color: #d4edda;
-      color: #155724;
-      border: 1px solid #c3e6cb;
-    }
-    
-    .record-status.error {
-      background-color: #f8d7da;
-      color: #721c24;
-      border: 1px solid #f5c6cb;
-    }
-    
-    .record-status.info {
-      background-color: #d1ecf1;
-      color: #0c5460;
-      border: 1px solid #bee5eb;
-    }
-    
-    .record-stats {
-      background: #e7f3ff;
-      border: 1px solid #b8daff;
-      border-radius: 5px;
-      padding: 10px;
-      margin-top: 10px;
-      font-size: 14px;
-      line-height: 1.5;
-    }
   </style>
 </head>
 <body>
@@ -38807,195 +38704,6 @@
     let hasWarned = false; // 追蹤是否已經警告過未選擇選項
     let showingWrongAnswersOnly = false;
     let wrongQuestionIndices = [];
-    // 答題記錄相關變數
-    let userProgress = {
-      metadata: {
-        version: "1.0",
-        lastUpdated: null,
-        totalAttempted: 0
-      }
-    };  // 儲存每個題目ID對應的答題記錄陣列
-    let hasLoadedProgress = false;  // 是否已載入記錄
-
-    // 載入答題記錄
-    function loadUserProgress(file) {
-      if (!file) return;
-      
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        try {
-          const loadedProgress = JSON.parse(e.target.result);
-          
-          // 驗證檔案格式
-          if (!loadedProgress.metadata) {
-            throw new Error("檔案格式不正確，缺少metadata");
-          }
-          
-          // 合併記錄
-          Object.keys(loadedProgress).forEach(key => {
-            if (key !== 'metadata') {
-              const questionId = parseInt(key);
-              if (!isNaN(questionId) && Array.isArray(loadedProgress[key])) {
-                userProgress[questionId] = loadedProgress[key];
-              }
-            }
-          });
-          
-          userProgress.metadata = loadedProgress.metadata;
-          hasLoadedProgress = true;
-          
-          updateRecordStatus('success', `成功載入記錄檔！包含 ${Object.keys(loadedProgress).length - 1} 題記錄`);
-          showProgressStats();
-          
-        } catch (error) {
-          console.error("載入檔案錯誤:", error);
-          updateRecordStatus('error', "檔案格式錯誤或檔案損壞");
-        }
-      };
-      
-      reader.readAsText(file);
-    }
-
-    // 更新記錄狀態顯示
-    function updateRecordStatus(type, message) {
-      const statusElement = document.getElementById('recordStatus');
-      if (statusElement) {
-        statusElement.textContent = message;
-        statusElement.className = `record-status ${type}`;
-      }
-    }
-
-    // 顯示進度統計
-    function showProgressStats() {
-      const statsElement = document.getElementById('recordStats');
-      if (!statsElement) return;
-      
-      const attemptedQuestions = Object.keys(userProgress).filter(key => key !== 'metadata').length;
-      if (attemptedQuestions === 0) {
-        statsElement.style.display = 'none';
-        return;
-      }
-      
-      let totalAttempts = 0;
-      let totalCorrect = 0;
-      const subjectStats = {};
-      
-      // 計算統計資料
-      questions.forEach(q => {
-        const attempts = userProgress[q.id];
-        if (attempts && attempts.length > 0) {
-          totalAttempts += attempts.length;
-          totalCorrect += attempts.filter(result => result === 1).length;
-          
-          const subject = q.tags.find(tag => subjectTags.includes(tag)) || '未知';
-          if (!subjectStats[subject]) {
-            subjectStats[subject] = { total: 0, correct: 0 };
-          }
-          subjectStats[subject].total += attempts.length;
-          subjectStats[subject].correct += attempts.filter(result => result === 1).length;
-        }
-      });
-      
-      const overallAccuracy = totalAttempts > 0 ? (totalCorrect / totalAttempts * 100).toFixed(1) : 0;
-      
-      let statsHTML = `<strong>📊 答題統計</strong><br>`;
-      statsHTML += `已做題目數：${attemptedQuestions} 題<br>`;
-      statsHTML += `總答題次數：${totalAttempts} 次<br>`;
-      statsHTML += `整體正確率：${overallAccuracy}%<br>`;
-      
-      if (Object.keys(subjectStats).length > 0) {
-        statsHTML += `<br><strong>各科目表現：</strong><br>`;
-        Object.keys(subjectStats).sort().forEach(subject => {
-          const stats = subjectStats[subject];
-          const accuracy = stats.total > 0 ? (stats.correct / stats.total * 100).toFixed(1) : 0;
-          statsHTML += `${subject}：${accuracy}% (${stats.correct}/${stats.total})<br>`;
-        });
-      }
-      
-      if (userProgress.metadata.lastUpdated) {
-        statsHTML += `<br>最後更新：${new Date(userProgress.metadata.lastUpdated).toLocaleString()}`;
-      }
-      
-      statsElement.innerHTML = statsHTML;
-      statsElement.style.display = 'block';
-    }
-
-    // 記錄當前測驗結果
-    function recordCurrentTest() {
-      let recordedCount = 0;
-      
-      quiz.forEach((q, index) => {
-        // 確定答題結果
-        let result;
-        if (!q.userAnswer) {
-          result = -1; // 未答
-        } else {
-          const optionCount = Object.keys(q.options).length;
-          const isBonusQuestion = optionCount === 5;
-          
-          if (isBonusQuestion) {
-            result = 1; // 送分題，有答就對
-          } else {
-            result = q.userAnswer === q.answer ? 1 : 0; // 正確=1, 錯誤=0
-          }
-        }
-        
-        // 初始化該題目的記錄陣列（如果不存在）
-        if (!userProgress[q.id]) {
-          userProgress[q.id] = [];
-        }
-        
-        // 添加這次的答題結果
-        userProgress[q.id].push(result);
-        recordedCount++;
-      });
-      
-      // 更新元數據
-      userProgress.metadata.lastUpdated = new Date().toISOString();
-      userProgress.metadata.totalAttempted = Object.keys(userProgress).filter(key => key !== 'metadata').length;
-      
-      console.log(`已記錄 ${recordedCount} 題的答題結果`);
-    }
-
-    // 下載答題記錄
-    function downloadUserProgress() {
-      const recordCount = Object.keys(userProgress).filter(key => key !== 'metadata').length;
-      
-      if (recordCount === 0) {
-        updateRecordStatus('error', '沒有可下載的記錄');
-        return;
-      }
-      
-      const dataStr = JSON.stringify(userProgress, null, 2);
-      const blob = new Blob([dataStr], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      
-      const link = document.createElement('a');
-      link.href = url;
-      const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, '-');
-      link.download = `答題記錄_${timestamp}.json`;
-      link.click();
-      
-      URL.revokeObjectURL(url);
-      updateRecordStatus('success', `記錄檔已下載 (包含 ${recordCount} 題記錄)`);
-    }
-
-    // 取得題目的歷史記錄
-    function getQuestionHistory(questionId) {
-      return userProgress[questionId] || [];
-    }
-
-    // 計算題目的正確率
-    function calculateQuestionAccuracy(questionId) {
-      const attempts = getQuestionHistory(questionId);
-      if (attempts.length === 0) return null;
-      
-      const answeredAttempts = attempts.filter(result => result !== -1);
-      if (answeredAttempts.length === 0) return null;
-      
-      const correctAttempts = answeredAttempts.filter(result => result === 1);
-      return (correctAttempts.length / answeredAttempts.length) * 100;
-    }
 
     // 定義已知的年份和科目標籤
     const yearTags = ["114-1(一)", "113-2(一)", "113-1(一)", "112-2(一)", "112-1(一)", "111-2(一)", "111-1(一)", "110-2(一)", "110-1(一)", "109-2(一)", "109-1(一)", "108-2(一)", "108-1(一)", "107-2(一)", "107-1(一)", "106-2(一)", "106-1(一)", "105-2(一)", "105-1(一)", "104-2(一)", "104-1(一)", "114-1(二)", "113-2(二)", "113-1(二)", "112-2(二)", "112-1(二)", "111-2(二)", "111-1(二)", "110-2(二)", "110-1(二)", "109-2(二)", "109-1(二)", "108-2(二)", "108-1(二)", "107-2(二)", "107-1(二)", "106-2(二)", "106-1(二)", "105-2(二)", "105-1(二)", "104-2(二)", "104-1(二)"];
@@ -39725,10 +39433,7 @@
     }
 
     function showFinalResults() {
-      // 記錄當前測驗結果
-  recordCurrentTest();
-  
-  // 停用空白鍵功能
+      // 停用空白鍵功能
       canUseSpacebar = false;
       
       // 隱藏所有控制按鈕和進度條
@@ -39780,30 +39485,6 @@
       
       // 开始构建HTML内容，错题切换按钮放在最前面
       let htmlSummary = '';
-  
-  // 添加答題記錄管理區域到結果頁面
-  let recordManagementHTML = `
-    <div class="record-management">
-      <div class="record-section">
-        <h3>📂 載入答題記錄</h3>
-        <div class="file-input-wrapper">
-          <input type="file" accept=".json" class="file-input" onchange="loadUserProgress(this.files[0])">
-          <button class="file-input-btn">選擇記錄檔</button>
-        </div>
-        <span style="font-size: 14px; color: #666;">載入之前儲存的答題記錄檔案</span>
-        <div class="record-status info" id="recordStatus">尚未載入任何記錄檔案</div>
-        <div class="record-stats" id="recordStats" style="display: none;"></div>
-      </div>
-      
-      <div class="record-section">
-        <h3>💾 下載記錄</h3>
-        <button class="download-record-btn" onclick="downloadUserProgress()">下載答題記錄檔</button>
-        <span style="font-size: 14px; color: #666;">保存包含本次測驗的所有答題記錄</span>
-      </div>
-    </div>
-  `;
-  
-  htmlSummary = recordManagementHTML + htmlSummary;
       
       // 添加错题切换按钮（只有当有错题时才显示）
       if (wrongQuestionIndices.length > 0) {
@@ -39856,10 +39537,7 @@
 
     function resetQuiz() {
       // 完全重置所有變數到初始狀態
-      // 重置測驗相關變數（保留答題記錄）
-  // userProgress 和 hasLoadedProgress 保持不變
-  
-  quiz = [];
+      quiz = [];
       currentQuestion = 0;
       correct = 0;
       isStepMode = false;
