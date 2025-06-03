@@ -40440,7 +40440,12 @@
         const resultText = isCorrect ? (isBonusQuestion ? '✓ 正確（送分題）' : '✓ 正確') : '✗ 錯誤';
         const resultClass = isCorrect ? 'result-correct' : 'result-incorrect';
         
-        let questionResult = `第 ${idx + 1} 題：${q.question}\n標籤：${formatTags(q.tags)}\n選項：\n`;
+        let questionResult = `第 ${idx + 1} 題：${q.question}\n`;
+        // 如果有圖片，添加圖片HTML
+        if (q.images && q.images.length > 0) {
+          questionResult += `${generateImageHTML(q.images)}\n`;
+        }
+        questionResult += `標籤：${formatTags(q.tags)}\n選項：\n`;
         Object.entries(q.options).forEach(([key, value]) => {
           questionResult += `  ${key}. ${value}\n`;
         });
