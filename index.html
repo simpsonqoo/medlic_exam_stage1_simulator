@@ -1082,6 +1082,42 @@
     }
 
   
+    /* 瀏覽模式樣式 */
+    .question-result.browse-mode {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .question-result.browse-mode:nth-child(even) {
+      background: #ffffff;
+    }
+    
+    /* 瀏覽模式說明區塊 */
+    .browse-mode-info {
+      background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+      border: 2px solid #81c784;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .browse-mode-info h3 {
+      color: #2e7d32;
+      margin: 0 0 10px 0;
+      font-size: 1.2em;
+    }
+    
+    .browse-mode-info p {
+      color: #424242;
+      margin: 0;
+      font-size: 1em;
+    }
+
     /* 首頁記錄管理區域樣式 */
     .homepage-record-section {
       background: #f8f9fa;
@@ -1253,6 +1289,7 @@
     <select id="mode">
       <option value="step">一題一題作答並顯示詳解</option>
       <option value="all">全部作答後顯示詳解</option>
+      <option value="browse">瀏覽模式 - 直接查看題目與詳解</option>
     </select>
     <br><br>
     <label>出題順序：</label>
@@ -36163,7 +36200,7 @@
     },
     {
       id: 1141244,
-      question: "44. 下列針對健康促進計畫常見需要評價（evaluation）面向的描述，何者正確？",
+      question: "44. 下列針對健康促進計畫常見需要評價（evaluation）面向的描述，何者正確？<br>①忠誠（fidelity）：確認內部員工和夥伴有發揮其責任<br>②涵蓋（inclusion）：在計畫當中，每位工作夥伴都有負責其適當的工作<br>③多元性（multiplicity）：評價者需確定計畫的方向或對於優先族群需求的合適程度<br>④達成（reach）：優先族群有機會參與計畫、活動或服務的百分比<br>⑤回應（response）：優先族群的受益百分比，或是計畫介入策略的執行頻率與強度<br>⑥計量（dose）：優先族群確實參與計畫、活動或服務的百分比<br>⑦方向性（orientation）：意指計畫需要被有企圖地執行或按部就班地執行<br>⑧判斷（justification）：計畫、服務或活動被相關利益者所執行或認可，並且藉由需求評估資 料與分析進行判斷的程度",
       options: {"A": "②④⑧", "B": "①④⑧", "C": "③⑤⑥", "D": "⑥⑦⑧"},
       answer: "A",
       explanation: "健康促進計畫的評價面向包括過程評價、影響評價和結果評價等不同層面。\n(A) 正確，②④⑧涵蓋了健康促進計畫評價的主要面向\n(B) 錯誤，①④⑧不是完整的評價面向組合\n(C) 錯誤，③⑤⑥不是標準的評價面向組合\n(D) 錯誤，⑥⑦⑧不是完整的評價面向組合",
@@ -40140,6 +40177,7 @@
 
   const mode = document.getElementById('mode').value;
   isStepMode = mode === 'step';
+  const isBrowseMode = mode === 'browse';
   
   document.getElementById('result').innerText = '';
   document.getElementById('quiz').innerHTML = '';
@@ -40148,7 +40186,11 @@
   document.getElementById('setupSection').classList.add('hidden');
   document.getElementById('headerSection').classList.add('hidden');
 
-  if (isStepMode) {
+  if (isBrowseMode) {
+    // 瀏覽模式：直接顯示所有題目和詳解
+    showBrowseResults();
+    return;
+  } else if (isStepMode) {
     // 顯示進度條和步驟控制按鈕
     document.getElementById('progressInfo').classList.remove('hidden');
     document.getElementById('stepControls').classList.remove('hidden');
@@ -40394,6 +40436,94 @@
         // 直接顯示最終結果
         showFinalResults();
       }
+    }
+
+    function showBrowseResults() {
+      // 停用空白鍵功能
+      canUseSpacebar = false;
+      
+      // 隱藏所有控制按鈕和進度條
+      document.getElementById('stepControls').classList.add('hidden');
+      document.getElementById('progressInfo').classList.add('hidden');
+      document.getElementById('submitBtn').classList.add('hidden');
+      document.getElementById('quiz').innerHTML = '';
+      
+      const total = quiz.length;
+      
+      // 構建瀏覽模式的詳細結果
+      let detailedResults = '';
+      
+      quiz.forEach((q, idx) => {
+        // 檢查是否為五個選項的題目（送分題）
+        const optionCount = Object.keys(q.options).length;
+        const isBonusQuestion = optionCount === 5;
+        
+        let questionResult = `第 ${idx + 1} 題：${q.question}\n`;
+        // 如果有圖片，添加圖片HTML
+        if (q.images && q.images.length > 0) {
+          questionResult += `${generateImageHTML(q.images)}\n`;
+        }
+        questionResult += `標籤：${formatTags(q.tags)}\n選項：\n`;
+        Object.entries(q.options).forEach(([key, value]) => {
+          questionResult += `  ${key}. ${value}\n`;
+        });
+        questionResult += `正確答案：${q.answer}. ${q.options[q.answer]}${isBonusQuestion ? ' （送分題）' : ''}\n詳解：${q.explanation}\n${'-'.repeat(30)}\n\n`;
+        
+        // 給每個題目結果添加包裝div
+        detailedResults += `<div class="question-result browse-mode" data-question-index="${idx}">${questionResult}</div>`;
+      });
+      
+      // 開始構建HTML內容
+      let htmlSummary = '';
+  
+      // 添加答題記錄管理區域到結果頁面（瀏覽模式不記錄答題結果，但保留載入和視覺化功能）
+      let recordManagementHTML = `
+        <div class="record-management">
+          <div class="record-section">
+            <h3>📂 載入記錄</h3>
+            <div class="file-input-wrapper">
+              <input type="file" accept=".json" class="file-input" onchange="loadUserProgress(this.files[0])">
+              <button class="file-input-btn">選擇記錄檔</button>
+            </div>
+            <div class="record-status info" id="recordStatus">尚未載入記錄檔案</div>
+          </div>
+          
+          <div class="record-section">
+            <h3>📊 視覺化分析</h3>
+            <div class="download-buttons">
+              <button id="visualizationBtn" class="visualization-btn" onclick="openVisualization()" disabled>答題狀況視覺化</button>
+            </div>
+            <div style="font-size: 12px; color: #666; margin-top: 5px;">
+              瀏覽模式不會記錄答題結果
+            </div>
+          </div>
+        </div>
+      `;
+      
+      htmlSummary = recordManagementHTML + htmlSummary;
+          
+      // 瀏覽模式後初始化歷史記錄下載按鈕狀態
+      setTimeout(() => {
+        updateHistoryButtonState();
+        updateVisualizationButtonState();
+      }, 100);
+      
+      // 添加題目總數說明
+      htmlSummary += `<div style="background: #e7f3ff; border: 1px solid #b8daff; border-radius: 5px; padding: 15px; margin: 15px 0; text-align: center;">
+        <h3 style="margin: 0 0 5px 0; color: #0c5460;">📖 瀏覽模式</h3>
+        <p style="margin: 0; color: #0c5460;">總共 ${total} 題目內容和詳解</p>
+      </div>`;
+      
+      // 添加詳細結果
+      htmlSummary += `<div style="white-space: pre-wrap; font-family: monospace;">【題目內容與詳解】\n${'='.repeat(50)}\n\n`;
+      
+      htmlSummary += detailedResults + `</div><br>`;
+      
+      // 添加重新開始按鈕
+      htmlSummary += `<button onclick="resetQuiz()" style="padding: 10px 20px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">重新開始</button>`;
+      
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = htmlSummary;
     }
 
     function showFinalResults() {
