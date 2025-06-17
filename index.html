@@ -1257,6 +1257,27 @@
         width: 100%;
         max-width: 200px;
       }
+    /* 簡化的回饋表單樣式 */
+    .feedback-link {
+      display: inline-block;
+      text-align: center;
+      margin: 10px 0 5px 0;
+      font-size: 14px;
+    }
+    
+    .feedback-link a {
+      color: #007bff;
+      text-decoration: none;
+      padding: 2px 8px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+    
+    .feedback-link a:hover {
+      background-color: #f8f9fa;
+      text-decoration: underline;
+    }
+
     }
 </style>
 </head>
@@ -1283,6 +1304,10 @@
     </div>
     <div class="homepage-record-status info" id="homepageRecordStatus">尚未載入記錄檔案</div>
   </div>
+  <div class="feedback-link">
+    💬 <a href="https://forms.gle/XdYNQoRgq9PBRm658" target="_blank">系統回饋與建議</a>
+  </div>
+
   
   <hr class="homepage-divider">
   <label>選擇模式：</label>
