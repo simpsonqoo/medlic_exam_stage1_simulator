@@ -1,0 +1,1706 @@
+[
+  {
+    "id": 1091201,
+    "question": "1. 有關氣性壞疽（gas gangrene）之敘述，下列何者錯誤？",
+    "options": {
+      "A": "最常見之致病菌為化膿性鏈球菌（Streptococcus pyogenes）",
+      "B": "是經由傷口感染之急性肌肉壞死性疾病，感染會急速往周邊擴散而使病灶擴大",
+      "C": "治療方法包括清創術（debridement）、抗生素治療及傷口高壓氧治療（hyperbaric oxygen therapy）",
+      "D": "目前尚無有效的疫苗（vaccine）"
+    },
+    "answer": "A",
+    "explanation": "氣性壞疽主要由梭狀芽胞桿菌引起，不是化膿性鏈球菌。\n(A) 錯誤，氣性壞疽最常見致病菌為梭狀芽胞桿菌（Clostridium perfringens），而非化膿性鏈球菌（Streptococcus pyogenes）\n(B) 正確，氣性壞疽確實是經傷口感染的急性肌肉壞死性疾病，會快速擴散\n(C) 正確，治療包括清創術、抗生素治療及高壓氧治療\n(D) 正確，目前尚無有效疫苗可預防氣性壞疽",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1493"
+  },
+  {
+    "id": 1091202,
+    "question": "2. 有關白喉桿菌（Corynebacterium diphtheriae）的敘述，下列何者正確？",
+    "options": {
+      "A": "耐酸性染色陽性為一重要診斷依據",
+      "B": "人類是唯一的天然宿主",
+      "C": "攜帶白喉毒素（diphtheria toxin）的基因位於質體上",
+      "D": "還沒有疫苗可預防"
+    },
+    "answer": "B",
+    "explanation": "白喉桿菌的重要特徵是人類為其唯一天然宿主，且已有疫苗可預防。\n(A) 錯誤，白喉桿菌不是耐酸性細菌，耐酸性染色陽性常見於分枝桿菌\n(B) 正確，人類確實是白喉桿菌的唯一天然宿主\n(C) 錯誤，白喉毒素基因位於溶原性噬菌體，不是質體\n(D) 錯誤，已有白喉疫苗（DPT疫苗中的D），且廣泛使用",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1494"
+  },
+  {
+    "id": 1091203,
+    "question": "3. 利用早期分泌抗原標的-6（ESAT-6）及培養過濾蛋白-10（CFP-10），做為抗原以偵測病患的T細胞所產生的 丙型干擾素（IFN-γ），其目的是檢驗病患受到下列那一種微生物的感染？",
+    "options": {
+      "A": "立氏立克次體（Rickettsia rickettsii）",
+      "B": "煙麴霉菌（Aspergillus fumigatus）",
+      "C": "肺炎黴漿菌（Mycoplasma pneumoniae）",
+      "D": "結核分枝桿菌（Mycobacterium tuberculosis）"
+    },
+    "answer": "D",
+    "explanation": "ESAT-6和CFP-10是結核分枝桿菌特有的抗原，用於丙型干擾素釋放試驗檢測結核感染。\n(A) 錯誤，立氏立克次體不會產生ESAT-6和CFP-10抗原\n(B) 錯誤，煙麴霉菌是真菌，不具有這些特異性抗原\n(C) 錯誤，肺炎黴漿菌缺乏細胞壁，不產生這些抗原\n(D) 正確，ESAT-6和CFP-10是結核分枝桿菌的特異性抗原，用於干擾素γ釋放試驗（IGRA）檢測結核感染",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1495"
+  },
+  {
+    "id": 1091204,
+    "question": "4. 關於人類單核細胞艾利希體症（human monocytic ehrlichiosis）的敘述，下列何者錯誤？",
+    "options": {
+      "A": "以青黴素（penicillin）、氨基糖苷（aminoglycosides）、大環內酯（macrolides）等類藥物治療有效",
+      "B": "其致病菌可在血液單核球（monocyte）和巨噬細胞（macrophage）內進行繁殖",
+      "C": "多數病患會有血清轉胺酶（serum transaminase）升高及血小板減少（thrombocytopenia）的情況",
+      "D": "臨床主要以核酸增幅法（nucleic acid amplification）或血清學檢驗（serological test）確認此疾病"
+    },
+    "answer": "A",
+    "explanation": "人類單核細胞艾利希體症的治療首選是四環黴素類，不是題目所列的抗生素。\n(A) 錯誤，人類單核細胞艾利希體症治療首選四環黴素（tetracycline）或多西環素（doxycycline），青黴素、氨基糖苷和大環內酯類無效\n(B) 正確，致病菌確實在單核球和巨噬細胞內繁殖\n(C) 正確，患者常有肝功能異常（轉胺酶升高）和血小板減少\n(D) 正確，診斷主要依靠PCR核酸檢測或血清學檢驗",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1496"
+  },
+  {
+    "id": 1091205,
+    "question": "5. 關於肺炎鏈球菌（Streptococcus pneumoniae）的敘述，下列何者錯誤？",
+    "options": {
+      "A": "所產生的莢膜（capsule）能抵抗吞噬作用（phagocytosis）",
+      "B": "此菌於肺泡腔（alveolar spaces）大量生長，可造成肺炎（pneumonia）",
+      "C": "透過台口酸（teichoic acid）和胜肽聚醣（peptidoglycan）碎片，可誘發替代型補體活化路徑（alternative complement pathway）",
+      "D": "多價疫苗（polyvalent vaccine）是由常見的血清型菌株所產生的體表蛋白質（surface proteins）所製備的"
+    },
+    "answer": "D",
+    "explanation": "肺炎鏈球菌多價疫苗是由莢膜多醣體製成，不是表面蛋白質。\n(A) 正確，莢膜確實能抵抗吞噬作用，是重要毒力因子\n(B) 正確，肺炎鏈球菌在肺泡腔大量繁殖引起肺炎\n(C) 正確，胜肽聚醣碎片可激活替代性補體途徑\n(D) 錯誤，多價疫苗是由常見血清型的莢膜多醣體製備，不是表面蛋白質",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1497"
+  },
+  {
+    "id": 1091206,
+    "question": "6. 關於腸內桿菌科（Enterobacteriaceae）O抗原（O antigen）的敘述，下列何者正確？",
+    "options": {
+      "A": "是控制物質進出細菌的通道",
+      "B": "具有鞭毛蛋白（flagellin）",
+      "C": "細菌細胞壁脂多醣體（lipopolysaccharide）的一部分",
+      "D": "含胜肽聚醣（peptidoglycan），可用來維持細菌細胞壁的形態"
+    },
+    "answer": "C",
+    "explanation": "O抗原是革蘭氏陰性細菌外膜脂多醣體的組成部分。\n(A) 錯誤，控制物質進出的是孔洞蛋白（porin），不是O抗原\n(B) 錯誤，鞭毛蛋白是H抗原，不是O抗原\n(C) 正確，O抗原是細胞壁脂多醣體（lipopolysaccharide, LPS）的多醣部分\n(D) 錯誤，胜肽聚醣位於細胞壁內層，O抗原不含胜肽聚醣",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1498"
+  },
+  {
+    "id": 1091207,
+    "question": "7. 關於艱難梭狀芽胞桿菌（Clostridium difficile）的敘述，下列何者正確？",
+    "options": {
+      "A": "疾病經常是因長期使用抗生素，造成腸道菌群改變所引起",
+      "B": "可用安比西林（ampicillin）和克林黴素（clindamycin）治療",
+      "C": "會產生腸毒素（enterotoxin），造成肌肉痙攣",
+      "D": "會產生α毒素（α toxin），造成嚴重的軟組織壞死"
+    },
+    "answer": "A",
+    "explanation": "艱難梭狀芽胞桿菌感染常因抗生素使用改變腸道菌叢而引起。\n(A) 正確，長期使用抗生素會破壞正常腸道菌叢，使艱難梭狀芽胞桿菌過度生長\n(B) 錯誤，安比西林和克林黴素會加重病情，治療應使用萬古黴素（vancomycin）或菲達黴素（fidaxomicin）\n(C) 錯誤，艱難梭狀芽胞桿菌產生的是細胞毒素，造成腸道發炎，不是肌肉痙攣\n(D) 錯誤，α毒素是產氣莢膜桿菌的毒素，艱難梭狀芽胞桿菌產生的是毒素A和毒素B",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1499"
+  },
+  {
+    "id": 1091208,
+    "question": "8. 下列那些致病菌主要透過節肢動物（arthropods）的叮咬而傳染，並能在人類細胞內繁殖？ <br>①宋內志賀氏菌 （Shigella sonnei） <br>②馬爾他布魯氏菌（Brucella melitensis） <br>③土拉弗朗西斯菌（Francisella tularensis） ④嗜吞噬細胞無形體（Anaplasma phagocytophilum）",
+    "options": {
+      "A": "①②",
+      "B": "③④",
+      "C": "②④",
+      "D": "①③"
+    },
+    "answer": "B",
+    "explanation": "這題的解題關鍵在於識別同時具備兩個條件的致病菌：透過節肢動物叮咬傳播且能在人類細胞內繁殖。需要區分不同細菌的傳播途徑和致病機制。<br> ① 錯誤，宋內志賀氏菌（Shigella sonnei）主要透過糞口傳播途徑感染，而非節肢動物叮咬傳播，雖然能侵入腸道上皮細胞內繁殖。<br> ② 錯誤，馬爾他布魯氏菌（Brucella melitensis）主要透過接觸受感染動物或攝入未消毒乳製品傳播，而非節肢動物叮咬，雖然是典型的細胞內寄生菌。<br> ③ 正確，土拉弗朗西斯菌（Francisella tularensis）可透過蜱蟲（tick）、鹿蠅（deer fly）等節肢動物叮咬傳播，且能在巨噬細胞內繁殖引起兔熱病（tularemia）。<br> ④ 正確，嗜吞噬細胞無形體（Anaplasma phagocytophilum）主要透過硬蜱（Ixodes tick）叮咬傳播，專門在人類嗜中性白血球內繁殖引起人類粒細胞無形體病（human granulocytic anaplasmosis）。",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1500"
+  },
+  {
+    "id": 1091209,
+    "question": "9. 下列何者並非金黃色葡萄球菌（Staphylococcus aureus）常見的致病因子（virulence factor）？",
+    "options": {
+      "A": "凝固酶（coagulase）",
+      "B": "毒性休克症候毒素-1（toxic shock syndrome toxin-1）",
+      "C": "水腫因子（edema factor）",
+      "D": "蛋白質A（protein A）"
+    },
+    "answer": "C",
+    "explanation": "水腫因子是炭疽桿菌的致病因子，不是金黃色葡萄球菌的。\n(A) 正確，凝固酶是金黃色葡萄球菌的重要致病因子和鑑別特徵\n(B) 正確，毒性休克症候毒素-1是金黃色葡萄球菌產生的超抗原毒素\n(C) 錯誤，水腫因子（edema factor）是炭疽桿菌（Bacillus anthracis）的致病因子，不是金黃色葡萄球菌的\n(D) 正確，蛋白質A是金黃色葡萄球菌表面蛋白，可結合抗體Fc段",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1501"
+  },
+  {
+    "id": 1091210,
+    "question": "10. 有關腺病毒（adenovirus）的敘述，下列何者正確？",
+    "options": {
+      "A": "病毒蛋白質E6和E7會抑制p53的作用",
+      "B": "感染上皮細胞，會在細胞核內形成包涵體（inclusion body）",
+      "C": "具有線型雙股DNA，並含有外套膜（envelope）",
+      "D": "在淋巴組織造成溶解性感染（lytic infection）"
+    },
+    "answer": "B",
+    "explanation": "腺病毒感染上皮細胞後會在細胞核內形成包涵體。\n(A) 錯誤，E6和E7蛋白是人類乳突瘤病毒（HPV）的蛋白質，不是腺病毒\n(B) 正確，腺病毒感染上皮細胞時確實會在細胞核內形成包涵體\n(C) 錯誤，腺病毒具有線型雙股DNA但無外套膜，屬於無套膜病毒\n(D) 錯誤，腺病毒在淋巴組織通常造成持續性感染，不是溶解性感染",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1502"
+  },
+  {
+    "id": 1091211,
+    "question": "11. 下列那一種病毒會以反轉錄酶（reverse transcriptase）複製病毒基因體？",
+    "options": {
+      "A": "乳突瘤病毒（papillomavirus）",
+      "B": "西尼羅河病毒（West Nile virus）",
+      "C": "B型肝炎病毒（hepatitis B virus）",
+      "D": "呼吸道細胞融合病毒（respiratory syncytial virus）"
+    },
+    "answer": "C",
+    "explanation": "B型肝炎病毒是唯一使用反轉錄酶複製的DNA病毒。\n(A) 錯誤，乳突瘤病毒是DNA病毒，不使用反轉錄酶\n(B) 錯誤，西尼羅河病毒是RNA病毒，使用RNA依賴性RNA聚合酶\n(C) 正確，B型肝炎病毒雖然是DNA病毒，但複製過程中需要反轉錄酶將前基因組RNA反轉錄成DNA\n(D) 錯誤，呼吸道細胞融合病毒是RNA病毒，不使用反轉錄酶",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1503"
+  },
+  {
+    "id": 1091212,
+    "question": "12. 抗病毒藥物奧斯他偉（oseltamivir），主要是抑制病毒的那一種酵素？",
+    "options": {
+      "A": "蛋白酶（protease）",
+      "B": "神經氨酸酶（neuraminidase）",
+      "C": "胸腺嘧啶激酶（thymidine kinase）",
+      "D": "反轉錄酶（reverse transcriptase）"
+    },
+    "answer": "B",
+    "explanation": "奧斯他偉是神經氨酸酶抑制劑，用於治療流感。\n(A) 錯誤，奧斯他偉不是蛋白酶抑制劑\n(B) 正確，奧斯他偉（oseltamivir）主要抑制流感病毒的神經氨酸酶，阻止病毒從感染細胞釋放\n(C) 錯誤，胸腺嘧啶激酶抑制劑如阿昔洛韋用於疱疹病毒感染\n(D) 錯誤，反轉錄酶抑制劑用於HIV感染治療",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1504"
+  },
+  {
+    "id": 1091213,
+    "question": "13. 下列何種病毒會在宿主細胞內造成內格里小體（Negri bodies）的產生？",
+    "options": {
+      "A": "狂犬病病毒（Rabies virus）",
+      "B": "單純疱疹病毒（Herpes-simplex virus, HSV）",
+      "C": "痘病毒（Poxvirus）",
+      "D": "B型肝炎病毒（Hepatitis B virus）"
+    },
+    "answer": "A",
+    "explanation": "內格里小體是狂犬病病毒感染的特徵性病理變化。\n(A) 正確，狂犬病病毒感染神經細胞時會形成內格里小體（Negri bodies），這是狂犬病的病理特徵\n(B) 錯誤，單純疱疹病毒感染形成的是考德里A型包涵體\n(C) 錯誤，痘病毒感染形成的是包涵體，但不是內格里小體\n(D) 錯誤，B型肝炎病毒主要感染肝細胞，不形成內格里小體",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1505"
+  },
+  {
+    "id": 1091214,
+    "question": "14. 有關抑制病毒的藥物中，下列何者是胜肽類的藥物？",
+    "options": {
+      "A": "恩夫韋（enfuvirtide）",
+      "B": "丙氧鳥苷（ganciclovir）",
+      "C": "拉米夫定（lamivudine）",
+      "D": "奧斯他偉（oseltamivir）"
+    },
+    "answer": "A",
+    "explanation": "恩夫韋是胜肽類HIV融合抑制劑。\n(A) 正確，恩夫韋（enfuvirtide）是36個胺基酸組成的胜肽類藥物，作為HIV融合抑制劑\n(B) 錯誤，丙氧鳥苷是核苷類似物，不是胜肽類\n(C) 錯誤，拉米夫定是核苷類似物反轉錄酶抑制劑\n(D) 錯誤，奧斯他偉是小分子神經氨酸酶抑制劑",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1506"
+  },
+  {
+    "id": 1091215,
+    "question": "15. 有關德國麻疹病毒（rubella virus）的敘述，下列何者錯誤？",
+    "options": {
+      "A": "人類為唯一宿主",
+      "B": "只有一種血清型",
+      "C": "可施打MMR疫苗預防感染",
+      "D": "常規以喉頭拭子（throat swab）培養病毒，做為診斷感染的根據"
+    },
+    "answer": "D",
+    "explanation": "德國麻疹病毒不易培養，診斷主要依靠血清學檢查。\n(A) 正確，人類是德國麻疹病毒的唯一宿主\n(B) 正確，德國麻疹病毒只有一種血清型\n(C) 正確，MMR疫苗可預防麻疹、腮腺炎和德國麻疹\n(D) 錯誤，德國麻疹病毒不易培養，診斷主要依靠血清學檢查或RT-PCR，不是喉頭拭子培養",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1507"
+  },
+  {
+    "id": 1091216,
+    "question": "16. 培養糠秕馬拉癬菌（Malassezia furfur）時，為提高培養率，最常於培養基中加入下列何者？",
+    "options": {
+      "A": "澱粉（Starch）",
+      "B": "L-半胱胺酸（L-cysteine）",
+      "C": "橄欖油（Olive oil）",
+      "D": "N-乙醯葡萄胺糖（N-acetylglucosamine）"
+    },
+    "answer": "C",
+    "explanation": "糠秕馬拉癬菌需要脂質環境才能生長，培養時需添加橄欖油。\n(A) 錯誤，澱粉不是糠秕馬拉癬菌生長所需\n(B) 錯誤，L-半胱胺酸主要用於培養厭氧菌\n(C) 正確，糠秕馬拉癬菌是嗜脂性真菌，培養時需添加橄欖油等脂質來源\n(D) 錯誤，N-乙醯葡萄胺糖不是該菌生長必需品",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1508"
+  },
+  {
+    "id": 1091217,
+    "question": "17. 下列那一種真菌（fungi）通常不形成菌絲（hyphae）構造？",
+    "options": {
+      "A": "熱帶念珠菌（Candida tropicalis）",
+      "B": "白色念珠菌（Candida albicans）",
+      "C": "光滑念珠菌（Candida glabrata）",
+      "D": "近平滑念珠菌（Candida parapsilosis）"
+    },
+    "answer": "C",
+    "explanation": "光滑念珠菌與其他念珠菌不同，通常不形成菌絲或假菌絲。\n(A) 錯誤，熱帶念珠菌可形成假菌絲\n(B) 錯誤，白色念珠菌可形成菌絲和假菌絲\n(C) 正確，光滑念珠菌通常只以酵母菌形式存在，不形成菌絲構造\n(D) 錯誤，近平滑念珠菌可形成假菌絲",
+    "tags": [
+      "109-1(二)",
+      "微生物"
+    ],
+    "group_id": "group_1509"
+  },
+  {
+    "id": 1091218,
+    "question": "18. 位於腸道底層免疫組織中之M細胞的主要免疫功能為：",
+    "options": {
+      "A": "直接殺菌",
+      "B": "製造抗體",
+      "C": "捕捉及轉運腸道中的抗原至下層的淋巴組織",
+      "D": "保護周邊的腸道表皮細胞"
+    },
+    "answer": "C",
+    "explanation": "M細胞是腸道免疫系統的抗原呈現細胞，負責轉運抗原。\n(A) 錯誤，M細胞不直接殺菌，而是轉運抗原\n(B) 錯誤，M細胞不製造抗體，抗體由B細胞製造\n(C) 正確，M細胞（microfold cells）主要功能是捕捉腸道抗原並轉運至下層的派爾氏斑塊等淋巴組織\n(D) 錯誤，M細胞不保護周邊表皮細胞，而是進行抗原轉運",
+    "tags": [
+      "109-1(二)",
+      "免疫"
+    ],
+    "group_id": "group_1510"
+  },
+  {
+    "id": 1091219,
+    "question": "19. 模式辨識受體（pattern recognition receptors, PRRs）是先天免疫系統用來識別病原相關分子模式（pathogenassociated molecular patterns, PAMPs）的抗原受體，在所有先天免疫細胞都會表現。有關模式辨識受體的敘述 何者錯誤？",
+    "options": {
+      "A": "模式辨識受體中的類鐸受體（Toll-like receptors）是演化上古老而保守的病原辨識受體，即便在無脊椎動物 也有表現",
+      "B": "類鐸受體（Toll-like receptors）中TLR3和TLR7分別辨識源自於病毒的雙股及單股RNA",
+      "C": "模式辨識受體中的類NOD受體（nod-like receptors）主要是辨識胞內的病原菌，如沙門氏菌（Salmonella）及 李斯特菌（Listeria）的細胞壁成分",
+      "D": "模式辨識受體中的類RIG-I受體（RIG-I-like receptors）是辨識DNA病毒的DNA，而且免疫細胞的類RIG-I受 體和DNA結合後的訊息傳遞結果會產生第一型干擾素"
+    },
+    "answer": "D",
+    "explanation": "類RIG-I受體辨識RNA病毒，不是DNA病毒。\n(A) 正確，類鐸受體確實是演化保守的受體，在無脊椎動物也有表現\n(B) 正確，TLR3辨識雙股RNA，TLR7辨識單股RNA\n(C) 正確，類NOD受體主要辨識胞內病原菌的細胞壁成分\n(D) 錯誤，類RIG-I受體（RIG-I-like receptors）辨識的是RNA病毒的RNA，不是DNA病毒的DNA，且結合後確實會產生第一型干擾素",
+    "tags": [
+      "109-1(二)",
+      "免疫"
+    ],
+    "group_id": "group_1511"
+  },
+  {
+    "id": 1091220,
+    "question": "20. TCR為T細胞辨識外來抗原之主要分子，但TCR本身並不足以執行訊息傳遞的功能。TCR必須與CD3 complex 組合為TCR complex以達到專一辨識抗原及訊息傳遞作用。下列原因何者錯誤？",
+    "options": {
+      "A": "TCR的α-chain及β-chain的cytoplasmic domain非常短，無法進行signal transduction",
+      "B": "TCR與CD3 complex結合而表現在細胞表面",
+      "C": "CD3 complex的膜蛋白分子具有immunoreceptor tyrosine-based activation motifs（ITAMs），故能促進胞內訊 息傳遞",
+      "D": "CD3 complex的膜蛋白分子具有immunoreceptor tyrosine-based inhibition motifs（ITIMs），故能促進胞內訊息 傳遞"
+    },
+    "answer": "D",
+    "explanation": "CD3複合體含有的是ITAM而非ITIM，ITIM是抑制性訊號。\n(A) 正確，TCR的α鏈和β鏈胞質域很短，無法進行訊號傳遞\n(B) 正確，TCR必須與CD3複合體結合才能表現在細胞表面\n(C) 正確，CD3複合體含有ITAM（免疫受體酪胺酸活化基序），促進訊號傳遞\n(D) 錯誤，CD3複合體含有的是ITAM（免疫受體酪胺酸活化基序），不是ITIM（免疫受體酪胺酸抑制基序）；ITIM是抑制性訊號",
+    "tags": [
+      "109-1(二)",
+      "免疫"
+    ],
+    "group_id": "group_1512"
+  },
+  {
+    "id": 1091221,
+    "question": "21. 具有前期B細胞抗原接受器（pre-B cell receptor）之B型細胞具有下列那一項生物特性？",
+    "options": {
+      "A": "輕鏈基因重組（light chain gene rearrangement）",
+      "B": "細胞表面具IgM分子",
+      "C": "快速細胞分裂",
+      "D": "接受專一性抗原刺激"
+    },
+    "answer": "C",
+    "explanation": "前期B細胞受體（pre-B cell receptor）階段是B細胞發育的重要檢查點，此時細胞會進行快速分裂以擴增成功重組重鏈的細胞群。\n(A) 錯誤，輕鏈基因重組（light chain gene rearrangement）發生在後期，此階段只完成重鏈重組\n(B) 錯誤，細胞表面尚無完整的IgM分子，只有代理輕鏈與重鏈結合形成前期B細胞受體\n(C) 正確，具有前期B細胞受體的B細胞會進行快速細胞分裂，這是此階段的重要特徵\n(D) 錯誤，此階段尚未形成成熟的抗原受體，無法接受專一性抗原刺激",
+    "tags": [
+      "109-1(二)",
+      "免疫"
+    ],
+    "group_id": "group_1513"
+  },
+  {
+    "id": 1091222,
+    "question": "22. 成熟的CD4 T細胞在活化後，可以分化為不同的effector T細胞，其中可以分泌IL-17的CD4 T細胞主要功能 是：",
+    "options": {
+      "A": "清除胞內病原的感染",
+      "B": "清除胞外細菌的感染",
+      "C": "毒殺胞外的寄生蟲",
+      "D": "抑制T細胞過度的發炎反應"
+    },
+    "answer": "B",
+    "explanation": "分泌IL-17的CD4 T細胞稱為Th17細胞，主要功能是對抗胞外細菌和真菌感染。\n(A) 錯誤，清除胞內病原感染主要由Th1細胞負責，分泌IFN-γ和TNF-α\n(B) 正確，Th17細胞分泌IL-17可招募嗜中性球，增強對胞外細菌感染的免疫反應\n(C) 錯誤，毒殺胞外寄生蟲主要由Th2細胞負責，分泌IL-4、IL-5等細胞激素\n(D) 錯誤，抑制過度發炎反應主要由調節性T細胞（Treg）負責",
+    "tags": [
+      "109-1(二)",
+      "免疫"
+    ],
+    "group_id": "group_1514"
+  },
+  {
+    "id": 1091223,
+    "question": "23. 下列有關遺傳性免疫缺失疾病（immunodeficiency diseases）的敘述，何者錯誤？",
+    "options": {
+      "A": "autoimmune polyendocrinopathy-candidiasis-ectodermal dystrophy（APECED）是因為AIRE基因缺陷所造成",
+      "B": "bare lymphocyte syndrome的病人是因為MHC class II無法表現，所以體內CD4 T細胞數目雖正常但表面沒有 MHC class II",
+      "C": "Omenn syndrome常因為是RAG1或RAG2基因突變",
+      "D": "如果是白血球先天性缺陷造成的疾病，造血幹細胞移植是可行的療法"
+    },
+    "answer": "B",
+    "explanation": "裸淋巴細胞症候群（bare lymphocyte syndrome）是由於MHC class II分子表現缺陷導致CD4 T細胞發育異常。\n(A) 正確，APECED確實是由AIRE基因缺陷造成的自體免疫性多內分泌病變\n(B) 錯誤，裸淋巴細胞症候群患者因MHC class II無法表現，導致CD4 T細胞數目嚴重減少，而非數目正常但表面沒有MHC class II\n(C) 正確，Omenn症候群常因RAG1或RAG2基因突變導致V(D)J重組異常\n(D) 正確，白血球先天性缺陷疾病可透過造血幹細胞移植治療",
+    "tags": [
+      "109-1(二)",
+      "免疫"
+    ],
+    "group_id": "group_1515"
+  },
+  {
+    "id": 1091224,
+    "question": "24. 腸胃道中含有大量IgA，在黏膜免疫反應中可以有效阻斷病原菌入侵人體，相關的敘述何者最正確？",
+    "options": {
+      "A": "血清與腸胃道中2種IgA亞型的抗體比例一致",
+      "B": "細胞激素IL-12可以促進B細胞分泌IgA",
+      "C": "分泌型IgA上的分泌片段（secretory component）是由上皮細胞合成的",
+      "D": "病原菌抗原結合IgA，可以有效啟動補體古典活化路徑"
+    },
+    "answer": "C",
+    "explanation": "分泌型IgA（secretory IgA）是黏膜免疫的重要組成，其分泌片段由上皮細胞合成並協助IgA穿越上皮屏障。\n(A) 錯誤，血清中IgA1較多，而腸胃道中IgA2比例較高\n(B) 錯誤，促進B細胞分泌IgA的主要細胞激素是TGF-β，而非IL-12\n(C) 正確，分泌片段（secretory component）由上皮細胞合成，協助IgA二聚體穿越上皮細胞進入管腔\n(D) 錯誤，IgA結合病原菌主要起中和作用，較不會啟動補體古典活化路徑",
+    "tags": [
+      "109-1(二)",
+      "免疫"
+    ],
+    "group_id": "group_1516"
+  },
+  {
+    "id": 1091225,
+    "question": "25. 家豪對塵蟎過敏，常常在秋冬換季時出現流鼻水、打噴嚏、眼睛癢等症狀，在發作時他的免疫反應相較於正 常人最可能出現下列何種現象？",
+    "options": {
+      "A": "T細胞分泌較高量的TGF-β細胞激素",
+      "B": "有明顯遲發性過敏反應（delayed type hypersensitivity）",
+      "C": "出現很高量對塵蟎具特異性的IgA",
+      "D": "活化的肥大細胞（mast cell）釋放發炎介質"
+    },
+    "answer": "D",
+    "explanation": "塵蟎過敏屬於第一型過敏反應（IgE媒介），當過敏原再次接觸時會引發肥大細胞脫顆粒。\n(A) 錯誤，TGF-β主要由調節性T細胞分泌，具抗發炎作用，在過敏反應中不會大量增加\n(B) 錯誤，塵蟎過敏屬於立即型過敏反應，而非遲發性過敏反應\n(C) 錯誤，塵蟎過敏主要產生特異性IgE，而非IgA\n(D) 正確，肥大細胞（mast cell）活化後會釋放組織胺等發炎介質，導致流鼻水、打噴嚏等症狀",
+    "tags": [
+      "109-1(二)",
+      "免疫"
+    ],
+    "group_id": "group_1517"
+  },
+  {
+    "id": 1091226,
+    "question": "26. 臨床上成功應用於breast cancer免疫療法的單株抗體trastuzumab（Herceptin）是針對下列那一個分子？",
+    "options": {
+      "A": "Her-2/neu",
+      "B": "MAG-1",
+      "C": "MUC-1",
+      "D": "CD-20"
+    },
+    "answer": "A",
+    "explanation": "Trastuzumab（赫賽汀）是針對HER-2/neu受體的單株抗體，用於治療HER-2陽性乳癌。\n(A) 正確，Trastuzumab專一性結合Her-2/neu受體，阻斷其訊號傳遞路徑\n(B) 錯誤，MAG-1不是trastuzumab的標靶分子\n(C) 錯誤，MUC-1不是trastuzumab的標靶分子\n(D) 錯誤，CD-20是rituximab等抗體的標靶，主要用於B細胞淋巴瘤治療",
+    "tags": [
+      "109-1(二)",
+      "免疫"
+    ],
+    "group_id": "group_1518"
+  },
+  {
+    "id": 1091227,
+    "question": "27. 以下方法均可減少植體抗宿主疾病（graft-versus-host disease, GVHD），下列何者除外？",
+    "options": {
+      "A": "以alemtuzumab處理預植入的造血幹細胞，經由拮抗CD52的作用，使得成熟的T淋巴球數目減少",
+      "B": "將預植入的造血幹細胞實行淋巴球混合作用（mixed lymphocyte reaction），以減低T淋巴球的數目",
+      "C": "選擇MHC class I及MHC class II配合的植體，以降低植入後成熟T淋巴球的抗宿主反應",
+      "D": "使用抗胸腺球蛋白（anti-thymoglobulin）預處理植入的細胞，減低T淋巴球及白血球的數目"
+    },
+    "answer": "B",
+    "explanation": "植體抗宿主疾病（GVHD）是由移植物中的T淋巴球攻擊宿主組織所致，淋巴球混合反應會刺激而非減少T淋巴球。\n(A) 正確，alemtuzumab可透過拮抗CD52減少成熟T淋巴球數目\n(B) 錯誤，淋巴球混合反應（mixed lymphocyte reaction）是刺激T淋巴球增殖的實驗，不會減少T淋巴球數目，反而可能加重GVHD\n(C) 正確，選擇MHC相容的植體可降低T淋巴球的抗宿主反應\n(D) 正確，抗胸腺球蛋白可減少T淋巴球數目，降低GVHD風險",
+    "tags": [
+      "109-1(二)",
+      "免疫"
+    ],
+    "group_id": "group_1519"
+  },
+  {
+    "id": 1091228,
+    "question": "28. 腫瘤細胞缺乏下列何種分子時，NK細胞有更好的毒殺腫瘤細胞能力？",
+    "options": {
+      "A": "MHC class I",
+      "B": "MHC class II",
+      "C": "T1",
+      "D": "HER-2/neu"
+    },
+    "answer": "A",
+    "explanation": "自然殺手細胞（NK cell）透過「缺失自我」機制識別異常細胞，當目標細胞缺乏MHC class I時會增強毒殺能力。\n(A) 正確，腫瘤細胞缺乏MHC class I分子時，NK細胞的抑制性受體無法被活化，因此增強毒殺能力\n(B) 錯誤，MHC class II主要與CD4 T細胞相關，對NK細胞毒殺能力影響較小\n(C) 錯誤，T1不是影響NK細胞毒殺能力的主要分子\n(D) 錯誤，HER-2/neu雖是腫瘤標記，但不是NK細胞識別的主要分子",
+    "tags": [
+      "109-1(二)",
+      "免疫"
+    ],
+    "group_id": "group_1520"
+  },
+  {
+    "id": 1091229,
+    "question": "29. 罹患瀰漫性糞小桿線蟲症（disseminated strongyloidiasis stercoralis）的病患，通常有下列那些現象？<br>①蟲體僅 侵犯腸道及肺臟 <br>②容易發生在免疫缺陷的病人 <br>③嗜酸性白血球增加不明顯",
+    "options": {
+      "A": "僅①②",
+      "B": "僅①③",
+      "C": "僅②③",
+      "D": "①②③"
+    },
+    "answer": "C",
+    "explanation": "這題的解題關鍵在於理解瀰漫性糞小桿線蟲症與一般糞小桿線蟲感染的差異。瀰漫性感染是指蟲體廣泛散布到全身各器官，通常發生在免疫功能低下的患者。<br> ① 錯誤，瀰漫性糞小桿線蟲症的蟲體會侵犯全身多個器官系統，包括肝臟、腎臟、中樞神經系統、皮膚等，而非僅限於腸道和肺臟。<br> ② 正確，瀰漫性糞小桿線蟲症容易發生在免疫缺陷病患身上，如使用類固醇治療、愛滋病患者、器官移植後使用免疫抑制劑的病人等。<br> ③ 正確，與一般寄生蟲感染不同，瀰漫性糞小桿線蟲症患者的嗜酸性白血球（eosinophil）增加通常不明顯，這可能與免疫抑制狀態有關。",
+    "tags": [
+      "109-1(二)",
+      "寄生蟲"
+    ],
+    "group_id": "group_1521"
+  },
+  {
+    "id": 1091230,
+    "question": "30. 下列有關廣東住血線蟲（Angiostrongylus cantonensis）感染人體的敘述，有幾項敘述是正確的？<br>①人因食入 未熟帶蟲的蝸牛而感染 <br>②人體為終宿主（final host） <br>③蟲體只侵犯人體腦脊髓 <br>④引起嗜酸性白血球明 顯增加",
+    "options": {
+      "A": "1項",
+      "B": "2項",
+      "C": "3項",
+      "D": "4項"
+    },
+    "answer": "B",
+    "explanation": "這題的解題關鍵在於理解廣東住血線蟲的生活史、感染途徑和在人體的病理表現。需要區分終宿主與中間宿主的概念，以及了解此蟲在人體的分布和免疫反應。<br> ① 正確，人類主要因食用未充分加熱的含有第三期幼蟲的蝸牛、蛞蝓或被污染的生菜而感染廣東住血線蟲。<br> ② 錯誤，人體是意外宿主（accidental host）而非終宿主，真正的終宿主是鼠類，蝸牛和蛞蝓是中間宿主（intermediate host）。<br> ③ 錯誤，蟲體不只侵犯腦脊髓，也可能侵犯眼部造成眼部廣東住血線蟲症（ocular angiostrongyliasis），引起視力障礙等症狀。<br> ④ 正確，廣東住血線蟲感染會引起明顯的嗜酸性白血球增加症（eosinophilia），這是診斷的重要實驗室指標之一。",
+    "tags": [
+      "109-1(二)",
+      "寄生蟲"
+    ],
+    "group_id": "group_1522"
+  },
+  {
+    "id": 1091231,
+    "question": "31. 下列何者與日本血吸蟲（Schistosoma japonicum）或其在患者引起的疾病無關？",
+    "options": {
+      "A": "尾幼（cercariae）",
+      "B": "囊幼（metacercariae）",
+      "C": "肉芽腫（granulomas）",
+      "D": "片山熱（Katayama fever）"
+    },
+    "answer": "B",
+    "explanation": "日本血吸蟲的生活史包括尾幼蟲階段，但不包括囊幼蟲階段，囊幼蟲是其他吸蟲的發育階段。\n(A) 正確，尾幼蟲（cercariae）是血吸蟲生活史中的重要階段，從螺類宿主釋出感染人體\n(B) 錯誤，囊幼蟲（metacercariae）是肝吸蟲等其他吸蟲的發育階段，血吸蟲生活史中沒有此階段\n(C) 正確，肉芽腫（granulomas）是宿主對血吸蟲蟲卵的免疫反應，常見於肝臟和腸壁\n(D) 正確，片山熱（Katayama fever）是急性血吸蟲病的臨床表現，以發熱和過敏症狀為主",
+    "tags": [
+      "109-1(二)",
+      "寄生蟲"
+    ],
+    "group_id": "group_1523"
+  },
+  {
+    "id": 1091232,
+    "question": "32. 下列何種絛蟲之受孕節片具有卵囊（egg capsules）？",
+    "options": {
+      "A": "犬複殖器絛蟲（Dipylidium caninum）",
+      "B": "牛肉絛蟲（Taenia saginata）",
+      "C": "縮小包膜絛蟲（Hymenolepis diminuta）",
+      "D": "廣節裂頭絛蟲（Diphyllobothrium latum）"
+    },
+    "answer": "A",
+    "explanation": "犬複殖器絛蟲的受孕節片具有特殊的卵囊結構，與其他絛蟲不同。\n(A) 正確，犬複殖器絛蟲（Dipylidium caninum）的受孕節片具有卵囊（egg capsules），每個卵囊內含數個蟲卵\n(B) 錯誤，牛肉絛蟲（Taenia saginata）的受孕節片沒有卵囊結構\n(C) 錯誤，縮小包膜絛蟲（Hymenolepis diminuta）的受孕節片沒有卵囊結構\n(D) 錯誤，廣節裂頭絛蟲（Diphyllobothrium latum）的受孕節片沒有卵囊結構",
+    "tags": [
+      "109-1(二)",
+      "寄生蟲"
+    ],
+    "group_id": "group_1524"
+  },
+  {
+    "id": 1091233,
+    "question": "33. 陳小姐因愛美而配戴隱形眼鏡多年，日前因眼睛刺痛、紅腫而求助於眼科醫師，經診斷罹患嚴重角膜炎 （keratitis），並於角膜刮取物抹片鏡檢時發現有角狀雙層壁囊體。依據上述結果，陳小姐最可能感染何種寄 生蟲？",
+    "options": {
+      "A": "大腸阿米巴（Entamoeba coli）",
+      "B": "痢疾阿米巴（Entamoeba histolytica）",
+      "C": "福氏內格里阿米巴（Naegleria fowleri）",
+      "D": "棘阿米巴（Acanthamoeba spp.）"
+    },
+    "answer": "D",
+    "explanation": "角膜炎合併角狀雙層壁囊體的發現，高度提示棘阿米巴感染，常與隱形眼鏡配戴相關。\n(A) 錯誤，大腸阿米巴（Entamoeba coli）是腸道共生原蟲，不會引起角膜炎\n(B) 錯誤，痢疾阿米巴（Entamoeba histolytica）主要引起腸道感染，極少引起眼部感染\n(C) 錯誤，福氏內格里阿米巴（Naegleria fowleri）主要引起原發性阿米巴腦膜腦炎，不常引起角膜炎\n(D) 正確，棘阿米巴（Acanthamoeba spp.）常引起嚴重角膜炎，其囊體具有特徵性的角狀雙層壁結構",
+    "tags": [
+      "109-1(二)",
+      "寄生蟲"
+    ],
+    "group_id": "group_1525"
+  },
+  {
+    "id": 1091234,
+    "question": "34. 下列有關利什曼原蟲之敘述中，何者正確？",
+    "options": {
+      "A": "慢性感染巴西利什曼原蟲（Leishmania braziliensis）之患者，其耳朵軟骨常被侵蝕造成chiclero's ulcer",
+      "B": "嬰兒利什曼原蟲（Leishmania infantum）能侵入人體所有的有核細胞中分裂增殖",
+      "C": "杜氏利什曼原蟲（Leishmania donovani）是黑熱病（kala-azar）的致病原",
+      "D": "熱帶利什曼原蟲（Leishmania tropica）從未有導致內臟利什曼原蟲症（visceral leishmaniasis）的人體病例報 告"
+    },
+    "answer": "C",
+    "explanation": "利什曼原蟲有多種亞型，各有不同的臨床表現和地理分布。\n(A) 錯誤，巴西利什曼原蟲引起的mucocutaneous leishmaniasis會侵犯鼻黏膜，但chiclero's ulcer主要與墨西哥利什曼原蟲相關\n(B) 錯誤，嬰兒利什曼原蟲主要侵入單核球系統的細胞，並非所有有核細胞\n(C) 正確，杜氏利什曼原蟲（Leishmania donovani）是引起黑熱病（kala-azar）或內臟利什曼原蟲症的主要病原\n(D) 錯誤，熱帶利什曼原蟲偶爾也可能引起內臟利什曼原蟲症，特別是在免疫缺陷患者中",
+    "tags": [
+      "109-1(二)",
+      "寄生蟲"
+    ],
+    "group_id": "group_1526"
+  },
+  {
+    "id": 1091235,
+    "question": "35. 有關病媒（vector）及其媒介疾病之關係，下列何者錯誤？",
+    "options": {
+      "A": "埃及斑蚊（Aedes aegypti）傳播黃熱病（yellow fever）",
+      "B": "蚋（Simulium spp.）傳播河川盲（river blindness）",
+      "C": "采采蠅（tsetse fly）傳播卡格氏症（Chagas’disease）",
+      "D": "白蛉（sandfly）傳播利什曼原蟲症（leishmaniasis）"
+    },
+    "answer": "C",
+    "explanation": "采采蠅傳播非洲錐蟲病而非卡格氏症，卡格氏症是由錐蝽傳播的美洲錐蟲病。\n(A) 正確，埃及斑蚊（Aedes aegypti）是黃熱病（yellow fever）的重要病媒\n(B) 正確，蚋（Simulium spp.）傳播盤尾絲蟲引起河川盲（river blindness）\n(C) 錯誤，采采蠅（tsetse fly）傳播非洲錐蟲病，卡格氏症（Chagas disease）是由錐蝽（triatomine bug）傳播的美洲錐蟲病\n(D) 正確，白蛉（sandfly）是利什曼原蟲症（leishmaniasis）的病媒",
+    "tags": [
+      "109-1(二)",
+      "寄生蟲"
+    ],
+    "group_id": "group_1527"
+  },
+  {
+    "id": 1091236,
+    "question": "36. 假設有抽菸族群的血中古丁尼濃度（ng/ml）為常態分配（平均值=11, 變異數=16），無抽菸族群的血中古丁 尼濃度則為常態分配 （平均值=6, 變異數=16）。某研究提出可利用血中古丁尼濃度大於 7 判定為有抽菸者， 此規則所犯的偽陽率（false positive rate）為 0.25，偽陰率（false negative rate）為 0.15。若將判定抽菸標準提 高到血中古丁尼濃度大於 8.5，偽陽率與敏感度（sensitivity）會如何改變？",
+    "options": {
+      "A": "偽陽率下降，敏感度下降",
+      "B": "偽陽率下降，敏感度上升",
+      "C": "偽陽率上升，敏感度下降",
+      "D": "偽陽率上升，敏感度上升"
+    },
+    "answer": "A",
+    "explanation": "提高判定標準會降低偽陽率（特異度提高）但也會降低敏感度（增加偽陰率）。\n判定標準從7提高到8.5時，會有更少的非吸菸者被誤判為吸菸者（偽陽率下降），但也會有更多真正的吸菸者被遺漏（敏感度下降）。\n(A) 正確，提高判定標準會使偽陽率下降（特異度提高），敏感度下降\n(B) 錯誤，敏感度不會上升，而是下降\n(C) 錯誤，偽陽率不會上升，而是下降\n(D) 錯誤，兩者都不會同時上升",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1528"
+  },
+  {
+    "id": 1091237,
+    "question": "37. 某研究者想檢定來自北中南部的男大學生的平均身高是否一樣，在某大學隨機抽取來自北中南部男大學生各 200 名，下列統計分析方法何者最恰當？",
+    "options": {
+      "A": "Z檢定（Z test）",
+      "B": "變異數分析（ANOVA）",
+      "C": "配對t檢定（Paired t-test）",
+      "D": "列聯表分析（Contingency table）"
+    },
+    "answer": "B",
+    "explanation": "比較三個地區男大學生平均身高是否相同，屬於多組連續變數的比較，應使用變異數分析。\n(A) 錯誤，Z檢定用於已知母體變異數的單一樣本檢定\n(B) 正確，變異數分析（ANOVA）適用於比較三個或以上組別的平均數是否相同\n(C) 錯誤，配對t檢定用於相關樣本的比較，此研究為獨立樣本\n(D) 錯誤，列聯表分析用於類別變數的關聯性檢定",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1529"
+  },
+  {
+    "id": 1091238,
+    "question": "38. 某研究者想檢定某基因多型性（AA／AG組相對GG組）是否與口腔癌的發生有關，在某醫院有 200 名口腔癌 患者參與此研究，每位口腔癌患者都配對 1 名沒有口腔癌的健康者，分別測量其基因型，下列統計分析方法 何者最恰當？",
+    "options": {
+      "A": "線性迴歸",
+      "B": "獨立樣本之卡方檢定",
+      "C": "配對t檢定",
+      "D": "McNemar卡方檢定"
+    },
+    "answer": "D",
+    "explanation": "此研究為病例對照研究且採用配對設計，檢定類別變數的關聯性應使用McNemar卡方檢定。\n(A) 錯誤，線性迴歸用於連續依變數的預測\n(B) 錯誤，獨立樣本卡方檢定不適用於配對設計\n(C) 錯誤，配對t檢定用於連續變數的配對比較\n(D) 正確，McNemar卡方檢定專門用於配對設計中二分類變數的比較",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1530"
+  },
+  {
+    "id": 1091239,
+    "question": "39. 有一研究發現具有AA基因型的病人相較於其他基因型病人，對相同治療藥物的反應較佳，則AA基因型扮演 下列何種角色？",
+    "options": {
+      "A": "干擾因子",
+      "B": "拮抗因子",
+      "C": "修飾因子",
+      "D": "分化因子"
+    },
+    "answer": "C",
+    "explanation": "AA基因型影響治療藥物的反應效果，這種影響治療效果的因子稱為修飾因子。\n(A) 錯誤，干擾因子是與暴露和結果都相關但不在因果路徑上的變數\n(B) 錯誤，拮抗因子通常指藥理學上的受體拮抗劑\n(C) 正確，修飾因子（effect modifier）會改變暴露與結果之間關係的強度或方向\n(D) 錯誤，分化因子通常指細胞生物學中促進細胞分化的物質",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1531"
+  },
+  {
+    "id": 1091240,
+    "question": "40. 有關描述變項的性質，下列敘述何者正確？",
+    "options": {
+      "A": "標準誤（standard error）適合描述常態連續資料的分散情況",
+      "B": "幾何平均值（geometric mean）適合描述類別資料的集中趨勢",
+      "C": "標準差（standard deviation）適合描述類別資料的集中趨勢",
+      "D": "第50百分位數（the 50th percentile）適合描述連續資料的集中趨勢"
+    },
+    "answer": "D",
+    "explanation": "第50百分位數即中位數，適合描述連續資料的集中趨勢，特別是對極值不敏感。\n(A) 錯誤，標準誤（standard error）是描述樣本統計量精確度的指標，不是描述分散情況的\n(B) 錯誤，幾何平均值（geometric mean）適用於連續資料，特別是對數常態分布資料，不適用於類別資料\n(C) 錯誤，標準差（standard deviation）是描述連續資料分散程度的指標，不是集中趨勢\n(D) 正確，第50百分位數（中位數）適合描述連續資料的集中趨勢，對極值不敏感",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1532"
+  },
+  {
+    "id": 1091241,
+    "question": "41. 下列那一項不屬於溫室效應氣體（green house gases）？",
+    "options": {
+      "A": "N<sub>2</sub>O",
+      "B": "CO<sub>2</sub>",
+      "C": "CH<sub>4</sub>",
+      "D": "NH<sub>3</sub>"
+    },
+    "answer": "D",
+    "explanation": "溫室效應氣體是指能夠吸收和重新輻射紅外線輻射的氣體，導致地球表面溫度上升。\n(A) 正確，一氧化二氮（N<sub>2</sub>O）是重要的溫室效應氣體\n(B) 正確，二氧化碳（CO<sub>2</sub>）是最主要的溫室效應氣體\n(C) 正確，甲烷（CH<sub>4</sub>）是強效的溫室效應氣體\n(D) 錯誤，氨氣（NH<sub>3</sub>）不是溫室效應氣體，而是會影響空氣品質的污染物",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1533"
+  },
+  {
+    "id": 1091242,
+    "question": "42. 雞肉必須煮熟食用，是屬於「食品安全管制系統」（HACCP）的那個原則？",
+    "options": {
+      "A": "危害評估",
+      "B": "決定管制重點",
+      "C": "針對管制重點設置管制程序與標準",
+      "D": "建立管制監測系統"
+    },
+    "answer": "B",
+    "explanation": "HACCP是食品安全管制系統，包含七個原則，雞肉必須煮熟是確定需要控制的關鍵點。\n(A) 錯誤，危害評估是分析可能的食品安全危害\n(B) 正確，決定管制重點（Critical Control Point, CCP）是確認需要控制的關鍵步驟，雞肉煮熟就是一個CCP\n(C) 錯誤，設置管制程序與標準是針對已確定的CCP制定具體的控制措施\n(D) 錯誤，建立管制監測系統是監控CCP是否有效執行",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1534"
+  },
+  {
+    "id": 1091243,
+    "question": "43. 下列何種金屬過量暴露吸收，會造成人體出現振顫（tremor）和動作不協調（ataxia）等水俣病症狀？",
+    "options": {
+      "A": "汞",
+      "B": "鉈",
+      "C": "鎘",
+      "D": "鋁"
+    },
+    "answer": "A",
+    "explanation": "水俣病是由有機汞中毒引起的神經系統疾病，主要症狀包括振顫和運動失調。\n(A) 正確，汞中毒會造成振顫（tremor）和動作不協調（ataxia），這些都是水俣病的典型症狀\n(B) 錯誤，鉈中毒主要造成脫髮和周邊神經病變\n(C) 錯誤，鎘中毒主要造成腎臟損害和骨軟化症（痛痛病）\n(D) 錯誤，鋁中毒主要與阿茲海默症相關",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1535"
+  },
+  {
+    "id": 1091244,
+    "question": "44. 下列那一項工作不屬於塵肺症之危險族群？",
+    "options": {
+      "A": "報社印刷工人暴露紙屑纖維",
+      "B": "噴砂工人暴露二氧化矽的粉塵",
+      "C": "耐火磚製造工人暴露石棉",
+      "D": "造船工人暴露石棉"
+    },
+    "answer": "A",
+    "explanation": "塵肺症是由於長期吸入無機粉塵導致的肺部纖維化疾病。\n(A) 錯誤，報社印刷工人暴露的紙屑纖維是有機纖維，不會導致塵肺症\n(B) 正確，噴砂工人暴露二氧化矽粉塵會導致矽肺症（silicosis）\n(C) 正確，耐火磚製造工人暴露石棉會導致石棉肺症（asbestosis）\n(D) 正確，造船工人暴露石棉會導致石棉肺症",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1536"
+  },
+  {
+    "id": 1091245,
+    "question": "45. 某勞工於甲、乙、丙場所分別工作2.5、3、2.5小時，若其甲苯濃度分別為40、150、20 ppm，其時量平均濃度 （TWA）為何？",
+    "options": {
+      "A": "70 ppm",
+      "B": "74 ppm",
+      "C": "75 ppm",
+      "D": "80 ppm"
+    },
+    "answer": "C",
+    "explanation": "時量平均濃度（TWA）計算公式為各時段濃度乘以時間的加權平均。\n計算：TWA = (40×2.5 + 150×3 + 20×2.5) ÷ (2.5+3+2.5) = (100 + 450 + 50) ÷ 8 = 600 ÷ 8 = 75 ppm\n(A) 錯誤，計算結果不是70 ppm\n(B) 錯誤，計算結果不是74 ppm\n(C) 正確，時量平均濃度為75 ppm\n(D) 錯誤，計算結果不是80 ppm",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1537"
+  },
+  {
+    "id": 1091246,
+    "question": "46. 暴露於下列何種危害物最可能造成鼻中膈穿孔？",
+    "options": {
+      "A": "四氯化碳",
+      "B": "二甲機甲醯胺",
+      "C": "鉻酸",
+      "D": "有機磷"
+    },
+    "answer": "C",
+    "explanation": "鼻中膈穿孔是指鼻腔中間隔膜出現破洞，通常由腐蝕性物質引起。\n(A) 錯誤，四氯化碳主要造成肝腎損害\n(B) 錯誤，二甲基甲醯胺主要造成肝臟損害\n(C) 正確，鉻酸具有強烈腐蝕性，長期暴露會造成鼻中膈穿孔\n(D) 錯誤，有機磷主要造成神經系統中毒",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1538"
+  },
+  {
+    "id": 1091247,
+    "question": "47. 針對青少年處於不同階段，而採取不同步驟與策略協助其戒菸，例如若吸菸者缺乏戒菸意願，應教導吸菸害 處以強化戒菸動機，若吸菸者打算近期內戒菸，可提供其戒菸計畫與方法，這是應用那一種理論或模式來改 變行為？",
+    "options": {
+      "A": "社會學習理論",
+      "B": "健康信念模式",
+      "C": "操作性制約理論",
+      "D": "跨理論模式"
+    },
+    "answer": "D",
+    "explanation": "根據個人戒菸意願和準備程度採取不同策略，這是跨理論模式的核心概念。\n(A) 錯誤，社會學習理論強調觀察學習和模仿\n(B) 錯誤，健康信念模式強調對疾病威脅的認知\n(C) 錯誤，操作性制約理論強調增強和懲罰\n(D) 正確，跨理論模式（Transtheoretical Model）根據個人改變行為的準備階段提供不同的介入策略",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1539"
+  },
+  {
+    "id": 1091248,
+    "question": "48. 下列那一項不是世界衛生組織所提出的健康城市的健康指標？",
+    "options": {
+      "A": "低出生體重比率",
+      "B": "嬰兒死亡率",
+      "C": "墮胎率（相對於每一個活產數）",
+      "D": "總死亡率"
+    },
+    "answer": "C",
+    "explanation": "世界衛生組織的健康城市指標主要關注人口健康狀況，不包括倫理爭議性指標。\n(A) 正確，低出生體重比率是重要的健康指標\n(B) 正確，嬰兒死亡率是基本的健康指標\n(C) 錯誤，墮胎率不是WHO健康城市的健康指標，因為涉及倫理爭議\n(D) 正確，總死亡率是基本的人口健康指標",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1540"
+  },
+  {
+    "id": 1091249,
+    "question": "49. 有關以公權力推動強制性的衛生政策之倫理原則，下列敘述何者錯誤？",
+    "options": {
+      "A": "所採用的手段必須能夠達到政策目的",
+      "B": "所要達成的公共利益與所犧牲的個人利益之間要符合比例",
+      "C": "即使必須犧牲個人利益，仍應採取最小侵害手段",
+      "D": "即使某些衛生政策可能犧牲個人自由，但為了當事人的健康，也為了國民健康，衛生主管機關仍然應該毫 無例外地推動這些政策"
+    },
+    "answer": "D",
+    "explanation": "公共衛生政策的實施必須考慮個人權益與公共利益的平衡，不能無例外地推動。\n(A) 正確，手段必須有效才能達到政策目的\n(B) 正確，必須符合比例原則，公共利益與個人犧牲要相稱\n(C) 正確，應採取最小侵害手段，減少對個人自由的限制\n(D) 錯誤，即使為了健康目的，也不應毫無例外地推動可能犧牲個人自由的政策，需要考慮比例原則和程序正義",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1541"
+  },
+  {
+    "id": 1091250,
+    "question": "50. 為深入瞭解醫院內外部處境，醫院管理實務上常使用「SWOT」方法來做策略分析（strategic analysis），這 四個字母的“O”是指：",
+    "options": {
+      "A": "opportunity",
+      "B": "opponent",
+      "C": "optimum",
+      "D": "operation"
+    },
+    "answer": "A",
+    "explanation": "SWOT分析是策略分析工具，分析組織的內外部環境因素。\n(A) 正確，SWOT中的\"O\"代表機會（opportunity），是外部環境中的有利因素\n(B) 錯誤，opponent（對手）不是SWOT分析的組成要素\n(C) 錯誤，optimum（最佳）不是SWOT分析的組成要素\n(D) 錯誤，operation（營運）不是SWOT分析的組成要素",
+    "tags": [
+      "109-1(二)",
+      "公衛"
+    ],
+    "group_id": "group_1542"
+  },
+  {
+    "id": 1091251,
+    "question": "51. 有關fondaparinux敘述，下列何者錯誤？",
+    "options": {
+      "A": "主要作用為抑制凝血因子thrombin",
+      "B": "透過antithrombin III結合作用來中和factor Xa",
+      "C": "採用皮下注射，每天一次",
+      "D": "腎臟疾病患者，不宜使用"
+    },
+    "answer": "A",
+    "explanation": "Fondaparinux是選擇性Factor Xa抑制劑，不直接抑制凝血酶。\n(A) 錯誤，fondaparinux主要作用是抑制凝血因子Xa，而非直接抑制凝血酶（thrombin）\n(B) 正確，fondaparinux透過與antithrombin III結合來中和factor Xa\n(C) 正確，採用皮下注射，每天一次給藥\n(D) 正確，腎功能不全患者因為藥物清除率降低，不宜使用",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1543"
+  },
+  {
+    "id": 1091252,
+    "question": "52. 下列何種藥物不具有改善骨質疏鬆的效果？",
+    "options": {
+      "A": "vitamin D",
+      "B": "alendronate",
+      "C": "raloxifene",
+      "D": "danazol"
+    },
+    "answer": "D",
+    "explanation": "骨質疏鬆治療藥物主要包括促進骨質形成或抑制骨質流失的藥物。\n(A) 正確，維生素D促進鈣質吸收，有助改善骨質疏鬆\n(B) 正確，alendronate是雙磷酸鹽類藥物，抑制破骨細胞活性\n(C) 正確，raloxifene是選擇性雌激素受體調節劑，可改善骨質疏鬆\n(D) 錯誤，danazol是合成雄激素，主要用於治療子宮內膜異位症，不用於骨質疏鬆治療",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1544"
+  },
+  {
+    "id": 1091253,
+    "question": "53. 下列何項藥物可用以治療佩吉特氏病（Paget's disease）？",
+    "options": {
+      "A": "thyroxine",
+      "B": "exenatide",
+      "C": "calcitonin",
+      "D": "rosiglitazone"
+    },
+    "answer": "C",
+    "explanation": "佩吉特氏病（Paget's disease）是骨骼重塑異常的疾病，需要抑制破骨細胞活性。\n(A) 錯誤，thyroxine是甲狀腺激素，用於治療甲狀腺功能低下\n(B) 錯誤，exenatide是GLP-1受體促效劑，用於治療糖尿病\n(C) 正確，calcitonin（降鈣素）可抑制破骨細胞活性，用於治療佩吉特氏病\n(D) 錯誤，rosiglitazone是胰島素增敏劑，用於治療糖尿病",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1545"
+  },
+  {
+    "id": 1091254,
+    "question": "54. 那一種藥物臨床上最適用於治療心房心律不整及防止心肌梗塞之復發與突發性死亡？",
+    "options": {
+      "A": "verapamil",
+      "B": "quinidine",
+      "C": "propranolol",
+      "D": "flecainide"
+    },
+    "answer": "C",
+    "explanation": "心房心律不整和心肌梗塞後的預防需要β阻斷劑的多重保護作用。\n(A) 錯誤，verapamil是鈣離子通道阻斷劑，主要用於血管性心律不整\n(B) 錯誤，quinidine是鈉離子通道阻斷劑，可能增加死亡率\n(C) 正確，propranolol是非選擇性β阻斷劑，可治療心房心律不整並預防心肌梗塞復發和突發性死亡\n(D) 錯誤，flecainide是鈉離子通道阻斷劑，可能增加心律不整風險",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1546"
+  },
+  {
+    "id": 1091255,
+    "question": "55. 下列降血壓藥物中，何者使血管舒張的機轉主要是抑制鈣離子內流入平滑肌細胞？",
+    "options": {
+      "A": "aliskiren",
+      "B": "carvedilol",
+      "C": "doxazosin",
+      "D": "felodipine"
+    },
+    "answer": "D",
+    "explanation": "鈣離子通道阻斷劑直接阻止鈣離子進入血管平滑肌細胞，造成血管舒張。\n(A) 錯誤，aliskiren是腎素抑制劑，抑制血管收縮素系統\n(B) 錯誤，carvedilol是α和β阻斷劑，不主要作用於鈣離子通道\n(C) 錯誤，doxazosin是α1阻斷劑，阻斷交感神經作用\n(D) 正確，felodipine是鈣離子通道阻斷劑，直接抑制鈣離子內流入血管平滑肌細胞",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1547"
+  },
+  {
+    "id": 1091256,
+    "question": "56. 長期服用下列何種藥物來治療胃潰瘍時，易導致陽痿？",
+    "options": {
+      "A": "omeprazole",
+      "B": "cimetidine",
+      "C": "nizatidine",
+      "D": "ranitidine"
+    },
+    "answer": "B",
+    "explanation": "某些H2受體阻斷劑具有抗雄激素作用，可能導致性功能障礙。\n(A) 錯誤，omeprazole是質子幫浦抑制劑，較少引起陽痿\n(B) 正確，cimetidine具有抗雄激素作用，長期使用容易導致陽痿\n(C) 錯誤，nizatidine是H2受體阻斷劑，但較少有抗雄激素作用\n(D) 錯誤，ranitidine是H2受體阻斷劑，但較少有抗雄激素作用",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1548"
+  },
+  {
+    "id": 1091257,
+    "question": "57. 一早產兒發生動脈導管閉鎖不全，可以使用下列何種藥物來使其關閉？",
+    "options": {
+      "A": "diclofenac",
+      "B": "ibuprofen",
+      "C": "rofecoxib",
+      "D": "sulindac"
+    },
+    "answer": "B",
+    "explanation": "動脈導管未閉需要使用前列腺素合成抑制劑來促進導管關閉。\n(A) 錯誤，diclofenac雖是NSAID，但不是治療動脈導管未閉的首選\n(B) 正確，ibuprofen是前列腺素合成抑制劑，可用於早產兒動脈導管未閉的治療\n(C) 錯誤，rofecoxib是COX-2選擇性抑制劑，已下市\n(D) 錯誤，sulindac主要用於其他適應症",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1549"
+  },
+  {
+    "id": 1091258,
+    "question": "58. 有關抗癲癇藥物作用的敘述，下列何者錯誤？",
+    "options": {
+      "A": "ethosuximide主要透過阻斷T-type鈣離子通道來產生抗癲癇作用",
+      "B": "tiagabine主要透過阻斷GABA轉運子（transporter）的作用來產生抗癲癇作用",
+      "C": "topiramate透過阻斷glutamate轉運子（transporter）的作用來產生抗癲癇作用",
+      "D": "valproic acid可透過阻斷鈉離子通道來產生抗癲癇作用"
+    },
+    "answer": "C",
+    "explanation": "各種抗癲癇藥物有不同的作用機轉，需要準確了解其藥理作用。\n(A) 正確，ethosuximide主要透過阻斷T-type鈣離子通道產生抗癲癇作用\n(B) 正確，tiagabine透過阻斷GABA轉運子增加GABA濃度\n(C) 錯誤，topiramate不是透過阻斷glutamate轉運子，而是透過多種機轉包括阻斷鈉離子通道、增強GABA作用等\n(D) 正確，valproic acid可透過阻斷鈉離子通道產生抗癲癇作用",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1550"
+  },
+  {
+    "id": 1091259,
+    "question": "59. 下列止痛藥，何者的作用機制不是經由活化μ receptor？",
+    "options": {
+      "A": "nalbuphine",
+      "B": "morphine",
+      "C": "methadone",
+      "D": "fentanyl"
+    },
+    "answer": "A",
+    "explanation": "不同的鴉片類止痛藥對μ受體有不同的作用方式。\n(A) 正確，nalbuphine是κ受體促效劑和μ受體部分促效劑/拮抗劑，不主要透過活化μ受體\n(B) 錯誤，morphine是μ受體完全促效劑\n(C) 錯誤，methadone是μ受體促效劑\n(D) 錯誤，fentanyl是μ受體促效劑",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1551"
+  },
+  {
+    "id": 1091260,
+    "question": "60. 下列何種藥物，不會增加細胞中的cyclic GMP含量？",
+    "options": {
+      "A": "isoproterenol",
+      "B": "sodium nitroprusside",
+      "C": "sildenafil",
+      "D": "atrial natriuretic peptide"
+    },
+    "answer": "A",
+    "explanation": "cyclic GMP是重要的第二信使，不同藥物對其濃度有不同影響。\n(A) 正確，isoproterenol是β受體促效劑，主要增加cyclic AMP而非cyclic GMP\n(B) 錯誤，sodium nitroprusside釋放一氧化氮，激活鳥苷酸環化酶，增加cyclic GMP\n(C) 錯誤，sildenafil抑制磷酸二酯酶5，增加cyclic GMP濃度\n(D) 錯誤，atrial natriuretic peptide激活鳥苷酸環化酶，增加cyclic GMP",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1552"
+  },
+  {
+    "id": 1091261,
+    "question": "61. 酸性藥物中毒時，給與NaHCO3的主要原因為何？",
+    "options": {
+      "A": "增加酸性藥物在肝臟代謝的速率",
+      "B": "改變酸性藥物在血液中的穩定度",
+      "C": "增加藥物在血液中的free form，利於腎絲球的過濾",
+      "D": "減少藥物在腎小管的再回收"
+    },
+    "answer": "D",
+    "explanation": "給予碳酸氫鈉主要是鹼化尿液，減少酸性藥物在腎小管的再吸收，促進排泄。\n(A) 錯誤，碳酸氫鈉不會增加肝臟代謝速率\n(B) 錯誤，碳酸氫鈉不影響藥物在血液中的穩定度\n(C) 錯誤，鹼化血液會增加酸性藥物的離子化形式，減少自由形式\n(D) 正確，鹼化尿液會增加酸性藥物的離子化，減少其在腎小管的再回收，促進排泄",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1553"
+  },
+  {
+    "id": 1091262,
+    "question": "62. 下列何種抗生素須併用cilastatin，以避免被腎臟之dehydropeptidase水解破壞？",
+    "options": {
+      "A": "imipenem",
+      "B": "minocycline",
+      "C": "sulfamethoxazole",
+      "D": "tobramycin"
+    },
+    "answer": "A",
+    "explanation": "Imipenem易被腎臟的去氫胜肽酶分解，需併用cilastatin保護。\n(A) 正確，imipenem易被腎臟dehydropeptidase-I分解，必須併用cilastatin抑制該酶\n(B) 錯誤，minocycline不需要併用cilastatin\n(C) 錯誤，sulfamethoxazole不需要併用cilastatin\n(D) 錯誤，tobramycin不需要併用cilastatin",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1554"
+  },
+  {
+    "id": 1091263,
+    "question": "63. Cefepime可增加下列何種藥物進入細菌（例如：enterococci）的濃度，因此二者併用可增加抗菌作用 ？",
+    "options": {
+      "A": "amantadine",
+      "B": "amikacin",
+      "C": "azlocillin",
+      "D": "aztreonam"
+    },
+    "answer": "B",
+    "explanation": "Cefepime可增加氨基糖苷類抗生素進入細菌的濃度，產生協同作用。\n(A) 錯誤，amantadine是抗病毒藥物，不是抗菌藥物\n(B) 正確，cefepime可增加amikacin等氨基糖苷類抗生素進入腸球菌的濃度，產生協同抗菌效果\n(C) 錯誤，azlocillin是青黴素類抗生素，與cefepime協同效果不明顯\n(D) 錯誤，aztreonam與cefepime無此協同作用",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1555"
+  },
+  {
+    "id": 1091264,
+    "question": "64. 下列抗癌藥物中何者會被xanthine oxidase代謝，若同時服用xanthine oxidase抑制劑allopurinol時，可能會增加 其毒性？",
+    "options": {
+      "A": "5-fluorouracil",
+      "B": "6-mercaptopurine",
+      "C": "methotrexate",
+      "D": "6-thioguanin"
+    },
+    "answer": "B",
+    "explanation": "6-巰基嘌呤被黃嘌呤氧化酶代謝，併用allopurinol會增加毒性。\n(A) 錯誤，5-fluorouracil不被黃嘌呤氧化酶代謝\n(B) 正確，6-mercaptopurine被xanthine oxidase代謝，併用allopurinol會抑制其代謝，增加毒性\n(C) 錯誤，methotrexate主要經腎臟排泄，不被黃嘌呤氧化酶代謝\n(D) 錯誤，6-thioguanin較少被黃嘌呤氧化酶代謝",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1556"
+  },
+  {
+    "id": 1091265,
+    "question": "65. 下列何者因可抑制calcineurin phosphatase，可減少器官移植後的排斥反應？",
+    "options": {
+      "A": "basilixmab",
+      "B": "methylprednisolone",
+      "C": "cyclosporine",
+      "D": "orthoclone OKT3"
+    },
+    "answer": "C",
+    "explanation": "Cyclosporine通過抑制鈣調磷酸酶發揮免疫抑制作用。\n(A) 錯誤，basiliximab是IL-2受體拮抗劑\n(B) 錯誤，methylprednisolone是糖皮質激素\n(C) 正確，cyclosporine通過抑制calcineurin phosphatase，阻止IL-2的產生，減少器官移植排斥\n(D) 錯誤，orthoclone OKT3是單株抗體",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1557"
+  },
+  {
+    "id": 1091266,
+    "question": "66. 下列何者為長期服用glucocorticoid藥物最可能造成的副作用？",
+    "options": {
+      "A": "類紅斑性狼瘡",
+      "B": "骨質疏鬆",
+      "C": "肝臟中毒",
+      "D": "腎上腺腫瘤"
+    },
+    "answer": "B",
+    "explanation": "長期使用糖皮質激素最常見的副作用是骨質疏鬆。\n(A) 錯誤，糖皮質激素不會引起紅斑性狼瘡\n(B) 正確，長期使用glucocorticoid會抑制骨形成，增加骨吸收，導致骨質疏鬆\n(C) 錯誤，糖皮質激素一般不會造成肝毒性\n(D) 錯誤，長期使用會抑制腎上腺，不是造成腫瘤",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1558"
+  },
+  {
+    "id": 1091267,
+    "question": "67. 5歲男童因為生長激素受體的基因突變，造成新陳代謝障礙，所以無法長大。下列何者最適合改善此種症狀？",
+    "options": {
+      "A": "somatropin",
+      "B": "octreotide",
+      "C": "atosiban",
+      "D": "mecasermin"
+    },
+    "answer": "D",
+    "explanation": "生長激素受體基因突變需要使用類胰島素生長因子。\n(A) 錯誤，somatropin是生長激素，但患者的問題是受體突變\n(B) 錯誤，octreotide是生長激素抑制劑\n(C) 錯誤，atosiban是催產素拮抗劑\n(D) 正確，mecasermin是重組人類類胰島素生長因子-1，適用於生長激素受體缺陷的患者",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1559"
+  },
+  {
+    "id": 1091268,
+    "question": "68. 下列何者屬於M3蕈毒鹼受體（M3 muscarinic receptor）拮抗劑，臨床上用於治療膀胱過動症（overactive bladder）？",
+    "options": {
+      "A": "pirenzepine",
+      "B": "trihexyphenidyl",
+      "C": "ipratropium",
+      "D": "oxybutynin"
+    },
+    "answer": "D",
+    "explanation": "Oxybutynin是M3受體拮抗劑，用於治療膀胱過動症。\n(A) 錯誤，pirenzepine主要是M1受體拮抗劑\n(B) 錯誤，trihexyphenidyl主要用於帕金森病\n(C) 錯誤，ipratropium主要用於呼吸道疾病\n(D) 正確，oxybutynin是M3 muscarinic receptor拮抗劑，用於治療膀胱過動症",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1560"
+  },
+  {
+    "id": 1091269,
+    "question": "69. 下列藥物中，何者是屬於serotonin（5-HT3）的拮抗劑，用於預防因做化療（chemotherapy）時或手術後所引 起的噁心、嘔吐？",
+    "options": {
+      "A": "methysergide",
+      "B": "ketanserin",
+      "C": "cyproheptadine",
+      "D": "ondensetron",
+      "E": "一律給分"
+    },
+    "answer": "E",
+    "explanation": "此題已刪除，一律給分。\n(A) 錯誤，methysergide是5-HT2受體拮抗劑\n(B) 錯誤，ketanserin是5-HT2受體拮抗劑\n(C) 錯誤，cyproheptadine是抗組織胺和5-HT拮抗劑\n(D) 錯誤，ondansetron是5-HT3受體拮抗劑，用於預防化療引起的噁心嘔吐\n(E) 正確，此題一律給分",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1561"
+  },
+  {
+    "id": 1091270,
+    "question": "70. 小孩因病毒感染而引起發燒反應，首選退燒藥物應是下列何者？",
+    "options": {
+      "A": "aspirin",
+      "B": "acetaminophen",
+      "C": "etodolac",
+      "D": "celecoxib"
+    },
+    "answer": "B",
+    "explanation": "兒童發燒首選acetaminophen，避免使用aspirin以防雷氏症候群。\n(A) 錯誤，aspirin可能引起兒童雷氏症候群（Reye's syndrome），不建議用於病毒感染的兒童\n(B) 正確，acetaminophen是兒童發燒的首選退燒藥物，安全有效\n(C) 錯誤，etodolac是NSAID，不是兒童首選\n(D) 錯誤，celecoxib是COX-2抑制劑，不是兒童首選",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1562"
+  },
+  {
+    "id": 1091271,
+    "question": "71. 下列何者為GABAB受體的致效劑（agonist），主要作用於中樞神經系統，用於治療肌肉疼痛和痙攣？",
+    "options": {
+      "A": "dantrolene",
+      "B": "baclofen",
+      "C": "rocuronium",
+      "D": "tizanidine"
+    },
+    "answer": "B",
+    "explanation": "Baclofen是GABAB受體致效劑，用於治療肌肉痙攣。\n(A) 錯誤，dantrolene直接作用於肌肉，抑制鈣離子釋放\n(B) 正確，baclofen是GABAB受體agonist，作用於中樞神經系統，用於治療肌肉痙攣\n(C) 錯誤，rocuronium是神經肌肉阻斷劑\n(D) 錯誤，tizanidine是α2腎上腺素受體致效劑",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1563"
+  },
+  {
+    "id": 1091272,
+    "question": "72. 相較於haloperidol，非典型抗精神病藥物olanzapine比較不會造成錐體外症候群（extrapyramidal symptoms）， 下列何者為其可能的作用原因？",
+    "options": {
+      "A": "olanzapine活化α-adrenergic receptor",
+      "B": "olanzapine抑制突觸前dopamine釋放",
+      "C": "olanzapine與D2 dopamine receptor的親和力較低",
+      "D": "olanzapine對D1 dopamine receptor的親和力較高"
+    },
+    "answer": "C",
+    "explanation": "Olanzapine對D2受體親和力較低，因此較少引起錐體外症候群。\n(A) 錯誤，olanzapine不是通過活化α-adrenergic receptor減少錐體外症候群\n(B) 錯誤，olanzapine不抑制突觸前多巴胺釋放\n(C) 正確，olanzapine與D2 dopamine receptor的親和力比haloperidol低，因此較少引起錐體外症候群\n(D) 錯誤，對D1受體的親和力不是主要原因",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1564"
+  },
+  {
+    "id": 1091273,
+    "question": "73. 乙醇（酒精）與下列何者併用會造成乙醛（acetaldehyde）蓄積，導致噁心、嘔吐及低血壓等身體不適的反 應？",
+    "options": {
+      "A": "disulfiram",
+      "B": "acamprosate",
+      "C": "naltrexone",
+      "D": "baclofen"
+    },
+    "answer": "A",
+    "explanation": "Disulfiram抑制乙醛去氫酶，導致乙醛蓄積。\n(A) 正確，disulfiram抑制aldehyde dehydrogenase，導致acetaldehyde蓄積，引起不適反應\n(B) 錯誤，acamprosate作用機制不是抑制乙醛去氫酶\n(C) 錯誤，naltrexone是阿片受體拮抗劑\n(D) 錯誤，baclofen是GABAB受體致效劑",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1565"
+  },
+  {
+    "id": 1091274,
+    "question": "74. 下列何者可用於治療急性與慢性無機砷中毒（inorganic arsenic poisoning）的螫合劑（chelating agent）？",
+    "options": {
+      "A": "unithiol",
+      "B": "penicillamine",
+      "C": "deferoxamine",
+      "D": "prussian blue"
+    },
+    "answer": "A",
+    "explanation": "Unithiol是治療無機砷中毒的有效螯合劑。\n(A) 正確，unithiol（DMPS）是治療急性和慢性無機砷中毒的有效螯合劑\n(B) 錯誤，penicillamine主要用於銅中毒和威爾森病\n(C) 錯誤，deferoxamine主要用於鐵中毒\n(D) 錯誤，prussian blue主要用於鉈和銫中毒",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1566"
+  },
+  {
+    "id": 1091275,
+    "question": "75. 下列具細胞週期專一性之抗癌藥物（cell cycle-specific agents）中，藥物與其所抑制細胞週期之配對，何者正 確？",
+    "options": {
+      "A": "capecitabine－mitosis（M）期",
+      "B": "irinotecan－DNA synthesis（S）期",
+      "C": "ixabepilone－M期",
+      "D": "vincristine－S期"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "Irinotecan作用於S期，ixabepilone作用於M期。\n(A) 錯誤，capecitabine是5-FU前驅藥物，作用於S期，不是M期\n(B) 正確，irinotecan是topoisomerase I抑制劑，主要作用於DNA synthesis（S）期\n(C) 正確，ixabepilone是微管穩定劑，作用於mitosis（M）期\n(D) 錯誤，vincristine是微管抑制劑，作用於M期，不是S期",
+    "tags": [
+      "109-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_1567"
+  },
+  {
+    "id": 1091276,
+    "question": "76. 黃瘤（xanthoma）病灶中，foamy cells細胞質堆積的物質，最可能為：",
+    "options": {
+      "A": "磷酸鈣",
+      "B": "膽固醇",
+      "C": "Mallory-Denk body",
+      "D": "尿酸"
+    },
+    "answer": "B",
+    "explanation": "黃瘤中的泡沫細胞主要含有膽固醇酯。\n(A) 錯誤，磷酸鈣主要見於鈣化病變\n(B) 正確，黃瘤（xanthoma）中foamy cells的細胞質主要堆積膽固醇酯\n(C) 錯誤，Mallory-Denk body見於肝細胞損傷\n(D) 錯誤，尿酸見於痛風結節",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1568"
+  },
+  {
+    "id": 1091277,
+    "question": "77. 下列有關萎縮（atrophy）的敘述，何者錯誤？",
+    "options": {
+      "A": "在胚胎時期，某些組織已開始萎縮",
+      "B": "萎縮是組織或器官的細胞變小，但細胞數目並不會減少",
+      "C": "老年人腦部萎縮（senile atrophy）的主要原因是由於血液供應減少",
+      "D": "脂褐質（lipofuscin）可見於某些器官的萎縮"
+    },
+    "answer": "B",
+    "explanation": "萎縮時細胞變小且數目也會減少。\n(A) 正確，胚胎發育過程中確實有程序性細胞凋亡和組織萎縮\n(B) 錯誤，萎縮不僅是細胞變小，細胞數目也會通過凋亡而減少\n(C) 正確，老年性腦萎縮主要因血液供應減少\n(D) 正確，萎縮器官中常見脂褐質沉積",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1569"
+  },
+  {
+    "id": 1091278,
+    "question": "78. 下列關於染色體22q11.2缺失症候群（chromosome 22q11.2 deletion syndrome）的敘述，何者正確？",
+    "options": {
+      "A": "免疫系統主要會有B淋巴細胞的功能異常",
+      "B": "內分泌系統主要是腦下腺發育不良的問題",
+      "C": "多數的個案其染色體的缺失或突變是隨機的發生在生殖細胞（精或卵）形成的過程",
+      "D": "必須靠傳統染色體核型分析（karyotyping）才能確診"
+    },
+    "answer": "C",
+    "explanation": "22q11.2缺失症候群多數是新發突變，不是遺傳而來。\n(A) 錯誤，主要是T淋巴細胞功能異常，因胸腺發育不良\n(B) 錯誤，主要是副甲狀腺發育不良，不是腦下腺\n(C) 正確，約90%的22q11.2缺失是新發突變（de novo），發生在生殖細胞形成過程\n(D) 錯誤，需要使用螢光原位雜交（FISH）或微陣列分析，傳統核型分析無法檢出",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1570"
+  },
+  {
+    "id": 1091279,
+    "question": "79. 下列感染性疾病，何者的典型病理變化會出現小血管炎？<br>①第一、二、三期梅毒 <br>②斑疹傷寒（typhus） <br>③壞疽性臁瘡（ecthyma gangrenosum）",
+    "options": {
+      "A": "①②③",
+      "B": "僅①②",
+      "C": "僅②③",
+      "D": "僅①③"
+    },
+    "answer": "A",
+    "explanation": "這題的解題關鍵在於識別哪些感染性疾病會引起小血管炎（small vessel vasculitis）作為其典型病理變化。需要了解不同感染病原體對血管壁的侵犯機制和病理表現。<br> ① 正確，第一、二、三期梅毒會引起血管炎，特別是在二期梅毒時會出現小血管炎和血管內膜炎，這是梅毒螺旋體感染的典型病理變化之一。<br> ② 正確，斑疹傷寒（typhus）由立克次體（Rickettsia）感染引起，病原體具有血管內皮細胞親和性，會感染並破壞小血管內皮細胞，導致典型的小血管炎和血管周圍炎。<br> ③ 正確，壞疽性臁瘡（ecthyma gangrenosum）主要由綠膿桿菌（Pseudomonas aeruginosa）感染引起，細菌會侵犯小血管壁並產生血管毒性物質，導致血管炎和血管栓塞，形成特徵性的壞疽性皮膚病變。",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1571"
+  },
+  {
+    "id": 1091280,
+    "question": "80. 關於鉛（lead）中毒的相關症狀與病變，下列何者較不常見？",
+    "options": {
+      "A": "溶血性貧血（hemolytic anemia）",
+      "B": "擴張性心肌病變（dilated cardiomyopathy）",
+      "C": "周邊神經脫髓鞘性病變（peripheral demyelinating neuropathy）",
+      "D": "痛風（gout）"
+    },
+    "answer": "B",
+    "explanation": "鉛中毒較少引起擴張性心肌病變。\n(A) 正確，鉛中毒會引起溶血性貧血\n(B) 錯誤，擴張性心肌病變不是鉛中毒的常見表現\n(C) 正確，鉛中毒會引起周邊神經脫髓鞘病變\n(D) 正確，鉛中毒會影響腎臟，導致痛風",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1572"
+  },
+  {
+    "id": 1091281,
+    "question": "81. 相對而言，下列何者較少發生 BRAF V600E mutation？",
+    "options": {
+      "A": "Breast cancer",
+      "B": "Colon cancer",
+      "C": "Malignant melanoma",
+      "D": "Papillary thyroid carcinoma"
+    },
+    "answer": "A",
+    "explanation": "BRAF V600E突變在不同癌症中的發生率差異很大，乳癌中此突變相對較少見。\n(A) 正確，乳癌中BRAF V600E突變相對較少發生，約僅1-3%的病例\n(B) 錯誤，結腸癌中BRAF V600E突變約佔10-15%的病例\n(C) 錯誤，惡性黑色素瘤中BRAF V600E突變非常常見，約佔50-60%的病例\n(D) 錯誤，乳突狀甲狀腺癌中BRAF V600E突變約佔45-50%的病例",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1573"
+  },
+  {
+    "id": 1091282,
+    "question": "82. 下列身體水腫（edema）與積液的情況中，何者致病機制與其他三者不同？",
+    "options": {
+      "A": "血絲蟲感染引起的象皮病（elephantiasis）",
+      "B": "乳糜胸（chylothorax）",
+      "C": "乳癌病患接受乳房切除與腋下淋巴結清除後引起的上肢水腫",
+      "D": "肺梗塞（lung infarct）引起的肋膜積水（pleural effusion）"
+    },
+    "answer": "D",
+    "explanation": "肺梗塞引起的肋膜積水屬於滲出性積水，而其他三者都是淋巴系統阻塞造成的水腫。\n(A) 錯誤，血絲蟲感染阻塞淋巴管造成淋巴水腫，形成象皮病\n(B) 錯誤，乳糜胸是胸導管破裂或阻塞導致乳糜液積聚\n(C) 錯誤，乳房切除與腋下淋巴結清除阻斷淋巴回流造成上肢淋巴水腫\n(D) 正確，肺梗塞引起的肋膜積水是因為血管通透性增加和發炎反應，屬於滲出性機制，與淋巴阻塞無關",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1574"
+  },
+  {
+    "id": 1091283,
+    "question": "83. 有關肥厚型心肌病變（hypertrophic cardiomyopathy）的特徵，何者錯誤？",
+    "options": {
+      "A": "β–myosin heavy chain的基因產生突變是最常見的原因",
+      "B": "年輕人猝死的常見原因之一",
+      "C": "左心室游離壁（left ventricular free wall）增厚程度比心室中隔（ventricular septum）增厚程度要來得明顯",
+      "D": "主動脈開口附近心室變厚導致左心室流出通道阻塞（left ventricular outflow tract obstruction）是常見的特徵"
+    },
+    "answer": "C",
+    "explanation": "肥厚型心肌病變主要特徵是心室中隔不對稱性肥厚，而非左心室游離壁肥厚更明顯。\n(A) 正確，β-myosin heavy chain基因突變是肥厚型心肌病變最常見的遺傳原因\n(B) 正確，肥厚型心肌病變是年輕運動員猝死的重要原因之一\n(C) 錯誤，肥厚型心肌病變的特徵是心室中隔（ventricular septum）肥厚程度比左心室游離壁更明顯，形成不對稱性肥厚\n(D) 正確，心室中隔肥厚導致左心室流出通道阻塞是此病的典型特徵",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1575"
+  },
+  {
+    "id": 1091284,
+    "question": "84. 有關慢性骨髓性白血病（chronic myelogenous leukemia）的敘述，下列何者正確？",
+    "options": {
+      "A": "病人多數為兒童及青少年",
+      "B": "骨髓中的細胞量明顯比正常減少（hypocellular marrow）",
+      "C": "病人血液中的骨髓母細胞（myeloblasts）占比超過20%",
+      "D": "腫瘤細胞有第9對及第22對染色體轉位，造成BCR-ABL融合基因"
+    },
+    "answer": "D",
+    "explanation": "慢性骨髓性白血病的特徵是費城染色體產生的BCR-ABL融合基因，主要發生在成人。\n(A) 錯誤，慢性骨髓性白血病主要發生在成人，中位年齡約50-60歲\n(B) 錯誤，骨髓中細胞量明顯增加（hypercellular marrow），白血球數量大幅上升\n(C) 錯誤，慢性期的骨髓母細胞比例通常小於5-10%，急性期才會超過20%\n(D) 正確，t(9;22)染色體轉位產生費城染色體，形成BCR-ABL融合基因是此病的特徵性遺傳異常",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1576"
+  },
+  {
+    "id": 1091285,
+    "question": "85. 下列何者是最常見的胸腺癌（thymic carcinoma）？",
+    "options": {
+      "A": "腺癌（adenocarcinoma）",
+      "B": "淋巴上皮瘤樣癌（lymphoepithelioma-like carcinoma）",
+      "C": "神經內分泌癌（neuroendocrine carcinoma）",
+      "D": "鱗狀細胞癌（squamous cell carcinoma）"
+    },
+    "answer": "D",
+    "explanation": "胸腺癌中以鱗狀細胞癌最為常見，約佔所有胸腺癌的一半以上。\n(A) 錯誤，腺癌在胸腺癌中相對較少見\n(B) 錯誤，淋巴上皮瘤樣癌在胸腺癌中屬於少見類型\n(C) 錯誤，神經內分泌癌在胸腺癌中屬於罕見類型\n(D) 正確，鱗狀細胞癌（squamous cell carcinoma）是最常見的胸腺癌類型",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1577"
+  },
+  {
+    "id": 1091286,
+    "question": "86. 關於鼻腔血管纖維瘤（angiofibroma）的敘述，下列何者正確？",
+    "options": {
+      "A": "最常發生在中老年男性",
+      "B": "一般相信是從鼻腔後側壁的富含纖維血管的間質長出來的",
+      "C": "是造成鼻腔中隔壞死性潰瘍最常見的原因",
+      "D": "屬良性腫瘤，不會復發或造成病患死亡"
+    },
+    "answer": "B",
+    "explanation": "鼻腔血管纖維瘤是發生在青少年男性的良性腫瘤，起源於鼻腔後側壁富含血管的纖維組織。\n(A) 錯誤，鼻腔血管纖維瘤主要發生在青少年男性，而非中老年男性\n(B) 正確，此腫瘤一般認為起源於鼻腔後側壁（蝶腭孔附近）富含纖維血管的間質組織\n(C) 錯誤，鼻腔中隔壞死性潰瘍最常見原因是韋格納肉芽腫或藥物濫用\n(D) 錯誤，雖為良性腫瘤，但具有局部侵犯性，手術切除不完全時可能復發，嚴重時可危及生命",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1578"
+  },
+  {
+    "id": 1091287,
+    "question": "87. 下列何種疾病的發生與石棉塵肺症（asbestosis）較沒有相關？",
+    "options": {
+      "A": "纖維疤塊（fibrous plaque）",
+      "B": "肺淋巴瘤",
+      "C": "肺上皮癌",
+      "D": "間皮瘤（mesothelioma）"
+    },
+    "answer": "B",
+    "explanation": "石棉暴露與多種肺部疾病相關，但與肺淋巴瘤的關聯性較弱。\n(A) 錯誤，纖維疤塊（fibrous plaque）是石棉暴露的典型胸膜病變\n(B) 正確，肺淋巴瘤與石棉暴露的關聯性相對較弱，不是石棉相關疾病的主要類型\n(C) 錯誤，肺上皮癌（肺癌）與石棉暴露有明確關聯，風險顯著增加\n(D) 錯誤，間皮瘤（mesothelioma）是石棉暴露最特異性的惡性腫瘤",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1579"
+  },
+  {
+    "id": 1091288,
+    "question": "88. 下列何種肺癌相對其它選項較常具有表皮生長因子受體（epidermal growth factor receptor）基因的突變？",
+    "options": {
+      "A": "腺癌",
+      "B": "鱗狀上皮細胞癌",
+      "C": "小細胞癌",
+      "D": "大細胞癌"
+    },
+    "answer": "A",
+    "explanation": "表皮生長因子受體基因突變在肺腺癌中最為常見，特別是在非吸菸的亞洲女性患者中。\n(A) 正確，肺腺癌中EGFR基因突變最常見，約20-50%的病例（在亞洲人群中更高）\n(B) 錯誤，鱗狀上皮細胞癌中EGFR基因突變相對較少\n(C) 錯誤，小細胞肺癌中EGFR基因突變極少見\n(D) 錯誤，大細胞肺癌中EGFR基因突變也較少見",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1580"
+  },
+  {
+    "id": 1091289,
+    "question": "89. 關於原發性硬化性膽管炎（primary sclerosing cholangitis），下列敘述何者錯誤？",
+    "options": {
+      "A": "肝內及肝外膽管會有閉塞性纖維化（obliterative fibrosis）和節段性擴張（segmental dilatation）",
+      "B": "與HLA-B8相關",
+      "C": "常伴隨炎症性腸病（inflammatory bowel disease）",
+      "D": "發生於女性較男性多，會出現疲勞，搔癢和黃疸"
+    },
+    "answer": "D",
+    "explanation": "原發性硬化性膽管炎主要發生在男性，而非女性較多。\n(A) 正確，此病特徵是膽管的閉塞性纖維化和節段性擴張，形成串珠狀外觀\n(B) 正確，與HLA-B8和HLA-DR3等基因型相關\n(C) 正確，約70-80%的患者伴隨炎症性腸病，特別是潰瘍性結腸炎\n(D) 錯誤，原發性硬化性膽管炎主要發生在男性，男女比例約2:1，而非女性較多",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1581"
+  },
+  {
+    "id": 1091290,
+    "question": "90. 關於胰臟腫瘤下列敘述何者正確？",
+    "options": {
+      "A": "卵巢間質（ovarian stroma）結構常見於黏液性囊腺瘤（mucinous cystadenoma）",
+      "B": "固體假乳頭狀腫瘤（solid-pseudopapillary neoplasm）是良性腫瘤，通常發生在年輕男性",
+      "C": "漿液性囊性腫瘤（serous cystic neoplasm）於男性較常見，約為女性的兩倍",
+      "D": "管內乳頭狀黏液性腫瘤（intraductal papillary mucinous neoplasm）組成包括柱狀、含黏液（mucin）的上皮細 胞，與胰管系統沒有流通"
+    },
+    "answer": "A",
+    "explanation": "胰臟黏液性囊腺瘤常含有卵巢樣間質結構，這是其病理特徵之一。\n(A) 正確，黏液性囊腺瘤（mucinous cystadenoma）常含有卵巢間質（ovarian stroma）結構，幾乎只發生在女性\n(B) 錯誤，固體假乳頭狀腫瘤主要發生在年輕女性，且具有低度惡性潛能\n(C) 錯誤，漿液性囊性腫瘤在女性較常見，約為男性的10倍\n(D) 錯誤，管內乳頭狀黏液性腫瘤與主胰管或分支胰管系統有直接連通",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1582"
+  },
+  {
+    "id": 1091291,
+    "question": "91. 下列何種口腔病灶最容易演變為鱗狀細胞癌（squamous cell carcinoma）？",
+    "options": {
+      "A": "白斑（leukoplakia）",
+      "B": "紅斑（erythroplakia）",
+      "C": "毛狀白斑（hairy leukoplakia）",
+      "D": "口瘡性潰瘍（aphthous ulcer）"
+    },
+    "answer": "B",
+    "explanation": "紅斑病變比白斑病變具有更高的癌化風險，是口腔癌前病變中最危險的類型。\n(A) 錯誤，白斑（leukoplakia）雖有癌化風險，但比紅斑低\n(B) 正確，紅斑（erythroplakia）具有最高的癌化風險，約50-90%會演變為鱗狀細胞癌\n(C) 錯誤，毛狀白斑（hairy leukoplakia）主要與EBV感染相關，癌化風險較低\n(D) 錯誤，口瘡性潰瘍（aphthous ulcer）是良性復發性潰瘍，無癌化風險",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1583"
+  },
+  {
+    "id": 1091292,
+    "question": "92. 沉積在腎上腺微結節性增生（micronodular hyperplasia）最主要的色素為：",
+    "options": {
+      "A": "黑色素",
+      "B": "血鐵素",
+      "C": "血色素",
+      "D": "脂褐質"
+    },
+    "answer": "D",
+    "explanation": "腎上腺微結節性增生中沉積的主要色素是脂褐質，這是細胞老化的標記。\n(A) 錯誤，黑色素主要見於黑色素瘤或色素性腎上腺病變\n(B) 錯誤，血鐵素主要見於鐵質沉積疾病\n(C) 錯誤，血色素主要見於出血性病變\n(D) 正確，脂褐質（lipofuscin）是腎上腺微結節性增生中最主要的色素沉積，呈現棕黃色",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1584"
+  },
+  {
+    "id": 1091293,
+    "question": "93. 在嗜鉻細胞瘤（pheochromocytoma）中的支持細胞（sustentacular cells）最有可能以下列何種免疫組織化學染 色標記將其突顯出來？",
+    "options": {
+      "A": "嗜鉻粒蛋白（chromogranin）",
+      "B": "S100蛋白（S100）",
+      "C": "突觸素（synaptophysin）",
+      "D": "神經元特異性烯醇化酶（neuron specific enolase）"
+    },
+    "answer": "B",
+    "explanation": "嗜鉻細胞瘤中的支持細胞可用S100蛋白染色標記，有助於診斷和預後評估。\n(A) 錯誤，嗜鉻粒蛋白（chromogranin）主要標記神經內分泌細胞本身，而非支持細胞\n(B) 正確，S100蛋白是支持細胞（sustentacular cells）的特異性標記，用於評估嗜鉻細胞瘤的良惡性\n(C) 錯誤，突觸素（synaptophysin）主要標記神經內分泌細胞\n(D) 錯誤，神經元特異性烯醇化酶也主要標記神經內分泌細胞",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1585"
+  },
+  {
+    "id": 1091294,
+    "question": "94. 關於纖維肌肉發育不良（fibromuscular dysplasia）所導致之腎動脈狹窄，以下何者最不可能發生？",
+    "options": {
+      "A": "女性較多",
+      "B": "好發年齡為20至40歲",
+      "C": "僅會侵犯血管中層",
+      "D": "腎臟呈現缺血性萎縮"
+    },
+    "answer": "C",
+    "explanation": "纖維肌肉發育不良不僅侵犯血管中層，也可能影響內膜和外膜。\n(A) 正確，纖維肌肉發育不良確實在女性中較常見\n(B) 正確，好發年齡確實為20-40歲的年輕女性\n(C) 錯誤，纖維肌肉發育不良可侵犯血管壁的各層（內膜、中層、外膜），而非僅侵犯中層\n(D) 正確，腎動脈狹窄會導致患側腎臟缺血性萎縮",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1586"
+  },
+  {
+    "id": 1091295,
+    "question": "95. 下列有關外陰部乳房外柏哲德氏病（extramammary Paget disease）的敘述， 何者較不正確？",
+    "options": {
+      "A": "此罕見病灶的臨床表徵與乳房的柏哲德氏病相似",
+      "B": "與乳頭的柏哲德氏病相同，外陰部乳房外柏哲德氏病大多數有伴隨的潛在侵襲癌",
+      "C": "該疾病的腫瘤細胞–柏哲德氏細胞（Paget cell）常常表現cytokeratin 7",
+      "D": "柏哲德氏細胞可能向周邊上皮蔓延，超越外觀上肉眼可以辨識的區域，所以有時無法將病灶完全切除而導 致復發"
+    },
+    "answer": "B",
+    "explanation": "外陰部乳房外柏哲德氏病大多數為原發性，不像乳房柏哲德氏病總是伴隨潛在癌症。\n(A) 正確，外陰部乳房外柏哲德氏病的臨床表現確實與乳房柏哲德氏病相似\n(B) 錯誤，外陰部乳房外柏哲德氏病大多數（約85%）為原發性，僅少數伴隨潛在侵襲癌，這與乳房柏哲德氏病不同\n(C) 正確，柏哲德氏細胞常表現cytokeratin 7陽性\n(D) 正確，柏哲德氏細胞確實可能蔓延超越肉眼可見範圍，導致切除困難和復發",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1587"
+  },
+  {
+    "id": 1091296,
+    "question": "96. 下列有關卵巢生殖細胞瘤（germ cell tumor）的敘述， 何者較不正確？",
+    "options": {
+      "A": "良性囊性畸胎瘤（benign cystic teratoma）為最常見的卵巢生殖細胞瘤",
+      "B": "無性細胞瘤（dysgerminoma）為最常見的惡性卵巢生殖細胞瘤",
+      "C": "大部分的無性細胞瘤（dysgerminoma）發生在10歲以下",
+      "D": "卵黃囊腫瘤（yolk sac tumor）為第二常見的惡性卵巢生殖細胞瘤，其腫瘤細胞會分泌alpha-fetoprotein"
+    },
+    "answer": "C",
+    "explanation": "無性細胞瘤主要發生在青春期後的年輕女性，而非10歲以下兒童。\n(A) 正確，良性囊性畸胎瘤（皮樣囊腫）確實是最常見的卵巢生殖細胞瘤\n(B) 正確，無性細胞瘤是最常見的惡性卵巢生殖細胞瘤\n(C) 錯誤，無性細胞瘤主要發生在青春期後至30歲的年輕女性，10歲以下較少見\n(D) 正確，卵黃囊腫瘤是第二常見的惡性卵巢生殖細胞瘤，會分泌alpha-fetoprotein",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1588"
+  },
+  {
+    "id": 1091297,
+    "question": "97. 下列有關葡萄胎（hydatidiform mole）的敘述，何者較不正確？",
+    "options": {
+      "A": "完全性葡萄胎（complete mole）意指合子的遺傳物質皆為父源",
+      "B": "不完全性葡萄胎（partial mole）患者比完全性葡萄胎患者有較高危險性發生絨毛膜癌（choriocarcinoma）",
+      "C": "完全性葡萄胎（complete mole）患者比不完全性葡萄胎患者有較高危險性發生侵入性葡萄胎（invasive mole）",
+      "D": "不完全性葡萄胎（partial mole）意指合子的遺傳物質為母源加父源"
+    },
+    "answer": "B",
+    "explanation": "完全性葡萄胎比不完全性葡萄胎有更高的風險發展為絨毛膜癌。\n(A) 正確，完全性葡萄胎的遺傳物質全部來自父源（通常為46,XX或46,XY）\n(B) 錯誤，完全性葡萄胎患者比不完全性葡萄胎患者有更高風險發生絨毛膜癌（約15-20% vs 1-5%）\n(C) 正確，完全性葡萄胎確實比不完全性葡萄胎有更高風險發生侵入性葡萄胎\n(D) 正確，不完全性葡萄胎含有母源和父源的遺傳物質（通常為三倍體69,XXY或69,XXX）",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1589"
+  },
+  {
+    "id": 1091298,
+    "question": "98. 退化性關節炎（osteoarthritis）主要的致病機轉是：",
+    "options": {
+      "A": "關節軟骨下之成骨細胞（subchondral osteocyte）因年紀累積之過度使用而損傷，引起該關節發炎反應",
+      "B": "關節滑液膜細胞（synoviocyte）退化，導致淋巴球浸潤該關節，引起發炎反應",
+      "C": "關節軟骨退化（articular cartilage degeneration）和軟骨細胞異常的修復能力（disordered repair of chondrocytes）",
+      "D": "關節滑液膜細胞（synoviocyte）損傷退化，導致synoviocyte因修復而過度增生，阻礙關節附近組織之血管通 透性及養分供給"
+    },
+    "answer": "C",
+    "explanation": "退化性關節炎的主要病理機轉是關節軟骨退化和軟骨細胞修復能力異常。\n(A) 錯誤，主要問題不在於軟骨下成骨細胞的損傷\n(B) 錯誤，滑液膜細胞退化並非主要致病機轉\n(C) 正確，關節軟骨退化（articular cartilage degeneration）和軟骨細胞修復能力異常是退化性關節炎的核心病理機轉\n(D) 錯誤，滑液膜細胞過度增生不是退化性關節炎的主要特徵",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1590"
+  },
+  {
+    "id": 1091299,
+    "question": "99. 下列有關大腦類澱粉血管病變（cerebral amyloid angiopathy, CAA）的描述何者正確？<br>①CAA是造成lobar hemorrhage的危險因子之一 <br>②導因於中小型腦膜或皮質腦動脈血管壁有包含tau蛋白之類澱粉沉積 <br>③CAA 致病率與ApoE基因（與阿茲海默症有因果關聯的基因）多形性變異（polymorphism）有關 <br>④CAA血管病變 常會引起血管纖維化（arteriolar sclerosis/fibrosis）",
+    "options": {
+      "A": "①②",
+      "B": "①③",
+      "C": "②③",
+      "D": "②④"
+    },
+    "answer": "B",
+    "explanation": "這題的解題關鍵在於理解大腦類澱粉血管病變的病理特徵、臨床表現和遺傳因子。需要掌握CAA的類澱粉蛋白組成、好發部位、出血型態和基因關聯性。<br> ① 正確，CAA是造成腦葉出血（lobar hemorrhage）的重要危險因子，特別是老年人反覆發生的皮質下出血，與深部腦出血的病因不同。<br> ② 錯誤，CAA是由於中小型腦膜或皮質腦動脈血管壁有β類澱粉蛋白（beta-amyloid）沉積，不是tau蛋白。tau蛋白沉積主要見於神經纖維糾結，而非血管壁。<br> ③ 正確，CAA致病率與載脂蛋白E基因（ApoE gene）多形性變異有關，特別是ApoE ε4對偶基因會增加CAA的風險，這與阿茲海默症的遺傳易感性相似。<br> ④ 錯誤，CAA血管病變主要是類澱粉蛋白沉積導致血管壁變性和脆性增加，而不是典型的血管纖維化（arteriolar sclerosis/fibrosis）。血管纖維化更常見於高血壓性小血管病變。",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1591"
+  },
+  {
+    "id": 1091200,
+    "question": "100. 髓芽細胞瘤（medulloblastoma, WHO grade IV）是一好發於兒童小腦，分化差之中樞神經腫瘤。其腫瘤分子 分類（molecular subtype）中，何者預後最佳？",
+    "options": {
+      "A": "the WNT type",
+      "B": "the SHH type",
+      "C": "group 3 medulloblastoma",
+      "D": "group 4 medulloblastoma"
+    },
+    "answer": "A",
+    "explanation": "髓芽細胞瘤的分子分型中，WNT型預後最佳，5年存活率可達95%以上。\n(A) 正確，WNT型髓芽細胞瘤預後最佳，治療反應良好，復發率最低\n(B) 錯誤，SHH型預後中等，次於WNT型\n(C) 錯誤，第3群髓芽細胞瘤預後最差，常有MYC基因擴增\n(D) 錯誤，第4群髓芽細胞瘤預後中等，介於第3群和SHH型之間RetryClaude can make mistakes. Please double-check responses. Sonnet 4",
+    "tags": [
+      "109-1(二)",
+      "病理"
+    ],
+    "group_id": "group_1592"
+  }
+]

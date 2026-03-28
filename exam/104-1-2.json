@@ -1,0 +1,1725 @@
+[
+  {
+    "id": 1041201,
+    "question": "1. 當某種離子在細胞膜兩側達成電化學平衡（electrochemical equilibrium）時，下列敘述何者正確？",
+    "options": {
+      "A": "細胞膜電位（membrane potential）等於 0",
+      "B": "該種離子在細胞膜兩側之濃度相等",
+      "C": "細胞膜內側之正電荷總數等於細胞膜外側之負電荷總數",
+      "D": "此時之膜電位即為該種離子之平衡電位（equilibrium potential）"
+    },
+    "answer": "D",
+    "explanation": "電化學平衡是指某種離子在膜兩側的化學濃度梯度力和電性梯度力達到平衡，此時該離子的平衡電位等於膜電位。\n(A) 錯誤，電化學平衡時膜電位不會等於0，而是等於該離子的平衡電位\n(B) 錯誤，電化學平衡時離子濃度通常不相等，是濃度梯度與電性梯度的平衡\n(C) 錯誤，膜內外總電荷數的關係與單一離子的電化學平衡無關\n(D) 正確，當某離子達到電化學平衡時，此時的膜電位即為該離子的平衡電位（equilibrium potential）",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3690"
+  },
+  {
+    "id": 1041202,
+    "question": "2. 下列關於階梯電位（graded potentials）的敘述，何者正確？",
+    "options": {
+      "A": "其強度會隨著傳遞距離越遠而變小",
+      "B": "需要一定的刺激強度-閾刺激（threshold stimuli）才能引發",
+      "C": "具有絕對不反映期（refractory period）",
+      "D": "在中樞神經突觸後神經元記錄到的漸進電位，一定是去極化"
+    },
+    "answer": "A",
+    "explanation": "階梯電位（graded potentials）是局部性、漸進性的電位變化，會隨距離遞減。\n(A) 正確，階梯電位會隨著傳遞距離增加而強度遞減，這是其重要特徵\n(B) 錯誤，階梯電位不需要閾刺激即可引發，任何強度的刺激都能產生相應的階梯電位\n(C) 錯誤，階梯電位沒有絕對不反映期（refractory period），這是動作電位的特徵\n(D) 錯誤，突觸後電位可以是去極化（EPSP）或超極化（IPSP）",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3691"
+  },
+  {
+    "id": 1041203,
+    "question": "3. 下列有關 muscarinic cholinergic receptors 的敘述，何者正確？",
+    "options": {
+      "A": "是一種 G-protein-coupled receptors",
+      "B": "高密度分布於骨骼肌終板（end plate）",
+      "C": "與 acetylcholine 結合後能容許鈉與鉀離子通過",
+      "D": "高密度分布於交感與副交感節後神經胞體（soma）與樹突（dendrites）上"
+    },
+    "answer": "A",
+    "explanation": "毒蕈鹼膽鹼受體（muscarinic cholinergic receptors）屬於G蛋白偶聯受體家族。\n(A) 正確，毒蕈鹼受體是G蛋白偶聯受體（G-protein-coupled receptors）\n(B) 錯誤，骨骼肌終板主要分布菸鹼受體（nicotinic receptors），不是毒蕈鹼受體\n(C) 錯誤，毒蕈鹼受體結合乙醯膽鹼後通過G蛋白系統作用，不直接開啟離子通道\n(D) 錯誤，交感與副交感節後神經主要有菸鹼受體，毒蕈鹸受體主要在效應器官",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3692"
+  },
+  {
+    "id": 1041204,
+    "question": "4. 聽覺毛細胞（auditory hair cells）去極化時，最初始的離子流動現象為何？",
+    "options": {
+      "A": "influx of K<sup>+</sup>",
+      "B": "outflux of K<sup>+</sup>",
+      "C": "influx of Na<sup>+</sup>",
+      "D": "outflux of Ca<sup>2+</sup>"
+    },
+    "answer": "A",
+    "explanation": "聽覺毛細胞位於富含鉀離子的內淋巴中，去極化時首先是鉀離子內流。\n(A) 正確，聽覺毛細胞周圍的內淋巴液富含K<sup>+</sup>，毛細胞去極化時最初是K<sup>+</sup>內流（influx of K<sup>+</sup>）\n(B) 錯誤，K<sup>+</sup>是內流而非外流\n(C) 錯誤，雖然Na<sup>+</sup>最終也會參與，但最初始的離子流動是K<sup>+</sup>內流\n(D) 錯誤，Ca<sup>2+</sup>外流不是最初始的事件",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3693"
+  },
+  {
+    "id": 1041205,
+    "question": "5. 有關肌肉的長度或張力偵測系統（length- or tension-monitoring system），下列敘述何者正確？",
+    "options": {
+      "A": "muscle spindle 透過 Ib fiber 負責偵測張力",
+      "B": "muscle spindle 透過 Ia fiber 負責偵測長度",
+      "C": "Golgi tendon organ 透過 Ib fiber 負責偵測長度",
+      "D": "Golgi tendon organ 透過 Ia fiber 負責偵測張力"
+    },
+    "answer": "B",
+    "explanation": "肌梭（muscle spindle）通過Ia纖維偵測肌肉長度變化，高爾基腱器官（Golgi tendon organ）通過Ib纖維偵測張力。\n(A) 錯誤，肌梭通過Ia纖維偵測長度，不是通過Ib纖維偵測張力\n(B) 正確，肌梭（muscle spindle）透過Ia纖維負責偵測肌肉長度變化\n(C) 錯誤，高爾基腱器官通過Ib纖維偵測張力，不是長度\n(D) 錯誤，高爾基腱器官通過Ib纖維偵測張力，不是通過Ia纖維",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3694"
+  },
+  {
+    "id": 1041206,
+    "question": "6. 在黑暗中，有關視網膜錐形細胞的敘述，下列何者錯誤？",
+    "options": {
+      "A": "Guanosine monophosphate（GMP）濃度上升",
+      "B": "Influx of calcium",
+      "C": "細胞處於去極化狀態（depolarized state）",
+      "D": "Outer segment 膜上的鈣離子通道處於開啟狀態"
+    },
+    "answer": "A",
+    "explanation": "黑暗中視網膜錐形細胞處於去極化狀態，cGMP濃度應該上升，不是GMP。\n(A) 錯誤，黑暗中應該是cGMP（環鳥苷單磷酸）濃度上升，不是GMP（鳥苷單磷酸）\n(B) 正確，黑暗中鈣離子會內流\n(C) 正確，黑暗中錐形細胞處於去極化狀態\n(D) 正確，黑暗中外節膜上的鈣離子通道處於開啟狀態",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3695"
+  },
+  {
+    "id": 1041207,
+    "question": "7. 骨骼肌收縮過程中，Myosin head 藉由下列何種作用轉化為高能狀態（High-energy state）？",
+    "options": {
+      "A": "ATP 水解",
+      "B": "與 Actin 結合",
+      "C": "與 Titin 結合",
+      "D": "the condensation of ATP"
+    },
+    "answer": "A",
+    "explanation": "肌球蛋白頭部通過ATP水解獲得能量轉化為高能狀態，準備與肌動蛋白結合。\n(A) 正確，ATP水解提供能量使肌球蛋白頭部（Myosin head）轉化為高能狀態\n(B) 錯誤，與肌動蛋白（Actin）結合是在高能狀態後發生的事件\n(C) 錯誤，肌聯蛋白（Titin）主要提供彈性，不參與能量轉化\n(D) 錯誤，ATP縮合不是提供能量的過程",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3696"
+  },
+  {
+    "id": 1041208,
+    "question": "8. 下列何種物質，對血液中酸鹼值調控的重要性最低？",
+    "options": {
+      "A": "蛋白質",
+      "B": "硫酸氫根",
+      "C": "碳酸氫根",
+      "D": "血紅素"
+    },
+    "answer": "B",
+    "explanation": "血液酸鹼調控主要依賴碳酸氫根緩衝系統，蛋白質和血紅素也有緩衝作用，硫酸氫根重要性最低。\n(A) 錯誤，蛋白質是重要的血液緩衝系統\n(B) 正確，硫酸氫根（bisulfate）對血液酸鹼調控的重要性最低\n(C) 錯誤，碳酸氫根是最重要的血液緩衝系統\n(D) 錯誤，血紅素也具有重要的緩衝作用",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3697"
+  },
+  {
+    "id": 1041209,
+    "question": "9. 心臟移植後的病人，在短時間劇烈運動後，下列那一項參數的變化較不明顯？",
+    "options": {
+      "A": "心跳速率（heart rate）",
+      "B": "心輸出量（cardiac output）",
+      "C": "心搏出量（stroke volume）",
+      "D": "耗氧量（O2 consumption）",
+      "E": "送分"
+    },
+    "answer": "E",
+    "explanation": "此題已標記為刪除並一律給分。",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3698"
+  },
+  {
+    "id": 1041210,
+    "question": "10. 心室肌肉之細胞膜動作電位出現一段高原期（plateau），主要是細胞膜上的離子流動產生何種變 化？",
+    "options": {
+      "A": "鈉離子流入與鉀離子流出",
+      "B": "鈣離子流入與鉀離子流出",
+      "C": "鉀離子流入與鈉離子流出",
+      "D": "鉀離子流入與鈣離子流出"
+    },
+    "answer": "B",
+    "explanation": "心室肌動作電位的高原期主要由鈣離子內流和鉀離子外流平衡維持。\n(A) 錯誤，高原期主要不是鈉離子流動\n(B) 正確，心室肌動作電位高原期主要是鈣離子內流與鉀離子外流達到平衡\n(C) 錯誤，鉀離子是外流不是內流，鈉離子在高原期不是主要離子\n(D) 錯誤，鉀離子是外流，鈣離子是內流",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3699"
+  },
+  {
+    "id": 1041211,
+    "question": "11. 一位 50 歲男性，其心輸出量（cardiac output）為每分鐘 5 L，心跳速率每分鐘 80 次。若測得其全身 周邊血管總阻力為 22 mmHg/L/min，假設其收縮壓為 150 毫米汞柱（mmHg），其舒張壓的值最接近 多少 mmHg？",
+    "options": {
+      "A": "70",
+      "B": "80",
+      "C": "90",
+      "D": "110"
+    },
+    "answer": "C",
+    "explanation": "利用心輸出量、心跳速率和血管阻力計算血壓。平均動脈壓=心輸出量×總周邊阻力，舒張壓可通過收縮壓和平均動脈壓計算。\n計算：心搏出量=5L/80次=62.5mL/次；平均動脈壓=5×22=110mmHg；舒張壓約為平均動脈壓-(收縮壓-平均動脈壓)/3≈90mmHg\n(A) 錯誤，計算結果不是70mmHg\n(B) 錯誤，計算結果不是80mmHg\n(C) 正確，根據血流動力學計算，舒張壓最接近90mmHg\n(D) 錯誤，計算結果不是110mmHg",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3700"
+  },
+  {
+    "id": 1041212,
+    "question": "12. 一位 55 歲男性病患十天前因急性呼吸道感染導致肺炎，胸部 X 光片顯示擴散性、雙側和快速進展的 間質性與肺泡性浸潤變化，經診斷已出現肺水腫（lung edema）和高二氧化碳血症（hypercapnia）， 下列何者不會出現在此病患？",
+    "options": {
+      "A": "擴散（diffusion）障礙",
+      "B": "換氣／灌流異常（ventilation/perfusion mismatch）",
+      "C": "增加周邊組織中氧氣與血紅素的結合度",
+      "D": "體循環動脈氧分壓（PaO2）下降"
+    },
+    "answer": "C",
+    "explanation": "肺炎導致肺水腫和高二氧化碳血症時，血氧下降會使氧氣與血紅素的結合度降低，不會增加。\n(A) 正確，肺泡浸潤會造成擴散障礙\n(B) 正確，病變區域會出現換氣灌流異常\n(C) 錯誤，缺氧和酸中毒會降低氧氣與血紅素的結合度，不會增加\n(D) 正確，肺部病變會導致動脈氧分壓下降",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3701"
+  },
+  {
+    "id": 1041213,
+    "question": "13. 下列何者是環境缺氧（hypoxia）時，頸動脈體（carotid body）會興奮產生動作電位（action potential） 的原因？",
+    "options": {
+      "A": "頸動脈體第二型細胞代謝率下降",
+      "B": "頸動脈體第二型細胞之鈣離子通道（Ca2+ channel）被活化",
+      "C": "頸動脈體第一型細胞之對 ATP 敏感性鉀離子通道（ATP-sensitive K+ channel）被活化",
+      "D": "頸動脈體第一型細胞之對氧氣敏感性鉀離子通道（O2-sensitive K+ channel）被抑制"
+    },
+    "answer": "D",
+    "explanation": "缺氧時頸動脈體第一型細胞的氧敏感性鉀離子通道被抑制，導致去極化和動作電位產生。\n(A) 錯誤，第二型細胞不是主要的化學感受細胞\n(B) 錯誤，鈣離子通道活化是去極化的結果，不是原因\n(C) 錯誤，ATP敏感性鉀離子通道被活化會導致超極化\n(D) 正確，缺氧時第一型細胞的氧敏感性鉀離子通道（O2-sensitive K+ channel）被抑制，導致去極化",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3702"
+  },
+  {
+    "id": 1041214,
+    "question": "14. 當肺內某處的細支氣管（bronchiole）被異物阻塞時，會發生下列何種反應？",
+    "options": {
+      "A": "進入此區肺泡（alveolus）之通氣量（ventilation）增加",
+      "B": "進入此區肺泡（alveolus）之血液灌流量（perfusion）增加",
+      "C": "此區通氣量（ventilation）與血液灌流量（perfusion）之比值會改變，隨後恢復到與其它正常區域 相近",
+      "D": "鄰近的血管舒張（vasodilation）"
+    },
+    "answer": "C",
+    "explanation": "細支氣管阻塞會改變通氣灌流比，機體會通過血管收縮等機制調節，最終使該區域的通氣灌流比趨向正常。\n(A) 錯誤，阻塞會使通氣量減少，不是增加\n(B) 錯誤，通氣減少時灌流量會代償性減少\n(C) 正確，初期通氣灌流比會改變，但隨後會通過調節機制恢復到與正常區域相近的比值\n(D) 錯誤，鄰近血管會收縮而非舒張",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3703"
+  },
+  {
+    "id": 1041215,
+    "question": "15. 下列何者是人體肝臟產生的膽汁中，膽紅素（bilirubin）的來源？",
+    "options": {
+      "A": "膽鹽（bile salts）",
+      "B": "血紅素（hemoglobin）",
+      "C": "血清素（serotonin）",
+      "D": "膽固醇（cholesterol）"
+    },
+    "answer": "B",
+    "explanation": "膽紅素是血紅素分解的產物，在肝臟中處理後分泌到膽汁中。\n(A) 錯誤，膽鹽不是膽紅素的來源\n(B) 正確，膽紅素（bilirubin）是血紅素（hemoglobin）分解的產物\n(C) 錯誤，血清素不是膽紅素的來源\n(D) 錯誤，膽固醇不是膽紅素的來源",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3704"
+  },
+  {
+    "id": 1041216,
+    "question": "16. 下列何者不會促進胃相期（gastric phase）之胃酸分泌？",
+    "options": {
+      "A": "胃壁受到食物擴張",
+      "B": "蛋白質消化後之產物",
+      "C": "胰泌素（secretin）分泌增加",
+      "D": "刺激迷走神經"
+    },
+    "answer": "C",
+    "explanation": "胰泌素主要抑制胃酸分泌，不會促進胃相期的胃酸分泌。\n(A) 正確，胃壁擴張會促進胃酸分泌\n(B) 正確，蛋白質消化產物會刺激胃酸分泌\n(C) 錯誤，胰泌素（secretin）主要作用是抑制胃酸分泌，不會促進\n(D) 正確，迷走神經刺激會促進胃酸分泌",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3705"
+  },
+  {
+    "id": 1041217,
+    "question": "17. 在代謝性酸中毒（metabolic acidosis）時，呼吸系統最可能發生下列何種變化？",
+    "options": {
+      "A": "呼吸頻率增加（enhanced respiratory frequency）",
+      "B": "呼吸終止症候群（apnea syndrome）",
+      "C": "陳施氏呼吸（Cheyne-Stokes respiration）",
+      "D": "逆向式呼吸（paradoxical respiration）"
+    },
+    "answer": "A",
+    "explanation": "代謝性酸中毒時，呼吸系統會代償性增加通氣以排出CO₂，降低血中碳酸濃度。\n(A) 正確，代謝性酸中毒時呼吸頻率會增加，這是呼吸代償機制\n(B) 錯誤，不會出現呼吸終止症候群\n(C) 錯誤，陳施氏呼吸通常見於心衰竭或腦病變\n(D) 錯誤，逆向式呼吸與代謝性酸中毒無關",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3706"
+  },
+  {
+    "id": 1041218,
+    "question": "18. 當經過亨氏管上行粗枝與遠端小管的流速增加時，同一腎元的腎小球過濾率會降低。反之，流速降 低引起腎小球過濾率上升。上述的腎臟生理現象稱為：",
+    "options": {
+      "A": "腎小管-腎小球回饋（tubuloglomerular feedback）",
+      "B": "腎小球-腎小管平衡（glomerulotubular balance）",
+      "C": "逆流交換（countercurrent exchange）",
+      "D": "逆流倍增（countercurrent multiplier）"
+    },
+    "answer": "A",
+    "explanation": "這描述的是腎小管-腎小球回饋機制，當流速變化時會影響腎小球過濾率。\n(A) 正確，腎小管-腎小球回饋（tubuloglomerular feedback）機制調節腎小球過濾率\n(B) 錯誤，腎小球-腎小管平衡是不同的生理機制\n(C) 錯誤，逆流交換主要發生在血管束\n(D) 錯誤，逆流倍增主要在亨氏管形成濃縮梯度",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3707"
+  },
+  {
+    "id": 1041219,
+    "question": "19. 關於腎小管對於腎小球過濾液中鈉離子再吸收的描述，下列何者錯誤？",
+    "options": {
+      "A": "60%腎小球過濾液中的鈉離子在近曲小管被再吸收",
+      "B": "亨氏管上行段粗枝的基底外側細胞膜會利用鈉-鉀-氯協同轉運蛋白（Na-K-2Cl cotransporter）再吸 收 30%腎小球過濾液中的鈉離子",
+      "C": "遠曲小管（distal convoluted tubule）會利用頂膜（apical membrane）的鈉-氯協同轉運蛋白（Na-Cl cotransporter）再吸收 7%腎小球過濾液中的鈉離子",
+      "D": "集尿管（collecting duct）會利用頂膜的上皮鈉離子通道（epithelial sodium channel）再吸收 3%腎小 球過濾液中的鈉離子",
+      "E": "送分"
+    },
+    "answer": "E",
+    "explanation": "這題的解題關鍵在於了解腎小管各段對鈉離子再吸收的機制和比例分布。需要掌握各段腎小管的轉運蛋白位置和功能，以及鈉離子再吸收的數量分配。<br> (A) 正確，近曲小管（proximal convoluted tubule）確實再吸收約60-65%的過濾鈉離子，主要透過頂膜的鈉-氫交換器和基底外側膜的鈉-鉀幫浦進行。<br> (B) 錯誤，亨氏管上行段粗枝（thick ascending limb of Henle's loop）的鈉-鉀-氯協同轉運蛋白（NKCC2）位於頂膜（apical membrane）而非基底外側細胞膜，且該段再吸收約25-30%的鈉離子。<br> (C) 正確，遠曲小管會透過頂膜的鈉-氯協同轉運蛋白（NCCT, thiazide-sensitive）再吸收約5-10%的鈉離子，7%在此範圍內。<br> (D) 正確，集尿管透過頂膜的上皮鈉離子通道（ENaC, epithelial sodium channel）進行最終的鈉離子調節，約再吸收2-5%的鈉離子。",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3708"
+  },
+  {
+    "id": 1041220,
+    "question": "20. 下列何種激素會增加鈉離子的排泄？",
+    "options": {
+      "A": "aldosterone",
+      "B": "renin",
+      "C": "atrial natriuretic peptide",
+      "D": "angiotensin"
+    },
+    "answer": "C",
+    "explanation": "心房利鈉肽會促進鈉離子排泄，降低血容量和血壓。\n(A) 錯誤，醛固酮（aldosterone）會促進鈉離子重吸收，減少排泄\n(B) 錯誤，腎素（renin）會啟動RAAS系統，最終保存鈉離子\n(C) 正確，心房利鈉肽（atrial natriuretic peptide）會增加鈉離子排泄\n(D) 錯誤，血管收縮素（angiotensin）會保存鈉離子",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3709"
+  },
+  {
+    "id": 1041221,
+    "question": "21. 下列何者由下視丘所分泌？",
+    "options": {
+      "A": "LH（luteinizing hormone）",
+      "B": "TSH（thyroid stimulating hormone）",
+      "C": "Dopamine",
+      "D": "Vasopressin"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "下視丘（hypothalamus）是神經內分泌系統的重要調控中心，分泌多種釋放激素和抑制激素。\n(A) 錯誤，促黃體激素（LH, luteinizing hormone）是由腦下垂體前葉分泌，而非下視丘\n(B) 錯誤，促甲狀腺激素（TSH, thyroid stimulating hormone）是由腦下垂體前葉分泌，而非下視丘\n(C) 正確，多巴胺（dopamine）由下視丘分泌，作為催乳素抑制因子調控催乳素分泌\n(D) 正確，升壓素（vasopressin）由下視丘的視上核和室旁核神經元合成，經軸突運送至腦下垂體後葉釋放",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3710"
+  },
+  {
+    "id": 1041222,
+    "question": "22. 體液滲透壓增加時，較易促進下列何者的分泌？",
+    "options": {
+      "A": "黃體素（progesterone）",
+      "B": "醛固酮（aldosterone）",
+      "C": "皮質素（cortisol）",
+      "D": "升壓素（vasopressin）"
+    },
+    "answer": "D",
+    "explanation": "體液滲透壓增加時，身體需要保存水分並增加水的重吸收。\n(A) 錯誤，黃體素（progesterone）主要調控月經週期和妊娠，與滲透壓調節無直接關係\n(B) 錯誤，醛固酮（aldosterone）主要調控鈉離子和鉀離子平衡，雖然間接影響水分平衡但不是滲透壓變化的直接反應\n(C) 錯誤，皮質素（cortisol）主要參與糖類代謝和壓力反應，與滲透壓調節無直接關係\n(D) 正確，升壓素（vasopressin）是抗利尿激素，當體液滲透壓增加時會促進其分泌，增加腎臟對水的重吸收",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3711"
+  },
+  {
+    "id": 1041223,
+    "question": "23. 有關胰島素的作用，下列敘述何者錯誤？",
+    "options": {
+      "A": "胰島素與生長激素對促進生長有加成作用",
+      "B": "胰島素可促進腦神經細胞的葡萄糖吸收與利用",
+      "C": "在胰島素缺乏時，會促進酮體（ketone bodies）的產生",
+      "D": "胰島素升高會抑制肝臟糖質新生作用（gluconeogenesis）"
+    },
+    "answer": "B",
+    "explanation": "胰島素（insulin）是重要的代謝調節激素，主要促進葡萄糖的利用和儲存。\n(A) 正確，胰島素與生長激素（growth hormone）確實對促進生長有協同加成作用\n(B) 錯誤，腦神經細胞的葡萄糖吸收主要不依賴胰島素，腦部有血腦屏障且神經元主要使用GLUT1和GLUT3轉運蛋白，這些不受胰島素調控\n(C) 正確，胰島素缺乏時會促進脂肪分解，產生酮體（ketone bodies）作為替代能源\n(D) 正確，胰島素升高會抑制肝臟的糖質新生作用（gluconeogenesis），促進葡萄糖利用",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3712"
+  },
+  {
+    "id": 1041224,
+    "question": "24. 蝕骨細胞（osteoclast）最主要是由下列何種細胞分化而來？",
+    "options": {
+      "A": "Monocyte",
+      "B": "Neutrophil",
+      "C": "Basophil",
+      "D": "T lymphocyte"
+    },
+    "answer": "A",
+    "explanation": "蝕骨細胞（osteoclast）是負責骨吸收的多核巨細胞，來源於造血系統。\n(A) 正確，蝕骨細胞主要由單核細胞（monocyte）分化而來，屬於巨噬細胞系統\n(B) 錯誤，嗜中性球（neutrophil）主要參與急性發炎反應，不會分化成蝕骨細胞\n(C) 錯誤，嗜鹼性球（basophil）主要參與過敏反應，不會分化成蝕骨細胞\n(D) 錯誤，T淋巴球（T lymphocyte）屬於適應性免疫細胞，不會分化成蝕骨細胞",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3713"
+  },
+  {
+    "id": 1041225,
+    "question": "25. 下列何者非 Sertoli cell 的主要功能？",
+    "options": {
+      "A": "吞噬有缺陷（defective）的精子",
+      "B": "分泌 paracrine 分子來影響 Leydig cell 的功能",
+      "C": "接受 LH 的刺激來分泌 testosterone",
+      "D": "分泌 Müllerian-inhibiting substance 來調控性別分化"
+    },
+    "answer": "C",
+    "explanation": "塞托利細胞（Sertoli cell）是睪丸內的支持細胞，具有多種重要功能但不直接產生睪固酮。\n(A) 正確，塞托利細胞會吞噬有缺陷的精子和細胞碎片，維持精子發生環境\n(B) 正確，塞托利細胞會分泌旁分泌因子影響萊迪格細胞（Leydig cell）的功能\n(C) 錯誤，萊迪格細胞（Leydig cell）才是接受促黃體激素（LH）刺激並分泌睪固酮（testosterone）的細胞，塞托利細胞主要接受促濾泡激素（FSH）刺激\n(D) 正確，塞托利細胞分泌穆勒氏管抑制物質（Müllerian-inhibiting substance）調控胚胎期性別分化",
+    "tags": [
+      "104-1(二)",
+      "生理"
+    ],
+    "group_id": "group_3714"
+  },
+  {
+    "id": 1041226,
+    "question": "26. Protein phosphatase 可拮抗下列那類酵素的反應結果？",
+    "options": {
+      "A": "acetyltransferases",
+      "B": "methyltransferases",
+      "C": "ubiquitin E3 ligases",
+      "D": "kinases"
+    },
+    "answer": "D",
+    "explanation": "蛋白質磷酸酶（protein phosphatase）是去磷酸化酶，可移除蛋白質上的磷酸基團。\n(A) 錯誤，乙醯轉移酶（acetyltransferases）催化乙醯化反應，蛋白質磷酸酶不能拮抗其作用\n(B) 錯誤，甲基轉移酶（methyltransferases）催化甲基化反應，蛋白質磷酸酶不能拮抗其作用\n(C) 錯誤，泛素E3連接酶（ubiquitin E3 ligases）催化泛素化反應，蛋白質磷酸酶不能拮抗其作用\n(D) 正確，激酶（kinases）催化磷酸化反應，而蛋白質磷酸酶催化去磷酸化反應，兩者作用相反可互相拮抗",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3715"
+  },
+  {
+    "id": 1041227,
+    "question": "27. 某抑制劑會使酵素反應的 Km上升，但是不影響最高反應速率（即 Vmax不變），此抑制劑應屬於下列 何者？",
+    "options": {
+      "A": "競爭型抑制劑（competitive inhibitor）",
+      "B": "不競爭型抑制劑（uncompetitive inhibitor）",
+      "C": "非競爭型抑制劑（noncompetitive inhibitor）",
+      "D": "混合型抑制劑（mixed inhibitor）"
+    },
+    "answer": "A",
+    "explanation": "不同類型的酵素抑制劑對Km和Vmax有不同影響模式。\n(A) 正確，競爭型抑制劑（competitive inhibitor）與受質競爭酵素活性位點，使表觀Km上升但Vmax不變\n(B) 錯誤，非競爭型抑制劑（uncompetitive inhibitor）會使Km和Vmax都下降\n(C) 錯誤，非競爭型抑制劑（noncompetitive inhibitor）會使Vmax下降但Km不變\n(D) 錯誤，混合型抑制劑（mixed inhibitor）會影響Vmax並可能影響Km",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3716"
+  },
+  {
+    "id": 1041228,
+    "question": "28. 下列關於酵素反應的敘述，何者錯誤？",
+    "options": {
+      "A": "酵素可以改變化學反應的平衡常數，使正反應的速率上升",
+      "B": "大多數的酵素為蛋白質，但少數核糖核酸分子（RNA）亦具有催化能力",
+      "C": "一般化學反應的速率會隨著溫度升高而上升，但大多數酵素反應的速率在溫度過高時會顯著降低",
+      "D": "酵素可區分光學性質不同的受質，因此反應的立體專一性（stereospecificity）極高"
+    },
+    "answer": "A",
+    "explanation": "酵素的基本特性包括催化能力和專一性，但不能改變反應的熱力學平衡。\n(A) 錯誤，酵素只能降低反應活化能，加速反應速率，但不能改變化學反應的平衡常數，平衡常數由反應物和產物的自由能差決定\n(B) 正確，大多數酵素確實是蛋白質，但部分核糖核酸分子（ribozymes）也具有催化能力\n(C) 正確，溫度升高會增加反應速率，但過高溫度會使酵素蛋白質變性失活\n(D) 正確，酵素具有高度立體專一性（stereospecificity），能區分光學異構物",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3717"
+  },
+  {
+    "id": 1041229,
+    "question": "29. 一位 3 個月大的男嬰自出生後便有成長遲緩現象，理學檢查發現有肌無力徵候。血液檢查發現乳酸 （lactate）、丙酮酸（pyruvate）、丙胺酸（alanine）上升，並有代謝性酸中毒（metabolic acidosis） 現象。根據這些病徵，可優先考慮以何種維生素作為治療？",
+    "options": {
+      "A": "維生素 B6（pyridoxine）",
+      "B": "菸鹼酸（niacin）",
+      "C": "核黃素（riboflavin）",
+      "D": "硫胺（thiamine）"
+    },
+    "answer": "D",
+    "explanation": "患兒症狀顯示能量代謝障礙，乳酸、丙酮酸、丙胺酸升高提示糖解途徑問題。\n(A) 錯誤，維生素B6（pyridoxine）主要參與胺基酸代謝，與此症狀關聯性較低\n(B) 錯誤，菸鹼酸（niacin）是NAD+/NADH的前驅物，但不是此症狀的主要原因\n(C) 錯誤，核黃素（riboflavin）是FAD/FADH2的前驅物，與此症狀關聯性較低\n(D) 正確，硫胺（thiamine, 維生素B1）是丙酮酸去氫酶複合體的輔酶，缺乏時會導致丙酮酸堆積，出現乳酸、丙酮酸、丙胺酸升高和代謝性酸中毒",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3718"
+  },
+  {
+    "id": 1041230,
+    "question": "30. 下列何種鹼基不存於一般 RNA 分子？",
+    "options": {
+      "A": "腺嘌呤（adenine）",
+      "B": "尿嘧啶（uracil）",
+      "C": "胸腺嘧啶（thymine）",
+      "D": "胞嘧啶（cytosine）"
+    },
+    "answer": "C",
+    "explanation": "RNA和DNA在鹼基組成上有差異，其中一個重要差異是嘧啶類鹼基的不同。\n(A) 正確，腺嘌呤（adenine）存在於RNA中\n(B) 正確，尿嘧啶（uracil）是RNA特有的鹼基，取代DNA中的胸腺嘧啶\n(C) 正確，胸腺嘧啶（thymine）只存在於DNA中，RNA中以尿嘧啶取代\n(D) 正確，胞嘧啶（cytosine）存在於RNA中",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3719"
+  },
+  {
+    "id": 1041231,
+    "question": "31. 下列何種酵素反應不參與 DNA 聚合酶（polymerase）的校對（proofreading）功能？",
+    "options": {
+      "A": "3'→5'外切酶（exonuclease）的活性",
+      "B": "磷酸二酯鍵（phosphodiester bond）的水解",
+      "C": "鹼基配對錯誤（mismatched base pairs）",
+      "D": "5'→3'外切酶（exonuclease）的活性"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "DNA聚合酶的校對功能主要依賴其3'→5'外切酶活性來移除錯誤配對的核苷酸。\n(A) 正確，3'→5'外切酶（exonuclease）活性是DNA聚合酶校對功能的核心\n(B) 正確，校對過程涉及磷酸二酯鍵（phosphodiester bond）的水解來移除錯誤核苷酸\n(C) 錯誤，鹼基配對錯誤（mismatched base pairs）是被校對的對象，本身不是酵素反應\n(D) 錯誤，5'→3'外切酶活性不參與校對功能，DNA聚合酶的校對功能專門依賴3'→5'外切酶活性",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3720"
+  },
+  {
+    "id": 1041232,
+    "question": "32. 許多藥物的合成乃是結合分子生物學與合成化學而得，抗愛滋病的藥物 3'-azido-2',3'-dideoxythymidine （AZT）即為其中一項，下列關於 AZT 的敘述，何者錯誤？",
+    "options": {
+      "A": "AZT 由易被 HIV 病毒感染的 T 淋巴球所吸收而轉變為三磷酸根 AZT（AZT triphosphate）",
+      "B": "HIV 病毒的反轉錄酶對於 AZT triphosphate 有極高的親和力",
+      "C": "HIV 病毒的 DNA 進行複製時若 3'端加入 AZT triphosphate 則會終止複製反應",
+      "D": "人類 T 淋巴球的 DNA 複製酶對 AZT triphosphate 有高親和力，所以會帶來許多副作用"
+    },
+    "answer": "D",
+    "explanation": "AZT是第一個被FDA批准的抗HIV藥物，作為核苷類反轉錄酶抑制劑。\n(A) 正確，AZT被T淋巴球吸收後會被磷酸化形成三磷酸根AZT（AZT triphosphate）\n(B) 正確，HIV反轉錄酶對AZT三磷酸根有高親和力，容易被誤認為天然核苷酸\n(C) 正確，AZT三磷酸根缺乏3'-OH基團，一旦摻入DNA鏈就會終止複製\n(D) 錯誤，人類DNA聚合酶對AZT三磷酸根的親和力較低，這正是AZT相對選擇性的原因，但仍會有一些副作用",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3721"
+  },
+  {
+    "id": 1041233,
+    "question": "33. 下列那一種 RNA 之 5'端及 3'端之核糖（ribose），最可能同時具有 free 3'-OH？",
+    "options": {
+      "A": "真核細胞 mRNA",
+      "B": "原核細胞 mRNA",
+      "C": "真核細胞 rRNA",
+      "D": "原核細胞 rRNA"
+    },
+    "answer": "A",
+    "explanation": "不同類型的RNA在末端修飾上有所差異，真核細胞mRNA具有特殊的末端結構。\n(A) 正確，真核細胞mRNA的5'端有帽狀結構（cap），3'端有多聚腺苷酸尾（poly-A tail），兩端的核糖都可能具有游離的3'-OH\n(B) 錯誤，原核細胞mRNA沒有帽狀結構和多聚腺苷酸尾\n(C) 錯誤，真核細胞rRNA不具有mRNA特有的末端修飾\n(D) 錯誤，原核細胞rRNA不具有mRNA特有的末端修飾",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3722"
+  },
+  {
+    "id": 1041234,
+    "question": "34. 下列那一項不是 RNA 聚合酶（RNA polymerase）轉錄的特性？",
+    "options": {
+      "A": "結合 DNA 的大小涵蓋約 35 bp",
+      "B": "需要鎂離子（Mg2+）",
+      "C": "於 5'-OH 末端接上核苷酸",
+      "D": "從 5'往 3'方向延長 RNA 序列"
+    },
+    "answer": "C",
+    "explanation": "RNA聚合酶進行轉錄時有其特定的作用機制和方向性。\n(A) 正確，RNA聚合酶結合DNA時確實涵蓋約35個鹼基對的區域\n(B) 正確，RNA聚合酶需要鎂離子（Mg2+）作為輔助因子\n(C) 錯誤，RNA聚合酶在3'-OH末端接上核苷酸，而非5'-OH末端\n(D) 正確，RNA聚合酶從5'往3'方向延長RNA序列",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3723"
+  },
+  {
+    "id": 1041235,
+    "question": "35. CRP（cAMP receptor protein）是 lac operon 基因表現的一個主要調控因子，下列何者是 CRP 最適的 描述？",
+    "options": {
+      "A": "CRP 協助 RNA 聚合酶（RNA polymerase）與 lac-啟動子（lac-promoter）的結合",
+      "B": "CRP 與 lac operon 的結合只能在葡萄糖存在下進行",
+      "C": "CRP 與 lac operon 的結合可防止 lac-抑制子（lac-repressor）與 operator 的結合",
+      "D": "CRP 與 lac-抑制子（lac-repressor）競爭 operator 代號：2101 頁次：11－5"
+    },
+    "answer": "A",
+    "explanation": "CRP（cAMP receptor protein）是lac操縱子的正調控因子，在葡萄糖缺乏時促進基因表現。\n(A) 正確，CRP與cAMP結合後協助RNA聚合酶與lac啟動子結合，增強轉錄\n(B) 錯誤，CRP與lac操縱子的結合需要在葡萄糖缺乏（cAMP濃度高）時才能進行\n(C) 錯誤，CRP不直接影響lac抑制子與操作子的結合，兩者作用於不同位點\n(D) 錯誤，CRP不與lac抑制子競爭操作子，它們結合不同的DNA序列",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3724"
+  },
+  {
+    "id": 1041236,
+    "question": "36. 在血基質（heme）的生合成反應過程中，下列何者為速率決定步驟（rate-limiting step）之酵素？",
+    "options": {
+      "A": "Ferrochelatase",
+      "B": "Heme oxygenase",
+      "C": "delta-aminolevulinic acid（δ-ALA）synthase",
+      "D": "UDP-glucose dehydrogenase"
+    },
+    "answer": "C",
+    "explanation": "血基質（heme）生合成是一個多步驟過程，其中第一步是速率決定步驟。\n(A) 錯誤，鐵螯合酶（ferrochelatase）是血基質生合成的最後一步，不是速率決定步驟\n(B) 錯誤，血基質氧化酶（heme oxygenase）參與血基質分解而非合成\n(C) 正確，δ-胺基乙醯丙酸合成酶（δ-ALA synthase）催化血基質生合成的第一步反應，是整個途徑的速率決定步驟\n(D) 錯誤，UDP-葡萄糖去氫酶（UDP-glucose dehydrogenase）參與醣類代謝，不參與血基質生合成",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3725"
+  },
+  {
+    "id": 1041237,
+    "question": "37. 利用氟-18 去氧葡萄糖（18F-2-deoxyglucose）所做的正子造影能有效找出體內癌細胞的正確位置，此 方法的原理係基於癌細胞的何種特性？",
+    "options": {
+      "A": "DNA 複製速率比正常細胞快",
+      "B": "克氏循環（TCA cycle）速率比正常細胞高",
+      "C": "糖解作用（glycolysis）速率比正常細胞高",
+      "D": "肝醣合成（glycogen biosynthesis）速率比正常細胞高"
+    },
+    "answer": "C",
+    "explanation": "18F-去氧葡萄糖正子造影（FDG-PET）是基於癌細胞代謝特性的影像技術。\n(A) 錯誤，雖然癌細胞DNA複製快，但FDG-PET主要反映葡萄糖代謝而非DNA合成\n(B) 錯誤，克氏循環（TCA cycle）在癌細胞中通常是受抑制的\n(C) 正確，癌細胞的糖解作用（glycolysis）速率比正常細胞高，大量消耗葡萄糖，因此會攝取更多的18F-去氧葡萄糖\n(D) 錯誤，肝醣合成在癌細胞中通常不是主要的代謝途徑",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3726"
+  },
+  {
+    "id": 1041238,
+    "question": "38. Fructose 2,6-bisphosphate 是糖解作用（glycolysis）與糖質新生作用（gluconeogenesis）的重要共同異 位調解因子（allosteric regulator），下列有關 fructose 2,6-bisphosphate 的敘述何者正確？",
+    "options": {
+      "A": "昇糖激素（glucagon）促進其合成",
+      "B": "fructose 2,6-bisphosphatase 催化其由 fructose 6-phosphate 合成",
+      "C": "fructose 2,6-bisphosphate 活化 phosphofructokinase-1",
+      "D": "fructose 2,6-bisphosphate 增加糖質新生作用（gluconeogenesis）"
+    },
+    "answer": "C",
+    "explanation": "果糖2,6-雙磷酸（fructose 2,6-bisphosphate）是糖解作用和糖質新生作用的重要調控分子。\n(A) 錯誤，昇糖激素（glucagon）會抑制果糖2,6-雙磷酸的合成，促進糖質新生作用\n(B) 錯誤，是果糖2,6-雙磷酸激酶（fructose 2,6-bisphosphate kinase）催化其合成，而非磷酸酶\n(C) 正確，果糖2,6-雙磷酸是磷酸果糖激酶-1（phosphofructokinase-1）的變構活化劑，促進糖解作用\n(D) 錯誤，果糖2,6-雙磷酸會抑制糖質新生作用，促進糖解作用",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3727"
+  },
+  {
+    "id": 1041239,
+    "question": "39. Neuraminidase 是某些流感病毒的重要酵素之一，此酵素可以切除宿主細胞膜上醣複合物上的那一種 糖基？",
+    "options": {
+      "A": "N-acetylglucosamine",
+      "B": "gluconic acid",
+      "C": "galactose",
+      "D": "sialic acid"
+    },
+    "answer": "D",
+    "explanation": "神經胺酸酶（neuraminidase）是流感病毒的重要酵素，參與病毒從宿主細胞的釋放。\n(A) 錯誤，N-乙醯葡萄糖胺（N-acetylglucosamine）不是神經胺酸酶的作用對象\n(B) 錯誤，葡萄糖酸（gluconic acid）不是神經胺酸酶的作用對象\n(C) 錯誤，半乳糖（galactose）不是神經胺酸酶的作用對象\n(D) 正確，神經胺酸酶專門切除唾液酸（sialic acid），這是病毒從感染細胞釋放的關鍵步驟",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3728"
+  },
+  {
+    "id": 1041240,
+    "question": "40. 下列關於固醇調節區域結合蛋白質（sterol regulatory element-binding protein；SREBP）之敘述，何者 錯誤？",
+    "options": {
+      "A": "位於內質網",
+      "B": "經由切斷連結的脂肪酸而活化",
+      "C": "活化後進入細胞核",
+      "D": "做為轉錄因子增加合成膽固醇（cholesterol）的基因表現"
+    },
+    "answer": "B",
+    "explanation": "SREBP是調控膽固醇和脂肪酸合成的重要轉錄因子。\n(A) 正確，SREBP位於內質網膜上\n(B) 錯誤，SREBP是經由蛋白酶切斷而活化，而非經由切斷脂肪酸連結\n(C) 正確，SREBP活化後會進入細胞核\n(D) 正確，SREBP作為轉錄因子增加合成膽固醇相關基因的表現",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3729"
+  },
+  {
+    "id": 1041241,
+    "question": "41. 將離子載體（ionophore），如纈氨黴素（Valinomycin），加至原核細胞懸浮液，該細胞之膜離子梯 度（transmembrane ion gradients）會有下列何種變化？",
+    "options": {
+      "A": "離子梯度增加",
+      "B": "離子梯度減少",
+      "C": "離子梯度沒有任何改變",
+      "D": "離子梯度無法預期是否會改變",
+      "E": "送分"
+    },
+    "answer": "E",
+    "explanation": "此題標記為送分題，表示題目有問題或存在爭議。離子載體（ionophore）如纈氨黴素（valinomycin）會破壞細胞膜的離子梯度。\n(A) 錯誤，離子載體會破壞而非增加離子梯度\n(B) 正確，離子載體會使離子通過膜屏障，減少跨膜離子梯度\n(C) 錯誤，離子載體必然會改變離子梯度\n(D) 錯誤，離子載體對離子梯度的影響是可預期的\n(E) 正確，此題一律給分",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3730"
+  },
+  {
+    "id": 1041242,
+    "question": "42. 罕見遺傳疾病 medium-chain acyl-CoA dehydrogenase 基因突變，可能造成脂肪肝、低血糖、octanoic acid 在血液中堆積、嗜睡、嘔吐及昏迷。下列有關該酶之功能敘述，何者正確？",
+    "options": {
+      "A": "該酶之作用是將脂肪酸運入粒線體",
+      "B": "該酶作用於 ω-oxidation",
+      "C": "該酶之作用是將脂肪酸逐步轉化為 pyruvate",
+      "D": "該酶之作用是將脂肪酸逐步轉化為 acetyl-CoA"
+    },
+    "answer": "D",
+    "explanation": "中鏈醯基輔酶A去氫酶（medium-chain acyl-CoA dehydrogenase）參與脂肪酸的β氧化過程。\n(A) 錯誤，將脂肪酸運入粒線體的是肉鹼穿梭系統（carnitine shuttle system）\n(B) 錯誤，該酶參與的是β氧化（beta-oxidation），不是ω氧化（omega-oxidation）\n(C) 錯誤，脂肪酸不會直接轉化為丙酮酸（pyruvate）\n(D) 正確，中鏈醯基輔酶A去氫酶參與β氧化過程，將脂肪酸逐步分解為乙醯輔酶A（acetyl-CoA）",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3731"
+  },
+  {
+    "id": 1041243,
+    "question": "43. 下列那一種胺基酸無法代謝時會導致甲基丙二酸血症（methylmalonic acidemia）？",
+    "options": {
+      "A": "alanine",
+      "B": "glycine",
+      "C": "isoleucine",
+      "D": "histidine"
+    },
+    "answer": "C",
+    "explanation": "甲基丙二酸血症（methylmalonic acidemia）與某些胺基酸代謝異常有關。\n(A) 錯誤，丙胺酸（alanine）代謝異常不會導致甲基丙二酸血症\n(B) 錯誤，甘胺酸（glycine）代謝異常不會導致甲基丙二酸血症\n(C) 正確，異白胺酸（isoleucine）代謝過程中會產生甲基丙二醯輔酶A，需要維生素B12作為輔因子轉化，代謝異常時會導致甲基丙二酸血症\n(D) 錯誤，組胺酸（histidine）代謝異常不會導致甲基丙二酸血症",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3732"
+  },
+  {
+    "id": 1041244,
+    "question": "44. 威而剛（Viagra）可透過加強一氧化氮（NO）下游 cGMP 的訊息傳遞作用，而達到其藥理效果。NO 是那一種胺基酸的代謝產物？",
+    "options": {
+      "A": "arginine",
+      "B": "aspartate",
+      "C": "lysine",
+      "D": "tryptophan"
+    },
+    "answer": "A",
+    "explanation": "一氧化氮（NO）是重要的血管舒張因子，由特定胺基酸合成。\n(A) 正確，精胺酸（arginine）是一氧化氮合酶（NO synthase）的受質，被轉化為一氧化氮和瓜胺酸\n(B) 錯誤，天門冬胺酸（aspartate）不是一氧化氮的前驱物\n(C) 錯誤，離胺酸（lysine）不是一氧化氮的前驱物\n(D) 錯誤，色胺酸（tryptophan）是血清素的前驱物，不是一氧化氮的前驱物",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3733"
+  },
+  {
+    "id": 1041245,
+    "question": "45. 參與電子傳遞鏈的蛋白質複合體使用那一種胺基酸形成 iron-sulfur center，輔助電子傳遞？",
+    "options": {
+      "A": "丙胺酸（alanine）",
+      "B": "甲硫胺酸（methionine）",
+      "C": "色胺酸（tryptophan）",
+      "D": "半胱胺酸（cysteine）"
+    },
+    "answer": "D",
+    "explanation": "鐵硫中心（iron-sulfur center）是電子傳遞鏈複合體的重要組成部分。\n(A) 錯誤，丙胺酸（alanine）不參與鐵硫中心的形成\n(B) 錯誤，甲硫胺酸（methionine）不參與鐵硫中心的形成\n(C) 錯誤，色胺酸（tryptophan）不參與鐵硫中心的形成\n(D) 正確，半胱胺酸（cysteine）含有硫基團，能與鐵離子結合形成鐵硫中心，輔助電子傳遞",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3734"
+  },
+  {
+    "id": 1041246,
+    "question": "46. 革蘭氏陰性菌分泌的內毒素（endotoxin）會調控小腸 Cl-的分泌，其作用是因為活化小腸上皮細胞具 有那種酵素活性的受器（receptor）所致？",
+    "options": {
+      "A": "Tyrosine kinase",
+      "B": "Guanylyl cyclase",
+      "C": "Tyrosine phosphatase",
+      "D": "Serine kinase"
+    },
+    "answer": "B",
+    "explanation": "革蘭氏陰性菌的內毒素（endotoxin）會影響腸道離子轉運。\n(A) 錯誤，酪胺酸激酶（tyrosine kinase）不是主要的內毒素受體\n(B) 正確，內毒素會活化鳥苷酸環化酶（guanylyl cyclase），增加cGMP濃度，促進氯離子分泌\n(C) 錯誤，酪胺酸磷酸酶（tyrosine phosphatase）不是主要的內毒素受體\n(D) 錯誤，絲胺酸激酶（serine kinase）不是主要的內毒素受體",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3735"
+  },
+  {
+    "id": 1041247,
+    "question": "47. G 蛋白耦合受體（G-protein-coupled receptor）是屬於下列那一類型的受體？",
+    "options": {
+      "A": "寡聚配體門控之離子通道（oligomeric ligand-gated ion channel）",
+      "B": "7-穿膜片段受體（7-transmembrane segment receptor）",
+      "C": "細胞黏附蛋白受體（cell adhesion protein receptor）",
+      "D": "單穿膜片段催化受體（single transmembrane segment catalytic receptor）"
+    },
+    "answer": "B",
+    "explanation": "G蛋白耦合受體（G-protein-coupled receptor）具有特殊的膜結構特徵。\n(A) 錯誤，寡聚配體門控離子通道是另一類受體\n(B) 正確，G蛋白耦合受體具有七個跨膜片段（7-transmembrane segment），是其典型結構特徵\n(C) 錯誤，細胞黏附蛋白受體是另一類受體\n(D) 錯誤，單跨膜片段催化受體是另一類受體",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3736"
+  },
+  {
+    "id": 1041248,
+    "question": "48. 有關腎上腺素（epinephrine）與乙型腎上腺素受體（β-adrenergic receptor）結合所產生的結果，下列 敘述何者錯誤？",
+    "options": {
+      "A": "刺激 Gs 蛋白次單元與 GTP 結合",
+      "B": "增加腺苷酸環化酶（adenylyl cyclase）活性",
+      "C": "增加蛋白激酶 A（protein kinase A）的酵素活性",
+      "D": "促進激素-受體複合物（hormone-receptor complex）的內噬（endocytosis）",
+      "E": "送分"
+    },
+    "answer": "E",
+    "explanation": "此題標記為送分題，表示題目有問題或存在爭議。腎上腺素與β腎上腺素受體結合會活化cAMP訊號傳遞路徑。\n(A) 正確，會刺激Gs蛋白與GTP結合\n(B) 正確，會增加腺苷酸環化酶活性\n(C) 正確，會增加蛋白激酶A活性\n(D) 正確，激素受體複合物會發生內噬作用\n(E) 正確，此題一律給分",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3737"
+  },
+  {
+    "id": 1041249,
+    "question": "49. 利用 Sanger method 定序 DNA，使用之試劑 dideoxy analog 具有下列那一種功能？",
+    "options": {
+      "A": "可中止 DNA 合成",
+      "B": "水解斷裂 DNA 之磷酯鍵",
+      "C": "是合成引子（primer）的成分",
+      "D": "合成沒有 5'端磷酸根之 DNA"
+    },
+    "answer": "A",
+    "explanation": "Sanger定序法使用去氧核糖核苷酸類似物進行DNA定序。\n(A) 正確，去氧核糖核苷酸類似物（dideoxy analog）缺少3'-OH基團，無法形成下一個磷酸二酯鍵，因此能中止DNA合成\n(B) 錯誤，該試劑不會水解DNA的磷酯鍵\n(C) 錯誤，該試劑不是合成引子的成分\n(D) 錯誤，該試劑不會影響5'端磷酸根的存在",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3738"
+  },
+  {
+    "id": 1041250,
+    "question": "50. 下列何者是選殖質體（cloning plasmids）的正確描述？",
+    "options": {
+      "A": "在大腸桿菌 DNA 複製（replication）時，環狀質體（circular plasmids）不需要複製起點（origin of replication）",
+      "B": "可用以選殖約 50 Kb 鹼基對（kilo-base pairs）的外來 DNA",
+      "C": "通常不需抗生素抗藥性基因（antibiotic resistant gene）",
+      "D": "需要特定限制酶切點（unique restriction enzyme site）以供選殖外來 DNA 之用"
+    },
+    "answer": "D",
+    "explanation": "選殖質體（cloning plasmids）是基因工程中重要的載體工具。\n(A) 錯誤，環狀質體仍需要複製起點才能在大腸桿菌中複製\n(B) 錯誤，一般選殖質體只能選殖數千鹼基對的DNA，50Kb太大需要使用其他載體如BAC\n(C) 錯誤，抗生素抗藥性基因是選殖質體的重要選擇標記\n(D) 正確，選殖質體需要特定的限制酶切點，以便插入外來DNA進行選殖",
+    "tags": [
+      "104-1(二)",
+      "生化"
+    ],
+    "group_id": "group_3739"
+  },
+  {
+    "id": 1041251,
+    "question": "51. 下列有關藥物動力學的敘述，何者錯誤？",
+    "options": {
+      "A": "酸性的藥物在鹼性尿液中較易排出",
+      "B": "靜脈注射給藥沒有首渡效應（first-pass effect）",
+      "C": "血漿蛋白結合力高的藥物比較不易與其他藥物產生交互作用",
+      "D": "血中白蛋白（Albumin）量的改變會影響藥物的代謝"
+    },
+    "answer": "C",
+    "explanation": "藥物動力學涉及藥物的吸收、分佈、代謝和排泄過程。\n(A) 正確，酸性藥物在鹼性尿液中離子化程度高，較易排出\n(B) 正確，靜脈注射直接進入血液循環，沒有首渡效應\n(C) 錯誤，血漿蛋白結合力高的藥物更容易與其他藥物產生競爭性結合，導致藥物交互作用\n(D) 正確，血中白蛋白量的改變會影響藥物的結合和代謝",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3740"
+  },
+  {
+    "id": 1041252,
+    "question": "52. 有關藥物交互作用，何者錯誤？",
+    "options": {
+      "A": "Griseofulvin 會加強 warfarin 代謝",
+      "B": "Phenytoin 會加強 alprazolam 代謝",
+      "C": "Ritonavir 會加強 midazolam 代謝",
+      "D": "Carbamazepine 會加強 itraconazole 代謝"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "藥物交互作用涉及不同藥物對肝酶系統的影響。\n(A) 正確，灰黴素（griseofulvin）會誘導肝酶，加強華法林（warfarin）代謝\n(B) 錯誤，苯妥英（phenytoin）是肝酶誘導劑，會加強阿普唑侖（alprazolam）代謝，此選項描述正確\n(C) 錯誤，利托那韋（ritonavir）是強效CYP3A4抑制劑，會抑制而非加強咪達唑侖（midazolam）代謝\n(D) 正確，卡馬西平（carbamazepine）會誘導肝酶，加強伊曲康唑（itraconazole）代謝",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3741"
+  },
+  {
+    "id": 1041253,
+    "question": "53. 下列何種藥物之抗藥菌，其抗藥機轉並非使用 Tet efflux pump 作用而排出菌體外，適用於嚴重之腹 腔感染？",
+    "options": {
+      "A": "Doxycycline",
+      "B": "Tetracycline",
+      "C": "Minocycline",
+      "D": "Tigecycline"
+    },
+    "answer": "D",
+    "explanation": "替加環素（tigecycline）是新型四環素類抗生素，具有特殊的抗藥性機制。\n(A) 錯誤，多西環素（doxycycline）的抗藥菌會使用Tet efflux pump排出藥物\n(B) 錯誤，四環素（tetracycline）的抗藥菌會使用Tet efflux pump排出藥物\n(C) 錯誤，米諾環素（minocycline）的抗藥菌會使用Tet efflux pump排出藥物\n(D) 正確，替加環素的抗藥機制不依賴Tet efflux pump，因此適用於嚴重腹腔感染",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3742"
+  },
+  {
+    "id": 1041254,
+    "question": "54. 一名育嬰授乳的婦女感染生殖器疱疹，下列何種藥物為治療這名婦女之首選藥物？",
+    "options": {
+      "A": "Amantadine",
+      "B": "Acyclovir",
+      "C": "Ritonavir",
+      "D": "Trifluridine"
+    },
+    "answer": "B",
+    "explanation": "生殖器疱疹需要使用抗病毒藥物治療，且需考慮哺乳安全性。\n(A) 錯誤，金剛烷胺（amantadine）主要用於流感病毒，不適用於疱疹病毒\n(B) 正確，無環鳥苷（acyclovir）是疱疹病毒感染的首選藥物，且在哺乳期相對安全\n(C) 錯誤，利托那韋（ritonavir）是HIV蛋白酶抑制劑，不適用於疱疹病毒\n(D) 錯誤，三氟胸苷（trifluridine）主要用於眼科疱疹，不適用於生殖器疱疹",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3743"
+  },
+  {
+    "id": 1041255,
+    "question": "55. 新生兒有細菌感染時，使用下列何種抗生素，應特別注意劑量勿大於 50 mg/kg/d，以免發生灰嬰症候 群？",
+    "options": {
+      "A": "Chloramphenicol",
+      "B": "Tetracycline",
+      "C": "Vancomycin",
+      "D": "Erythromycin"
+    },
+    "answer": "A",
+    "explanation": "新生兒使用某些抗生素需要特別注意劑量以避免嚴重副作用。\n(A) 正確，氯黴素（chloramphenicol）在新生兒中代謝緩慢，劑量超過50 mg/kg/d可能導致灰嬰症候群（gray baby syndrome）\n(B) 錯誤，四環素在新生兒中主要關注牙齒和骨骼發育問題\n(C) 錯誤，萬古黴素的主要副作用是腎毒性和耳毒性\n(D) 錯誤，紅黴素的主要副作用是胃腸道不適",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3744"
+  },
+  {
+    "id": 1041256,
+    "question": "56. 下列何者為 Nitrofurantoin 主要之副作用？",
+    "options": {
+      "A": "噁心",
+      "B": "耳聾",
+      "C": "腎功能不全",
+      "D": "抽搐（seizure）"
+    },
+    "answer": "A",
+    "explanation": "硝基呋喃妥因（nitrofurantoin）是泌尿道感染的常用抗生素。\n(A) 正確，噁心是硝基呋喃妥因最常見的副作用\n(B) 錯誤，耳聾主要是氨基糖苷類抗生素的副作用\n(C) 錯誤，腎功能不全主要是氨基糖苷類或萬古黴素的副作用\n(D) 錯誤，抽搐主要是β-內醯胺類抗生素的副作用",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3745"
+  },
+  {
+    "id": 1041257,
+    "question": "57. 下列何者屬於 anti-IgE 單株抗體（monoclonal antibody），可用於過敏性氣喘治療？",
+    "options": {
+      "A": "Basiliximab",
+      "B": "Omalizumab",
+      "C": "Abatacept",
+      "D": "Efalizumab"
+    },
+    "answer": "B",
+    "explanation": "抗IgE單株抗體用於過敏性氣喘的治療。\n(A) 錯誤，巴利昔單抗（basiliximab）是抗CD25單株抗體，用於器官移植\n(B) 正確，奧瑪珠單抗（omalizumab）是抗IgE單株抗體，用於過敏性氣喘治療\n(C) 錯誤，阿巴西普（abatacept）是CTLA-4融合蛋白，用於類風濕性關節炎\n(D) 錯誤，依法利珠單抗（efalizumab）是抗CD11a單株抗體，用於銀屑病",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3746"
+  },
+  {
+    "id": 1041258,
+    "question": "58. 下列何種作用與低劑量 Aspirin 預防栓塞型中風（Stroke）有關？",
+    "options": {
+      "A": "抑制血管內皮細胞的 COX-2",
+      "B": "抑制血球細胞的 Lipoxygenase",
+      "C": "抑制血小板的 COX-1",
+      "D": "抑制血小板的 Thromboxane A2 受體"
+    },
+    "answer": "C",
+    "explanation": "低劑量阿斯匹靈（aspirin）預防血栓形成的機制涉及抗血小板作用。\n(A) 錯誤，血管內皮細胞的COX-2抑制不是主要機制\n(B) 錯誤，脂氧合酶（lipoxygenase）不是阿斯匹靈的主要作用目標\n(C) 正確，低劑量阿斯匹靈主要抑制血小板的環氧合酶-1（COX-1），減少血栓素A2（thromboxane A2）產生，發揮抗血小板凝集作用\n(D) 錯誤，阿斯匹靈不直接抑制血栓素A2受體",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3747"
+  },
+  {
+    "id": 1041259,
+    "question": "59. 下列抗血小板凝集藥物中，何者較易發生 Neutropenia 之不良作用？",
+    "options": {
+      "A": "Clopidogrel",
+      "B": "Ticlopidine",
+      "C": "Abciximab",
+      "D": "Dipyridamole"
+    },
+    "answer": "B",
+    "explanation": "不同抗血小板藥物具有不同的副作用譜。\n(A) 錯誤，氯吡格雷（clopidogrel）較少引起嗜中性球減少症\n(B) 正確，替氯匹定（ticlopidine）較易發生嗜中性球減少症（neutropenia），需要定期監測血球計數\n(C) 錯誤，阿昔單抗（abciximab）主要副作用是出血\n(D) 錯誤，雙嘧達莫（dipyridamole）主要副作用是頭痛和胃腸道不適",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3748"
+  },
+  {
+    "id": 1041260,
+    "question": "60. 生長激素（growth hormone）具有促進脂肪和碳水化合物代謝的作用，主要係間接透過下列何種激素 的作用來產生的？",
+    "options": {
+      "A": "促甲狀腺激素（thyroid-stimulating hormone; TSH）",
+      "B": "促腎上腺皮質激素（adrenocorticotropic hormone; ACTH）",
+      "C": "促腎上腺皮質釋放激素（corticotropin-releasing hormone; CRH）",
+      "D": "第一型類胰島素成長因子（insulin-like growth factor; IGF-1）"
+    },
+    "answer": "D",
+    "explanation": "生長激素（growth hormone）的代謝作用主要透過間接機制。\n(A) 錯誤，促甲狀腺激素不是生長激素代謝作用的主要媒介\n(B) 錯誤，促腎上腺皮質激素不是生長激素代謝作用的主要媒介\n(C) 錯誤，促腎上腺皮質釋放激素不是生長激素代謝作用的主要媒介\n(D) 正確，生長激素主要透過刺激第一型類胰島素生長因子（IGF-1）的產生，間接促進脂肪和碳水化合物代謝",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3749"
+  },
+  {
+    "id": 1041261,
+    "question": "61. 下列何種藥物使用時，可以明顯的改善甲狀腺機能亢進的臨床症狀，但不會降低血清中甲狀腺素濃 度？",
+    "options": {
+      "A": "Levothyroxine",
+      "B": "Methimazole",
+      "C": "Propranolol",
+      "D": "Propylthiouracil"
+    },
+    "answer": "C",
+    "explanation": "Propranolol是β-阻斷劑，可以阻斷甲狀腺素的周邊交感神經效應，改善症狀但不影響甲狀腺素濃度。\n(A) 錯誤，左甲狀腺素（Levothyroxine）是甲狀腺素補充劑，會增加血清甲狀腺素濃度\n(B) 錯誤，甲巰咪唑（Methimazole）會抑制甲狀腺素合成，降低血清濃度\n(C) 正確，普萘洛爾（Propranolol）可改善甲狀腺機能亢進的交感神經症狀，但不會降低血清甲狀腺素濃度\n(D) 錯誤，丙硫氧嘧啶（Propylthiouracil）會抑制甲狀腺素合成，降低血清濃度",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3750"
+  },
+  {
+    "id": 1041262,
+    "question": "62. 下列有關糖皮質激素（glucocorticoids）作用的描述，何者錯誤？",
+    "options": {
+      "A": "高劑量的糖皮質激素會造成消化性潰瘍（peptic ulcer）的發生",
+      "B": "長期使用糖皮質激素會抑制促腎上腺皮質激素（adrenocorticotropic hormone; ACTH）的釋放作用",
+      "C": "高劑量的糖皮質激素具有降低顱內壓（intracranial pressure）的作用",
+      "D": "糖皮質激素具有促進早產兒肺部發展的作用"
+    },
+    "answer": "C",
+    "explanation": "糖皮質激素具有抗炎作用，但高劑量不會降低顱內壓，反而可能因為鈉水滯留而增加顱內壓。\n(A) 正確，高劑量糖皮質激素會增加胃酸分泌，造成消化性潰瘍\n(B) 正確，長期使用會抑制下視丘-垂體-腎上腺軸，抑制ACTH釋放\n(C) 錯誤，糖皮質激素通常會增加顱內壓，不會降低顱內壓\n(D) 正確，糖皮質激素可促進胎兒肺部成熟，用於早產兒治療",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3751"
+  },
+  {
+    "id": 1041263,
+    "question": "63. 那一種因基因異常引起之心律不整病人服用 mexiletine 最易誘發心律不整之產生？",
+    "options": {
+      "A": "LQT-3 病人",
+      "B": "Brugada Syndrome 病人",
+      "C": "Familial atrial fibrillation 病人",
+      "D": "LQT-2 病人"
+    },
+    "answer": "B",
+    "explanation": "Brugada症候群患者的鈉離子通道功能異常，mexiletine作為鈉通道阻斷劑會加重傳導異常。\n(A) 錯誤，LQT-3患者mexiletine通常是有益的\n(B) 正確，Brugada症候群患者使用mexiletine（鈉通道阻斷劑）最易誘發心律不整\n(C) 錯誤，家族性心房纖維顫動患者使用mexiletine相對安全\n(D) 錯誤，LQT-2患者使用mexiletine相對安全",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3752"
+  },
+  {
+    "id": 1041264,
+    "question": "64. 下列關於 angiotensin converting enzyme inhibitors 之敘述何者正確？",
+    "options": {
+      "A": "可藉由抑制 bradykinin 及 substance P 之生成而降血壓",
+      "B": "會造成反射性心搏過速，故不適用於治療心衰竭",
+      "C": "可以治療糖尿病腎病變（diabetic nephropathy）",
+      "D": "和留鉀利尿劑併用可以預防高血鉀症之發生"
+    },
+    "answer": "C",
+    "explanation": "ACE抑制劑可以減少蛋白尿，保護腎功能，適用於糖尿病腎病變治療。\n(A) 錯誤，ACE抑制劑是抑制ACE而非促進bradykinin分解，實際上會增加bradykinin\n(B) 錯誤，ACE抑制劑不會造成反射性心搏過速，且適用於心衰竭治療\n(C) 正確，ACE抑制劑可以治療糖尿病腎病變（diabetic nephropathy），減少蛋白尿\n(D) 錯誤，與留鉀利尿劑併用會增加高血鉀症風險，不是預防",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3753"
+  },
+  {
+    "id": 1041265,
+    "question": "65. 下列降血壓藥物中，何者可增加血管平滑肌細胞內 cGMP 濃度而使血管舒張？",
+    "options": {
+      "A": "Minoxidil",
+      "B": "Nifedipine",
+      "C": "Prazosin",
+      "D": "Sodium nitroprusside"
+    },
+    "answer": "D",
+    "explanation": "硝普鈉釋放一氧化氮，活化鳥苷酸環化酶，增加cGMP濃度導致血管舒張。\n(A) 錯誤，米諾地爾（Minoxidil）主要通過開啟鉀離子通道作用\n(B) 錯誤，硝苯地平（Nifedipine）是鈣通道阻斷劑\n(C) 錯誤，哌唑嗪（Prazosin）是α1-阻斷劑\n(D) 正確，硝普鈉（Sodium nitroprusside）釋放NO，增加血管平滑肌細胞內cGMP濃度",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3754"
+  },
+  {
+    "id": 1041266,
+    "question": "66. 下列何種藥物，最適合用於治療過敏性休克？",
+    "options": {
+      "A": "Dopamine",
+      "B": "Epinephrine",
+      "C": "Norepinephrine",
+      "D": "Phenylephrine"
+    },
+    "answer": "B",
+    "explanation": "腎上腺素具有α和β受體激動作用，是過敏性休克的首選治療藥物。\n(A) 錯誤，多巴胺（Dopamine）主要用於心源性休克\n(B) 正確，腎上腺素（Epinephrine）是治療過敏性休克的首選藥物\n(C) 錯誤，去甲腎上腺素（Norepinephrine）主要用於血管性休克\n(D) 錯誤，苯腎上腺素（Phenylephrine）主要用於鼻塞",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3755"
+  },
+  {
+    "id": 1041267,
+    "question": "67. 有關 propranolol 之敘述，下列何者錯誤？",
+    "options": {
+      "A": "非選擇性 β-adrenoceptor 拮抗劑",
+      "B": "口服之生體可用率極高",
+      "C": "可穿過血腦障壁進入腦部",
+      "D": "使用於心肌梗塞病人可延長存活率"
+    },
+    "answer": "B",
+    "explanation": "Propranolol有顯著的首渡效應，口服生體可用率不高，約30%左右。\n(A) 正確，普萘洛爾是非選擇性β-腎上腺受體拮抗劑\n(B) 錯誤，普萘洛爾口服有顯著首渡效應，生體可用率並不高\n(C) 正確，普萘洛爾具脂溶性，可穿過血腦障壁\n(D) 正確，用於心肌梗塞後可延長存活率",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3756"
+  },
+  {
+    "id": 1041268,
+    "question": "68. 下列那種藥物適合用於改善 Crohn’s disease 症狀，而且作用可達 12 週？",
+    "options": {
+      "A": "Loperamide",
+      "B": "Cholestyramine",
+      "C": "Infliximab",
+      "D": "Senna"
+    },
+    "answer": "C",
+    "explanation": "Infliximab是TNF-α抑制劑，用於治療克隆氏病，作用可持續12週。\n(A) 錯誤，洛哌丁胺（Loperamide）是止瀉劑，作用時間短\n(B) 錯誤，消膽胺（Cholestyramine）是膽酸結合劑，不適用於克隆氏病\n(C) 正確，英夫利昔單抗（Infliximab）是TNF-α抑制劑，適合治療克隆氏病，作用可達12週\n(D) 錯誤，番瀉葉（Senna）是瀉劑，不適用於克隆氏病",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3757"
+  },
+  {
+    "id": 1041269,
+    "question": "69. Terfenadine 若合併下列何種藥物使用，最容易產生心室性心律不整（ventricular arrhythmias）？",
+    "options": {
+      "A": "Carbachol",
+      "B": "Erythromycin",
+      "C": "Scopolamine",
+      "D": "Loratadine"
+    },
+    "answer": "B",
+    "explanation": "Erythromycin會抑制CYP3A4，增加terfenadine血中濃度，導致心律不整。\n(A) 錯誤，卡巴膽鹼（Carbachol）不會影響terfenadine代謝\n(B) 正確，紅黴素（Erythromycin）會抑制CYP3A4，增加terfenadine濃度，導致心室性心律不整\n(C) 錯誤，東莨菪鹼（Scopolamine）不會影響terfenadine代謝\n(D) 錯誤，氯雷他定（Loratadine）本身是抗組織胺，不會產生交互作用",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3758"
+  },
+  {
+    "id": 1041270,
+    "question": "70. 承上題，引起心律不整的原因，主要是由於阻斷下列何種通道？",
+    "options": {
+      "A": "Na<sup>+</sup>",
+      "B": "K<sup>+</sup>",
+      "C": "Ca<sup>2+</sup>",
+      "D": "Mg<sup>2+</sup>"
+    },
+    "answer": "B",
+    "explanation": "Terfenadine在高濃度時會阻斷心肌細胞的鉀離子通道，延長QT間期，導致心律不整。\n(A) 錯誤，主要不是阻斷鈉離子通道\n(B) 正確，terfenadine會阻斷鉀離子通道，特別是hERG鉀通道，導致QT延長\n(C) 錯誤，主要不是阻斷鈣離子通道\n(D) 錯誤，不是阻斷鎂離子通道",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3758"
+  },
+  {
+    "id": 1041271,
+    "question": "71. 下列有關退化性老年癡呆症（Alzheimer’s disease）的描述，何者錯誤？",
+    "options": {
+      "A": "退化性老年癡呆症病人其前腦（basal forebrain）的膽鹼性（cholinergic）神經元有退化現象",
+      "B": "退化性老年癡呆症病人的大腦皮質（cerebral cortex）及海馬迴（hippocampus）區域經常可以發現 類澱粉斑（amyloid plaques）的出現",
+      "C": "臨床上可以使用乙醯膽鹼酯酶（Acetylcholinesterase）抑制劑來緩解其認知異常的症狀，但經常會 出現病人血壓上升的副作用",
+      "D": "Memantine 為一種 N-methyl-D-aspartate 受體的阻斷劑，對於退化性老年癡呆症病人也具有治療的 效果",
+      "E": "送分"
+    },
+    "answer": "E",
+    "explanation": "此題已標記為刪除並一律給分。",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3759"
+  },
+  {
+    "id": 1041272,
+    "question": "72. 下列那一種藥物可以用來當作海洛因（heroin）成癮者的替代式治療（substitution therapy）藥物？",
+    "options": {
+      "A": "naloxone",
+      "B": "methadone",
+      "C": "acamprosate",
+      "D": "rimonabant"
+    },
+    "answer": "B",
+    "explanation": "美沙冬是長效鴉片類藥物，可用於海洛因成癮者的替代治療。\n(A) 錯誤，納洛酮（naloxone）是鴉片拮抗劑，用於解毒\n(B) 正確，美沙冬（methadone）是長效鴉片類藥物，用於海洛因成癮的替代治療\n(C) 錯誤，阿坎酸（acamprosate）用於酒精戒斷\n(D) 錯誤，利莫那班（rimonabant）是CB1受體拮抗劑",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3760"
+  },
+  {
+    "id": 1041273,
+    "question": "73. 下列那一種治療部分性癲癇（partial seizure）的藥物，常因為肝臟毒性的副作用，而減少其普遍使 用性？",
+    "options": {
+      "A": "Diazepam",
+      "B": "Felbamate",
+      "C": "Ethosuximide",
+      "D": "Valproic acid"
+    },
+    "answer": [
+      "B",
+      "D"
+    ],
+    "explanation": "Felbamate和Valproic acid都可能造成嚴重肝毒性，限制了其臨床使用。\n(A) 錯誤，地西泮（Diazepam）主要副作用不是肝毒性\n(B) 正確，非巴酯（Felbamate）因嚴重肝毒性副作用而減少使用\n(C) 錯誤，乙琥胺（Ethosuximide）主要副作用不是肝毒性\n(D) 正確，丙戊酸（Valproic acid）也可能造成嚴重肝毒性",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3761"
+  },
+  {
+    "id": 1041274,
+    "question": "74. 下列那一種鎮靜催眠藥物在停藥後所產生的禁斷現象（withdrawal syndrome），較其他三者來的輕微 且較慢發生？",
+    "options": {
+      "A": "Oxazepam",
+      "B": "Prazepam",
+      "C": "Alprazolam",
+      "D": "Lorazepam"
+    },
+    "answer": "B",
+    "explanation": "Prazepam是長效benzodiazepine，停藥後禁斷現象較溫和且發生較慢。\n(A) 錯誤，奧沙西泮（Oxazepam）是中效藥物\n(B) 正確，普拉西泮（Prazepam）是長效benzodiazepine，禁斷現象較輕微且較慢發生\n(C) 錯誤，阿普唑侖（Alprazolam）是短效藥物，禁斷現象較嚴重\n(D) 錯誤，勞拉西泮（Lorazepam）是中效藥物",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3762"
+  },
+  {
+    "id": 1041275,
+    "question": "75. 下列何種藥物是 cyanide 中毒時的最佳解毒劑？",
+    "options": {
+      "A": "Hydroxocobalamin",
+      "B": "Acetylcysteine",
+      "C": "Physostigmine",
+      "D": "Pralidoxime"
+    },
+    "answer": "A",
+    "explanation": "羥鈷胺素能結合氰化物形成氰鈷胺素，是氰化物中毒的最佳解毒劑。\n(A) 正確，羥鈷胺素（Hydroxocobalamin）是氰化物中毒的最佳解毒劑\n(B) 錯誤，乙醯半胱胺酸（Acetylcysteine）是乙醯胺酚中毒的解毒劑\n(C) 錯誤，毒扁豆鹼（Physostigmine）是抗膽鹼藥物中毒的解毒劑\n(D) 錯誤，解磷定（Pralidoxime）是有機磷中毒的解毒劑",
+    "tags": [
+      "104-1(二)",
+      "藥理"
+    ],
+    "group_id": "group_3763"
+  },
+  {
+    "id": 1041276,
+    "question": "76. 活體肝移植捐贈者於部分肝切除後剩下的肝臟變化，下列敘述何者正確？",
+    "options": {
+      "A": "被切除的肝葉重新長出",
+      "B": "剩下的肝臟至少需半年以上才能長大一倍",
+      "C": "肝細胞與庫弗氏細胞（Kupffer’s cells）及內皮細胞同步複製",
+      "D": "肝臟切除後的代償性生長主要是由於肝內幹細胞（intrahepatic stem cells）之生長"
+    },
+    "answer": "C",
+    "explanation": "肝臟切除後，各種肝細胞類型會同步進行代償性增生，包括肝細胞、庫弗氏細胞和內皮細胞。\n(A) 錯誤，是剩餘肝臟代償性增大，不是被切除部分重新長出\n(B) 錯誤，肝臟再生速度很快，通常數週內就能顯著增大\n(C) 正確，肝臟切除後各種細胞類型會同步複製增生\n(D) 錯誤，主要是成熟肝細胞的增生，不是幹細胞",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3764"
+  },
+  {
+    "id": 1041277,
+    "question": "77. 下列有關細胞凋亡（apoptosis）的敘述，何者正確？",
+    "options": {
+      "A": "細胞變大",
+      "B": "細胞質在 H＆E 染色時呈嗜鹼性（basophilia）",
+      "C": "凋亡體（apoptotic bodies）很快會被吞噬",
+      "D": "會引起炎症反應"
+    },
+    "answer": "C",
+    "explanation": "細胞凋亡會形成凋亡體，這些凋亡體會被巨噬細胞快速吞噬清除。\n(A) 錯誤，凋亡細胞會縮小，不是變大\n(B) 錯誤，凋亡細胞質呈嗜酸性，不是嗜鹼性\n(C) 正確，凋亡體（apoptotic bodies）會很快被巨噬細胞吞噬清除\n(D) 錯誤，細胞凋亡通常不會引起炎症反應",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3765"
+  },
+  {
+    "id": 1041278,
+    "question": "78. 下列有關體幹細胞（adult/somatic stem cells）的敘述，何者正確？",
+    "options": {
+      "A": "肝臟的幹細胞是在哈維氏管（canals of Havers）",
+      "B": "腦部的幹細胞是在海馬迴（hippocampus）的 CA1 及 CA2 區",
+      "C": "皮膚的幹細胞是在毛囊膨出部（hair follicle bulge）、毛囊間之表皮（interfollicular areas of surface epidermis）及皮脂腺（sebaceous glands）",
+      "D": "骨骼肌的幹細胞是在肌外膜（epimysium）之間質細胞 代號：2101 頁次：11－9"
+    },
+    "answer": "C",
+    "explanation": "皮膚幹細胞分布在毛囊膨出部、毛囊間表皮和皮脂腺等部位。\n(A) 錯誤，哈維氏管是骨組織結構，不是肝臟幹細胞位置\n(B) 錯誤，腦部幹細胞主要在海馬迴齒狀回和側腦室下區\n(C) 正確，皮膚幹細胞位於毛囊膨出部、毛囊間表皮和皮脂腺\n(D) 錯誤，骨骼肌幹細胞（衛星細胞）位於肌纖維和基底膜之間",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3766"
+  },
+  {
+    "id": 1041279,
+    "question": "79. 有關家族性高膽固醇血症（familial hypercholesterolemia）之敘述，下列何者正確？",
+    "options": {
+      "A": "主要是低密度脂蛋白結構異常引起的遺傳性疾病",
+      "B": "大多是低密度脂蛋白基因印記（genomic imprinting）異常所致",
+      "C": "大多是調控低密度脂蛋白表現的基因被甲基化（methylation）所致",
+      "D": "大多是低密度脂蛋白受器（receptor）基因突變引起的遺傳性疾病"
+    },
+    "answer": "D",
+    "explanation": "家族性高膽固醇血症主要是LDL受體基因突變導致LDL受器功能異常。\n(A) 錯誤，主要不是LDL結構異常，而是受器問題\n(B) 錯誤，不是基因印記異常\n(C) 錯誤，不是甲基化問題\n(D) 正確，家族性高膽固醇血症主要是低密度脂蛋白受器基因突變引起",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3767"
+  },
+  {
+    "id": 1041280,
+    "question": "80. 普拉德-威利症候群（Prader-Willi Syndrome）是下列何種異常造成的遺傳性疾病？",
+    "options": {
+      "A": "組織結構蛋白（structural proteins）異常",
+      "B": "細胞受器（receptor）異常",
+      "C": "基因印記（genomic imprinting）異常",
+      "D": "染色體轉位（translocation）"
+    },
+    "answer": "C",
+    "explanation": "普拉德-威利症候群是由於15號染色體父源性區域缺失或母源性單親二倍體導致的基因印記異常。\n(A) 錯誤，不是結構蛋白異常\n(B) 錯誤，不是受器異常\n(C) 正確，普拉德-威利症候群是基因印記（genomic imprinting）異常造成的遺傳疾病\n(D) 錯誤，雖然可能涉及染色體異常，但主要機制是基因印記異常",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3768"
+  },
+  {
+    "id": 1041281,
+    "question": "81. 下列何者最適合利用聚合酶鏈鎖反應（polymerase chain reaction）法分析基因長度的變化以作診斷？",
+    "options": {
+      "A": "柯林菲特氏症候群（Klinefelter syndrome）",
+      "B": "X 染色體脆折症候群（fragile-X syndrome）",
+      "C": "馬凡氏症候群（Marfan syndrome）",
+      "D": "龐貝氏症（Pompe disease）"
+    },
+    "answer": "B",
+    "explanation": "聚合酶鏈鎖反應（PCR）適合分析基因長度變化，特別是重複序列的擴增。\n(A) 錯誤，柯林菲特氏症候群（Klinefelter syndrome）是染色體數目異常（47,XXY），需要染色體分析而非PCR\n(B) 正確，X染色體脆折症候群（fragile-X syndrome）是由FMR1基因中CGG重複序列過度擴增造成，PCR可以有效檢測重複序列長度變化\n(C) 錯誤，馬凡氏症候群（Marfan syndrome）主要是FBN1基因點突變，需要基因定序而非長度分析\n(D) 錯誤，龐貝氏症（Pompe disease）是GAA基因缺陷，主要是點突變或缺失，不是長度變化",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3769"
+  },
+  {
+    "id": 1041282,
+    "question": "82. 有關腫瘤細胞的敘述，下列何者錯誤？",
+    "options": {
+      "A": "依目前普遍的觀點，整個腫瘤是源自單株的腫瘤細胞增生而成",
+      "B": "一顆 5 公分大的腫瘤，其所有細胞普遍為同質性（homogeneity）",
+      "C": "一顆 5 公分大的腫瘤，其實所含的腫瘤細胞大部分不處於增生複製期（replicative pool）",
+      "D": "依理論如果腫瘤細胞的倍增時間為 3 天，那在體內由單一細胞經過 120 天即可能長成 1 公斤的腫 瘤，但實際上並非如此，因為許多腫瘤細胞會進入 G0週期，進行分化或凋亡"
+    },
+    "answer": "B",
+    "explanation": "腫瘤細胞在生長過程中會發生基因突變，導致細胞異質性增加。\n(A) 正確，腫瘤確實起源於單一細胞的克隆性增生（monoclonal origin）\n(B) 錯誤，5公分大的腫瘤細胞並非同質性，在生長過程中會累積不同突變，形成異質性（heterogeneity）的細胞群體\n(C) 正確，大部分腫瘤細胞確實不處於活躍的增生複製期，多數在G0期或分化狀態\n(D) 正確，理論上腫瘤細胞可快速增長，但實際上許多細胞會進入G0期、分化或凋亡，影響實際生長速度",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3770"
+  },
+  {
+    "id": 1041283,
+    "question": "83. 下列抑癌基因，何者不直接調控細胞週期（G1→S）？",
+    "options": {
+      "A": "RB",
+      "B": "E-cadherin",
+      "C": "p16/INK4a",
+      "D": "p53"
+    },
+    "answer": "B",
+    "explanation": "抑癌基因主要調控細胞週期進程，防止細胞異常增殖。\n(A) 錯誤，RB基因直接調控G1/S檢查點，控制細胞從G1期進入S期\n(B) 正確，E-鈣黏蛋白（E-cadherin）主要參與細胞間黏附和細胞極性維持，不直接調控G1→S細胞週期轉換\n(C) 錯誤，p16/INK4a直接抑制CDK4/6激酶，阻止細胞從G1期進入S期\n(D) 錯誤，p53基因是重要的G1/S檢查點調控因子，可阻止DNA損傷細胞進入S期",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3771"
+  },
+  {
+    "id": 1041284,
+    "question": "84. 一位 25 歲女性在生產後不久突發呼吸困難、發紺、血壓下降及休克，病人接續發生肺水腫。下列何 者最不可能出現在病人的肺部微血管循環中？",
+    "options": {
+      "A": "空氣",
+      "B": "鱗狀細胞",
+      "C": "脂肪",
+      "D": "黏液"
+    },
+    "answer": "A",
+    "explanation": "產後突發呼吸困難和休克提示栓塞症，多種物質可能進入肺循環。\n(A) 正確，空氣栓塞（air embolism）在產後較不常見，更常見於外科手術或潛水相關\n(B) 錯誤，羊水栓塞中可能含有胎兒鱗狀細胞，是產後栓塞的可能成分\n(C) 錯誤，脂肪栓塞可能發生在產後，特別是併發症情況下\n(D) 錯誤，羊水中含有黏液成分，羊水栓塞時可能出現在肺循環中",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3772"
+  },
+  {
+    "id": 1041285,
+    "question": "85. 從受傷或死亡的心肌細胞釋放於血液中某些成分可用於判定心肌梗塞的發生，下列蛋白質何者為心 肌缺氧性損傷最具特異性的標示物質（biomarker）？",
+    "options": {
+      "A": "C-reactive protein",
+      "B": "creatine kinase muscle dimer",
+      "C": "lactate dehydrogenase",
+      "D": "troponin T and troponin I"
+    },
+    "answer": "D",
+    "explanation": "心肌梗塞時心肌細胞死亡會釋放特異性蛋白質到血液中。\n(A) 錯誤，C反應蛋白（C-reactive protein）是非特異性發炎指標，不特異於心肌損傷\n(B) 錯誤，肌酸激酶肌肉型（creatine kinase muscle dimer, CK-MB）雖然用於心肌梗塞診斷，但特異性不如肌鈣蛋白\n(C) 錯誤，乳酸去氫酶（lactate dehydrogenase）存在於多種組織中，特異性不高\n(D) 正確，肌鈣蛋白T和I（troponin T and troponin I）是心肌特異性蛋白質，是目前心肌梗塞最具特異性的生物標記",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3773"
+  },
+  {
+    "id": 1041286,
+    "question": "86. 一位 10 歲男童最近發生上呼吸道感染並在心肌中出現 Aschoff bodies。下列有關此心肌病變的敘述中， 何者最不適當？",
+    "options": {
+      "A": "類纖維蛋白壞死併膨脹嗜伊紅性的膠原",
+      "B": "出現 Anitschkow 細胞（毛毛蟲樣細胞）",
+      "C": "多核巨細胞形成 Aschoff 巨細胞",
+      "D": "只發生於心肌"
+    },
+    "answer": "D",
+    "explanation": "阿紹夫小體（Aschoff bodies）是風濕性心臟病的特徵性病理變化。\n(A) 正確，阿紹夫小體含有類纖維蛋白壞死和膨脹的嗜伊紅性膠原\n(B) 正確，含有阿尼茲考夫細胞（Anitschkow cells），細胞核呈毛毛蟲樣外觀\n(C) 正確，可見多核巨細胞形成阿紹夫巨細胞（Aschoff giant cells）\n(D) 錯誤，阿紹夫小體不只發生在心肌，也可出現在心包膜、心內膜、關節、皮下組織等部位",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3774"
+  },
+  {
+    "id": 1041287,
+    "question": "87. 下列有關惡性貧血（pernicious anemia）的敘述，何者正確？",
+    "options": {
+      "A": "自體抗體攻擊十二指腸腺體所致",
+      "B": "周邊血液出現細胞變大且細胞核有超多葉的嗜中性白血球",
+      "C": "腸胃道黏膜相關淋巴癌（mucosa-associated lymphoid tumor）的重要危險因子",
+      "D": "周邊血液出現變大及淡染的卵形紅血球"
+    },
+    "answer": "B",
+    "explanation": "惡性貧血（pernicious anemia）是維生素B12缺乏導致的巨球性貧血。\n(A) 錯誤，惡性貧血是自體抗體攻擊胃壁細胞和內在因子，而非十二指腸腺體\n(B) 正確，維生素B12缺乏會導致DNA合成異常，造成嗜中性球出現超多葉核（hypersegmented neutrophils）\n(C) 錯誤，胃黏膜相關淋巴瘤（MALT lymphoma）主要與幽門螺旋桿菌感染相關\n(D) 錯誤，應該是出現大型卵圓形紅血球（megaloblasts），且是深染而非淡染",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3775"
+  },
+  {
+    "id": 1041288,
+    "question": "88. 下列有關周邊血液紅血球病變的敘述，何者錯誤？",
+    "options": {
+      "A": "具有靶狀細胞（target cells），則病人可能有慢性酒精中毒、脾臟切除，或海洋性貧血等",
+      "B": "紅血球具有好威爾-久麗氏體（Howell-Jolly bodies），則病人可能有脾臟切除之病史",
+      "C": "紅血球具有嗜鹼性彩斑（basophilic stippling），則病人骨髓可能受到藥物或毒素的傷害",
+      "D": "具有裂細胞（schistocytes），則病人可能有缺鐵性貧血 代號：2101 頁次：11－10"
+    },
+    "answer": "D",
+    "explanation": "不同的紅血球形態變化反映不同的病理狀況。\n(A) 正確，靶狀細胞（target cells）可見於慢性酒精中毒、脾臟切除、海洋性貧血等情況\n(B) 正確，好威爾-久麗氏體（Howell-Jolly bodies）是DNA殘留，脾臟切除後無法清除這些異常紅血球\n(C) 正確，嗜鹼性彩斑（basophilic stippling）表示RNA殘留，常見於鉛中毒或其他骨髓毒性\n(D) 錯誤，裂細胞（schistocytes）是破碎紅血球，常見於微血管病變性溶血性貧血，而非缺鐵性貧血。缺鐵性貧血主要出現小球性低色素性紅血球",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3776"
+  },
+  {
+    "id": 1041289,
+    "question": "89. 下列有關非特異性間質肺炎（non-specific interstitial pneumonia）的敘述，何者正確？",
+    "options": {
+      "A": "可分細胞性（cellular）和纖維化（fibrosing）兩種型態",
+      "B": "時間異質性（temporal heterogeneity）明顯",
+      "C": "可見纖維母細胞增生病灶（fibroblastic focus）",
+      "D": "可見蜂巢狀纖維化（honeycomb fibrosis）"
+    },
+    "answer": "A",
+    "explanation": "非特異性間質肺炎（NSIP）是特發性間質性肺炎的一種類型。\n(A) 正確，NSIP可分為細胞性（cellular）和纖維化（fibrosing）兩種主要型態\n(B) 錯誤，NSIP的特徵是時間同質性（temporal homogeneity），病變程度較為一致\n(C) 錯誤，纖維母細胞增生病灶（fibroblastic focus）是尋常性間質肺炎（UIP）的特徵\n(D) 錯誤，蜂巢狀纖維化（honeycomb fibrosis）也是UIP的特徵性表現",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3777"
+  },
+  {
+    "id": 1041290,
+    "question": "90. 一位 45 歲中年男子，主訴呼吸短促，胸部 X 光顯示，右肺區 hyperlucent 且有右肺塌陷呈白色陰影 貼近心臟邊緣，縱膈腔左移。下列何項為最有可能的診斷？",
+    "options": {
+      "A": "肺結核",
+      "B": "肋膜炎",
+      "C": "肺氣腫破裂",
+      "D": "肺癌"
+    },
+    "answer": "C",
+    "explanation": "右肺透亮度增加合併肺塌陷和縱膈偏移提示氣胸。\n(A) 錯誤，肺結核通常表現為浸潤性病變，不會有透亮度增加\n(B) 錯誤，肋膜炎通常有肋膜積液，表現為白色陰影而非透亮\n(C) 正確，肺氣腫破裂導致氣胸，右肺透亮度增加（pneumothorax），肺塌陷貼近心臟，縱膈向對側偏移\n(D) 錯誤，肺癌通常表現為腫塊陰影，不會有透亮度增加",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3778"
+  },
+  {
+    "id": 1041291,
+    "question": "91. 下列何種疾病最常伴隨原發性硬化性膽管炎（primary sclerosing cholangitis）？",
+    "options": {
+      "A": "全身性紅斑性狼瘡（systemic lupus erythematosus）",
+      "B": "葛雷夫氏病（Graves’ disease）",
+      "C": "胰臟炎（pancreatitis）",
+      "D": "潰瘍性結腸炎（ulcerative colitis）"
+    },
+    "answer": "D",
+    "explanation": "原發性硬化性膽管炎（PSC）常與特定腸道疾病合併出現。\n(A) 錯誤，全身性紅斑性狼瘡（SLE）與PSC無特殊關聯\n(B) 錯誤，葛雷夫氏病（Graves' disease）是甲狀腺疾病，與PSC無關\n(C) 錯誤，胰臟炎雖可能合併膽道疾病，但不是PSC的典型伴隨疾病\n(D) 正確，原發性硬化性膽管炎最常伴隨潰瘍性結腸炎（ulcerative colitis），約70-80%的PSC患者有潰瘍性結腸炎",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3779"
+  },
+  {
+    "id": 1041292,
+    "question": "92. 一位 20 歲的女大學生最近幾個月來早晨有嗜睡的情形，一直到吃完早餐才會恢復正常。醫師為她做 了一系列的檢查，發現在胰臟的尾部長了一個 1 公分大小的腫瘤，顯微鏡下的圖形如下圖。則下列 那一個診斷最有可能？",
+    "options": {
+      "A": "腺癌（adenocarcinoma）",
+      "B": "血管瘤（hemangioma）",
+      "C": "胰島素瘤（insulinoma）",
+      "D": "偽囊腫（pseudocyst）"
+    },
+    "answer": "C",
+    "explanation": "年輕女性晨起嗜睡、進食後改善，合併胰臟腫瘤提示胰島素瘤。\n(A) 錯誤，腺癌不會引起低血糖症狀\n(B) 錯誤，血管瘤是良性血管病變，不會產生激素\n(C) 正確，胰島素瘤（insulinoma）分泌過量胰島素導致低血糖，典型表現為晨起嗜睡、進食後症狀改善\n(D) 錯誤，偽囊腫是液體積聚，不會產生激素",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "images": [
+      "./image/104-1-2-92.jpg"
+    ],
+    "group_id": "group_3780"
+  },
+  {
+    "id": 1041293,
+    "question": "93. 一新生男嬰，出生時體重 2950 克，在嬰兒室餵奶量正常。一個月後，母親發現餵奶量減少，嘔吐次 數增加，上腹部摸到橄欖狀腫塊，則最可能的診斷為何？",
+    "options": {
+      "A": "梅克爾氏憩室（Meckel diverticulum）",
+      "B": "膽道閉鎖（biliary atresia）",
+      "C": "賁門痙攣（cardiospasm）",
+      "D": "幼兒性肥大性幽門狹窄（infantile hypertrophic pyloric stenosis）"
+    },
+    "answer": "D",
+    "explanation": "新生兒餵奶量減少、嘔吐、上腹部橄欖狀腫塊提示幽門狹窄。\n(A) 錯誤，梅克爾氏憩室通常無症狀或表現為腸出血\n(B) 錯誤，膽道閉鎖主要表現為黃疸和灰白色糞便\n(C) 錯誤，賁門痙攣主要影響食道，不會有腹部腫塊\n(D) 正確，幼兒性肥大性幽門狹窄（IHPS）典型表現為餵奶後噴射性嘔吐、腹部可觸及橄欖狀幽門腫塊",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3781"
+  },
+  {
+    "id": 1041294,
+    "question": "94. 一位 20 歲女性，因為肚子痛而至急診，腹部超音波發現胰臟有一直徑約 8 公分的腫瘤，腫瘤內有囊 狀結構。經手術切除腫瘤，組織學檢查腫瘤內有一些囊狀結構內充滿出血，腫瘤細胞生長方式為成 片排列或者為乳突狀突起。則下列何者為最可能的診斷？",
+    "options": {
+      "A": "congenital cyst of pancreas of pancreas",
+      "B": "pancreas divisum",
+      "C": "solid-pseudopapillary neoplasm",
+      "D": "pancreatic pseudocyst"
+    },
+    "answer": "C",
+    "explanation": "年輕女性胰臟囊實性腫瘤，內有出血和乳突狀結構提示特定腫瘤類型。\n(A) 錯誤，先天性胰臟囊腫通常是單純囊腫，無實性成分\n(B) 錯誤，胰臟分裂是發育異常，不是腫瘤\n(C) 正確，實性假乳突狀腫瘤（solid-pseudopapillary neoplasm）好發於年輕女性，特徵為囊實性結構、出血、乳突狀排列\n(D) 錯誤，胰臟假囊腫通常是胰臟炎後形成，內容物為胰液而非腫瘤細胞",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3782"
+  },
+  {
+    "id": 1041295,
+    "question": "95. 有關副甲狀腺腺瘤常見的病理特徵，下列何者錯誤？",
+    "options": {
+      "A": "腫瘤界限明顯",
+      "B": "大部分以多個結節腫瘤呈現",
+      "C": "重量約為 0.5 公克至 5.0 公克之間",
+      "D": "腫瘤細胞主要由主細胞（chief cells）所構成"
+    },
+    "answer": "B",
+    "explanation": "副甲狀腺腺瘤是良性腫瘤，具有特定的病理特徵。\n(A) 正確，副甲狀腺腺瘤通常界限清楚，有完整包膜\n(B) 錯誤，副甲狀腺腺瘤大部分為單發性腫瘤，而非多發性結節\n(C) 正確，副甲狀腺腺瘤重量通常在0.5-5.0公克之間\n(D) 正確，腫瘤細胞主要由主細胞（chief cells）構成",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3783"
+  },
+  {
+    "id": 1041296,
+    "question": "96. 下列腎絲球疾病中，何者最易產生新月形（crescent）腎絲球細胞增生？",
+    "options": {
+      "A": "細基底膜病（thin basement membrane disease）",
+      "B": "抗基底膜病（anti-basement membrane disease）",
+      "C": "瀰漫性膜性腎絲球腎炎（diffuse membranous glomerulonephritis）",
+      "D": "糖尿病腎絲球疾病（diabetic glomerular disease）"
+    },
+    "answer": "B",
+    "explanation": "新月形腎絲球腎炎是嚴重的腎絲球疾病，與特定病因相關。\n(A) 錯誤，細基底膜病是良性疾病，很少產生新月形變化\n(B) 正確，抗基底膜病（anti-GBM disease）是典型的新月形腎絲球腎炎原因，抗體攻擊基底膜導致嚴重發炎\n(C) 錯誤，膜性腎絲球腎炎主要表現為蛋白尿，很少有新月形變化\n(D) 錯誤，糖尿病腎病變主要是慢性硬化性變化，不典型產生新月形增生",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3784"
+  },
+  {
+    "id": 1041297,
+    "question": "97. 一位 30 歲女性，因下腹痛來急診，身體檢查發現病人血壓過低，緊急開刀發現右側輸卵管有血塊。 病理檢查發現如下圖的構造，最可能的診斷是：",
+    "options": {
+      "A": "絨毛癌（choriocarcinoma）",
+      "B": "子宮外孕（ectopic pregnancy）",
+      "C": "水泡狀胎塊（hydatidiform mole）",
+      "D": "漿液性癌（serous carcinoma）"
+    },
+    "answer": "B",
+    "explanation": "年輕女性下腹痛、血壓低、輸卵管出血提示子宮外孕破裂。\n(A) 錯誤，絨毛癌是惡性腫瘤，不會單純出現在輸卵管\n(B) 正確，子宮外孕（ectopic pregnancy）最常發生在輸卵管，破裂時會導致腹腔內出血和休克\n(C) 錯誤，水泡狀胎塊發生在子宮內，不會在輸卵管\n(D) 錯誤，漿液性癌是卵巢或輸卵管的惡性腫瘤，不會急性出血導致休克",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "images": [
+      "./image/104-1-2-97.jpg"
+    ],
+    "group_id": "group_3785"
+  },
+  {
+    "id": 1041298,
+    "question": "98. 以帶血的乳頭分泌物（bloody discharge）呈現的乳房疾病，下列何種最常見？",
+    "options": {
+      "A": "乳管內乳突瘤（intraductal papilloma）",
+      "B": "乳管原位癌（ductal carcinoma in situ）",
+      "C": "侵襲性乳管癌（invasive ductal carcinoma）",
+      "D": "派吉特氏病（Paget’s disease）"
+    },
+    "answer": "A",
+    "explanation": "帶血乳頭分泌物是乳房疾病的重要症狀，不同疾病有不同特徵。\n(A) 正確，乳管內乳突瘤（intraductal papilloma）是最常見導致帶血乳頭分泌物的良性疾病\n(B) 錯誤，乳管原位癌較少直接導致帶血分泌物\n(C) 錯誤，侵襲性乳管癌通常表現為腫塊，較少有帶血分泌物\n(D) 錯誤，派吉特氏病主要表現為乳頭皮膚變化，較少有帶血分泌物",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3786"
+  },
+  {
+    "id": 1041299,
+    "question": "99. 病人大腦有病灶，發生 Kernohan 切跡（Kernohan’s notch），導致病灶同側輕偏癱（hemiparesis）， 與之直接相關的變化為何？",
+    "options": {
+      "A": "大腦鎌下脫出（subfalcial herniation）",
+      "B": "經小腦天幕脫出（transtentorial herniation）",
+      "C": "小腦扁桃體脫出（tonsillar herniation）",
+      "D": "杜雷特氏出血（Duret’s hemorrhage）"
+    },
+    "answer": "B",
+    "explanation": "Kernohan切跡是腦疝的重要併發症，與特定腦疝類型相關。\n(A) 錯誤，大腦鎌下脫出主要影響前腦動脈，不會產生Kernohan切跡\n(B) 正確，經小腦天幕脫出（transtentorial herniation）時，腦幹受壓迫在天幕邊緣產生切跡，壓迫對側腦腳導致同側輕偏癱\n(C) 錯誤，小腦扁桃體脫出主要影響延髓，不會產生Kernohan切跡\n(D) 錯誤，杜雷特氏出血是腦幹出血，不是Kernohan切跡的直接原因",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3787"
+  },
+  {
+    "id": 1041200,
+    "question": "100. 下列腫瘤的組織學型態，何者與其他三者相差最多？",
+    "options": {
+      "A": "縱膈腔的卵黃囊腫瘤（yolk sac tumor）",
+      "B": "睪丸的精細胞瘤（seminoma）",
+      "C": "卵巢的 dysgerminoma dysgerminoma",
+      "D": "松果腺地區的 germinoma germinoma"
+    },
+    "answer": "A",
+    "explanation": "生殖細胞腫瘤在不同部位有相似的組織學特徵，但卵黃囊腫瘤較特殊。\n(A) 正確，卵黃囊腫瘤（yolk sac tumor）具有特殊的網狀結構和Schiller-Duval小體，組織學型態與其他生殖細胞腫瘤差異最大\n(B) 錯誤，精細胞瘤（seminoma）與dysgerminoma和germinoma組織學相似\n(C) 錯誤，卵巢的無性細胞瘤（dysgerminoma）與精細胞瘤組織學相似\n(D) 錯誤，松果腺的生殖細胞瘤（germinoma）與精細胞瘤組織學相似",
+    "tags": [
+      "104-1(二)",
+      "病理"
+    ],
+    "group_id": "group_3788"
+  }
+]

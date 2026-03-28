@@ -1,0 +1,1709 @@
+[
+  {
+    "id": 1042101,
+    "question": "1. 豆狀核（lenticular nucleus）之血流，主要來自下列何者之深部分支（deep branch）？",
+    "options": {
+      "A": "眼動脈（ophthalmic artery）",
+      "B": "中大腦動脈（middle cerebral artery）",
+      "C": "前大腦動脈（anterior cerebral artery）",
+      "D": "內頸動脈（internal carotid artery）"
+    },
+    "answer": "B",
+    "explanation": "豆狀核（lenticular nucleus）包含尾狀核和殼核，其血流供應主要來自中大腦動脈的深部分支，即豆紋動脈（lenticulostriate arteries）。\n(A) 錯誤，眼動脈（ophthalmic artery）主要供應眼部結構，不供應豆狀核\n(B) 正確，中大腦動脈（middle cerebral artery）的深部分支豆紋動脈是豆狀核的主要血流來源\n(C) 錯誤，前大腦動脈（anterior cerebral artery）主要供應大腦半球內側面，不供應豆狀核\n(D) 錯誤，內頸動脈（internal carotid artery）本身不直接供應豆狀核，而是透過其分支中大腦動脈",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3889"
+  },
+  {
+    "id": 1042102,
+    "question": "2. 腦下垂體腫瘤壓迫視交叉（optic chiasma），最可能發生下列何種症狀？",
+    "options": {
+      "A": "單眼視野全盲",
+      "B": "雙眼顳側視野偏盲（bitemporal hemianopia）",
+      "C": "雙眼同側視野偏盲（homonymous hemianopia）",
+      "D": "雙眼同側視野偏盲，但黃斑部視野保留（homonymous hemianopia with macula sparing）"
+    },
+    "answer": "B",
+    "explanation": "腦下垂體腫瘤壓迫視交叉（optic chiasma）會影響交叉的視神經纖維，這些纖維來自雙眼的鼻側視網膜，負責顳側視野。\n(A) 錯誤，單眼視野全盲通常由視神經病變引起，不是視交叉壓迫的典型表現\n(B) 正確，視交叉壓迫會導致雙眼顳側視野偏盲（bitemporal hemianopia），因為交叉的鼻側視網膜纖維受損\n(C) 錯誤，雙眼同側視野偏盲（homonymous hemianopia）通常由視束或視皮質病變引起\n(D) 錯誤，同側視野偏盲伴黃斑部保留通常見於視皮質病變，不是視交叉壓迫的表現",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3890"
+  },
+  {
+    "id": 1042103,
+    "question": "3. 下列何者不由面神經所含之副交感神經纖維支配？",
+    "options": {
+      "A": "淚腺",
+      "B": "鼻腔黏膜之腺體",
+      "C": "耳下腺",
+      "D": "下頜腺"
+    },
+    "answer": "C",
+    "explanation": "面神經含有副交感神經纖維，但耳下腺是由舌咽神經的副交感纖維支配。\n(A) 錯誤，淚腺由面神經的副交感纖維支配\n(B) 錯誤，鼻腔黏膜腺體由面神經的副交感纖維支配\n(C) 正確，耳下腺由舌咽神經（glossopharyngeal nerve）的副交感纖維支配，不是面神經\n(D) 錯誤，下頜腺（submandibular gland）由面神經的副交感纖維支配",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3891"
+  },
+  {
+    "id": 1042104,
+    "question": "4. 下列何者不是動眼神經損傷之典型臨床症狀？",
+    "options": {
+      "A": "眼瞼下垂",
+      "B": "損傷側眼睛無法向內看",
+      "C": "瞳孔縮小",
+      "D": "複視"
+    },
+    "answer": "C",
+    "explanation": "動眼神經損傷會導致眼瞼下垂、眼球運動障礙和瞳孔散大，不會造成瞳孔縮小。\n(A) 錯誤，眼瞼下垂是動眼神經損傷的典型症狀，因提上眼瞼肌麻痺\n(B) 錯誤，損傷側眼睛無法向內看是典型症狀，因內直肌麻痺\n(C) 正確，動眼神經損傷會導致瞳孔散大而非縮小，因副交感纖維受損\n(D) 錯誤，複視是動眼神經損傷的典型症狀，因眼球運動不協調",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3892"
+  },
+  {
+    "id": 1042105,
+    "question": "5. 環狀軟骨（cricoid cartiage）相對於何脊椎骨高度？",
+    "options": {
+      "A": "C2",
+      "B": "C4",
+      "C": "C6",
+      "D": "T1"
+    },
+    "answer": "C",
+    "explanation": "環狀軟骨（cricoid cartilage）是喉部最下方的軟骨，位於第六頸椎（C6）高度。\n(A) 錯誤，C2高度約在舌骨體部位\n(B) 錯誤，C4高度約在甲狀軟骨上緣\n(C) 正確，環狀軟骨（cricoid cartilage）位於第六頸椎（C6）高度\n(D) 錯誤，T1高度已到胸廓入口，超過環狀軟骨位置",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3893"
+  },
+  {
+    "id": 1042106,
+    "question": "6. 下列何者穿過甲狀舌骨膜（thyrohyoid membrane）？",
+    "options": {
+      "A": "喉返神經（recurrent laryngeal n.）",
+      "B": "喉外神經（external laryngeal n.）",
+      "C": "喉下神經（inferior laryngeal n.）",
+      "D": "喉內神經（internal laryngeal n.）"
+    },
+    "answer": "D",
+    "explanation": "甲狀舌骨膜（thyrohyoid membrane）位於舌骨和甲狀軟骨之間，喉內神經穿過此膜進入喉腔。\n(A) 錯誤，喉返神經（recurrent laryngeal nerve）從下方進入喉部，不穿過甲狀舌骨膜\n(B) 錯誤，喉外神經（external laryngeal nerve）不穿過甲狀舌骨膜\n(C) 錯誤，喉下神經（inferior laryngeal nerve）是喉返神經的終末支，不穿過甲狀舌骨膜\n(D) 正確，喉內神經（internal laryngeal nerve）穿過甲狀舌骨膜（thyrohyoid membrane）進入喉腔",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3894"
+  },
+  {
+    "id": 1042107,
+    "question": "7. 下列有關唾液腺的敘述何者錯誤？",
+    "options": {
+      "A": "下頜下腺導管（submandibular duct）穿過下頜舌骨肌（mylohyoid m.），開口於舌繫帶基 底兩旁",
+      "B": "頦下動脈（submental a.）供應下頜下腺",
+      "C": "鼓索神經（chorda tympani n.）傳遞舌下腺腺體分泌的副交感節前神經",
+      "D": "舌下腺的淋巴匯集到下頜下淋巴結（submandibular lymph nodes）"
+    },
+    "answer": "A",
+    "explanation": "下頜下腺導管開口於舌繫帶基底兩旁是正確的，但導管不穿過下頜舌骨肌，而是在其表面經過。\n(A) 正確，下頜下腺導管（submandibular duct）不穿過下頜舌骨肌（mylohyoid muscle），而是在其表面經過，開口於舌繫帶基底兩旁\n(B) 錯誤，頦下動脈（submental artery）確實供應下頜下腺\n(C) 錯誤，鼓索神經（chorda tympani nerve）確實傳遞舌下腺分泌的副交感節前神經\n(D) 錯誤，舌下腺的淋巴確實匯集到下頜下淋巴結（submandibular lymph nodes）",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3895"
+  },
+  {
+    "id": 1042108,
+    "question": "8. 下列何者位於顳骨（temporal bone）上？",
+    "options": {
+      "A": "面神經管（facial canal）",
+      "B": "卵圓孔（foramen ovale）",
+      "C": "翼管（pterygoid canal）",
+      "D": "盲孔（foramen cecum）"
+    },
+    "answer": "A",
+    "explanation": "面神經管位於顳骨岩部內，是面神經通過的骨管。\n(A) 正確，面神經管（facial canal）位於顳骨（temporal bone）的岩部\n(B) 錯誤，卵圓孔（foramen ovale）位於蝶骨大翼\n(C) 錯誤，翼管（pterygoid canal）位於蝶骨翼突\n(D) 錯誤，盲孔（foramen cecum）位於額骨",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3896"
+  },
+  {
+    "id": 1042109,
+    "question": "9. 下列有關面神經（facial nerve）負責傳遞舌前三分之二的味覺之分支的敘述，何者正確？",
+    "options": {
+      "A": "穿過莖乳突孔（stylomastoid foramen）",
+      "B": "穿過鼓室，是為鼓室神經（tympanic nerve）",
+      "C": "穿過翼管（pterygoid canal）",
+      "D": "其細胞本體位於膝狀神經節（geniculate ganglion）"
+    },
+    "answer": "D",
+    "explanation": "面神經負責舌前三分之二味覺的分支是鼓索神經，其味覺神經元胞體位於膝狀神經節。\n(A) 錯誤，鼓索神經不穿過莖乳突孔（stylomastoid foramen），該孔是面神經主幹出顱的位置\n(B) 錯誤，鼓索神經穿過鼓室，但不是鼓室神經（tympanic nerve），後者屬於舌咽神經\n(C) 錯誤，鼓索神經不穿過翼管（pterygoid canal）\n(D) 正確，負責舌前三分之二味覺的鼓索神經，其細胞本體位於膝狀神經節（geniculate ganglion）",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3897"
+  },
+  {
+    "id": 1042110,
+    "question": "10. 正常情況下，心臟後方大都由下列何者構成？",
+    "options": {
+      "A": "右心室（right ventricle）",
+      "B": "左心室（left ventricle）",
+      "C": "右心房（right atrium）",
+      "D": "左心房（left atrium）"
+    },
+    "answer": "D",
+    "explanation": "心臟後方主要由左心房構成，左心房是心臟最後方的腔室。\n(A) 錯誤，右心室位於心臟前下方\n(B) 錯誤，左心室位於心臟左下方\n(C) 錯誤，右心房位於心臟右側\n(D) 正確，正常情況下心臟後方大都由左心房（left atrium）構成",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3898"
+  },
+  {
+    "id": 1042111,
+    "question": "11. 肋骨處的壁層胸膜（costal parietal pleura）由下列何者支配？",
+    "options": {
+      "A": "膈神經（phrenic nerve）",
+      "B": "肋間神經（intercostal nerve）",
+      "C": "迷走神經（vagus nerve）",
+      "D": "交感神經幹（sympathetic trunk）"
+    },
+    "answer": "B",
+    "explanation": "肋骨處的壁層胸膜由肋間神經支配，因為肋間神經沿肋骨走行並支配該區域。\n(A) 錯誤，膈神經（phrenic nerve）主要支配橫膈膜和縱隔胸膜\n(B) 正確，肋骨處的壁層胸膜（costal parietal pleura）由肋間神經（intercostal nerve）支配\n(C) 錯誤，迷走神經（vagus nerve）主要支配內臟，不支配壁層胸膜\n(D) 錯誤，交感神經幹（sympathetic trunk）不直接支配壁層胸膜",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3899"
+  },
+  {
+    "id": 1042112,
+    "question": "12. 在後縱隔腔（posterior mediastinum）中段處 ①胸主動脈（thoracic aorta） ②奇靜脈 （azygos vein） ③胸管（thoracic duct）三者，由左至右排列的順序為：",
+    "options": {
+      "A": "②③①",
+      "B": "③②①",
+      "C": "①②③",
+      "D": "①③②"
+    },
+    "answer": "D",
+    "explanation": "這題的解題關鍵在於掌握後縱隔腔中段三個重要結構的解剖位置關係。需要從左到右依序記憶這些結構在橫切面上的排列順序。<br> 在後縱隔腔中段，由左至右的正確排列順序為：胸主動脈（thoracic aorta）→胸管（thoracic duct）→奇靜脈（azygos vein）。胸主動脈位於最左側緊鄰脊柱左前方，胸管位於中間偏左的位置，奇靜脈則位於最右側脊柱右前方。",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3900"
+  },
+  {
+    "id": 1042113,
+    "question": "13. 下列何者不是結腸的特徵？",
+    "options": {
+      "A": "完全為腹膜內器官",
+      "B": "具脂肪垂（omental appendices）",
+      "C": "管壁的縱肌特化為三條帶狀的taeniae coli",
+      "D": "袋狀管壁外觀（haustra）"
+    },
+    "answer": "A",
+    "explanation": "結腸的大部分位於腹膜後方，不完全為腹膜內器官。\n(A) 正確，結腸不完全為腹膜內器官，升結腸和降結腸為腹膜後器官\n(B) 錯誤，結腸具有脂肪垂（omental appendices）是其特徵之一\n(C) 錯誤，結腸管壁的縱肌特化為三條帶狀的結腸帶（taeniae coli）\n(D) 錯誤，結腸具有袋狀管壁外觀（haustra）",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3901"
+  },
+  {
+    "id": 1042114,
+    "question": "14. 內臟大神經（greater splanchnic nerve）起自脊髓的那個段位？",
+    "options": {
+      "A": "T2～4",
+      "B": "T5～9",
+      "C": "T11～12",
+      "D": "L1～2"
+    },
+    "answer": "B",
+    "explanation": "內臟大神經起源於胸椎T5-T9段的交感神經節前纖維。\n(A) 錯誤，T2-4不是內臟大神經的起源\n(B) 正確，內臟大神經（greater splanchnic nerve）起自脊髓T5-T9段\n(C) 錯誤，T11-12是內臟小神經的起源\n(D) 錯誤，L1-2不是內臟大神經的起源",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3902"
+  },
+  {
+    "id": 1042115,
+    "question": "15. 下列何者不支配前腹壁構造？",
+    "options": {
+      "A": "髂腹下神經（iliohypogastric nerve）",
+      "B": "髂腹股溝神經（ilioinguinal nerve）",
+      "C": "生殖股神經（genitofemoral nerve）",
+      "D": "閉孔神經（obturator nerve）"
+    },
+    "answer": "D",
+    "explanation": "閉孔神經主要支配大腿內側肌群，不支配前腹壁構造。\n(A) 錯誤，髂腹下神經（iliohypogastric nerve）支配前腹壁構造\n(B) 錯誤，髂腹股溝神經（ilioinguinal nerve）支配前腹壁構造\n(C) 錯誤，生殖股神經（genitofemoral nerve）的生殖支支配前腹壁構造\n(D) 正確，閉孔神經（obturator nerve）主要支配大腿內收肌群，不支配前腹壁構造",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3903"
+  },
+  {
+    "id": 1042116,
+    "question": "16. 交感神經鏈（sympathetic chain）由横膈（diaphragm）的下列何處進入腹腔？",
+    "options": {
+      "A": "正中弓狀韌帶（median arcuate ligament）下",
+      "B": "內側弓狀韌帶（medial arcuate ligament）下",
+      "C": "外側弓狀韌帶（lateral arcuate ligament）下",
+      "D": "主動脈孔（aortic hiatus）"
+    },
+    "answer": "B",
+    "explanation": "交感神經鏈通過橫膈的內側弓狀韌帶下方進入腹腔。\n(A) 錯誤，正中弓狀韌帶（median arcuate ligament）下方是主動脈通過的位置\n(B) 正確，交感神經鏈（sympathetic chain）通過內側弓狀韌帶（medial arcuate ligament）下方進入腹腔\n(C) 錯誤，外側弓狀韌帶（lateral arcuate ligament）下方是腰方肌通過的位置\n(D) 錯誤，主動脈孔（aortic hiatus）是主動脈通過的位置",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3904"
+  },
+  {
+    "id": 1042117,
+    "question": "17. 下列何者發生阻塞時，最不會影響陰道的血液供應？",
+    "options": {
+      "A": "卵巢動脈",
+      "B": "子宮動脈",
+      "C": "直腸中動脈",
+      "D": "陰部內動脈"
+    },
+    "answer": "A",
+    "explanation": "卵巢動脈主要供應卵巢，對陰道血液供應的影響最小。\n(A) 正確，卵巢動脈主要供應卵巢，對陰道血液供應影響最小\n(B) 錯誤，子宮動脈的陰道支是陰道的重要血液來源\n(C) 錯誤，直腸中動脈（middle rectal artery）供應陰道後部\n(D) 錯誤，陰部內動脈（internal pudendal artery）供應陰道下部",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3905"
+  },
+  {
+    "id": 1042118,
+    "question": "18. 下列何者形成肛門直腸屈曲（anorectal flexure）且有助於排便控制（fecal continence）？",
+    "options": {
+      "A": "肛門內括約肌（internal anal sphincter）",
+      "B": "尾骨肌（coccygeus）",
+      "C": "恥骨直腸肌（puborectalis）",
+      "D": "肛門外括約肌（external anal sphincter）"
+    },
+    "answer": "C",
+    "explanation": "恥骨直腸肌形成肛門直腸屈曲，對排便控制很重要。\n(A) 錯誤，肛門內括約肌（internal anal sphincter）主要維持靜息時肛門緊閉\n(B) 錯誤，尾骨肌（coccygeus）不直接參與肛門直腸屈曲形成\n(C) 正確，恥骨直腸肌（puborectalis）形成肛門直腸屈曲（anorectal flexure）並有助於排便控制（fecal continence）\n(D) 錯誤，肛門外括約肌（external anal sphincter）主要負責主動收縮控制",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3906"
+  },
+  {
+    "id": 1042119,
+    "question": "19. 下列何者受損時最可能影響提睪肌（cremasteric muscle）的收縮？",
+    "options": {
+      "A": "股神經（femoral nerve）",
+      "B": "陰部神經（pudendal nerve）",
+      "C": "生殖股神經（genitofemoral nerve）",
+      "D": "髂腹股溝神經（ilioinguinal nerve）"
+    },
+    "answer": "C",
+    "explanation": "提睪肌由生殖股神經的生殖支支配。\n(A) 錯誤，股神經（femoral nerve）不支配提睪肌\n(B) 錯誤，陰部神經（pudendal nerve）不支配提睪肌\n(C) 正確，生殖股神經（genitofemoral nerve）的生殖支支配提睪肌（cremasteric muscle）\n(D) 錯誤，髂腹股溝神經（ilioinguinal nerve）不支配提睪肌",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3907"
+  },
+  {
+    "id": 1042120,
+    "question": "20. 為確診骨盆腔積血，通常經由下列何處施行陷凹穿刺抽液術（culdocentesis）？",
+    "options": {
+      "A": "陰道後穹隆（posterior fornix of vagina）",
+      "B": "陰道前穹隆（anterior fornix of vagina）",
+      "C": "膀胱後壁（posterior wall of urinary bladder）",
+      "D": "直腸前壁（anterior wall of rectum）"
+    },
+    "answer": "A",
+    "explanation": "陷凹穿刺抽液術通常經陰道後穹隆進行，因為直腸子宮陷凹是骨盆腔最低點。\n(A) 正確，陷凹穿刺抽液術（culdocentesis）通常經由陰道後穹隆（posterior fornix of vagina）施行\n(B) 錯誤，陰道前穹隆不是穿刺的適當位置\n(C) 錯誤，膀胱後壁不是陷凹穿刺的進入點\n(D) 錯誤，直腸前壁不是陷凹穿刺的進入點",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3908"
+  },
+  {
+    "id": 1042121,
+    "question": "21. 下列何者是陰莖勃起功能（penile erection）最重要的血管？",
+    "options": {
+      "A": "陰莖背動脈（dorsal artery of penis）",
+      "B": "陰莖深動脈（deep artery of penis）",
+      "C": "陰莖淺背靜脈（superficial dorsal vein of penis）",
+      "D": "陰莖球動脈（artery of the bulb of penis）"
+    },
+    "answer": "B",
+    "explanation": "陰莖勃起主要依靠陰莖海綿體內血管充血，陰莖深動脈（deep artery of penis）直接供應陰莖海綿體，是勃起功能最重要的血管。\n(A) 錯誤，陰莖背動脈（dorsal artery of penis）主要供應陰莖龜頭和包皮\n(B) 正確，陰莖深動脈（deep artery of penis）直接進入陰莖海綿體，是勃起時血液充盈的主要來源\n(C) 錯誤，陰莖淺背靜脈（superficial dorsal vein of penis）是靜脈回流，與勃起無直接關係\n(D) 錯誤，陰莖球動脈（artery of the bulb of penis）主要供應尿道球部",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3909"
+  },
+  {
+    "id": 1042122,
+    "question": "22. 下列何者支配的肌肉數目最少？",
+    "options": {
+      "A": "腓淺神經（superficial fibular nerve）",
+      "B": "腓深神經（deep fibular nerve）",
+      "C": "肌皮神經（musculocutaneous nerve）",
+      "D": "橈神經（radial nerve）"
+    },
+    "answer": "A",
+    "explanation": "腓淺神經（superficial fibular nerve）主要負責感覺功能，支配的肌肉數目最少。\n(A) 正確，腓淺神經主要支配腓骨長肌（fibularis longus）和腓骨短肌（fibularis brevis）兩塊肌肉\n(B) 錯誤，腓深神經（deep fibular nerve）支配脛前肌群多塊肌肉\n(C) 錯誤，肌皮神經（musculocutaneous nerve）支配肱二頭肌、肱肌、喙肱肌等多塊肌肉\n(D) 錯誤，橈神經（radial nerve）支配多塊伸肌群肌肉，數目最多",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3910"
+  },
+  {
+    "id": 1042123,
+    "question": "23. 在前臂，下列何者最可能與前臂外側皮神經（lateral cutaneous nerve of forearm）靠近或伴 行？",
+    "options": {
+      "A": "頭靜脈（cephalic vein）",
+      "B": "貴要靜脈（basilic vein）",
+      "C": "正中肘靜脈（median cubital vein）",
+      "D": "肱靜脈（brachial vein）"
+    },
+    "answer": "A",
+    "explanation": "前臂外側皮神經（lateral cutaneous nerve of forearm）是肌皮神經的延續，在前臂與頭靜脈伴行。\n(A) 正確，頭靜脈（cephalic vein）在前臂外側走行，與前臂外側皮神經靠近伴行\n(B) 錯誤，貴要靜脈（basilic vein）位於前臂內側\n(C) 錯誤，正中肘靜脈（median cubital vein）僅存在於肘窩區域\n(D) 錯誤，肱靜脈（brachial vein）位於上臂深部",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3911"
+  },
+  {
+    "id": 1042124,
+    "question": "24. 切開斜方肌（trapezius）與頭半棘肌（semispinalis capitis）的頭部附著處，最容易傷及穿 過這些肌肉的那一條神經？",
+    "options": {
+      "A": "耳大神經（great auricular nerve）",
+      "B": "耳顳神經（auriculotemporal nerve）",
+      "C": "枕大神經（greater occipital nerve）",
+      "D": "枕小神經（lesser occipital nerve）"
+    },
+    "answer": "C",
+    "explanation": "枕大神經（greater occipital nerve）穿過斜方肌和頭半棘肌的附著處，在此處手術時容易被損傷。\n(A) 錯誤，耳大神經（great auricular nerve）走行於胸鎖乳突肌表面\n(B) 錯誤，耳顳神經（auriculotemporal nerve）位於顳部\n(C) 正確，枕大神經穿過斜方肌（trapezius）和頭半棘肌（semispinalis capitis）的附著處，是該區域最容易受傷的神經\n(D) 錯誤，枕小神經（lesser occipital nerve）走行較淺表",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3912"
+  },
+  {
+    "id": 1042125,
+    "question": "25. 左右髂骨嵴（iliac crest）最高點的水平連線通過下列何者的棘突（spinous process）？",
+    "options": {
+      "A": "L2",
+      "B": "L3",
+      "C": "L4",
+      "D": "L5"
+    },
+    "answer": "C",
+    "explanation": "髂骨嵴最高點連線通過第四腰椎棘突，這是臨床上重要的解剖標誌。\n(A) 錯誤，L2棘突位置過高\n(B) 錯誤，L3棘突位置略高\n(C) 正確，左右髂骨嵴（iliac crest）最高點的水平連線通過第四腰椎（L4）棘突\n(D) 錯誤，L5棘突位置過低",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3913"
+  },
+  {
+    "id": 1042126,
+    "question": "26. 肱骨在三角肌粗隆（deltoid tuberosity of humerus）位置的骨折，最可能直接傷及那一條神 經？",
+    "options": {
+      "A": "腋神經（axillary nerve）",
+      "B": "橈神經（radial nerve）",
+      "C": "尺神經（ulnar nerve）",
+      "D": "副神經（accessory nerve）"
+    },
+    "answer": "B",
+    "explanation": "橈神經在肱骨中段繞行於螺旋溝，三角肌粗隆附近的肱骨骨折容易損傷橈神經。\n(A) 錯誤，腋神經較少在三角肌粗隆處受傷\n(B) 正確，橈神經（radial nerve）在肱骨螺旋溝走行，三角肌粗隆（deltoid tuberosity）附近的骨折最容易直接損傷橈神經\n(C) 錯誤，尺神經走行於肱骨內上髁後方\n(D) 錯誤，副神經主要支配斜方肌，與此處骨折無關",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3914"
+  },
+  {
+    "id": 1042127,
+    "question": "27. 屈指深肌（flexor digitorum profundus）的肌腱附著於下列何者？",
+    "options": {
+      "A": "遠端指骨（distal phalange）",
+      "B": "中端指骨（middle phalange）",
+      "C": "近端指骨（proximal phalange）",
+      "D": "腕骨（metacarpal）"
+    },
+    "answer": "A",
+    "explanation": "屈指深肌負責手指遠端指間關節的屈曲，其肌腱附著於遠端指骨。\n(A) 正確，屈指深肌（flexor digitorum profundus）的肌腱附著於遠端指骨（distal phalange），負責遠端指間關節屈曲\n(B) 錯誤，中端指骨是屈指淺肌腱的附著點\n(C) 錯誤，近端指骨不是屈指深肌腱的附著點\n(D) 錯誤，腕骨（metacarpal）是掌骨的錯誤表述，且不是屈指深肌腱附著點",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3915"
+  },
+  {
+    "id": 1042128,
+    "question": "28. 尺神經（ulnar nerve）受損時，拇指無法進行何種動作？",
+    "options": {
+      "A": "屈曲（flexion）",
+      "B": "伸直（extension）",
+      "C": "內收（adduction）",
+      "D": "外展（abduction）"
+    },
+    "answer": "C",
+    "explanation": "尺神經支配拇指內收肌，尺神經受損時拇指無法內收。\n(A) 錯誤，拇指屈曲主要由正中神經支配的肌肉執行\n(B) 錯誤，拇指伸直主要由橈神經支配\n(C) 正確，尺神經（ulnar nerve）支配拇指內收肌（adductor pollicis），受損時拇指無法內收（adduction）\n(D) 錯誤，拇指外展主要由正中神經支配",
+    "tags": [
+      "104-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_3916"
+  },
+  {
+    "id": 1042129,
+    "question": "29. 胚胎早期發育時，下列何者最早出現？",
+    "options": {
+      "A": "羊膜腔（amniotic cavity）",
+      "B": "囊胚腔（blastocyst cavity）",
+      "C": "初級卵黃囊（primary yolk sac）",
+      "D": "絨毛膜腔（chorionic cavity）"
+    },
+    "answer": "B",
+    "explanation": "胚胎發育過程中，囊胚腔是最早形成的腔隙結構。\n(A) 錯誤，羊膜腔形成較晚\n(B) 正確，囊胚腔（blastocyst cavity）在胚胎早期發育時最早出現，是囊胚期的特徵性結構\n(C) 錯誤，初級卵黃囊形成時間較晚\n(D) 錯誤，絨毛膜腔形成時間較晚",
+    "tags": [
+      "104-2(一)",
+      "胚胎"
+    ],
+    "group_id": "group_3917"
+  },
+  {
+    "id": 1042130,
+    "question": "30. 下列何者衍生成為肛管（anal canal）的下1/3段？",
+    "options": {
+      "A": "原肛（proctodeum）",
+      "B": "直腸（rectum）",
+      "C": "泌尿生殖竇（urogenital sinus）",
+      "D": "泄殖腔（cloaca）"
+    },
+    "answer": "A",
+    "explanation": "肛管下1/3段由外胚層衍生的原肛形成，與上2/3段的內胚層來源不同。\n(A) 正確，原肛（proctodeum）是外胚層內陷形成，衍生成肛管的下1/3段\n(B) 錯誤，直腸由內胚層形成肛管上2/3段\n(C) 錯誤，泌尿生殖竇與肛管形成無關\n(D) 錯誤，泄殖腔分化後形成直腸和泌尿生殖竇",
+    "tags": [
+      "104-2(一)",
+      "胚胎"
+    ],
+    "group_id": "group_3918"
+  },
+  {
+    "id": 1042131,
+    "question": "31. 下列有關動脈導管（ductus arteriosus）之敘述，何者正確？",
+    "options": {
+      "A": "源自右側第六動脈弓（aortic arch）",
+      "B": "連接右側肺動脈（pulmonary artery）及主動脈弓（aortic arch）",
+      "C": "出生後，閉鎖形成動脈韌帶（ligamentum arteriosum）",
+      "D": "右側喉返神經（recurrent laryngeal nerve）自動脈韌帶（ligamentum arteriosum）旁通過"
+    },
+    "answer": "C",
+    "explanation": "動脈導管出生後閉鎖形成動脈韌帶，連接肺動脈主幹與主動脈弓。\n(A) 錯誤，動脈導管源自左側第六動脈弓，不是右側\n(B) 錯誤，動脈導管連接肺動脈主幹與主動脈弓，不是右側肺動脈\n(C) 正確，動脈導管（ductus arteriosus）出生後閉鎖形成動脈韌帶（ligamentum arteriosum）\n(D) 錯誤，左側喉返神經自動脈韌帶旁通過，不是右側",
+    "tags": [
+      "104-2(一)",
+      "胚胎"
+    ],
+    "group_id": "group_3919"
+  },
+  {
+    "id": 1042132,
+    "question": "32. 嚼肌（masseter muscle）是衍生自那一咽弓（pharyngeal arch）？",
+    "options": {
+      "A": "第一咽弓",
+      "B": "第二咽弓",
+      "C": "第三咽弓",
+      "D": "第四咽弓"
+    },
+    "answer": "A",
+    "explanation": "嚼肌屬於咀嚼肌群，由第一咽弓衍生，受三叉神經下頜支支配。\n(A) 正確，嚼肌（masseter muscle）衍生自第一咽弓，與其他咀嚼肌一樣受三叉神經支配\n(B) 錯誤，第二咽弓主要形成表情肌\n(C) 錯誤，第三咽弓主要與舌骨相關結構有關\n(D) 錯誤，第四咽弓主要與喉部結構有關",
+    "tags": [
+      "104-2(一)",
+      "胚胎"
+    ],
+    "group_id": "group_3920"
+  },
+  {
+    "id": 1042133,
+    "question": "33. 上皮細胞的表面常以下列何種特化構造增加表面積？",
+    "options": {
+      "A": "微絨毛（microvilli）",
+      "B": "基底膜（basement membrane）",
+      "C": "接合複體（junctional complex）",
+      "D": "纖毛（cilia）"
+    },
+    "answer": "A",
+    "explanation": "微絨毛是上皮細胞表面的細胞膜延伸，主要功能是增加細胞表面積以提高吸收效率。\n(A) 正確，微絨毛（microvilli）是上皮細胞表面的特化構造，主要功能是增加表面積\n(B) 錯誤，基底膜（basement membrane）是支持結構，不是增加表面積的構造\n(C) 錯誤，接合複體（junctional complex）主要用於細胞間連接\n(D) 錯誤，纖毛（cilia）主要用於物質移動，不是專門增加表面積",
+    "tags": [
+      "104-2(一)",
+      "組織"
+    ],
+    "group_id": "group_3921"
+  },
+  {
+    "id": 1042134,
+    "question": "34. 下列何者纖維母細胞（fibroblasts）無法合成？",
+    "options": {
+      "A": "膠原纖維（collagen fibers）",
+      "B": "彈性纖維（elastic fibers）",
+      "C": "網狀纖維（reticular fibers）",
+      "D": "肌原纖維（myofibrils）"
+    },
+    "answer": "D",
+    "explanation": "纖維母細胞能合成各種結締組織纖維，但無法合成肌原纖維，肌原纖維是肌細胞特有的收縮蛋白。\n(A) 錯誤，纖維母細胞能合成膠原纖維（collagen fibers）\n(B) 錯誤，纖維母細胞能合成彈性纖維（elastic fibers）\n(C) 錯誤，纖維母細胞能合成網狀纖維（reticular fibers）\n(D) 正確，肌原纖維（myofibrils）只能由肌細胞合成，纖維母細胞（fibroblasts）無法合成",
+    "tags": [
+      "104-2(一)",
+      "組織"
+    ],
+    "group_id": "group_3922"
+  },
+  {
+    "id": 1042135,
+    "question": "35. 下列何者不會在膜內骨生成（intramembraneous bone formation）過程中出現？",
+    "options": {
+      "A": "類骨質（osteoid）",
+      "B": "骨針（bone spicules）",
+      "C": "透明軟骨（hyaline cartilage）",
+      "D": "初級骨髓（primary bone marrow）"
+    },
+    "answer": "C",
+    "explanation": "膜內骨生成是直接由間質細胞分化成骨母細胞形成骨組織，不經過軟骨階段。\n(A) 錯誤，類骨質（osteoid）會在膜內骨生成過程中出現\n(B) 錯誤，骨針（bone spicules）是膜內骨生成的特徵性結構\n(C) 正確，透明軟骨（hyaline cartilage）不會在膜內骨生成（intramembranous bone formation）過程中出現，這是軟骨內骨生成的特徵\n(D) 錯誤，初級骨髓會在膜內骨生成過程中出現",
+    "tags": [
+      "104-2(一)",
+      "組織"
+    ],
+    "group_id": "group_3923"
+  },
+  {
+    "id": 1042136,
+    "question": "36. 下列有關淋巴結（lymph node）的敘述，何者錯誤？",
+    "options": {
+      "A": "淋巴結具纖維狀的被囊（capsule）",
+      "B": "淋巴結內的支架主要由彈性纖維（elastic fiber）構成",
+      "C": "淋巴結其凸狀面（convex）有輸入淋巴管（afferent lymph vessels）進入",
+      "D": "淋巴結實質（parenchyma）主要分為皮質（cortex）和髓質（medulla）"
+    },
+    "answer": "B",
+    "explanation": "淋巴結內的支架主要由網狀纖維構成，不是彈性纖維。\n(A) 錯誤，淋巴結確實具有纖維狀被囊（capsule）\n(B) 正確，淋巴結內的支架主要由網狀纖維（reticular fiber）構成，不是彈性纖維（elastic fiber）\n(C) 錯誤，淋巴結的凸狀面確實有輸入淋巴管進入\n(D) 錯誤，淋巴結實質確實分為皮質和髓質",
+    "tags": [
+      "104-2(一)",
+      "組織"
+    ],
+    "group_id": "group_3924"
+  },
+  {
+    "id": 1042137,
+    "question": "37. 肌上皮細胞（myoepithelial cells）不出現於下列何處？",
+    "options": {
+      "A": "皮脂腺（sebaceous gland）",
+      "B": "汗腺（sweat gland）",
+      "C": "乳腺（mammary gland）",
+      "D": "唾液腺（salivary gland）"
+    },
+    "answer": "A",
+    "explanation": "肌上皮細胞存在於有分泌功能的腺體中協助分泌，皮脂腺是全漿分泌腺體，不含肌上皮細胞。\n(A) 正確，皮脂腺（sebaceous gland）是全漿分泌腺，不含肌上皮細胞（myoepithelial cells）\n(B) 錯誤，汗腺含有肌上皮細胞協助汗液排出\n(C) 錯誤，乳腺含有肌上皮細胞協助乳汁分泌\n(D) 錯誤，唾液腺含有肌上皮細胞協助唾液分泌",
+    "tags": [
+      "104-2(一)",
+      "組織"
+    ],
+    "group_id": "group_3925"
+  },
+  {
+    "id": 1042138,
+    "question": "38. 結腸帶（teniae coli）由下列何種構造形成？",
+    "options": {
+      "A": "黏膜肌層（muscularis mucosa）內的平滑肌",
+      "B": "黏膜肌層（muscularis mucosa）內的骨骼肌",
+      "C": "外肌層（muscularis externa）的內環平滑肌",
+      "D": "外肌層（muscularis externa）的外縱平滑肌"
+    },
+    "answer": "D",
+    "explanation": "結腸帶（teniae coli）是結腸外肌層縱行平滑肌的特化結構，形成三條帶狀肌束。\n(A) 錯誤，黏膜肌層不形成結腸帶\n(B) 錯誤，黏膜肌層沒有骨骼肌\n(C) 錯誤，外肌層的內環平滑肌不形成結腸帶\n(D) 正確，結腸帶（teniae coli）由外肌層（muscularis externa）的外縱平滑肌特化形成",
+    "tags": [
+      "104-2(一)",
+      "組織"
+    ],
+    "group_id": "group_3926"
+  },
+  {
+    "id": 1042139,
+    "question": "39. 腎上腺皮質細胞不含下列何項構造？",
+    "options": {
+      "A": "脂肪滴",
+      "B": "分泌顆粒",
+      "C": "粒線體",
+      "D": "平滑內質網"
+    },
+    "answer": "B",
+    "explanation": "腎上腺皮質細胞分泌類固醇激素，這類激素不儲存在分泌顆粒中，而是現合成現分泌。\n(A) 錯誤，腎上腺皮質細胞含有脂肪滴，用於儲存膽固醇\n(B) 正確，腎上腺皮質細胞不含分泌顆粒，因為類固醇激素是現合成現分泌\n(C) 錯誤，腎上腺皮質細胞含有大量粒線體進行類固醇合成\n(D) 錯誤，腎上腺皮質細胞含有豐富的平滑內質網進行類固醇合成",
+    "tags": [
+      "104-2(一)",
+      "組織"
+    ],
+    "group_id": "group_3927"
+  },
+  {
+    "id": 1042140,
+    "question": "40. 會製造睪固酮（testosterone）的細胞是：",
+    "options": {
+      "A": "萊迪氏細胞（Leydig cell）",
+      "B": "塞托利氏細胞（Sertoli cell）",
+      "C": "管周邊細胞（peritubular cell）",
+      "D": "產精細胞（spermatogenic cell）"
+    },
+    "answer": "A",
+    "explanation": "萊迪氏細胞（Leydig cell）位於精細管間質中，是製造睪固酮的主要細胞。\n(A) 正確，萊迪氏細胞（Leydig cell）位於睪丸間質中，是製造睪固酮（testosterone）的細胞\n(B) 錯誤，塞托利氏細胞（Sertoli cell）主要支持精子發育，不製造睪固酮\n(C) 錯誤，管周邊細胞主要參與精細管的結構支持\n(D) 錯誤，產精細胞是發育中的精子，不製造睪固酮",
+    "tags": [
+      "104-2(一)",
+      "組織"
+    ],
+    "group_id": "group_3928"
+  },
+  {
+    "id": 1042141,
+    "question": "41. 有關眼球組織發生病變時，下列敘述何者錯誤？",
+    "options": {
+      "A": "視網膜剝離（retinal detachment）常發生於視網膜層（retina）與脈絡膜層（choroid layer）之間",
+      "B": "細菌性結膜炎（bacterial conjunctivitis）常伴有膿性分泌物（opaque purulent discharge）",
+      "C": "眼球房水（aqueous humor）之引流循環失能，會使眼壓上升，長期則導致青光眼 （glaucoma）",
+      "D": "晶狀體（lens）失去透明度時，會導致白內障（cataract）"
+    },
+    "answer": "A",
+    "explanation": "視網膜剝離是指神經視網膜與視網膜色素上皮層（retinal pigment epithelium, RPE）分離，而不是視網膜與脈絡膜分離。\n(A) 錯誤，視網膜剝離（retinal detachment）是發生在神經視網膜與視網膜色素上皮層之間，而非視網膜層與脈絡膜層之間\n(B) 正確，細菌性結膜炎確實常伴有膿性分泌物\n(C) 正確，房水引流循環失能會導致眼壓上升，長期可引起青光眼\n(D) 正確，晶狀體失去透明度確實會導致白內障",
+    "tags": [
+      "104-2(一)",
+      "組織"
+    ],
+    "group_id": "group_3929"
+  },
+  {
+    "id": 1042142,
+    "question": "42. 下列有關產氣單胞桿菌（Aeromonas）之敘述，何者錯誤？",
+    "options": {
+      "A": "細胞形態似腸內菌",
+      "B": "屬兼性厭氧菌",
+      "C": "青黴素Penicillin最具療效",
+      "D": "廣存於淡水及鹹水中"
+    },
+    "answer": "C",
+    "explanation": "產氣單胞桿菌對青黴素具有天然抗性，青黴素對其無效。\n(A) 正確，產氣單胞桿菌細胞形態確實類似腸內菌科細菌\n(B) 正確，產氣單胞桿菌屬於兼性厭氧菌\n(C) 錯誤，產氣單胞桿菌對青黴素（Penicillin）具有天然抗性，青黴素並非最具療效的抗生素\n(D) 正確，產氣單胞桿菌廣泛存在於淡水和鹹水環境中",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3930"
+  },
+  {
+    "id": 1042143,
+    "question": "43. 下列有關Campylobacter upsaliensis之敘述，何者錯誤？",
+    "options": {
+      "A": "主要由接觸飼養的貓狗所感染",
+      "B": "與Guillain-Barré syndrome無關",
+      "C": "細胞形態似Helicobacter pylori",
+      "D": "屬微氧需求菌"
+    },
+    "answer": "B",
+    "explanation": "Campylobacter upsaliensis與Guillain-Barré syndrome有關聯，並非無關。\n(A) 正確，C. upsaliensis主要由接觸飼養的貓狗感染\n(B) 錯誤，Campylobacter upsaliensis與Guillain-Barré syndrome是有關聯的，而非無關\n(C) 正確，其細胞形態確實類似Helicobacter pylori\n(D) 正確，屬於微氧需求菌",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3931"
+  },
+  {
+    "id": 1042144,
+    "question": "44. 下列有關Bordetella pertussis 引起之百日咳的敘述，何者錯誤？",
+    "options": {
+      "A": "卡它期（catarrhal stage）症狀似感冒",
+      "B": "陣發期（paroxysmal stage）通常細菌量最多",
+      "C": "核酸放大偵測法敏感（sensitive）且特異性（specificity）高",
+      "D": "可用紅黴素（Erythromycin）治療"
+    },
+    "answer": "B",
+    "explanation": "百日咳的陣發期通常細菌量已經減少，卡它期才是細菌量最多的時期。\n(A) 正確，卡它期症狀確實類似感冒\n(B) 錯誤，陣發期（paroxysmal stage）時細菌量通常已經減少，卡它期（catarrhal stage）才是細菌量最多的時期\n(C) 正確，核酸放大偵測法確實敏感且特異性高\n(D) 正確，可以使用紅黴素治療",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3932"
+  },
+  {
+    "id": 1042145,
+    "question": "45. 尿素酵素（urease）是以下何種細菌的致病因子？",
+    "options": {
+      "A": "致病性大腸桿菌（Enteropathogenic E. coli）",
+      "B": "霍亂弧菌（Vibrio cholerae）",
+      "C": "博德氏桿菌（Bordetella pertussis）",
+      "D": "幽門桿菌（Helicobacter pylori）"
+    },
+    "answer": "D",
+    "explanation": "尿素酵素是幽門桿菌的重要致病因子，有助於其在胃酸環境中生存。\n(A) 錯誤，致病性大腸桿菌的主要致病因子不是尿素酵素\n(B) 錯誤，霍亂弧菌的主要致病因子是霍亂毒素，不是尿素酵素\n(C) 錯誤，博德氏桿菌的主要致病因子是百日咳毒素，不是尿素酵素\n(D) 正確，尿素酵素（urease）是幽門桿菌（Helicobacter pylori）的重要致病因子",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3933"
+  },
+  {
+    "id": 1042146,
+    "question": "46. 下列有關白喉毒素（diphtheria toxin）的敘述，那一項錯誤？",
+    "options": {
+      "A": "是一種endotoxin",
+      "B": "可結合至細胞表面之heparin-binding epidermal growth factor",
+      "C": "可結合至心臟及神經細胞導致受損",
+      "D": "A subunit會使細胞內的elongation factor 2（EF-2）失去活性"
+    },
+    "answer": "A",
+    "explanation": "白喉毒素是外毒素（exotoxin），不是內毒素（endotoxin）。\n(A) 錯誤，白喉毒素是外毒素（exotoxin），不是內毒素（endotoxin）\n(B) 正確，可結合至細胞表面的heparin-binding epidermal growth factor\n(C) 正確，可結合至心臟及神經細胞導致損害\n(D) 正確，A subunit確實會使elongation factor 2失去活性",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3934"
+  },
+  {
+    "id": 1042147,
+    "question": "47. 下列對麻瘋分枝桿菌（Mycobacterium leprae）之敘述，何者正確？",
+    "options": {
+      "A": "可在麻瘋瘤型麻瘋（lepromatous leprosy）病人的黏膜抹片或皮膚括取物中被發現",
+      "B": "已經成功的在培養基中培養出來",
+      "C": "生長速度快，因此潛伏期很短",
+      "D": "並非典型的耐酸性染色菌"
+    },
+    "answer": "A",
+    "explanation": "麻瘋分枝桿菌可在麻瘋瘤型麻瘋病人的檢體中被發現，但無法在培養基中培養。\n(A) 正確，可在麻瘋瘤型麻瘋病人的黏膜抹片或皮膚括取物中發現\n(B) 錯誤，麻瘋分枝桿菌至今仍無法在人工培養基中成功培養\n(C) 錯誤，生長速度極慢，潛伏期很長，通常數年至數十年\n(D) 錯誤，是典型的耐酸性染色菌",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3935"
+  },
+  {
+    "id": 1042148,
+    "question": "48. 有一病人因久咳且痰中帶有血絲及膿液而就診，經醫師採集其痰液進行細菌培養檢測後，發 現其痰檢體中出現結核分枝桿菌，是為肺結核之患者。下列那一種抗生素不會出現在醫師的 處方箋中？",
+    "options": {
+      "A": "Isoniazid",
+      "B": "Ethambutol",
+      "C": "Rifampin",
+      "D": "Vancomycin"
+    },
+    "answer": "D",
+    "explanation": "結核病的標準治療不包括萬古黴素，萬古黴素主要用於革蘭陽性菌感染。\n(A) 正確，Isoniazid是結核病的一線治療藥物\n(B) 正確，Ethambutol是結核病的一線治療藥物\n(C) 正確，Rifampin是結核病的一線治療藥物\n(D) 錯誤，Vancomycin主要用於革蘭陽性菌感染，不用於結核病治療",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3936"
+  },
+  {
+    "id": 1042149,
+    "question": "49. 流感嗜血桿菌（Haemophilus influenzae）的生長在血液培養盤上金黃色葡萄球菌 （Staphylococcus aureus）菌落的周圍有促進的現象，此是因為後者能提供其生長所需的那 種成分？",
+    "options": {
+      "A": "磷血紅素（hemin）",
+      "B": "螯鐵素（siderophores）",
+      "C": "半胱氨酸（L-cysteine）",
+      "D": "菸醯胺腺嘌呤雙核酸（nicotinamide adenine dinucleotide）"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "流感嗜血桿菌需要X因子（磷血紅素）和V因子（NAD）才能生長，金黃色葡萄球菌可提供這兩種因子。\n(A) 正確，磷血紅素（hemin）是X因子，為流感嗜血桿菌生長必需\n(B) 錯誤，螯鐵素不是流感嗜血桿菌的生長因子\n(C) 錯誤，半胱氨酸不是流感嗜血桿菌的特殊生長需求\n(D) 正確，菸醯胺腺嘌呤雙核酸（NAD）是V因子，為流感嗜血桿菌生長必需",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3937"
+  },
+  {
+    "id": 1042150,
+    "question": "50. 下列那一項無法作為細菌行無氧呼吸（anaerobic respiration）時之最後的電子接受分子？",
+    "options": {
+      "A": "Nitrate",
+      "B": "Sulfate",
+      "C": "Carbon dioxide",
+      "D": "NADH"
+    },
+    "answer": "D",
+    "explanation": "NADH是電子供體，不能作為最終電子接受者。\n(A) 正確，硝酸鹽可作為最終電子接受者\n(B) 正確，硫酸鹽可作為最終電子接受者\n(C) 正確，二氧化碳可作為最終電子接受者\n(D) 錯誤，NADH是電子供體（electron donor），不能作為最終電子接受分子（terminal electron acceptor）",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3938"
+  },
+  {
+    "id": 1042151,
+    "question": "51. 下列菌屬中，何者對鹼性環境的耐受度最高？",
+    "options": {
+      "A": "螺旋桿菌屬（Helicobacter）",
+      "B": "弧菌屬（Vibrio）",
+      "C": "假單胞菌屬（Pseudomonas）",
+      "D": "奈瑟氏菌屬（Neisseria）"
+    },
+    "answer": "B",
+    "explanation": "弧菌屬對鹼性環境有較強的耐受性，霍亂弧菌就能在鹼性環境中生存。\n(A) 錯誤，螺旋桿菌屬偏好酸性環境，如幽門桿菌\n(B) 正確，弧菌屬對鹼性環境耐受度最高，如霍亂弧菌能在pH 8.5-9.0環境中生存\n(C) 錯誤，假單胞菌屬對鹼性環境耐受度不如弧菌屬\n(D) 錯誤，奈瑟氏菌屬對鹼性環境耐受度不如弧菌屬",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3939"
+  },
+  {
+    "id": 1042152,
+    "question": "52. 下列何種病毒感染後，在感染部位的抹片檢查可以看到有多核的融合細胞與內涵體 （inclusion body）？",
+    "options": {
+      "A": "Herpes simplex virus",
+      "B": "Human papillomavirus",
+      "C": "Adenovirus",
+      "D": "Epstein-Barr virus"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "單純疱疹病毒感染可形成多核融合細胞和Cowdry A型內涵體。\n(A) 正確，單純疱疹病毒（Herpes simplex virus）感染可見多核融合細胞和內涵體\n(B) 錯誤，人類乳突病毒感染主要見挖空細胞（koilocytes）\n(C) 錯誤，腺病毒感染主要見嗜酸性內涵體，但不形成多核融合細胞\n(D) 錯誤，EB病毒感染主要影響淋巴細胞，不形成多核融合細胞",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3940"
+  },
+  {
+    "id": 1042153,
+    "question": "53. 一旦感染下列何種病毒，可以及早利用接種疫苗的方式來預防病毒在體內擴散而發病？",
+    "options": {
+      "A": "玻納病毒（Borna disease virus）",
+      "B": "狂犬病毒（Rabies virus）",
+      "C": "線狀病毒（Filovirus）",
+      "D": "馬堡病毒（Marburg virus）"
+    },
+    "answer": "B",
+    "explanation": "狂犬病毒感染後仍可透過疫苗接種進行暴露後預防。\n(A) 錯誤，玻納病毒感染後疫苗接種無效\n(B) 正確，狂犬病毒感染後可及早接種疫苗進行暴露後預防（post-exposure prophylaxis）\n(C) 錯誤，線狀病毒感染後疫苗接種無效\n(D) 錯誤，馬堡病毒感染後疫苗接種無效",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3941"
+  },
+  {
+    "id": 1042154,
+    "question": "54. 下列對於副黏液病毒科（Paramyxoviridae）之敘述，何者正確？",
+    "options": {
+      "A": "為正股（positive sense）RNA病毒",
+      "B": "依核蛋白（nucleoprotein）共分為A、B及C三型",
+      "C": "核蛋白衣（nucleocapsid）為二十面體對稱結構",
+      "D": "皆具有套膜（envelope）及融合（fusion）蛋白質"
+    },
+    "answer": "D",
+    "explanation": "副黏液病毒科的病毒都具有套膜和融合蛋白質。\n(A) 錯誤，副黏液病毒科為負股（negative sense）RNA病毒\n(B) 錯誤，依核蛋白分型的是流感病毒，不是副黏液病毒科\n(C) 錯誤，核蛋白衣為螺旋對稱結構，不是二十面體對稱\n(D) 正確，副黏液病毒科病毒皆具有套膜和融合蛋白質",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3942"
+  },
+  {
+    "id": 1042155,
+    "question": "55. 下列何種病毒具有E1A與E1B這兩種促進細胞生長的活化因子？",
+    "options": {
+      "A": "Adenovirus",
+      "B": "Papillomavirus",
+      "C": "Epstein-Barr virus",
+      "D": "Cytomegalovirus"
+    },
+    "answer": "A",
+    "explanation": "腺病毒具有E1A和E1B早期基因產物，可促進細胞生長。\n(A) 正確，腺病毒（Adenovirus）具有E1A與E1B這兩種促進細胞生長的活化因子\n(B) 錯誤，乳突病毒主要有E6和E7蛋白\n(C) 錯誤，EB病毒主要有LMP-1和EBNA等蛋白\n(D) 錯誤，巨細胞病毒沒有E1A和E1B蛋白",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3943"
+  },
+  {
+    "id": 1042156,
+    "question": "56. 下列何者不是致病性普里昂蛋白（scrapie-like prion protein, PrPSC）的特性？",
+    "options": {
+      "A": "致病潛伏期很長",
+      "B": "造成神經組織空洞化",
+      "C": "可存在於細胞外",
+      "D": "引起很強的免疫反應"
+    },
+    "answer": "D",
+    "explanation": "致病性普里昂蛋白不會引起強烈的免疫反應，這也是其難以被清除的原因之一。\n(A) 正確，普里昂疾病潛伏期確實很長\n(B) 正確，會造成神經組織海綿狀變化（空洞化）\n(C) 正確，可存在於細胞外環境\n(D) 錯誤，普里昂蛋白不會引起強烈的免疫反應，因為它與正常蛋白結構相似",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3944"
+  },
+  {
+    "id": 1042157,
+    "question": "57. 某25歲護士上班回家後，出現發燒、頭痛、喉嚨痛、流鼻水、打噴嚏、無痰性乾咳、肌肉痛 不舒服等症狀，病情持續了4天沒有好轉，反而進一步延伸為細菌性肺炎及肌炎 （myositis），該護士經住院治療二星期後痊癒，此護士可能受下列何病原感染？",
+    "options": {
+      "A": "麻疹病毒（Measles virus）",
+      "B": "呼吸道細胞融合病毒（Respiratory syncytial virus）",
+      "C": "流行性感冒病毒（Influenza virus）",
+      "D": "腸病毒71型（Enterovirus 71）"
+    },
+    "answer": "C",
+    "explanation": "流行性感冒病毒感染可能併發細菌性肺炎和肌炎，符合題目描述的症狀進展。\n(A) 錯誤，麻疹病毒感染通常不會進展為細菌性肺炎和肌炎\n(B) 錯誤，呼吸道細胞融合病毒主要影響幼兒，成人感染較少併發肌炎\n(C) 正確，流行性感冒病毒感染可能併發細菌性肺炎和肌炎，符合護士的症狀表現\n(D) 錯誤，腸病毒71型主要引起手足口病和腦炎，不符合症狀描述",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3945"
+  },
+  {
+    "id": 1042158,
+    "question": "58. 某病毒可引起孩童之急性下呼吸道疾病，經由鼻腔分泌物分離出該病毒，發覺其不具血球凝 集作用，但可使感染之細胞融合（syncytia）。該病毒可能為下列何者？",
+    "options": {
+      "A": "流行性感冒病毒A型（Influenza virus A）",
+      "B": "副流行性感冒病毒（Parainfluenza virus）",
+      "C": "呼吸道細胞融合病毒（Respiratory syncytial virus）",
+      "D": "麻疹病毒（Measles virus）"
+    },
+    "answer": "C",
+    "explanation": "呼吸道細胞融合病毒不具血球凝集作用，但會使感染細胞融合形成合胞體。\n(A) 錯誤，流感病毒A型具有血球凝集作用\n(B) 錯誤，副流感病毒具有血球凝集作用\n(C) 正確，呼吸道細胞融合病毒（RSV）不具血球凝集作用，但可使感染細胞融合成合胞體\n(D) 錯誤，麻疹病毒具有血球凝集作用",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3946"
+  },
+  {
+    "id": 1042159,
+    "question": "59. 有一黴菌在顯微鏡下可見分隔菌絲及瓶狀產孢器（phialides）且分生孢子（conidia）排列 成‘paint brush’，最可能為下列何者？",
+    "options": {
+      "A": "Histoplasma capsulatum",
+      "B": "Sporothrix schenckii",
+      "C": "Fusarium solani",
+      "D": "Penicillium marneffei"
+    },
+    "answer": "D",
+    "explanation": "Penicillium marneffei具有瓶狀產孢器和'paint brush'狀分生孢子排列的特徵。\n(A) 錯誤，組織胞漿菌不具有瓶狀產孢器和'paint brush'排列\n(B) 錯誤，孢子絲菌不具有這些特徵\n(C) 錯誤，鐮刀菌不具有瓶狀產孢器和'paint brush'排列\n(D) 正確，Penicillium marneffei具有分隔菌絲、瓶狀產孢器和分生孢子呈'paint brush'狀排列的特徵",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3947"
+  },
+  {
+    "id": 1042160,
+    "question": "60. 一般而言，Fluconazole對下列何種黴菌無療效？",
+    "options": {
+      "A": "Candida albicans",
+      "B": "Candida krusei",
+      "C": "Candida tropicalis",
+      "D": "Candida parapsilosis"
+    },
+    "answer": "B",
+    "explanation": "Candida krusei對Fluconazole具有天然抗性。\n(A) 錯誤，白色念珠菌對Fluconazole通常敏感\n(B) 正確，Candida krusei對Fluconazole具有天然抗性，治療無效\n(C) 錯誤，熱帶念珠菌對Fluconazole通常敏感\n(D) 錯誤，副絲狀念珠菌對Fluconazole通常敏感",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3948"
+  },
+  {
+    "id": 1042161,
+    "question": "61. 下列何者為盛行於北美洲密西西比河流域，兩型性（dimorphic）全身感染性真菌？",
+    "options": {
+      "A": "Blastomyces dermatitidis and Histoplasma capsulatum",
+      "B": "Coccidioides immitis and Paracoccidioides brasiliensis",
+      "C": "Paracoccidioides brasiliensis and Histoplasma capsulatum",
+      "D": "Blastomyces dermatitidis and Paracoccidioides brasiliensis"
+    },
+    "answer": "A",
+    "explanation": "北美洲密西西比河流域是兩種重要兩型性真菌的流行區域，都能引起全身性感染。\n(A) 正確，皮炎芽生菌（Blastomyces dermatitidis）和莢膜組織胞漿菌（Histoplasma capsulatum）都盛行於北美洲密西西比河流域，屬兩型性全身感染性真菌\n(B) 錯誤，球孢子菌（Coccidioides immitis）主要分布於美國西南部，副球孢子菌（Paracoccidioides brasiliensis）主要分布於南美洲\n(C) 錯誤，副球孢子菌主要分布於南美洲，不是北美密西西比河流域\n(D) 錯誤，副球孢子菌不分布於北美密西西比河流域",
+    "tags": [
+      "104-2(一)",
+      "微生物"
+    ],
+    "group_id": "group_3949"
+  },
+  {
+    "id": 1042162,
+    "question": "62. 有關先天性免疫力（innate immunity）之概念，下列何者錯誤？",
+    "options": {
+      "A": "在微生物入侵數分鐘內即可啟動其反應",
+      "B": "對微生物進行吞噬作用",
+      "C": "對微生物不具備辨識能力",
+      "D": "可由細胞外病原（extracellular pathogens）以及細胞內病原（intracellular pathogens）引 發"
+    },
+    "answer": "C",
+    "explanation": "先天性免疫雖然不具備獲得性免疫的記憶功能，但仍具有一定的病原識別能力。\n(A) 錯誤，先天性免疫確實可在微生物入侵數分鐘內啟動\n(B) 錯誤，先天性免疫確實會對微生物進行吞噬作用\n(C) 正確，先天性免疫（innate immunity）具備模式識別受體（pattern recognition receptors），能辨識病原相關分子模式（PAMPs），因此對微生物具有辨識能力\n(D) 錯誤，先天性免疫確實可由細胞外和細胞內病原引發",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3950"
+  },
+  {
+    "id": 1042163,
+    "question": "63. 下列那一個基因突變破壞時，就不會產生B及T細胞？",
+    "options": {
+      "A": "末端去氧核苷酸轉移酶（terminal deoxynucleotidyl transferase, TdT）",
+      "B": "ZAP-70",
+      "C": "AID（activation-induced cytidine deaminase）",
+      "D": "RAG1/RAG2重組酶（RAG1/RAG2 recombinase）"
+    },
+    "answer": "D",
+    "explanation": "RAG1/RAG2重組酶是B細胞和T細胞受體基因重組的關鍵酶，缺失時無法產生功能性淋巴細胞。\n(A) 錯誤，末端去氧核苷酸轉移酶缺失不會完全阻止B和T細胞產生\n(B) 錯誤，ZAP-70缺失主要影響T細胞功能，不影響B細胞產生\n(C) 錯誤，AID缺失主要影響抗體類別轉換和親和力成熟\n(D) 正確，RAG1/RAG2重組酶（RAG1/RAG2 recombinase）負責免疫球蛋白和T細胞受體基因重組，缺失時無法產生B細胞和T細胞",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3951"
+  },
+  {
+    "id": 1042164,
+    "question": "64. 下列何者不是毒殺性T細胞（cytotoxic T lymphocyte，CTL）能專一性毒殺標的細胞的原 因？",
+    "options": {
+      "A": "CTL需利用TCR辨認標的細胞是否有表現專一性抗原胜肽/MHCclass I複合物",
+      "B": "CTL利用TCR辨認出標的細胞後，其將要分泌出去的內容物顆粒會移至CTL與標的細胞接 觸的位置",
+      "C": "CTL利用TCR辨認出標的細胞後，可以利用FasL與標的細胞的Fas結合，引發標的細胞的 凋亡",
+      "D": "CTL可以分泌IL-12來幫助細胞抑制病毒的複製"
+    },
+    "answer": "D",
+    "explanation": "毒殺性T細胞主要通過細胞毒性顆粒和死亡受體途徑殺死標的細胞，IL-12是由其他細胞分泌的細胞激素。\n(A) 錯誤，CTL確實需要TCR辨認MHC class I/抗原胜肽複合物\n(B) 錯誤，CTL確實會將細胞毒性顆粒定向釋放至接觸部位\n(C) 錯誤，CTL確實可通過FasL/Fas途徑誘導標的細胞凋亡\n(D) 正確，IL-12主要由樹突細胞和巨噬細胞分泌，CTL不分泌IL-12來抑制病毒複製",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3952"
+  },
+  {
+    "id": 1042165,
+    "question": "65. Celiac disease及Crohn's disease是二種腸道發炎疾病，下列有關二者之比較何者正確？",
+    "options": {
+      "A": "前者是對腸內共生菌有強烈發炎反應，後者是因為對麥類食物過敏所引起",
+      "B": "前者可能與NOD-2分子失去功能有關，後者主要與HLA-DQ2分子的表現有關",
+      "C": "IFN-γ所引起的發炎反應，在這二種疾病都扮演重要角色",
+      "D": "利用廣泛性抗生素去掉大部分共生菌，皆可治療這二種疾病"
+    },
+    "answer": "C",
+    "explanation": "乳糜瀉和克隆氏病都是Th1細胞介導的發炎性疾病，IFN-γ在兩者中都扮演重要角色。\n(A) 錯誤，乳糜瀉（Celiac disease）是對麥類食物過敏，克隆氏病（Crohn's disease）與腸內共生菌有關\n(B) 錯誤，克隆氏病與NOD-2功能缺失有關，乳糜瀉與HLA-DQ2表現有關\n(C) 正確，兩種疾病都是Th1細胞介導的發炎反應，IFN-γ在兩者中都扮演重要角色\n(D) 錯誤，抗生素治療對乳糜瀉無效，對克隆氏病效果有限",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3953"
+  },
+  {
+    "id": 1042166,
+    "question": "66. 下列有關補體的敘述，何者錯誤？",
+    "options": {
+      "A": "補體是一種蛋白質",
+      "B": "補體會參與專一性和非專一性防禦作用",
+      "C": "干擾素也是補體的一種",
+      "D": "補體可以溶解細菌的細胞膜"
+    },
+    "answer": "C",
+    "explanation": "干擾素是細胞激素，不屬於補體系統的組成成分。\n(A) 錯誤，補體確實是蛋白質\n(B) 錯誤，補體確實參與專一性和非專一性防禦\n(C) 正確，干擾素（interferon）不是補體的一種，補體是特定的蛋白質級聯系統\n(D) 錯誤，補體確實可形成膜攻擊複合體溶解細菌",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3954"
+  },
+  {
+    "id": 1042167,
+    "question": "67. 嬰幼兒施打破傷風類毒素疫苗後產生免疫保護時，會啟動特異性免疫反應並且有長期的免疫 記憶。這項免疫反應主要是由下列那一種免疫細胞間的互動所引發的？",
+    "options": {
+      "A": "樹突細胞（dendritic cells）藉由MHCclass I分子和CD4 T cells進行非抗原特異性結合",
+      "B": "巨噬細胞（macrophages）藉由MHCclass I分子和CD8 T cells進行非抗原特異性結合",
+      "C": "樹突細胞藉由MHCclass II分子和CD4 T cells進行抗原特異性結合",
+      "D": "巨噬細胞藉由MHCclass II分子和CD8 T cells進行抗原特異性結合"
+    },
+    "answer": "C",
+    "explanation": "疫苗免疫主要通過樹突細胞呈現抗原給CD4 T細胞，啟動特異性免疫反應和記憶形成。\n(A) 錯誤，樹突細胞通過MHC class II與CD4 T細胞結合，且是抗原特異性的\n(B) 錯誤，巨噬細胞不是主要的抗原呈現細胞，且MHC class I主要與CD8 T細胞結合\n(C) 正確，樹突細胞（dendritic cells）通過MHC class II分子與CD4 T細胞進行抗原特異性結合，啟動疫苗免疫反應\n(D) 錯誤，MHC class II主要與CD4 T細胞結合，不是CD8 T細胞",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3955"
+  },
+  {
+    "id": 1042168,
+    "question": "68. 志明和春嬌結婚後發現他們的祖母是表姊妹。他們生下的女兒小英特別容易得到肺炎鏈球菌 和嗜血桿菌的感染。免疫學檢查發現小英的 IgM 血清濃度正常但缺乏其他 isotype 的抗體， 並且其抗體的抗原結合部位缺乏高頻率突變導入的多樣性。小英最可能有下列何種疾病？",
+    "options": {
+      "A": "Selective IgA deficiency",
+      "B": "Bruton's agammaglobulinemia",
+      "C": "Hyper IgE.syndrome",
+      "D": "Autosomal inherited defect in the AID（activation-induced cytidine deaminase） gene"
+    },
+    "answer": "D",
+    "explanation": "患者缺乏抗體多樣性和類別轉換，但IgM正常，提示AID基因缺陷導致的免疫缺陷。\n(A) 錯誤，選擇性IgA缺乏不會影響其他抗體類型\n(B) 錯誤，Bruton氏無丙種球蛋白血症會導致所有抗體缺乏\n(C) 錯誤，高IgE症候群不符合描述的症狀\n(D) 正確，AID基因（activation-induced cytidine deaminase）缺陷導致無法進行抗體類別轉換和體細胞高頻突變，但IgM產生正常",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3956"
+  },
+  {
+    "id": 1042169,
+    "question": "69. 臨床醫師目前無法使用下列那一項方式來治療過敏性氣喘？",
+    "options": {
+      "A": "抗IgE抗體（anti-IgE.antibodies）",
+      "B": "類固醇（corticosteroid）",
+      "C": "減敏療法（desensitization immunotherapy）",
+      "D": "注射IL-12提升TH1細胞活性"
+    },
+    "answer": "D",
+    "explanation": "IL-12注射提升Th1細胞活性在臨床上並未用於過敏性氣喘治療，且可能加重發炎反應。\n(A) 錯誤，抗IgE抗體已用於嚴重氣喘治療\n(B) 錯誤，類固醇是氣喘的標準治療藥物\n(C) 錯誤，減敏療法已廣泛用於過敏性疾病治療\n(D) 正確，注射IL-12提升Th1細胞活性目前無法用於治療過敏性氣喘，且可能有害",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3957"
+  },
+  {
+    "id": 1042170,
+    "question": "70. 志明（血型B型）和春嬌（血型AB型）結婚後生下女兒小英（血型A型）。他們的下一個小 孩血型為B型的機會正常狀態下為多少百分比？",
+    "options": {
+      "A": "0",
+      "B": "25",
+      "C": "33",
+      "D": "50"
+    },
+    "answer": "D",
+    "explanation": "根據遺傳學原理，志明（B型，基因型可能BB或BO）與春嬌（AB型，基因型AB）的後代中，B型機率為50%。\n由於小英為A型，說明志明基因型為BO。志明（BO）×春嬌（AB）的後代基因型為：BA、BO、AA、AO，其中BO表現為B型，機率為50%。\n(A) 錯誤，B型後代是可能的\n(B) 錯誤，機率不是25%\n(C) 錯誤，機率不是33%\n(D) 正確，下一個小孩為B型的機率是50%",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3958"
+  },
+  {
+    "id": 1042171,
+    "question": "71. 某些微生物感染而引起自體免疫疾病，其致病機轉為何？",
+    "options": {
+      "A": "引起人體特殊HLA抗原的表現，進而導致自體免疫性",
+      "B": "由於感染抗原與組織抗原之分子類似性（molecular mimicry），導致自體免疫性",
+      "C": "高內皮小靜脈細胞（high endothelial venule, HEV）被活化，進而導致自體免疫性",
+      "D": "胸腺之中央移除（central deletion）機轉受影響，進而導致自體免疫性"
+    },
+    "answer": "B",
+    "explanation": "分子類似性是感染引起自體免疫的主要機制，病原抗原與人體組織抗原結構相似導致交叉反應。\n(A) 錯誤，感染不會直接引起特殊HLA抗原表現\n(B) 正確，分子類似性（molecular mimicry）是指感染抗原與人體組織抗原結構相似，導致免疫系統攻擊自身組織\n(C) 錯誤，HEV活化不是自體免疫的主要機制\n(D) 錯誤，胸腺中央移除機轉受影響不是感染引起自體免疫的機制",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3959"
+  },
+  {
+    "id": 1042172,
+    "question": "72. 一位患有重症肌無力（myasthenia gravis）的孕婦，剛剛平安產下3100公克的小女嬰，但是 隨即發現小女嬰呼吸較淺，四肢力量也較差，因此迅速被送入新生兒加護病房治療。小女嬰 的病因為何？",
+    "options": {
+      "A": "母親傳給她的抗乙醯膽鹼受體抗體（anti-acetylcholine receptor antibody）致病",
+      "B": "母親的TR1細胞（TR1 cells）引起之免疫反應",
+      "C": "母親的TH3細胞（TH3 cells）引起之免疫反應",
+      "D": "母親傳給她的抗Ro抗體（anti-Ro antibody）及抗La抗體（anti-La antibody）所致病"
+    },
+    "answer": "A",
+    "explanation": "重症肌無力患者體內的抗乙醯膽鹼受體抗體可通過胎盤傳給胎兒，引起新生兒暫時性肌無力。\n(A) 正確，母親的抗乙醯膽鹼受體抗體（anti-acetylcholine receptor antibody）通過胎盤傳給新生兒，導致新生兒暫時性重症肌無力\n(B) 錯誤，TR1細胞是調節性T細胞，不會引起此症狀\n(C) 錯誤，TH3細胞不是此病症的原因\n(D) 錯誤，抗Ro和抗La抗體主要與新生兒狼瘡和先天性心臟傳導阻滯有關",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3960"
+  },
+  {
+    "id": 1042173,
+    "question": "73. Anti-VEGF（anti-vascular endothelium growth factor）抗體在治療大腸癌之作用機轉是下列 那一項？",
+    "options": {
+      "A": "抑制血管新生",
+      "B": "抑制吞噬細胞作用",
+      "C": "促進T細胞增生",
+      "D": "促進自然殺手NK細胞增生"
+    },
+    "answer": "A",
+    "explanation": "Anti-VEGF抗體通過阻斷血管內皮生長因子，抑制腫瘤血管新生，切斷腫瘤營養供應。\n(A) 正確，Anti-VEGF抗體通過抑制血管新生來治療大腸癌，阻斷腫瘤血液供應\n(B) 錯誤，Anti-VEGF不直接抑制吞噬細胞\n(C) 錯誤，Anti-VEGF不直接促進T細胞增生\n(D) 錯誤，Anti-VEGF不直接促進NK細胞增生",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3961"
+  },
+  {
+    "id": 1042174,
+    "question": "74. 組織移植種入身體免疫特區（immunologically privileged sites）時，能夠長期存活，下列那 一項不屬於這種免疫特區？",
+    "options": {
+      "A": "大腦",
+      "B": "小腦",
+      "C": "睪丸",
+      "D": "肌肉"
+    },
+    "answer": "D",
+    "explanation": "免疫特區是指某些解剖部位具有免疫抑制環境，肌肉組織不屬於此類特殊部位。\n(A) 錯誤，大腦確實是免疫特區\n(B) 錯誤，小腦作為中樞神經系統的一部分也是免疫特區\n(C) 錯誤，睪丸是典型的免疫特區\n(D) 正確，肌肉不屬於免疫特區（immunologically privileged sites），不具有特殊的免疫抑制環境",
+    "tags": [
+      "104-2(一)",
+      "免疫"
+    ],
+    "group_id": "group_3962"
+  },
+  {
+    "id": 1042175,
+    "question": "75. 下列有關羅阿絲蟲（Loa loa）感染人體的敘述，何者錯誤？",
+    "options": {
+      "A": "成蟲主要寄生在皮下組織",
+      "B": "成蟲移行時常會引起劇痛",
+      "C": "微絲蟲（microfilaria）會出現在血液內",
+      "D": "大多數病患之嗜酸性白血球會明顯增高"
+    },
+    "answer": "B",
+    "explanation": "羅阿絲蟲成蟲在皮下組織移行時通常不引起劇痛，主要是搔癢和不適感。\n(A) 錯誤，羅阿絲蟲成蟲確實主要寄生在皮下組織\n(B) 正確，羅阿絲蟲（Loa loa）成蟲移行時通常不會引起劇痛，主要是搔癢感\n(C) 錯誤，微絲蟲確實會出現在血液中\n(D) 錯誤，患者嗜酸性白血球確實會明顯增高",
+    "tags": [
+      "104-2(一)",
+      "寄生蟲"
+    ],
+    "group_id": "group_3963"
+  },
+  {
+    "id": 1042176,
+    "question": "76. 下列何種人體寄生蟲感染較常導致臨床上出現嚴重貧血症狀？",
+    "options": {
+      "A": "日本血吸蟲（Schistosoma japonicum）",
+      "B": "班氏絲蟲（Wuchereria bancrofti）",
+      "C": "十二指腸鉤蟲（Ancylostoma duodenale）",
+      "D": "廣東住血線蟲（Angiostrongylus cantonensis）"
+    },
+    "answer": "C",
+    "explanation": "十二指腸鉤蟲會在腸道吸血，長期感染導致慢性失血和嚴重貧血。\n(A) 錯誤，日本血吸蟲主要引起肝脾腫大，貧血較輕微\n(B) 錯誤，班氏絲蟲主要引起淋巴管阻塞，不直接導致貧血\n(C) 正確，十二指腸鉤蟲（Ancylostoma duodenale）成蟲在小腸吸血，長期感染導致嚴重缺鐵性貧血\n(D) 錯誤，廣東住血線蟲主要引起腦膜炎，不導致貧血",
+    "tags": [
+      "104-2(一)",
+      "寄生蟲"
+    ],
+    "group_id": "group_3964"
+  },
+  {
+    "id": 1042177,
+    "question": "77. 有一間歇性腹瀉（chronic intermittent diarrhea）的病患，在其糞便中發現大小約2.3 mm的 蟲體，除口、腹吸盤特徵外，在生殖孔附近有第三吸盤，該病患最可能感染下列何種寄生 蟲？",
+    "options": {
+      "A": "人雙口吸蟲（Gastrodiscoides hominis）",
+      "B": "異形吸蟲（Heterophyes heterophyes）",
+      "C": "槍狀肝吸蟲（Dicrocoelium dendriticum）",
+      "D": "橫川吸蟲（Metagonimus yokogawai）"
+    },
+    "answer": "B",
+    "explanation": "異形吸蟲的特徵是除了口吸盤和腹吸盤外，在生殖孔附近還有第三個吸盤結構。\n(A) 錯誤，人雙口吸蟲體型較大且無第三吸盤\n(B) 正確，異形吸蟲（Heterophyes heterophyes）大小約2.3mm，在生殖孔附近有第三吸盤，是其特徵性結構\n(C) 錯誤，槍狀肝吸蟲無第三吸盤\n(D) 錯誤，橫川吸蟲無第三吸盤",
+    "tags": [
+      "104-2(一)",
+      "寄生蟲"
+    ],
+    "group_id": "group_3965"
+  },
+  {
+    "id": 1042178,
+    "question": "78. 曼森裂頭絛蟲（Spirometra mansonoides）那些發育時期的蟲體可以感染人？<br>①六鈎幼蟲卵 <br>②似囊尾幼蟲（cysticercoid） <br>③原尾幼蟲（procercoid） <br>④長尾幼蟲（plerocercoid）",
+    "options": {
+      "A": "①②",
+      "B": "①③",
+      "C": "②④",
+      "D": "③④"
+    },
+    "answer": "D",
+    "explanation": "這題的解題關鍵在於了解曼森裂頭絛蟲的生活史和各發育階段對人類的感染能力。人類主要透過攝食含有感染性幼蟲的中間宿主或直接接觸而感染。<br> ① 錯誤，六鈎幼蟲卵（hexacanth embryo）是絛蟲的最初幼蟲階段，存在於蟲卵內，必須先被第一中間宿主（劍水蚤）攝食才能繼續發育，不會直接感染人類。<br> ② 錯誤，似囊尾幼蟲（cysticercoid）是在第一中間宿主劍水蚤體內的發育階段，人類不會透過攝食劍水蚤而感染裂頭絛蟲病。<br> ③ 正確，原尾幼蟲（procercoid）存在於第一中間宿主劍水蚤體內，人類飲用含有感染性劍水蚤的生水時可能被感染。<br> ④ 正確，長尾幼蟲（plerocercoid）存在於第二中間宿主（如蛙類、蛇類、魚類）的肌肉組織中，人類食用未充分烹煮的感染動物或將感染動物敷在傷口上時會被此階段的幼蟲感染，造成裂頭絛蟲病（sparganosis）。",
+    "tags": [
+      "104-2(一)",
+      "寄生蟲"
+    ],
+    "group_id": "group_3966"
+  },
+  {
+    "id": 1042179,
+    "question": "79. 王先生奉派駐任中非共和國外交官服務二年，近日因腹部腫脹及週期性發燒而返國就醫，經 醫師檢查發現有肝脾腫大（hepatosplenomegaly）及貧血（anemia）病癥，住院後進行骨 髓穿刺可見巨噬細胞內有寄生物。依據上述結果，王先生最可能感染何種寄生蟲？",
+    "options": {
+      "A": "杜氏利什曼原蟲（Leishmania donovani）",
+      "B": "熱帶利什曼原蟲（Leishmania tropica）",
+      "C": "岡比亞錐蟲（Trypanosoma brucei gambiense）",
+      "D": "枯西氏錐蟲（Trypanosoma cruzi）"
+    },
+    "answer": "A",
+    "explanation": "中非地區的內臟利什曼病主要由杜氏利什曼原蟲引起，骨髓檢查可見巨噬細胞內寄生蟲。\n(A) 正確，杜氏利什曼原蟲（Leishmania donovani）引起內臟利什曼病，分布於非洲，症狀包括肝脾腫大、貧血，骨髓穿刺可見巨噬細胞內寄生蟲\n(B) 錯誤，熱帶利什曼原蟲主要引起皮膚利什曼病\n(C) 錯誤，岡比亞錐蟲主要引起昏睡病，不寄生於巨噬細胞內\n(D) 錯誤，枯西氏錐蟲主要分布於中南美洲，引起查加斯病",
+    "tags": [
+      "104-2(一)",
+      "寄生蟲"
+    ],
+    "group_id": "group_3967"
+  },
+  {
+    "id": 1042180,
+    "question": "80. 下列有關陰道滴蟲（Trichomonas vaginalis）或其引起的病症，何者錯誤？",
+    "options": {
+      "A": "性伴侶中，男性如果沒有症狀可不必投藥，只需治療出現症狀的女方即可",
+      "B": "沒有保蟲宿主（reservoir host）",
+      "C": "女性患者之症狀包括陰道搔癢、白帶增多且常呈黃綠色等",
+      "D": "根據非洲的研究顯示，陰道滴蟲症（vaginal trichomoniasis）患者感染HIV的機率較高"
+    },
+    "answer": "A",
+    "explanation": "陰道滴蟲是性傳播疾病，男性伴侶即使無症狀也需要同時治療，避免重複感染。\n(A) 正確，男性伴侶即使無症狀也必須同時治療，避免重複感染，因此此敘述錯誤\n(B) 錯誤，陰道滴蟲確實沒有保蟲宿主\n(C) 錯誤，女性患者確實會出現陰道搔癢、黃綠色白帶等症狀\n(D) 錯誤，研究確實顯示陰道滴蟲症患者感染HIV風險較高",
+    "tags": [
+      "104-2(一)",
+      "寄生蟲"
+    ],
+    "group_id": "group_3968"
+  },
+  {
+    "id": 1042181,
+    "question": "81. 黑水熱（blackwater fever）通常與何種寄生蟲之感染有關？",
+    "options": {
+      "A": "日本血吸蟲（Schistosoma japonicum）",
+      "B": "杜氏利什曼原蟲（Leishmania donovani）",
+      "C": "班氏絲蟲（Wuchereria bancrofti）",
+      "D": "惡性瘧原蟲（Plasmodium falciparum）"
+    },
+    "answer": "D",
+    "explanation": "黑水熱是惡性瘧原蟲感染的嚴重併發症，因大量紅血球破壞導致血紅蛋白尿。\n(A) 錯誤，日本血吸蟲感染不會引起黑水熱\n(B) 錯誤，杜氏利什曼原蟲感染引起內臟利什曼病，不會引起黑水熱\n(C) 錯誤，班氏絲蟲感染引起淋巴絲蟲病，不會引起黑水熱\n(D) 正確，黑水熱（blackwater fever）是惡性瘧原蟲感染的嚴重併發症，因大量溶血導致血紅蛋白尿呈黑色",
+    "tags": [
+      "104-2(一)",
+      "寄生蟲"
+    ],
+    "group_id": "group_3969"
+  },
+  {
+    "id": 1042182,
+    "question": "82. 下列有關蜱媒介人畜共通萊姆病（Lyme disease）之敘述，何者錯誤？",
+    "options": {
+      "A": "高度流行區內常有共同感染（co-infection）巴貝氏原蟲（Babesia spp.）",
+      "B": "其致病原為伯氏疏螺旋體（Borrelia burgdorferi）",
+      "C": "感染早期以遊走性紅斑（erythema migrans）為主要病癥",
+      "D": "人類感染之早期診斷以血液抹片鏡檢為主"
+    },
+    "answer": "D",
+    "explanation": "萊姆病早期診斷主要依據臨床症狀和血清學檢查，血液抹片鏡檢無法檢出疏螺旋體。\n(A) 正確，萊姆病高流行區確實常有巴貝氏原蟲共同感染\n(B) 正確，萊姆病致病原確實為伯氏疏螺旋體\n(C) 正確，感染早期確實以遊走性紅斑為主要症狀\n(D) 錯誤，萊姆病早期診斷主要依據臨床症狀和血清學檢查，血液抹片鏡檢無法直接觀察到疏螺旋體",
+    "tags": [
+      "104-2(一)",
+      "寄生蟲"
+    ],
+    "group_id": "group_3970"
+  },
+  {
+    "id": 1042183,
+    "question": "83. 下面有關參數（parameter）信賴區間估計的敘述何者正確？",
+    "options": {
+      "A": "95% 單尾信賴區間與 95% 雙尾信賴區間的顯著水準 α 不同",
+      "B": "簡單線性迴歸係數的 95% 信賴區間沒有包含 0 代表該解釋變項與反應變項有顯著的線性 關係",
+      "C": "勝算比（Odds Ratio）的 95% 信賴區間沒有包含 0 代表該解釋變項與反應變項有關聯",
+      "D": "檢定學生近視的比例是否與 10 年前相同，用信賴區間法進行檢定與假說檢定之 Z 檢定結 論不同"
+    },
+    "answer": "B",
+    "explanation": "迴歸係數的95%信賴區間不包含0，表示該解釋變項與反應變項有顯著線性關係。\n(A) 錯誤，95%單尾和雙尾信賴區間的顯著水準α相同，都是0.05\n(B) 正確，簡單線性迴歸係數的95%信賴區間不包含0，代表該解釋變項與反應變項有顯著線性關係\n(C) 錯誤，勝算比的95%信賴區間應該不包含1（而非0）才表示有關聯\n(D) 錯誤，信賴區間法與假說檢定的Z檢定結論應該一致",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3971"
+  },
+  {
+    "id": 1042184,
+    "question": "84. 下列那一項因素不會造成某慢性疾病的發生率產生變動？",
+    "options": {
+      "A": "潛伏期",
+      "B": "疾病診斷技術",
+      "C": "環境因素",
+      "D": "生活習慣",
+      "E": "送分"
+    },
+    "answer": "E",
+    "explanation": "此題標記為送分題。\n(A) 錯誤，潛伏期變化會影響疾病發生率\n(B) 錯誤，診斷技術改進會影響疾病發現和發生率統計\n(C) 錯誤，環境因素改變會影響疾病發生率\n(D) 錯誤，生活習慣改變會影響慢性疾病發生率\n(E) 正確，此題為送分題",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3972"
+  },
+  {
+    "id": 1042185,
+    "question": "85. 下列那一選項能夠增加統計檢定力（statistical power）？",
+    "options": {
+      "A": "採用雙盲（double-blind）",
+      "B": "隨機分派（randomization）",
+      "C": "增加樣本數（sample size）",
+      "D": "使用對照組（control）"
+    },
+    "answer": "C",
+    "explanation": "增加樣本數可以提高統計檢定力，減少第二型錯誤的機率。\n(A) 錯誤，雙盲設計主要是減少偏差，不直接增加統計檢定力\n(B) 錯誤，隨機分派主要是控制干擾因子，不直接增加統計檢定力\n(C) 正確，增加樣本數（sample size）可以增加統計檢定力（statistical power）\n(D) 錯誤，使用對照組是研究設計要求，不直接增加統計檢定力",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3973"
+  },
+  {
+    "id": 1042186,
+    "question": "86. 某研究者想探討失業率與自殺率的關係，所以在 319 縣市中收集去年之年平均失業率與年平 均自殺率資料，下面統計分析方法何者最恰當？",
+    "options": {
+      "A": "線性迴歸（Linear Regression）",
+      "B": "變異數分析（ANOVA）",
+      "C": "羅吉斯迴歸（Logistic Regression）",
+      "D": "列聯表分析（Contingency Table）"
+    },
+    "answer": "A",
+    "explanation": "失業率與自殺率都是連續變數，適合用線性迴歸分析其關係。\n(A) 正確，失業率和自殺率都是連續變數，適合使用線性迴歸分析其關係\n(B) 錯誤，變異數分析用於比較不同組別間的平均數差異\n(C) 錯誤，羅吉斯迴歸用於二元或多元分類反應變項\n(D) 錯誤，列聯表分析用於分析類別變數間的關聯",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3974"
+  },
+  {
+    "id": 1042187,
+    "question": "87. 下列那一種研究設計不屬於觀察型流行病學？",
+    "options": {
+      "A": "病例對照研究法",
+      "B": "世代追蹤研究法",
+      "C": "生態相關研究法",
+      "D": "臨床試驗"
+    },
+    "answer": "D",
+    "explanation": "臨床試驗屬於實驗性研究，不是觀察型流行病學研究。\n(A) 錯誤，病例對照研究法屬於觀察型流行病學\n(B) 錯誤，世代追蹤研究法屬於觀察型流行病學\n(C) 錯誤，生態相關研究法屬於觀察型流行病學\n(D) 正確，臨床試驗屬於實驗性研究（experimental study），不是觀察型流行病學",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3975"
+  },
+  {
+    "id": 1042188,
+    "question": "88. 所謂「健康工人效應（healthy worker effect）」是指會造成何種偏差（bias）？",
+    "options": {
+      "A": "選樣上偏差（selection bias）",
+      "B": "資料上偏差（information bias）",
+      "C": "干擾（confounding）",
+      "D": "測量上偏差（measurement error）"
+    },
+    "answer": "A",
+    "explanation": "健康工人效應是指健康的人較可能被雇用，造成選樣偏差。\n(A) 正確，健康工人效應會造成選樣上偏差，因為較健康的人更容易被雇用\n(B) 錯誤，不是資料收集上的偏差\n(C) 錯誤，不是干擾因子的問題\n(D) 錯誤，不是測量誤差的問題",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3976"
+  },
+  {
+    "id": 1042189,
+    "question": "89. 下列那一項為病例對照研究的主要缺點？",
+    "options": {
+      "A": "生態謬誤",
+      "B": "回憶偏差",
+      "C": "診斷標準改變",
+      "D": "不適合研究稀有疾病"
+    },
+    "answer": "B",
+    "explanation": "病例對照研究需要回溯過去暴露史，容易產生回憶偏差。\n(A) 錯誤，生態謬誤是生態相關研究的主要問題\n(B) 正確，病例對照研究需要回溯過去的暴露史，容易產生回憶偏差（recall bias）\n(C) 錯誤，診斷標準改變主要影響世代研究\n(D) 錯誤，病例對照研究適合研究稀有疾病",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3977"
+  },
+  {
+    "id": 1042190,
+    "question": "90. 環保署公布之空氣污染指標值（PSI），乃是將測得之各項污染物濃度換算成副指標，再以 其中何者公布之？",
+    "options": {
+      "A": "所有污染物副指標中最大值",
+      "B": "所有污染物副指標中最小值",
+      "C": "所有污染物副指標之總和",
+      "D": "所有污染物副指標之平均"
+    },
+    "answer": "A",
+    "explanation": "空氣污染指標值採用各項污染物副指標中的最大值來公布。\n(A) 正確，PSI以所有污染物副指標中的最大值公布\n(B) 錯誤，不是取最小值\n(C) 錯誤，不是取總和\n(D) 錯誤，不是取平均值",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3978"
+  },
+  {
+    "id": 1042191,
+    "question": "91. 空氣污染物除了會對動植物造成影響外，也可能損壞建築物。損毀建築物的原因，最主要是 來自下列那一項污染物？",
+    "options": {
+      "A": "CO",
+      "B": "NO<sub>x</sub>",
+      "C": "O<sub>3</sub>",
+      "D": "碳氫化物"
+    },
+    "answer": "B",
+    "explanation": "氮氧化物會形成酸雨，對建築物造成腐蝕損害。\n(A) 錯誤，一氧化碳主要影響人體健康，較少直接損害建築物\n(B) 正確，氮氧化物（NO<sub>x</sub>）會形成酸雨，對建築物造成腐蝕損害\n(C) 錯誤，臭氧主要影響植物和人體呼吸系統\n(D) 錯誤，碳氫化物對建築物的直接損害較小",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3979"
+  },
+  {
+    "id": 1042192,
+    "question": "92. 下列何者屬於衍生性空氣污染物？",
+    "options": {
+      "A": "二氧化硫",
+      "B": "一氧化碳",
+      "C": "一氧化氮",
+      "D": "臭氧"
+    },
+    "answer": "D",
+    "explanation": "臭氧是由其他污染物在大氣中經光化學反應形成的衍生性污染物。\n(A) 錯誤，二氧化硫是直接排放的一次污染物\n(B) 錯誤，一氧化碳是直接排放的一次污染物\n(C) 錯誤，一氧化氮是直接排放的一次污染物\n(D) 正確，臭氧是由氮氧化物和揮發性有機物經光化學反應形成的衍生性（二次）空氣污染物",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3980"
+  },
+  {
+    "id": 1042193,
+    "question": "93. 風險評估的四個組成，包括：危害界定、劑量效應、風險本質特性化和下列那一項？",
+    "options": {
+      "A": "經濟評估",
+      "B": "技術評估",
+      "C": "暴露評估",
+      "D": "溝通評估"
+    },
+    "answer": "C",
+    "explanation": "風險評估的四個組成包括危害界定、劑量效應、暴露評估和風險本質特性化。\n(A) 錯誤，經濟評估不是風險評估的四個組成之一\n(B) 錯誤，技術評估不是風險評估的四個組成之一\n(C) 正確，風險評估包括危害界定、劑量效應評估、暴露評估和風險本質特性化\n(D) 錯誤，溝通評估屬於風險管理階段，不是風險評估的組成",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3981"
+  },
+  {
+    "id": 1042194,
+    "question": "94. 有效風險溝通之團隊組成，建議由四種專家為基礎共同組成，包括：",
+    "options": {
+      "A": "主題事件專家、投資報酬分析專家、實地溝通專業人員和風險及決策分析專家",
+      "B": "主題事件專家、行為科學專家、實地溝通專業人員和臨床心理學專家",
+      "C": "主題事件專家、投資報酬分析專家、技術專業人員和風險及決策分析專家",
+      "D": "主題事件專家、行為科學專家、實地溝通專業人員和風險及決策分析專家"
+    },
+    "answer": "D",
+    "explanation": "有效風險溝通團隊應包括主題事件專家、行為科學專家、實地溝通專業人員和風險及決策分析專家。\n(A) 錯誤，不需要投資報酬分析專家\n(B) 錯誤，不需要臨床心理學專家\n(C) 錯誤，不需要投資報酬分析專家和技術專業人員\n(D) 正確，有效風險溝通團隊包括主題事件專家、行為科學專家、實地溝通專業人員和風險及決策分析專家",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3982"
+  },
+  {
+    "id": 1042195,
+    "question": "95. 健康行為改變的PRECEDE-PROCEED模式中，下列那一項是屬於增強因素（reinforcing factor）？",
+    "options": {
+      "A": "資源整合運用",
+      "B": "重要他人支持",
+      "C": "態度信念改變",
+      "D": "支持環境的重建"
+    },
+    "answer": "B",
+    "explanation": "PRECEDE-PROCEED模式中，重要他人的支持屬於增強因素。\n(A) 錯誤，資源整合運用屬於促成因素\n(B) 正確，重要他人支持屬於增強因素（reinforcing factor）\n(C) 錯誤，態度信念改變屬於傾向因素\n(D) 錯誤，支持環境重建屬於促成因素",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3983"
+  },
+  {
+    "id": 1042196,
+    "question": "96. 針對衛生教育計畫本身執行過程給予評核，如教學活動安排時間是否合適、教學者能否熟用 教學法、學習者是否全程參與教學活動等，是屬於下列那一種衛生教育的評價？",
+    "options": {
+      "A": "結果評價",
+      "B": "過程評價",
+      "C": "衝擊評價",
+      "D": "成效評價"
+    },
+    "answer": "B",
+    "explanation": "評核教學活動安排、教學者表現、學習者參與等執行過程屬於過程評價。\n(A) 錯誤，結果評價是評估最終成果\n(B) 正確，評核計畫執行過程如教學安排、教學者能力、學習者參與等屬於過程評價（process evaluation）\n(C) 錯誤，衝擊評價是評估短期影響\n(D) 錯誤，成效評價是評估長期效果",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3984"
+  },
+  {
+    "id": 1042197,
+    "question": "97. 當我們面對壓力時，以下何者最具有緩衝壓力（stress-buffering）的功能？",
+    "options": {
+      "A": "自我效能",
+      "B": "楷模典範",
+      "C": "社會支持",
+      "D": "自我增能"
+    },
+    "answer": "C",
+    "explanation": "社會支持具有緩衝壓力的功能，能減輕壓力對健康的負面影響。\n(A) 錯誤，自我效能主要影響行為動機，緩衝壓力效果較小\n(B) 錯誤，楷模典範主要用於行為學習，不是主要的壓力緩衝因子\n(C) 正確，社會支持具有最強的壓力緩衝（stress-buffering）功能\n(D) 錯誤，自我增能主要增加個人能力，緩衝壓力效果不如社會支持",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3985"
+  },
+  {
+    "id": 1042198,
+    "question": "98. 基於疾病與傷害本身的特異性以及民眾對醫療保健服務需求的特殊性，使得醫療服務市場有 一些不同於一般市場。下列何項不屬於醫療保健服務市場之特性？",
+    "options": {
+      "A": "需求與結果的不確定性",
+      "B": "資訊不對等",
+      "C": "消費者對醫療服務提供者提供之診治項目的種類、數量、價格有主導權",
+      "D": "醫療提供者不一定會追求利潤極大，而可能以病人的需要為最重要的考量"
+    },
+    "answer": "C",
+    "explanation": "醫療服務市場中，醫療提供者通常主導診治項目，消費者較少有主導權。\n(A) 錯誤，需求與結果的不確定性確實是醫療市場特性\n(B) 錯誤，資訊不對等確實是醫療市場特性\n(C) 正確，在醫療服務市場中，通常是醫療提供者主導診治項目，而非消費者有主導權\n(D) 錯誤，醫療提供者可能以病人需要為考量確實是醫療市場特性",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3986"
+  },
+  {
+    "id": 1042199,
+    "question": "99. 與醫療品質相關的通報系統，分為政策推動與政策鼓勵兩大類，以下何者不屬於政策推動之 通報系統？",
+    "options": {
+      "A": "癌症登記系統",
+      "B": "癌症篩檢系統",
+      "C": "院內感染監測資訊系統",
+      "D": "全國藥品不良反應通報系統"
+    },
+    "answer": "B",
+    "explanation": "癌症篩檢系統屬於政策鼓勵而非政策推動的通報系統。\n(A) 錯誤，癌症登記系統屬於政策推動的通報系統\n(B) 正確，癌症篩檢系統屬於政策鼓勵，不是政策推動的通報系統\n(C) 錯誤，院內感染監測資訊系統屬於政策推動的通報系統\n(D) 錯誤，全國藥品不良反應通報系統屬於政策推動的通報系統",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3987"
+  },
+  {
+    "id": 1042100,
+    "question": "100. 進行人體試驗時，接受試驗者同意前，醫療機構應先告知的事項，不包括下列那一事項？",
+    "options": {
+      "A": "試驗目的及方法",
+      "B": "可能產生之副作用及危險",
+      "C": "預期試驗效果",
+      "D": "接受試驗者撤回同意時，須經主治醫師之同意"
+    },
+    "answer": "D",
+    "explanation": "接受試驗者有權隨時撤回同意，無需經主治醫師同意。\n(A) 錯誤，試驗目的及方法是必須告知的事項\n(B) 錯誤，可能的副作用及危險是必須告知的事項\n(C) 錯誤，預期試驗效果是必須告知的事項\n(D) 正確，接受試驗者撤回同意時無需經主治醫師同意，此項不屬於應告知事項",
+    "tags": [
+      "104-2(一)",
+      "公衛"
+    ],
+    "group_id": "group_3988"
+  }
+]

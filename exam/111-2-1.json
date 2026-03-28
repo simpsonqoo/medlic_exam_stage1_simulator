@@ -1,0 +1,1716 @@
+[
+  {
+    "id": 1112101,
+    "question": "1. 下列何者由腦幹內的內弓狀纖維（internal arcuate fibers）交叉到對側之後匯聚形成？",
+    "options": {
+      "A": "內側蹄系（medial lemniscus）",
+      "B": "脊髓蹄系（spinal lemniscus）",
+      "C": "外側蹄系（lateral lemniscus）",
+      "D": "錐體交叉（pyramidal decussation）"
+    },
+    "answer": "A",
+    "explanation": "內弓狀纖維是後索-內側蹄系途徑的重要組成部分，負責精細觸覺和本體感覺的傳導。內弓狀纖維在延髓內交叉到對側後，會匯聚形成內側蹄系。\n(A) 正確，內弓狀纖維（internal arcuate fibers）在腦幹內交叉到對側後匯聚形成內側蹄系（medial lemniscus）\n(B) 錯誤，脊髓蹄系（spinal lemniscus）主要來自脊髓丘腦束，不是由內弓狀纖維形成\n(C) 錯誤，外側蹄系（lateral lemniscus）是聽覺傳導路徑的一部分，與內弓狀纖維無關\n(D) 錯誤，錐體交叉（pyramidal decussation）是運動神經纖維的交叉，不是由內弓狀纖維形成",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1693"
+  },
+  {
+    "id": 1112102,
+    "question": "2. 連結大腦皮質的布羅卡氏區（Broca's area）與沃尼克氏區（Wernicke's area）間的主要神經纖維束稱為：",
+    "options": {
+      "A": "弓狀束（arcuate fasciculus）",
+      "B": "內側縱束（medial longitudinal fasciculus）",
+      "C": "背側縱束（dorsal longitudinal fasciculus）",
+      "D": "內側前腦束（medial forebrain bundle）"
+    },
+    "answer": "A",
+    "explanation": "布羅卡氏區負責語言表達，沃尼克氏區負責語言理解，兩者間的連接對語言功能至關重要。弓狀束是連接這兩個重要語言區域的主要白質纖維束。\n(A) 正確，弓狀束（arcuate fasciculus）是連接布羅卡氏區（Broca's area）與沃尼克氏區（Wernicke's area）的主要神經纖維束\n(B) 錯誤，內側縱束（medial longitudinal fasciculus）主要連接眼球運動相關的腦幹核團\n(C) 錯誤，背側縱束（dorsal longitudinal fasciculus）主要與自主神經功能相關\n(D) 錯誤，內側前腦束（medial forebrain bundle）主要與下視丘和邊緣系統相關",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1694"
+  },
+  {
+    "id": 1112103,
+    "question": "3. 乳頭體（mamillary body）發出乳頭丘腦束（mamillo-thalamic fasciculus），主要進入丘腦（thalamus）的那一 神經核？",
+    "options": {
+      "A": "腹前側核（ventral anterior nuclei）",
+      "B": "前側核（anterior nuclei）",
+      "C": "腹後外側核（ventral posterior lateral nuclei）",
+      "D": "腹後內側核（ventral posterior medial nuclei）"
+    },
+    "answer": "B",
+    "explanation": "乳頭體是邊緣系統的重要組成部分，與記憶功能密切相關。乳頭丘腦束將乳頭體與丘腦前側核連接，形成Papez迴路的一部分。\n(A) 錯誤，腹前側核（ventral anterior nuclei）主要接受基底核的投射\n(B) 正確，乳頭丘腦束（mamillo-thalamic fasciculus）主要進入丘腦的前側核（anterior nuclei）\n(C) 錯誤，腹後外側核（ventral posterior lateral nuclei）主要接受軀體感覺的投射\n(D) 錯誤，腹後內側核（ventral posterior medial nuclei）主要接受顏面感覺的投射",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1695"
+  },
+  {
+    "id": 1112104,
+    "question": "4. 下列何者不經過丘腦（thalamus），直接傳入邊緣系統（limbic system）？",
+    "options": {
+      "A": "嗅覺訊息（olfactory signal）",
+      "B": "視覺訊息（visual signal）",
+      "C": "聽覺訊息（auditory signal）",
+      "D": "味覺訊息（gustatory signal）"
+    },
+    "answer": "A",
+    "explanation": "大部分感覺訊息都需要經過丘腦的中繼處理才能到達大腦皮質，但嗅覺是唯一的例外。嗅覺訊息可以直接投射到邊緣系統，這也解釋了嗅覺與情緒和記憶的密切關聯。\n(A) 正確，嗅覺訊息（olfactory signal）不經過丘腦，直接傳入邊緣系統\n(B) 錯誤，視覺訊息經過外膝狀核（丘腦的一部分）處理\n(C) 錯誤，聽覺訊息經過內膝狀核（丘腦的一部分）處理\n(D) 錯誤，味覺訊息經過腹後內側核（丘腦的一部分）處理",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1696"
+  },
+  {
+    "id": 1112105,
+    "question": "5. 下列關於眼外肌中的下斜肌（inferior oblique）的描述，何者錯誤？",
+    "options": {
+      "A": "由動眼神經（oculomotor nerve）支配",
+      "B": "可讓瞳孔朝下朝外側觀看",
+      "C": "起點位於上頷骨",
+      "D": "終點附著於眼球後半部"
+    },
+    "answer": "B",
+    "explanation": "下斜肌是六條眼外肌之一，由動眼神經支配。當下斜肌收縮時，會使眼球向上向外轉動，而不是向下向外。\n(A) 正確，下斜肌（inferior oblique）確實由動眼神經（oculomotor nerve）支配\n(B) 錯誤，下斜肌收縮時讓瞳孔朝上朝外側觀看，不是朝下朝外側\n(C) 正確，下斜肌起點位於上頷骨的眶底部\n(D) 正確，下斜肌終點附著於眼球後半部",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1697"
+  },
+  {
+    "id": 1112106,
+    "question": "6. 下列何者與內頸動脈（internal carotid artery）一起穿入海綿竇（cavernous sinus）內，而後自行進入眼眶？",
+    "options": {
+      "A": "視神經（optic nerve）",
+      "B": "外旋神經（abducens nerve）",
+      "C": "三叉神經（trigeminal nerve）",
+      "D": "滑車神經（trochlear nerve）"
+    },
+    "answer": "B",
+    "explanation": "海綿竇是顱內重要的靜脈竇，內含多條重要神經和血管。外旋神經是唯一與內頸動脈一起穿過海綿竇，並繼續進入眼眶的神經。\n(A) 錯誤，視神經（optic nerve）通過視神經孔進入眼眶，不經過海綿竇\n(B) 正確，外旋神經（abducens nerve）與內頸動脈一起穿入海綿竇內，而後進入眼眶\n(C) 錯誤，三叉神經（trigeminal nerve）雖經過海綿竇，但不進入眼眶\n(D) 錯誤，滑車神經（trochlear nerve）不與內頸動脈一起經過海綿竇",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1698"
+  },
+  {
+    "id": 1112107,
+    "question": "7. 下列關於眼瞼（eyelid）的描述，何者正確？",
+    "options": {
+      "A": "瞼板腺（tarsal gland）分泌水樣狀液體",
+      "B": "收集眼淚的淚湖（lacrimal lake）位於眼眶外下部",
+      "C": "提上眼瞼肌（levator palpebrae superioris）負責關閉眼瞼",
+      "D": "淚腺（lacrimal gland）位於眼眶外上部"
+    },
+    "answer": "D",
+    "explanation": "眼瞼的解剖結構包含多個重要的腺體和肌肉。淚腺位於眼眶的外上部，負責分泌淚液以保持眼球濕潤。\n(A) 錯誤，瞼板腺（tarsal gland）分泌油脂性物質，不是水樣狀液體\n(B) 錯誤，淚湖（lacrimal lake）位於眼眶內下部（內眥），不是外下部\n(C) 錯誤，提上眼瞼肌（levator palpebrae superioris）負責張開眼瞼，眼輪匝肌負責閉合眼瞼\n(D) 正確，淚腺（lacrimal gland）位於眼眶外上部",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1699"
+  },
+  {
+    "id": 1112108,
+    "question": "8. 下列何者不是頸神經叢（cervical plexus）的分支？",
+    "options": {
+      "A": "枕小神經（lesser occipital nerve）",
+      "B": "耳大神經（great auricular nerve）",
+      "C": "肩胛上神經（suprascapular nerve）",
+      "D": "鎖骨上神經（supraclavicular nerve）"
+    },
+    "answer": "C",
+    "explanation": "頸神經叢由第1-4頸神經根組成，支配頸部的皮膚感覺和部分肌肉。肩胛上神經來自臂神經叢，不屬於頸神經叢。\n(A) 正確，枕小神經（lesser occipital nerve）是頸神經叢的分支\n(B) 正確，耳大神經（great auricular nerve）是頸神經叢的分支\n(C) 錯誤，肩胛上神經（suprascapular nerve）來自臂神經叢（C5-C6），不是頸神經叢的分支\n(D) 正確，鎖骨上神經（supraclavicular nerve）是頸神經叢的分支",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1700"
+  },
+  {
+    "id": 1112109,
+    "question": "9. 下列何者不是顏面神經在顳骨區域的分支？",
+    "options": {
+      "A": "岩大神經（greater petrosal nerve）",
+      "B": "岩小神經（lesser petrosal nerve）",
+      "C": "鼓索神經（chorda tympani nerve）",
+      "D": "鐙骨肌神經（nerve to stapedius）"
+    },
+    "answer": "B",
+    "explanation": "顏面神經在顳骨內有多個分支，這些分支負責不同的功能。岩小神經屬於舌咽神經系統，不是顏面神經的分支。\n(A) 正確，岩大神經（greater petrosal nerve）是顏面神經在顳骨區域的分支\n(B) 錯誤，岩小神經（lesser petrosal nerve）是舌咽神經的分支，不是顏面神經的分支\n(C) 正確，鼓索神經（chorda tympani nerve）是顏面神經在顳骨區域的分支\n(D) 正確，鐙骨肌神經（nerve to stapedius）是顏面神經在顳骨區域的分支",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1701"
+  },
+  {
+    "id": 1112110,
+    "question": "10. 拔除臼齒（molar teeth）時，不慎折斷牙根，其碎片最可能進入下列何副鼻竇？",
+    "options": {
+      "A": "蝶竇（sphenoid sinus）",
+      "B": "篩竇（ethmoid sinus）",
+      "C": "額竇（frontal sinus）",
+      "D": "上頷竇（maxillary sinus）"
+    },
+    "answer": "D",
+    "explanation": "上頷竇位於上頷骨內，與上頷牙齒的牙根關係密切。拔除上頷臼齒時，由於解剖位置相近，折斷的牙根碎片最容易進入上頷竇。\n(A) 錯誤，蝶竇（sphenoid sinus）位置較深，與臼齒牙根距離較遠\n(B) 錯誤，篩竇（ethmoid sinus）主要與鼻腔上部相關\n(C) 錯誤，額竇（frontal sinus）位於額骨內，與臼齒位置相距甚遠\n(D) 正確，上頷竇（maxillary sinus）與上頷臼齒牙根關係密切，拔牙時牙根碎片最可能進入此副鼻竇",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1702"
+  },
+  {
+    "id": 1112111,
+    "question": "11. 下列有關嘴唇結構的敘述，何者錯誤？",
+    "options": {
+      "A": "嘴唇的核心肌肉為口輪匝肌（orbicularis oris）",
+      "B": "嘴唇的淋巴只引流到頦下淋巴結（submental lymph nodes）",
+      "C": "上下嘴唇內均具有唇繫帶（labial frenula）",
+      "D": "嘴唇的血液供應來自上、下唇動脈（superior and inferior labial artery），它們是顏面動脈（facial artery）分 支"
+    },
+    "answer": "B",
+    "explanation": "嘴唇的淋巴引流並非只有單一方向，而是有多個引流途徑。上唇主要引流到頦下淋巴結，但下唇除了引流到頦下淋巴結外，還會引流到頜下淋巴結。\n(A) 正確，口輪匝肌（orbicularis oris）確實是嘴唇的核心肌肉\n(B) 錯誤，嘴唇的淋巴不只引流到頦下淋巴結（submental lymph nodes），還會引流到頜下淋巴結（submandibular lymph nodes）\n(C) 正確，上下嘴唇內均具有唇繫帶（labial frenula）\n(D) 正確，嘴唇的血液供應來自顏面動脈（facial artery）的上、下唇動脈分支",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1703"
+  },
+  {
+    "id": 1112112,
+    "question": "12. 下列那一條神經負責中耳鼓室（tympanic cavity）內黏膜的一般感覺？",
+    "options": {
+      "A": "第五對腦神經（CN V）",
+      "B": "第七對腦神經（CN VII）",
+      "C": "第九對腦神經（CN IX）",
+      "D": "第十對腦神經（CN X）"
+    },
+    "answer": "C",
+    "explanation": "中耳鼓室內黏膜的感覺神經支配由舌咽神經的鼓室分支負責。這個分支稱為雅各布森神經，負責中耳腔內黏膜的一般感覺。\n(A) 錯誤，第五對腦神經（CN V）主要負責顏面感覺，不支配中耳鼓室\n(B) 錯誤，第七對腦神經（CN VII）雖經過中耳，但主要負責味覺和運動功能\n(C) 正確，第九對腦神經（CN IX）舌咽神經的鼓室分支負責中耳鼓室內黏膜的一般感覺\n(D) 錯誤，第十對腦神經（CN X）迷走神經不支配中耳鼓室黏膜",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1704"
+  },
+  {
+    "id": 1112113,
+    "question": "13. 下列那一部位損傷會出現如圖的視野缺損情形？",
+    "options": {
+      "A": "左視徑（left optic tract）",
+      "B": "視交叉（optic chiasm）",
+      "C": "右視神經（right optic nerve）",
+      "D": "右外膝狀核（right lateral geniculate nucleus）"
+    },
+    "answer": "A",
+    "explanation": "視野缺損的類型可以幫助定位視覺通路的損傷部位。左視徑損傷會造成右側同側性偏盲，即雙眼右側視野缺損。\n(A) 正確，左視徑（left optic tract）損傷會造成右側同側性偏盲（right homonymous hemianopia）\n(B) 錯誤，視交叉（optic chiasm）損傷通常造成雙顳側偏盲\n(C) 錯誤，右視神經（right optic nerve）損傷會造成右眼完全失明\n(D) 錯誤，右外膝狀核（right lateral geniculate nucleus）損傷也會造成左側同側性偏盲，但題目描述的是右側視野缺損",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "images": [
+      "./image/111-2-1-13.jpg"
+    ],
+    "group_id": "group_1705"
+  },
+  {
+    "id": 1112114,
+    "question": "14. 右後胸壁的血液主要回流至下列那一個靜脈？",
+    "options": {
+      "A": "內胸靜脈（internal thoracic vein）",
+      "B": "半奇靜脈（hemiazygos vein）",
+      "C": "副半奇靜脈（accessory hemiazygos vein）",
+      "D": "奇靜脈（azygos vein）"
+    },
+    "answer": "D",
+    "explanation": "胸壁靜脈的回流系統有一定的解剖規律。右後胸壁的血液主要經由奇靜脈系統回流到上腔靜脈。\n(A) 錯誤，內胸靜脈（internal thoracic vein）主要收集前胸壁的血液\n(B) 錯誤，半奇靜脈（hemiazygos vein）主要收集左下後胸壁的血液\n(C) 錯誤，副半奇靜脈（accessory hemiazygos vein）主要收集左上後胸壁的血液\n(D) 正確，奇靜脈（azygos vein）主要收集右後胸壁的血液",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1706"
+  },
+  {
+    "id": 1112115,
+    "question": "15. 漿液性心包膜（serous pericardium）壁層（parietal layer）的痛覺由下列何者傳遞？",
+    "options": {
+      "A": "肋間神經（intercostal nerve）",
+      "B": "迷走神經（vagus nerve）",
+      "C": "交感神經幹（sympathetic trunk）",
+      "D": "膈神經（phrenic nerve）"
+    },
+    "answer": "D",
+    "explanation": "心包膜的神經支配有特定的解剖分布。漿液性心包膜壁層的痛覺主要由膈神經傳遞，這也是心包炎疼痛可能放射到肩部的原因。\n(A) 錯誤，肋間神經（intercostal nerve）主要支配胸壁\n(B) 錯誤，迷走神經（vagus nerve）主要支配內臟器官\n(C) 錯誤，交感神經幹（sympathetic trunk）主要負責交感神經功能\n(D) 正確，膈神經（phrenic nerve）傳遞漿液性心包膜壁層的痛覺",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1707"
+  },
+  {
+    "id": 1112116,
+    "question": "16. 有關支氣管肺節段（bronchopulmonary segment），下列敘述何者最恰當？",
+    "options": {
+      "A": "每一個支氣管肺節段內的氣體，主要由一個細支氣管（bronchiole）來供應",
+      "B": "左右肺各有十個支氣管肺節段，但部分支氣管肺節段在右肺常常會彼此合併",
+      "C": "肺動脈常見於兩個支氣管肺節段之間",
+      "D": "單一個支氣管肺節段可以被手術移除，而不影響鄰近區域支氣管肺節段的功能"
+    },
+    "answer": "D",
+    "explanation": "支氣管肺節段是肺臟的功能性解剖單位，每個節段都有相對獨立的血管和支氣管供應。這種獨立性使得單一節段可以被手術切除而不影響鄰近區域。\n(A) 錯誤，每個支氣管肺節段由一個節段性支氣管供應，不是細支氣管\n(B) 錯誤，右肺有10個節段，左肺通常有8-10個節段\n(C) 錯誤，肺動脈位於節段內部，不是在節段之間\n(D) 正確，單一個支氣管肺節段可以被手術移除，而不影響鄰近區域支氣管肺節段的功能",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1708"
+  },
+  {
+    "id": 1112117,
+    "question": "17. 有關胸骨角（sternal angle）之敘述，下列何者正確？",
+    "options": {
+      "A": "兩側連接第一肋骨",
+      "B": "水平位置對應第四與第五胸椎間",
+      "C": "為胸骨體與劍突交界",
+      "D": "年輕時屬滑液關節（synovial joint），中老年時骨化"
+    },
+    "answer": "B",
+    "explanation": "胸骨角是胸骨柄與胸骨體的交界處，是重要的體表標誌。它位於第二肋軟骨附著處，水平位置對應第四與第五胸椎間。\n(A) 錯誤，胸骨角兩側連接第二肋骨，不是第一肋骨\n(B) 正確，胸骨角水平位置對應第四與第五胸椎間\n(C) 錯誤，胸骨角是胸骨柄與胸骨體的交界，不是胸骨體與劍突的交界\n(D) 錯誤，胸骨角是纖維軟骨性關節，不是滑液關節",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1709"
+  },
+  {
+    "id": 1112118,
+    "question": "18. 下膈動脈（inferior phrenic artery）是下列何者的分支？",
+    "options": {
+      "A": "腹主動脈（abdominal aorta）",
+      "B": "腎上腺動脈（suprarenal artery）",
+      "C": "內胸動脈（internal thoracic artery）",
+      "D": "胸主動脈（thoracic aorta）"
+    },
+    "answer": "A",
+    "explanation": "下膈動脈是供應膈肌下面的血管，它直接來自腹主動脈的分支。通常在腹主動脈進入腹腔後不久就分出下膈動脈。\n(A) 正確，下膈動脈（inferior phrenic artery）是腹主動脈（abdominal aorta）的分支\n(B) 錯誤，腎上腺動脈是腎上腺的血液供應，不是下膈動脈的來源\n(C) 錯誤，內胸動脈位於胸腔內，不會分出下膈動脈\n(D) 錯誤，胸主動脈位於胸腔內，不會分出下膈動脈",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1710"
+  },
+  {
+    "id": 1112119,
+    "question": "19. 下列何者是腹膜後器官（retroperitoneal organ）？",
+    "options": {
+      "A": "肝臟（liver）",
+      "B": "胃（stomach）",
+      "C": "空腸（jejunum）",
+      "D": "胰臟（pancreas）"
+    },
+    "answer": "D",
+    "explanation": "腹膜後器官是指位於腹膜後方，不被腹膜完全包圍的器官。胰臟大部分位於腹膜後間隙，屬於腹膜後器官。\n(A) 錯誤，肝臟（liver）大部分被腹膜包圍，屬於腹膜內器官\n(B) 錯誤，胃（stomach）被腹膜完全包圍，屬於腹膜內器官\n(C) 錯誤，空腸（jejunum）被腹膜完全包圍，屬於腹膜內器官\n(D) 正確，胰臟（pancreas）大部分位於腹膜後間隙，屬於腹膜後器官",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1711"
+  },
+  {
+    "id": 1112120,
+    "question": "20. 肝圓韌帶（round ligament of liver）是何種結構的遺跡？",
+    "options": {
+      "A": "靜脈導管（ductus venosus）",
+      "B": "臍靜脈（umbilical vein）",
+      "C": "臍動脈（umbilical artery）",
+      "D": "臍尿管（urachus）"
+    },
+    "answer": "B",
+    "explanation": "肝圓韌帶是胚胎時期血管結構的遺跡。胚胎期的臍靜脈在出生後閉合，成為成人的肝圓韌帶。\n(A) 錯誤，靜脈導管（ductus venosus）的遺跡是靜脈韌帶，不是肝圓韌帶\n(B) 正確，肝圓韌帶（round ligament of liver）是臍靜脈（umbilical vein）的遺跡\n(C) 錯誤，臍動脈（umbilical artery）的遺跡是內側臍襞\n(D) 錯誤，臍尿管（urachus）的遺跡是正中臍襞",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1712"
+  },
+  {
+    "id": 1112121,
+    "question": "21. 下列結構及其神經支配之配對，何者錯誤？",
+    "options": {
+      "A": "橫膈（diaphragm）：膈神經（phrenic nerve）",
+      "B": "腰大肌（psoas major muscle）：股神經（femoral nerve）",
+      "C": "腹外斜肌（external oblique muscle）：T7-T11胸段脊神經（T7-T11 thoracic spinal nerves）",
+      "D": "髂肌（iliacus）：股神經（femoral nerve）"
+    },
+    "answer": "B",
+    "explanation": "腰大肌的神經支配來自腰神經叢的直接分支，而不是股神經。股神經雖然也來自腰神經叢，但它主要支配股四頭肌和髂肌。\n(A) 正確，橫膈（diaphragm）由膈神經（phrenic nerve）支配\n(B) 錯誤，腰大肌（psoas major muscle）由腰神經叢的直接分支支配（L1-L4），不是由股神經支配\n(C) 正確，腹外斜肌（external oblique muscle）由T7-T11胸段脊神經支配\n(D) 正確，髂肌（iliacus）由股神經（femoral nerve）支配",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1713"
+  },
+  {
+    "id": 1112122,
+    "question": "22. 關於女性外陰（vulva），下列敘述何者正確？",
+    "options": {
+      "A": "尿道旁腺（paraurethral glands）又稱為巴多林氏腺（Bartholin's glands），其導管（ducts）開口於尿道口附 近",
+      "B": "大前庭腺（greater vestibular gland）位於前庭球（bulb of vestibule）的前方",
+      "C": "男性陰莖（penis）有懸韌帶（suspensory ligament），但女性陰蒂（clitoris）沒有",
+      "D": "前庭球（bulb of vestibule）是由勃起組織（erectile tissue）構成"
+    },
+    "answer": "D",
+    "explanation": "女性外陰的解剖結構包含多種腺體和勃起組織。前庭球是由勃起組織構成的結構，類似於男性的陰莖海綿體。\n(A) 錯誤，尿道旁腺又稱斯基恩氏腺，巴多林氏腺是大前庭腺的別稱\n(B) 錯誤，大前庭腺位於前庭球的後方，不是前方\n(C) 錯誤，女性陰蒂也有懸韌帶\n(D) 正確，前庭球（bulb of vestibule）是由勃起組織（erectile tissue）構成",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1714"
+  },
+  {
+    "id": 1112123,
+    "question": "23. 下列何者不進入骨盆腔？",
+    "options": {
+      "A": "輸尿管（ureter）",
+      "B": "薦正中動脈（median sacral artery）",
+      "C": "下直腸動脈（inferior rectal artery）",
+      "D": "卵巢動脈（ovarian artery）"
+    },
+    "answer": "C",
+    "explanation": "骨盆腔的邊界有特定的解剖界線。下直腸動脈屬於肛門周圍的血管，不進入骨盆腔內。\n(A) 正確，輸尿管（ureter）進入骨盆腔，最終進入膀胱\n(B) 正確，薦正中動脈（median sacral artery）沿薦骨前面下行，進入骨盆腔\n(C) 錯誤，下直腸動脈（inferior rectal artery）供應肛門周圍組織，不進入骨盆腔\n(D) 正確，卵巢動脈（ovarian artery）進入骨盆腔供應卵巢",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1715"
+  },
+  {
+    "id": 1112124,
+    "question": "24. 下列何者不是髂內動脈（internal iliac artery）的分支？",
+    "options": {
+      "A": "深髂迴旋動脈（deep circumflex iliac artery）",
+      "B": "髂腰動脈（iliolumbar artery）",
+      "C": "臀上動脈（superior gluteal artery）",
+      "D": "臀下動脈（inferior gluteal artery）"
+    },
+    "answer": "A",
+    "explanation": "髂內動脈是骨盆腔內臟器官的主要血液供應來源。深髂迴旋動脈來自髂外動脈，不是髂內動脈的分支。\n(A) 錯誤，深髂迴旋動脈（deep circumflex iliac artery）是髂外動脈（external iliac artery）的分支，不是髂內動脈的分支\n(B) 正確，髂腰動脈（iliolumbar artery）是髂內動脈的分支\n(C) 正確，臀上動脈（superior gluteal artery）是髂內動脈的分支\n(D) 正確，臀下動脈（inferior gluteal artery）是髂內動脈的分支",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1716"
+  },
+  {
+    "id": 1112125,
+    "question": "25. 下列何者受損對肛管（anal canal）管壁肌肉的收縮影響最大？",
+    "options": {
+      "A": "腰內臟神經（lumbar splanchnic nerve）",
+      "B": "骨盆內臟神經（pelvic splanchnic nerve）",
+      "C": "薦交感神經幹（sacral sympathetic trunk）",
+      "D": "會陰神經（perineal nerve）"
+    },
+    "answer": "B",
+    "explanation": "肛管的肌肉收縮主要受副交感神經控制。骨盆內臟神經是主要的副交感神經，負責控制肛門內括約肌和直腸平滑肌的收縮。\n(A) 錯誤，腰內臟神經（lumbar splanchnic nerve）主要是交感神經\n(B) 正確，骨盆內臟神經（pelvic splanchnic nerve）是副交感神經，對肛管管壁肌肉收縮影響最大\n(C) 錯誤，薦交感神經幹（sacral sympathetic trunk）是交感神經系統\n(D) 錯誤，會陰神經（perineal nerve）主要支配肛門外括約肌，不是管壁肌肉",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1717"
+  },
+  {
+    "id": 1112126,
+    "question": "26. 下列有關大隱靜脈（great saphenous vein）的敘述，何者錯誤？",
+    "options": {
+      "A": "一般起源於足背靜脈弓（dorsal venous arch）",
+      "B": "於內踝（medial malleolus）的後側向上延伸",
+      "C": "會與小隱靜脈（small saphenous vein）形成吻合（anastomosis）",
+      "D": "最終匯入股靜脈（femoral vein）"
+    },
+    "answer": "B",
+    "explanation": "大隱靜脈是下肢最長的淺靜脈，其走行路徑有特定的解剖規律。它在內踝前側而非後側向上延伸。\n(A) 正確，大隱靜脈起源於足背靜脈弓（dorsal venous arch）\n(B) 錯誤，大隱靜脈於內踝（medial malleolus）的前側向上延伸，不是後側\n(C) 正確，大隱靜脈會與小隱靜脈形成吻合\n(D) 正確，大隱靜脈最終匯入股靜脈（femoral vein）",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1718"
+  },
+  {
+    "id": 1112127,
+    "question": "27. 下列那一條神經所支配的肌肉群同時具有屈曲上臂與前臂作用（flex arm and forearm）﹖",
+    "options": {
+      "A": "腋神經（axillary nerve）",
+      "B": "胸背神經（thoracodorsal nerve）",
+      "C": "肌皮神經（musculocutaneous nerve）",
+      "D": "上肩胛下神經（upper subscapular nerve）"
+    },
+    "answer": "C",
+    "explanation": "肌皮神經支配的肌肉群包括肱二頭肌、肱肌和喙肱肌，這些肌肉既能屈曲上臂也能屈曲前臂。\n(A) 錯誤，腋神經（axillary nerve）主要支配三角肌，主要作用是外展上臂\n(B) 錯誤，胸背神經（thoracodorsal nerve）支配背闊肌，主要作用是內收和後伸上臂\n(C) 正確，肌皮神經（musculocutaneous nerve）支配的肌肉群同時具有屈曲上臂與前臂的作用\n(D) 錯誤，上肩胛下神經（upper subscapular nerve）支配肩胛下肌，主要作用是內旋上臂",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1719"
+  },
+  {
+    "id": 1112128,
+    "question": "28. 下列何者的肌腱繞過載距突（sustentaculum tali）下方的溝槽進入足底？",
+    "options": {
+      "A": "屈長肌（flexor hallucis longus）",
+      "B": "屈趾長肌（flexor digitorum longus）",
+      "C": "屈短肌（flexor hallucis brevis）",
+      "D": "屈趾短肌（flexor digitorum brevis）"
+    },
+    "answer": "A",
+    "explanation": "載距突是距骨的重要解剖標誌，其下方有溝槽供特定肌腱通過。屈拇長肌的肌腱會繞過載距突下方的溝槽進入足底。\n(A) 正確，屈拇長肌（flexor hallucis longus）的肌腱繞過載距突（sustentaculum tali）下方的溝槽進入足底\n(B) 錯誤，屈趾長肌（flexor digitorum longus）的肌腱走行路徑不同\n(C) 錯誤，屈拇短肌（flexor hallucis brevis）位於足底，不經過載距突下方\n(D) 錯誤，屈趾短肌（flexor digitorum brevis）位於足底，不經過載距突下方",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1720"
+  },
+  {
+    "id": 1112129,
+    "question": "29. 下列甲、乙、丙三個椎骨，在脊柱由頭端往尾端的排列順序為何？",
+    "options": {
+      "A": "甲→乙→丙",
+      "B": "丙→乙→甲",
+      "C": "乙→甲→丙",
+      "D": "丙→甲→乙"
+    },
+    "answer": "D",
+    "explanation": "根據椎骨的形態特徵可以判斷其在脊柱中的位置。通過觀察椎體大小、橫突形態和棘突特徵，可以確定甲、乙、丙三個椎骨的排列順序。\n(A) 錯誤，不符合脊柱由頭端往尾端的解剖排列\n(B) 錯誤，不符合脊柱由頭端往尾端的解剖排列\n(C) 錯誤，不符合脊柱由頭端往尾端的解剖排列\n(D) 正確，在脊柱由頭端往尾端的排列順序為丙→甲→乙",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "images": [
+      "./image/111-2-1-29.jpg"
+    ],
+    "group_id": "group_1721"
+  },
+  {
+    "id": 1112130,
+    "question": "30. 股骨大轉子（greater trochanter）碎裂時，對下列何者的功能影響最小？",
+    "options": {
+      "A": "臀大肌（gluteus maximus）",
+      "B": "臀小肌（gluteus minimus）",
+      "C": "梨狀肌（piriformis）",
+      "D": "閉孔內肌（obturator internus）"
+    },
+    "answer": "A",
+    "explanation": "股骨大轉子是多條肌肉的附著點。臀大肌主要附著於股骨的臀肌粗隆和髂脛束，對大轉子的依賴性較小。\n(A) 正確，臀大肌（gluteus maximus）主要附著於臀肌粗隆，對股骨大轉子碎裂的影響最小\n(B) 錯誤，臀小肌（gluteus minimus）附著於大轉子，碎裂會明顯影響其功能\n(C) 錯誤，梨狀肌（piriformis）附著於大轉子，碎裂會影響其功能\n(D) 錯誤，閉孔內肌（obturator internus）附著於大轉子，碎裂會影響其功能",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1722"
+  },
+  {
+    "id": 1112131,
+    "question": "31. 下列何者起自屈指深肌（flexor digitorum profundus）的肌腱？",
+    "options": {
+      "A": "掌短肌（palmaris brevis）",
+      "B": "骨間背側肌（dorsal interosseous muscle）",
+      "C": "骨間掌側肌（palmar interosseous muscle）",
+      "D": "蚓狀肌（lumbrical muscle）"
+    },
+    "answer": "D",
+    "explanation": "蚓狀肌是手部的小肌肉，負責掌指關節屈曲和指間關節伸展。蚓狀肌的特殊之處在於它起自屈指深肌的肌腱，而不是骨骼。\n(A) 錯誤，掌短肌（palmaris brevis）起自手掌筋膜，不是從屈指深肌肌腱起始\n(B) 錯誤，骨間背側肌（dorsal interosseous muscle）起自掌骨，不是從屈指深肌肌腱起始\n(C) 錯誤，骨間掌側肌（palmar interosseous muscle）起自掌骨，不是從屈指深肌肌腱起始\n(D) 正確，蚓狀肌（lumbrical muscle）起自屈指深肌（flexor digitorum profundus）的肌腱",
+    "tags": [
+      "111-2(一)",
+      "解剖"
+    ],
+    "group_id": "group_1723"
+  },
+  {
+    "id": 1112132,
+    "question": "32. 下列關於胚胎之胸心包膜（pleuropericardial membrane）的敘述，何項錯誤？",
+    "options": {
+      "A": "形成漿液心包膜的臟層（visceral layer of serous pericardium）",
+      "B": "此膜內包含有總主靜脈（common cardinal vein）",
+      "C": "此膜內包含有膈神經（phrenic nerve）",
+      "D": "此膜所形成之構造分隔胸膜腔與心包腔"
+    },
+    "answer": "A",
+    "explanation": "胸心包膜是胚胎發育過程中分隔胸膜腔和心包腔的重要結構。這個膜會形成纖維心包膜，而不是漿液心包膜的臟層。\n(A) 錯誤，胸心包膜（pleuropericardial membrane）形成纖維心包膜（fibrous pericardium），不是漿液心包膜的臟層\n(B) 正確，此膜內包含有總主靜脈（common cardinal vein）\n(C) 正確，此膜內包含有膈神經（phrenic nerve）\n(D) 正確，此膜所形成之構造分隔胸膜腔與心包腔",
+    "tags": [
+      "111-2(一)",
+      "胚胎"
+    ],
+    "group_id": "group_1724"
+  },
+  {
+    "id": 1112133,
+    "question": "33. 下列那一項構造衍生自第三咽弓（pharyngeal arch）？",
+    "options": {
+      "A": "莖突舌骨韌帶（stylohyoid ligament）",
+      "B": "舌骨之小角（lesser cornu of hyoid bone）",
+      "C": "舌骨之大角（greater cornu of hyoid bone）",
+      "D": "甲狀軟骨（thyroid cartilage）"
+    },
+    "answer": "C",
+    "explanation": "咽弓是胚胎發育過程中頭頸部結構形成的重要組織。第三咽弓主要形成舌骨的大角和舌骨體的下部。\n(A) 錯誤，莖突舌骨韌帶（stylohyoid ligament）衍生自第二咽弓\n(B) 錯誤，舌骨小角（lesser cornu of hyoid bone）衍生自第二咽弓\n(C) 正確，舌骨大角（greater cornu of hyoid bone）衍生自第三咽弓\n(D) 錯誤，甲狀軟骨（thyroid cartilage）衍生自第四和第六咽弓",
+    "tags": [
+      "111-2(一)",
+      "胚胎"
+    ],
+    "group_id": "group_1725"
+  },
+  {
+    "id": 1112134,
+    "question": "34. 在胚胎發育至第幾週時，小腸會由體外返回腹腔內？",
+    "options": {
+      "A": "第四週",
+      "B": "第七週",
+      "C": "第十週",
+      "D": "第十二週"
+    },
+    "answer": "C",
+    "explanation": "胚胎發育過程中，小腸會暫時突出到體外形成生理性臍疝，這是正常的發育過程。在第10週左右，小腸會回到腹腔內。\n(A) 錯誤，第四週時小腸尚未完全形成\n(B) 錯誤，第七週時小腸仍在體外\n(C) 正確，在胚胎發育第十週時，小腸會由體外返回腹腔內\n(D) 錯誤，第十二週時小腸已經回到腹腔內",
+    "tags": [
+      "111-2(一)",
+      "胚胎"
+    ],
+    "group_id": "group_1726"
+  },
+  {
+    "id": 1112135,
+    "question": "35. 在胚胎時期心房間隔（interatrial septum）的發育，其第一孔（foramen primum）之封閉是由於：",
+    "options": {
+      "A": "第一中隔（septum primum）與心內膜墊（endocardial cushion）之融合",
+      "B": "第二中隔（septum secundum）與心內膜墊（endocardial cushion）之融合",
+      "C": "第一中隔（septum primum）之新細胞增生",
+      "D": "第一中隔（septum primum）與第二中隔（septum secundum）之融合"
+    },
+    "answer": "A",
+    "explanation": "心房間隔的發育是一個複雜的過程，涉及多個結構的形成和融合。第一孔的封閉是由第一中隔向下生長與心內膜墊融合造成的。\n(A) 正確，第一孔（foramen primum）的封閉是由於第一中隔（septum primum）與心內膜墊（endocardial cushion）的融合\n(B) 錯誤，第二中隔與心內膜墊的融合不是第一孔封閉的原因\n(C) 錯誤，單純的第一中隔細胞增生不足以封閉第一孔\n(D) 錯誤，第一中隔與第二中隔的融合發生在出生後，不是第一孔封閉的原因",
+    "tags": [
+      "111-2(一)",
+      "胚胎"
+    ],
+    "group_id": "group_1727"
+  },
+  {
+    "id": 1112136,
+    "question": "36. 下列那一項構造，不包含於鼓膜（tympanic membrane）的發育？",
+    "options": {
+      "A": "第一咽溝（pharyngeal groove）的外胚層（ectoderm）",
+      "B": "第二咽溝（pharyngeal groove）的外胚層（ectoderm）",
+      "C": "第一咽囊（pharyngeal pouch）的內胚層（endoderm）",
+      "D": "第一和第二咽弓（pharyngeal arch）的間葉組織（mesenchyme）"
+    },
+    "answer": "B",
+    "explanation": "鼓膜的發育涉及三個胚層的參與：外胚層、間葉組織和內胚層。第二咽溝的外胚層不參與鼓膜的形成。\n(A) 正確，第一咽溝的外胚層參與鼓膜外層的形成\n(B) 錯誤，第二咽溝（pharyngeal groove）的外胚層不參與鼓膜的發育\n(C) 正確，第一咽囊的內胚層參與鼓膜內層的形成\n(D) 正確，第一和第二咽弓的間葉組織參與鼓膜中層的形成",
+    "tags": [
+      "111-2(一)",
+      "胚胎"
+    ],
+    "group_id": "group_1728"
+  },
+  {
+    "id": 1112137,
+    "question": "37. 骨骼肌肌梭（muscle spindle）之內鞘（internal capsule）所包覆的構造，不包含：",
+    "options": {
+      "A": "運動終板（motor end plate）",
+      "B": "環螺旋末梢（annulospiral ending）",
+      "C": "核鏈纖維（nuclear chain fiber）",
+      "D": "核袋纖維（nuclear bag fiber）"
+    },
+    "answer": "A",
+    "explanation": "肌梭是骨骼肌內的本體感受器，其內鞘包覆多種結構但不包含運動終板。運動終板位於梭外肌纖維上，不在肌梭內部。\n(A) 錯誤，運動終板（motor end plate）位於梭外肌纖維，不包含在肌梭內鞘中\n(B) 正確，環螺旋末梢（annulospiral ending）是肌梭內的感受器結構\n(C) 正確，核鏈纖維（nuclear chain fiber）是肌梭內的梭內肌纖維\n(D) 正確，核袋纖維（nuclear bag fiber）是肌梭內的梭內肌纖維",
+    "tags": [
+      "111-2(一)",
+      "組織"
+    ],
+    "group_id": "group_1729"
+  },
+  {
+    "id": 1112138,
+    "question": "38. 將分泌物質與細胞一併釋放至腺體管腔（lumen）的分泌方式是：",
+    "options": {
+      "A": "局部分泌（merocrine secretion）",
+      "B": "頂部分泌（apocrine secretion）",
+      "C": "全分泌（holocrine secretion）",
+      "D": "內分泌（endocrine secretion）"
+    },
+    "answer": "C",
+    "explanation": "腺體的分泌方式分為三種類型。全分泌是指整個細胞連同分泌物一起釋放到腺體管腔中，細胞在分泌過程中會死亡。\n(A) 錯誤，局部分泌（merocrine secretion）是指分泌物通過胞吐作用釋放，細胞本身不受損\n(B) 錯誤，頂部分泌（apocrine secretion）是指細胞頂端部分連同分泌物一起釋放\n(C) 正確，全分泌（holocrine secretion）將分泌物質與細胞一併釋放至腺體管腔\n(D) 錯誤，內分泌（endocrine secretion）是指分泌物直接釋放到血液中",
+    "tags": [
+      "111-2(一)",
+      "組織"
+    ],
+    "group_id": "group_1730"
+  },
+  {
+    "id": 1112139,
+    "question": "39. 長骨骨幹（diaphysis of long bone）的直徑加粗（increase in diameter），最主要是下列何者的增生與分化所促 成？",
+    "options": {
+      "A": "骨外膜（periosteum）",
+      "B": "骨內膜（endosteum）",
+      "C": "骨幹骺端（metaphysis）",
+      "D": "骨骺板（epiphyseal plate）"
+    },
+    "answer": "A",
+    "explanation": "長骨直徑的增粗主要通過骨外膜的成骨細胞活動來實現。骨外膜內層的成骨細胞會在骨表面沉積新的骨組織，使骨幹直徑增加。\n(A) 正確，長骨骨幹直徑加粗主要是骨外膜（periosteum）的增生與分化所促成\n(B) 錯誤，骨內膜（endosteum）主要參與骨髓腔的改建，不是直徑增粗的主要因素\n(C) 錯誤，骨幹骺端（metaphysis）主要參與長度生長，不是直徑增粗的主要部位\n(D) 錯誤，骨骺板（epiphyseal plate）主要負責骨的縱向生長，不是直徑增粗的主要結構",
+    "tags": [
+      "111-2(一)",
+      "組織"
+    ],
+    "group_id": "group_1731"
+  },
+  {
+    "id": 1112140,
+    "question": "40. 下列有關膜性迷路（membranous labyrinth）的敘述，何者錯誤？",
+    "options": {
+      "A": "壺腹嵴（crista ampullaris）是頭部角加速運動（angular acceleration）的感覺受器",
+      "B": "頂帽（cupula）的耳石（otolith）是頭部直線加速運動（linear acceleration）的感覺受器",
+      "C": "前庭階（scala vestibule）與鼓室階（scala tympani）於蝸孔（helicotrema）彼此相通",
+      "D": "耳蝸導管（cochlear duct）內，流動的液體為內淋巴液（endolymph）"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "膜性迷路包含前庭器官和耳蝸，負責平衡和聽覺功能。此題有兩個錯誤選項。\n(A) 正確，壺腹嵴（crista ampullaris）確實是頭部角加速運動的感覺受器\n(B) 錯誤，頂帽（cupula）沒有耳石，耳石（otolith）存在於橢圓囊和球囊中，才是頭部直線加速運動的感覺受器\n(C) 錯誤，前庭階（scala vestibuli）與鼓室階（scala tympani）內流動的是外淋巴液，不是內淋巴液\n(D) 正確，耳蝸導管（cochlear duct）內流動的液體確實是內淋巴液",
+    "tags": [
+      "111-2(一)",
+      "組織"
+    ],
+    "group_id": "group_1732"
+  },
+  {
+    "id": 1112141,
+    "question": "41. 下列有關小動脈（arteriole）和小靜脈（venule）之敘述，何者正確？",
+    "options": {
+      "A": "兩者的血管內膜（tunica intima）均有單層的內皮細胞（endothelial cells）",
+      "B": "兩者均有數層的骨骼肌細胞（skeletal muscle cells）和彈性板（elastic lamellae）組成",
+      "C": "兩者在血管壁上有顯著波浪狀的彈性內膜（internal elastic membrane）",
+      "D": "兩者均有平滑肌細胞（smooth muscle cells）所形成的微血管前括約肌（precapillary sphincter），控制血液進 入微血管"
+    },
+    "answer": "A",
+    "explanation": "小動脈和小靜脈都是微循環系統的重要組成部分，兩者在結構上有相似之處也有差異。血管內膜的內皮細胞是所有血管的基本結構。\n(A) 正確，小動脈（arteriole）和小靜脈（venule）的血管內膜（tunica intima）均有單層的內皮細胞（endothelial cells）\n(B) 錯誤，血管壁主要由平滑肌細胞組成，不是骨骼肌細胞（skeletal muscle cells）\n(C) 錯誤，小動脈和小靜脈的彈性內膜不會呈現顯著波浪狀\n(D) 錯誤，微血管前括約肌（precapillary sphincter）主要位於微血管入口處，不是小動脈和小靜脈都具有的結構",
+    "tags": [
+      "111-2(一)",
+      "組織"
+    ],
+    "group_id": "group_1733"
+  },
+  {
+    "id": 1112142,
+    "question": "42. 下列有關舌輪廓乳突（circumvallate papillae）的敘述，何者正確？",
+    "options": {
+      "A": "分布在舌外側且與舌長軸平行",
+      "B": "含有許多味蕾（taste bud）",
+      "C": "是舌乳突（papilla）中最小且數量最多",
+      "D": "表面覆有單層扁平上皮（simple squamous epithelium）"
+    },
+    "answer": "B",
+    "explanation": "舌輪廓乳突是舌背最大的乳突，呈V字型排列在舌根部。這些乳突含有大量味蕾，是味覺功能的重要結構。\n(A) 錯誤，舌輪廓乳突（circumvallate papillae）分布在舌背後部呈V字型排列，不是在舌外側平行排列\n(B) 正確，舌輪廓乳突含有許多味蕾（taste bud）\n(C) 錯誤，舌輪廓乳突是舌乳突中最大的，數量約7-12個，不是最小且最多的\n(D) 錯誤，舌輪廓乳突表面覆蓋復層扁平上皮（stratified squamous epithelium），不是單層扁平上皮",
+    "tags": [
+      "111-2(一)",
+      "組織"
+    ],
+    "group_id": "group_1734"
+  },
+  {
+    "id": 1112143,
+    "question": "43. 下列有關十二指腸（duodenum）、空腸（jejunum）、迴腸（ileum）三者的結構比較，何項正確？",
+    "options": {
+      "A": "空腸（jejunum）有最多的杯狀細胞（goblet cells）",
+      "B": "迴腸（ileum）有最多的絨毛（villi）",
+      "C": "十二指腸（duodenum）有Brunner's gland",
+      "D": "十二指腸（duodenum）有最多且明顯的Peyer's patch"
+    },
+    "answer": "C",
+    "explanation": "十二指腸、空腸、迴腸是小腸的三個部分，各有其特殊的組織學特徵。十二指腸具有獨特的Brunner腺，這是其他小腸段落所沒有的。\n(A) 錯誤，迴腸（ileum）有最多的杯狀細胞（goblet cells），不是空腸\n(B) 錯誤，空腸（jejunum）有最多的絨毛（villi），不是迴腸\n(C) 正確，十二指腸（duodenum）有Brunner腺（十二指腸腺），這是其特有的結構\n(D) 錯誤，迴腸有最多且明顯的Peyer淋巴結（Peyer's patches），不是十二指腸",
+    "tags": [
+      "111-2(一)",
+      "組織"
+    ],
+    "group_id": "group_1735"
+  },
+  {
+    "id": 1112144,
+    "question": "44. 下列有關腎臟的遠曲小管（distal convoluted tubule）和近曲小管（proximal convoluted tubule）的上皮比較， 何項正確？",
+    "options": {
+      "A": "遠曲小管的上皮細胞內有許多的溶酶體（lysosomes），細胞質較濃染",
+      "B": "遠曲小管上皮細胞的細胞核（nucleus）較靠近管腔（lumen）表面",
+      "C": "兩者上皮細胞之間的界線均很明顯",
+      "D": "兩者上皮細胞表面均有很多纖毛（cilia）"
+    },
+    "answer": "B",
+    "explanation": "腎小管的近曲小管和遠曲小管在組織學上有明顯差異。遠曲小管的細胞較小，細胞核位置較靠近管腔表面，而近曲小管的細胞核位置較靠近基底部。\n(A) 錯誤，近曲小管上皮細胞內有許多溶酶體（lysosomes）和粒線體，細胞質較濃染，不是遠曲小管\n(B) 正確，遠曲小管上皮細胞的細胞核（nucleus）較靠近管腔（lumen）表面\n(C) 錯誤，近曲小管上皮細胞之間的界線較不明顯，遠曲小管的界線較明顯\n(D) 錯誤，腎小管上皮細胞表面有微絨毛（microvilli），不是纖毛（cilia）",
+    "tags": [
+      "111-2(一)",
+      "組織"
+    ],
+    "group_id": "group_1736"
+  },
+  {
+    "id": 1112145,
+    "question": "45. 下列有關黃體（corpus luteum）的敘述，何者錯誤？",
+    "options": {
+      "A": "顆粒層黃體細胞（granulosa lutein cells）的直徑，比卵泡鞘黃體細胞（theca lutein cells）為長",
+      "B": "若無受精發生，則黃體逐漸退化而成白體（corpus albicans）",
+      "C": "若有受精及著床發生，黃體在懷孕初期時會持續生長且變大",
+      "D": "次級卵泡（secondary follicle）之顆粒層細胞（granulosa cells）及內鞘層（theca interna）細胞在排卵前已完 全分化為黃體細胞（luteal cells）"
+    },
+    "answer": "D",
+    "explanation": "黃體是排卵後由卵泡轉變而成的內分泌結構。顆粒細胞和內鞘層細胞在排卵時並未完全分化為黃體細胞，而是在排卵後才逐漸分化。\n(A) 正確，顆粒層黃體細胞（granulosa lutein cells）的直徑比卵泡鞘黃體細胞（theca lutein cells）大\n(B) 正確，若無受精發生，黃體會退化成白體（corpus albicans）\n(C) 正確，若有受精及著床，黃體在懷孕初期會持續生長變大\n(D) 錯誤，次級卵泡的顆粒層細胞和內鞘層細胞在排卵後才分化為黃體細胞，排卵前並未完全分化",
+    "tags": [
+      "111-2(一)",
+      "組織"
+    ],
+    "group_id": "group_1737"
+  },
+  {
+    "id": 1112146,
+    "question": "46. 下列何者會與細精管的基底板（basal lamina of seminiferous tubule）相接觸？",
+    "options": {
+      "A": "精母細胞（spermatocyte）",
+      "B": "精原細胞（spermatogonium）",
+      "C": "精細胞（spermatid）",
+      "D": "精子（spermatozoa）"
+    },
+    "answer": "B",
+    "explanation": "細精管內的精子發生過程遵循特定的空間排列，精原細胞位於基底部，隨著分化程度增加逐漸移向管腔。只有精原細胞直接接觸基底板。\n(A) 錯誤，精母細胞（spermatocyte）位於精原細胞之上，不直接接觸基底板\n(B) 正確，精原細胞（spermatogonium）位於細精管的基底部，與基底板（basal lamina）相接觸\n(C) 錯誤，精細胞（spermatid）位於更靠近管腔的位置，不接觸基底板\n(D) 錯誤，精子（spermatozoa）位於管腔內，不接觸基底板",
+    "tags": [
+      "111-2(一)",
+      "組織"
+    ],
+    "group_id": "group_1738"
+  },
+  {
+    "id": 1112147,
+    "question": "47. 就低溫下幫助維持細胞膜的流動性（membrane fluidity）而言，下列何種化學物質最為重要？",
+    "options": {
+      "A": "飽和脂肪酸",
+      "B": "膽固醇",
+      "C": "穿膜蛋白",
+      "D": "周圍膜蛋白"
+    },
+    "answer": "B",
+    "explanation": "細胞膜的流動性受到溫度和膜成分的影響。在低溫下，膽固醇能夠維持膜的流動性，防止膜過度僵化。\n(A) 錯誤，飽和脂肪酸在低溫下會使膜變得更僵硬，降低流動性\n(B) 正確，膽固醇在低溫下幫助維持細胞膜的流動性（membrane fluidity）\n(C) 錯誤，穿膜蛋白主要功能不是維持膜流動性\n(D) 錯誤，周圍膜蛋白主要功能不是維持膜流動性",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1739"
+  },
+  {
+    "id": 1112148,
+    "question": "48. 下列何者最不可能造成視野缺失（scotoma）？",
+    "options": {
+      "A": "散光（astigmatism）",
+      "B": "斜視（strabismus）",
+      "C": "黃斑部退化（macular degeneration）",
+      "D": "左側側膝核附近發生缺血缺氧中風（ischemic, hypoxic stroke around left lateral geniculate nucleus, LGN）"
+    },
+    "answer": "A",
+    "explanation": "視野缺失是指視野中某個區域的視覺功能喪失。散光是屈光不正的一種，會造成視覺模糊，但不會造成特定區域的視野缺失。\n(A) 正確，散光（astigmatism）是屈光不正，造成視覺模糊而非視野缺失（scotoma）\n(B) 錯誤，斜視（strabismus）可能造成複視或視野缺失\n(C) 錯誤，黃斑部退化（macular degeneration）會造成中心視野缺失\n(D) 錯誤，左側外膝狀核缺血中風會造成右側視野缺失",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1740"
+  },
+  {
+    "id": 1112149,
+    "question": "49. 下列有關耳蝸構造及功能的描述，何者最不適當？",
+    "options": {
+      "A": "內毛細胞數量通常較外毛細胞少，卻主要負責聽覺刺激的分析，外毛細胞則和在背景噪音下刻意傾聽特定聲 音訊息有關",
+      "B": "scala media內的液體是內淋巴液，鉀離子的濃度遠比鈉離子為高",
+      "C": "越接近卵圓窗和圓形窗的basilar membrane越狹窄，負責越高頻聲音的登錄（encoding）",
+      "D": "耳蝸尖細的一端有一個孔道，使內淋巴液得以在scala vestibuli和scala tympani兩腔中相通"
+    },
+    "answer": "D",
+    "explanation": "耳蝸的結構複雜，包含三個腔室。在耳蝸頂端的蝸孔，外淋巴液在前庭階和鼓室階之間相通，但內淋巴液在中階（scala media）中是封閉的。\n(A) 正確，內毛細胞數量較少但負責聽覺分析，外毛細胞與選擇性聽覺有關\n(B) 正確，中階（scala media）內是內淋巴液，鉀離子濃度高於鈉離子\n(C) 正確，靠近卵圓窗的基底膜較狹窄，負責高頻聲音編碼\n(D) 錯誤，蝸孔（helicotrema）使外淋巴液在前庭階和鼓室階相通，不是內淋巴液相通",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1741"
+  },
+  {
+    "id": 1112150,
+    "question": "50. Enteric nervous system應視為自主神經的一支，其和消化道運動控制較相關的次系統是下列何項？",
+    "options": {
+      "A": "choroid plexus",
+      "B": "submucosal plexus",
+      "C": "brachial plexus",
+      "D": "myenteric plexus"
+    },
+    "answer": "D",
+    "explanation": "腸道神經系統包含黏膜下神經叢和肌間神經叢。肌間神經叢主要控制腸道的運動功能，包括蠕動和收縮。\n(A) 錯誤，脈絡叢（choroid plexus）與腦脊髓液分泌有關，不屬於腸道神經系統\n(B) 錯誤，黏膜下神經叢（submucosal plexus）主要控制分泌功能\n(C) 錯誤，臂神經叢（brachial plexus）支配上肢，與消化道無關\n(D) 正確，肌間神經叢（myenteric plexus）與消化道運動控制較相關",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1742"
+  },
+  {
+    "id": 1112151,
+    "question": "51. 下列有關腦電圖（EEG）的敘述，何者最不適當？",
+    "options": {
+      "A": "參照電極及紀錄電極可置放於頭皮上方",
+      "B": "紀錄電極所量測到的電位（或電壓）改變強度（波的振幅），一般是在微伏特（microV）的尺度範圍",
+      "C": "警醒或專心從事思考時，在頂葉或枕葉的紀錄電極常會呈現出頻率極低（＜2 Hz）的波形",
+      "D": "紀錄電極可反映出電極下方附近，大腦皮質部位神經元之細胞外的淨電流活動"
+    },
+    "answer": "C",
+    "explanation": "腦電圖反映大腦皮質神經元的電活動，清醒專注時應出現高頻率波形。\n(A) 正確，參照電極和記錄電極都可以放置在頭皮上方進行非侵入性記錄\n(B) 正確，腦電圖記錄到的電位變化確實在微伏特（microV）的範圍內\n(C) 錯誤，警醒或專心思考時，頂葉或枕葉的記錄電極會呈現較高頻率（通常β波，13-30 Hz）的波形，而非極低頻率（<2 Hz）\n(D) 正確，記錄電極確實反映電極下方大腦皮質神經元的細胞外淨電流活動",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1743"
+  },
+  {
+    "id": 1112152,
+    "question": "52. 促使睡眠開始及維持睡眠的關鍵之一是下視丘preoptic area的神經活動。下列對preoptic area的描述，何者最為 適當？",
+    "options": {
+      "A": "其神經活動與體溫調節及性腺荷爾蒙之分泌有關",
+      "B": "其神經元多分泌orexin做為efferent fibers聯外用的化學物質",
+      "C": "其神經活動在睡眠開始後會變得低下，且遠低於意識清醒時",
+      "D": "其神經活動和reticular activating system中神經元的活動會有互相增強（reciprocal facilitation）的現象"
+    },
+    "answer": "A",
+    "explanation": "視前區（preoptic area）是下視丘的重要區域，參與多種生理調節功能。\n(A) 正確，視前區神經活動確實與體溫調節及性腺荷爾蒙分泌調節有密切關係\n(B) 錯誤，分泌食慾素（orexin）的主要是下視丘外側區，而非視前區\n(C) 錯誤，視前區在睡眠期間神經活動會增加，不是降低\n(D) 錯誤，視前區與網狀活化系統（reticular activating system）是相互抑制（reciprocal inhibition）而非相互增強",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1744"
+  },
+  {
+    "id": 1112153,
+    "question": "53. 不考慮離子之主動運輸等情況之一般生理離子條件下，若神經細胞在靜止膜電位為 -60 mV時，鈉離子與鉀離 子的被動運輸之主要動態會是：",
+    "options": {
+      "A": "鈉、鉀離子會漏進細胞",
+      "B": "鈉、鉀離子會漏出細胞",
+      "C": "鈉離子漏出細胞，鉀離子漏進細胞",
+      "D": "鉀離子漏出細胞，鈉離子漏進細胞"
+    },
+    "answer": "D",
+    "explanation": "在靜止膜電位-60 mV時，需考慮各離子的平衡電位和膜電位的關係。\n(A) 錯誤，鉀離子會漏出細胞，鈉離子會漏進細胞\n(B) 錯誤，鈉離子在此膜電位下會漏進細胞\n(C) 錯誤，鉀離子會漏出細胞，而非漏進細胞\n(D) 正確，在-60 mV時，鉀離子因為接近其平衡電位（約-90 mV）會漏出細胞，鈉離子因為遠離其平衡電位（約+60 mV）會漏進細胞",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1745"
+  },
+  {
+    "id": 1112154,
+    "question": "54. 單胺氧化酶抑制劑（monoamine oxidase inhibitors）類藥物，會增加下列何種神經傳導物質的含量？",
+    "options": {
+      "A": "乙醯膽鹼（acetylcholine）",
+      "B": "麩胺酸（glutamate）",
+      "C": "甘胺酸（glycine）",
+      "D": "正腎上腺素（norepinephrine）"
+    },
+    "answer": "D",
+    "explanation": "單胺氧化酶（monoamine oxidase）負責分解單胺類神經傳導物質。\n(A) 錯誤，乙醯膽鹼（acetylcholine）主要由乙醯膽鹼酯酶分解，不是單胺氧化酶的作用對象\n(B) 錯誤，麩胺酸（glutamate）不是單胺類神經傳導物質\n(C) 錯誤，甘胺酸（glycine）不是單胺類神經傳導物質\n(D) 正確，正腎上腺素（norepinephrine）是單胺類神經傳導物質，單胺氧化酶抑制劑會阻止其分解，增加其含量",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1746"
+  },
+  {
+    "id": 1112155,
+    "question": "55. 下列有關負重（load）與等張單次收縮（isotonic twitch contraction）之間關係的敘述，何者錯誤？",
+    "options": {
+      "A": "負重越重時，收縮潛伏期（latent period）會越長",
+      "B": "負重越重時，收縮速度（shortening velocity）會越慢",
+      "C": "負重越重時，收縮期間（twitch duration）會越長",
+      "D": "負重越重時，收縮時需要產生的張力就要越大"
+    },
+    "answer": "C",
+    "explanation": "負重與肌肉收縮特性的關係遵循力-速度關係。\n(A) 正確，負重越重時，需要更長時間產生足夠張力克服負重，收縮潛伏期會延長\n(B) 正確，根據力-速度關係，負重越重收縮速度越慢\n(C) 錯誤，負重越重時，收縮期間（twitch duration）會縮短，而非延長\n(D) 正確，負重越重時，肌肉需要產生更大的張力才能克服負重",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1747"
+  },
+  {
+    "id": 1112156,
+    "question": "56. 為一位患者進行抗凝血治療，下列何者最不予考慮？",
+    "options": {
+      "A": "aspirin",
+      "B": "vitamin K",
+      "C": "prostacyclin",
+      "D": "heparin"
+    },
+    "answer": "B",
+    "explanation": "抗凝血治療需要使用促進抗凝或抑制凝血的藥物。\n(A) 正確，阿斯匹靈（aspirin）可抑制血小板聚集，具抗凝血作用\n(B) 錯誤，維生素K是促凝血因子，會促進凝血酶原等凝血因子合成，不適用於抗凝血治療\n(C) 正確，前列環素（prostacyclin）可抑制血小板聚集，具抗凝血作用\n(D) 正確，肝素（heparin）是強效抗凝血劑",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1748"
+  },
+  {
+    "id": 1112157,
+    "question": "57. 有關心電圖中各個波形與波間距離所代表的生理現象，下列何者錯誤？",
+    "options": {
+      "A": "P波反映心房再極化",
+      "B": "T波反映心室再極化",
+      "C": "QRS complex對應於心室動作電位之初生期",
+      "D": "ST interval對應於心室動作電位之高原期（plateau）"
+    },
+    "answer": "A",
+    "explanation": "心電圖各波形代表心臟電活動的不同階段。\n(A) 錯誤，P波反映心房去極化（depolarization），而非再極化；心房再極化通常隱藏在QRS波群中\n(B) 正確，T波確實反映心室再極化\n(C) 正確，QRS波群對應心室動作電位的去極化初期\n(D) 正確，ST區間對應心室動作電位的高原期（plateau phase）",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1749"
+  },
+  {
+    "id": 1112158,
+    "question": "58. 有關主動脈瓣之關閉（aortic valve closure）的敘述，下列何者錯誤？",
+    "options": {
+      "A": "主動脈瓣之關閉產生第二心音",
+      "B": "心室等容舒張期（isovolumic ventricular relaxation）開始於主動脈瓣之關閉",
+      "C": "主動脈瓣之關閉結束了心室射血期（ventricular ejection）",
+      "D": "主動脈瓣關閉之瞬間是主動脈壓最高的時刻"
+    },
+    "answer": "D",
+    "explanation": "主動脈瓣關閉標誌著心室射血期結束，開始等容舒張期。\n(A) 正確，主動脈瓣關閉確實產生第二心音（S2）\n(B) 正確，心室等容舒張期開始於主動脈瓣關閉\n(C) 正確，主動脈瓣關閉結束心室射血期\n(D) 錯誤，主動脈瓣關閉時主動脈壓開始下降，最高的主動脈壓出現在射血期早期",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1750"
+  },
+  {
+    "id": 1112159,
+    "question": "59. 某人參加考試時，因心情緊張導致血壓微幅升高，引起頸動脈竇與主動脈弓感壓接受器放電速率增加，此時 體內循環系統為維持恆定，會產生一連串接續反應過程將血壓朝向正常值回復，該過程中最不可能者為下列 何項？",
+    "options": {
+      "A": "投射到靜脈的交感神經活性減少，導致靜脈收縮減弱，降低靜脈壓，減少靜脈回流",
+      "B": "投射到微動脈的交感神經活性減少，微動脈半徑縮小，減少周邊總阻力",
+      "C": "投射到心臟的副交感神經活性增加，使心跳速率減緩，減少心臟輸出",
+      "D": "投射到心臟的交感神經活性減少，使心室心肌細胞收縮力降低，減少心搏量"
+    },
+    "answer": "B",
+    "explanation": "壓力感受器反射會透過自主神經系統調節來降低血壓。\n(A) 正確，投射到靜脈的交感神經活性減少會使靜脈舒張，降低靜脈回流\n(B) 錯誤，投射到微動脈的交感神經活性減少會使微動脈舒張擴大，而非縮小，從而減少周邊總阻力\n(C) 正確，副交感神經活性增加會使心跳減緩\n(D) 正確，投射到心臟的交感神經活性減少會降低心肌收縮力",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1751"
+  },
+  {
+    "id": 1112160,
+    "question": "60. 某受試者，其氧氣消耗量為每分鐘600毫升（mL/min），肺動脈血氧濃度為每公升140毫升，肱動脈（brachial artery）血氧濃度為每公升200毫升，則此受試者的心輸出量（cardiac output）為多少L/min？",
+    "options": {
+      "A": "4.2",
+      "B": "10",
+      "C": "30",
+      "D": "34.2"
+    },
+    "answer": "B",
+    "explanation": "使用Fick原理計算心輸出量：心輸出量 = 氧消耗量 ÷ 動靜脈氧含量差。\n計算：心輸出量 = 600 mL/min ÷ (200-140) mL/L = 600 ÷ 60 = 10 L/min\n(A) 錯誤，計算結果不是4.2 L/min\n(B) 正確，根據Fick原理計算得出10 L/min\n(C) 錯誤，計算結果不是30 L/min\n(D) 錯誤，計算結果不是34.2 L/min",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1752"
+  },
+  {
+    "id": 1112161,
+    "question": "61. 健康者站立，在其肺容量等於功能肺餘容量（functional residual capacity）時開始吸氣（inspiration），此時吸 入的氣體最容易進入下列何區域的肺泡（alveolus）？",
+    "options": {
+      "A": "肺底（base）處",
+      "B": "肺中段",
+      "C": "肺尖（apex）處",
+      "D": "平均分布於肺臟各處"
+    },
+    "answer": "A",
+    "explanation": "站立時肺部不同區域的通氣分布受重力影響，肺底部更容易擴張。\n(A) 正確，站立時肺底（base）處的肺泡在功能肺餘容量時處於較佳的通氣位置，吸氣時更容易進氣\n(B) 錯誤，肺中段的通氣效率不如肺底部\n(C) 錯誤，肺尖（apex）處由於重力影響，肺泡已相對擴張，進一步擴張的能力較差\n(D) 錯誤，由於重力影響，氣體分布並非平均分布於各處",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1753"
+  },
+  {
+    "id": 1112162,
+    "question": "62. 在正常生理情況下，比較周邊組織微血管（tissue capillary）與肺泡微血管（pulmonary capillary）兩處的紅血 球（erythrocyte），下列敘述何者正確？",
+    "options": {
+      "A": "肺泡微血管內的紅血球，其細胞膜電位（cell membrane potential）更加去極化（depolarization）",
+      "B": "肺泡微血管內的紅血球，其細胞內碳酸氫根離子濃度（[HCO -]）比較高 3",
+      "C": "周邊組織微血管內的紅血球，其細胞內氯離子濃度（[Cl-]）比較低",
+      "D": "周邊組織微血管內的紅血球，其細胞內pH值比較高"
+    },
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": "比較周邊組織和肺泡微血管中紅血球的生理差異，主要涉及氣體交換和離子平衡。\n(A) 錯誤，紅血球膜電位變化與氣體交換位置無直接關係\n(B) 正確，肺泡微血管內紅血球因CO2排出減少，細胞內碳酸氫根離子濃度相對較高\n(C) 正確，周邊組織微血管內紅血球因氯離子移位（chloride shift）現象，細胞內氯離子濃度較低\n(D) 錯誤，周邊組織微血管內紅血球因CO2增加，pH值會較低",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1754"
+  },
+  {
+    "id": 1112163,
+    "question": "63. 下列關於胃泌素（gastrin）的敘述，何者正確？",
+    "options": {
+      "A": "主要製造的器官是小腸（small intestine），以促進胃酸分泌",
+      "B": "主要透過抑制Gi蛋白產生作用，以抑制胃酸分泌",
+      "C": "主要作用於主細胞（chief cell），以抑制胃酸分泌",
+      "D": "主要作用於細胞膜上的膽囊收縮素乙型（CCKB）接受器，以促進胃酸分泌"
+    },
+    "answer": "D",
+    "explanation": "胃泌素（gastrin）是重要的胃腸激素，主要促進胃酸分泌。\n(A) 錯誤，胃泌素主要由胃竇的G細胞製造，不是小腸\n(B) 錯誤，胃泌素主要透過激活Gq蛋白，而非抑制Gi蛋白\n(C) 錯誤，胃泌素主要作用於壁細胞（parietal cell），而非主細胞（chief cell）\n(D) 正確，胃泌素主要作用於細胞膜上的膽囊收縮素乙型（CCKB）受體，促進胃酸分泌",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1755"
+  },
+  {
+    "id": 1112164,
+    "question": "64. 下列何種酵素可幫助麥芽糖（maltose）水解成為葡萄糖 ？",
+    "options": {
+      "A": "蔗糖酶（sucrase）",
+      "B": "乳糖酶（lactase）",
+      "C": "海藻糖酶（trehalase）",
+      "D": "澱粉酶（amylase）"
+    },
+    "answer": "A",
+    "explanation": "不同的雙醣需要特定的酵素進行水解。\n(A) 正確，蔗糖酶（sucrase）除了分解蔗糖外，也具有麥芽糖酶活性，可將麥芽糖水解成葡萄糖\n(B) 錯誤，乳糖酶（lactase）專門分解乳糖成葡萄糖和半乳糖\n(C) 錯誤，海藻糖酶（trehalase）專門分解海藻糖\n(D) 錯誤，澱粉酶（amylase）分解澱粉成較小的糖類，但不直接作用於麥芽糖",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1756"
+  },
+  {
+    "id": 1112165,
+    "question": "65. 有關腎臟的酸鹼平衡功能，下列何者正確？",
+    "options": {
+      "A": "近端腎小管再吸收，遠端腎小管分泌",
+      "B": "近端腎小管分泌，遠端腎小管再吸收",
+      "C": "近端腎小管和遠端腎小管均再吸收",
+      "D": "近端腎小管和遠端腎小管均分泌",
+      "E": "一律給分"
+    },
+    "answer": "E",
+    "explanation": "此題標記為一律給分，表示題目或選項有爭議。\n關於腎臟酸鹼平衡：近端腎小管主要進行HCO3-再吸收，遠端腎小管主要進行H+分泌和HCO3-再生成。\n(E) 正確，此題一律給分",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1757"
+  },
+  {
+    "id": 1112166,
+    "question": "66. 計算純水清除率（clearance of free-water, C<sub>H<sub>2</sub>O</sub> ）的公式是C<sub>H<sub>2</sub>O</sub> = V（urine flow rate）–C<sub>osm</sub>（clearance of osmoles）。而C<sub>osm</sub>之定義為：V×（U<sub>osm</sub>/P<sub>osm</sub>），其中U<sub>osm</sub>與P<sub>osm</sub>分別為尿液與血漿之osmolality。下列何種 生理狀態，最可能使純水清除率（C<sub>H<sub>2</sub>O</sub>）成為負值？",
+    "options": {
+      "A": "飲用大量純水之後",
+      "B": "腎小球濾過率（glomerular filtration rate）增加",
+      "C": "血中抗利尿荷爾蒙（antidiuretic hormone）增加",
+      "D": "溶質清除率（C<sub>osm</sub>）減少"
+    },
+    "answer": "C",
+    "explanation": "純水清除率（free-water clearance）反映腎臟濃縮或稀釋尿液的能力。\n(A) 錯誤，飲用大量純水會產生稀釋尿液，純水清除率為正值\n(B) 錯誤，腎小球濾過率增加通常使純水清除率增加\n(C) 正確，血中抗利尿荷爾蒙（ADH）增加會使腎臟產生濃縮尿液，此時尿液滲透壓高於血漿滲透壓，純水清除率成為負值\n(D) 錯誤，溶質清除率減少不一定使純水清除率變負",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1758"
+  },
+  {
+    "id": 1112167,
+    "question": "67. 我們身體那一部位是二十四小時節律性（circadian rhythms）的重要調節樞紐，且當其受光激活會進而引發松 果體（pineal gland）分泌何種荷爾蒙進行調節運作？",
+    "options": {
+      "A": "腦下腺前葉（anterior pituitary）；多巴胺（dopamine）",
+      "B": "視交叉上核（suprachiasmatic nucleus, SCN）；褪黑素（melatonin）",
+      "C": "腦下腺後葉（posterior pituitary）；腎上腺促素釋素（corticotropin-releasing hormone, CRH）",
+      "D": "下視丘室旁核（paraventricular nucleus, PVN）；生長激素釋素（growth hormone-releasing hormone, GHRH）"
+    },
+    "answer": "B",
+    "explanation": "晝夜節律的調節涉及下視丘和松果體的協調作用。\n(A) 錯誤，腦下腺前葉不是晝夜節律調節中樞，多巴胺也不是松果體分泌的主要激素\n(B) 正確，視交叉上核（suprachiasmatic nucleus, SCN）是晝夜節律的主要調節中樞，受光激活後會調節松果體分泌褪黑素（melatonin）\n(C) 錯誤，腦下腺後葉不分泌CRH，CRH是下視丘分泌的\n(D) 錯誤，下視丘室旁核主要參與壓力反應，GHRH主要由下視丘弓狀核分泌",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1759"
+  },
+  {
+    "id": 1112168,
+    "question": "68. 下列有關醛固酮（aldosterone）之敘述，何者正確？",
+    "options": {
+      "A": "體抑素（somatostatin）可刺激醛固酮分泌，以減低腎臟碘離子之再吸收",
+      "B": "腎上腺素（epinephrine）可刺激醛固酮分泌，以減低腎臟鈣離子之再吸收",
+      "C": "血管收縮素（angiotensin-II）可刺激醛固酮分泌，以減低腎臟鈉離子之排放",
+      "D": "腎上腺促素（adrenocorticotropic hormone, ACTH）可刺激醛固酮分泌，以減低腎臟鉀離子之排放"
+    },
+    "answer": "C",
+    "explanation": "醛固酮（aldosterone）是重要的礦物皮質激素，調節電解質平衡。\n(A) 錯誤，體抑素不刺激醛固酮分泌，醛固酮也不調節碘離子\n(B) 錯誤，腎上腺素不是醛固酮分泌的主要刺激因子，醛固酮也不調節鈣離子\n(C) 正確，血管收縮素II（angiotensin-II）可刺激醛固酮分泌，醛固酮促進腎臟鈉離子再吸收，減少鈉離子排放\n(D) 錯誤，ACTH主要刺激皮質醇分泌，對醛固酮影響較小",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1760"
+  },
+  {
+    "id": 1112169,
+    "question": "69. 一般人於登高山時會促使身體腎上腺（adrenal gland）發生何種反應，以提供腦部充足能量使用，保持清醒？",
+    "options": {
+      "A": "雌二醇（17β-estradiol）分泌增加，促進骨骼肌肝醣生成（glycogenesis）",
+      "B": "腎上腺素（epinephrine）分泌增加，促進肝臟肝糖分解（glycogenolysis）",
+      "C": "多巴胺（dopamine）分泌增加，促進脂肪組織釋出脂肪酸（fatty acids）",
+      "D": "醛固酮（aldosterone）分泌增加，促進肝臟釋出酮體（ketone bodies）"
+    },
+    "answer": "B",
+    "explanation": "登高山時氧氣稀薄，身體需要快速提供能量維持腦部功能。\n(A) 錯誤，雌二醇與高山反應無直接關係，且不會促進肝醣生成\n(B) 正確，腎上腺素（epinephrine）分泌增加可促進肝臟肝糖分解（glycogenolysis），快速提供葡萄糖給腦部使用\n(C) 錯誤，多巴胺不是腎上腺分泌的主要激素，且不直接促進脂肪酸釋放\n(D) 錯誤，醛固酮主要調節電解質平衡，不直接促進酮體產生",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1761"
+  },
+  {
+    "id": 1112170,
+    "question": "70. 半夜血糖降低時，身體會發生何種反應，以協助調節血糖恆定（glucose homeostasis）？",
+    "options": {
+      "A": "腸道（intestine）分泌胰泌素（secretin）",
+      "B": "腎臟（kidney）分泌維生素D（vitamin D）",
+      "C": "胰臟（pancreas）分泌體抑素（somatostatin）",
+      "D": "腎上腺（adrenal gland）分泌腎上腺素（epinephrine）"
+    },
+    "answer": "D",
+    "explanation": "半夜血糖降低時，身體需要啟動升糖機制維持血糖恆定。\n(A) 錯誤，胰泌素（secretin）主要調節胰液分泌，與血糖調節無直接關係\n(B) 錯誤，維生素D主要參與鈣磷代謝，與血糖調節無直接關係\n(C) 錯誤，體抑素（somatostatin）通常抑制激素分泌，不利於血糖上升\n(D) 正確，腎上腺分泌腎上腺素（epinephrine）可促進肝糖分解和糖質新生，幫助提升血糖",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1762"
+  },
+  {
+    "id": 1112171,
+    "question": "71. 有關甲狀腺素功能異常的敘述，下列何者最為適當？",
+    "options": {
+      "A": "甲狀腺功能低下和生長激素分泌不足，在新生兒都可造成身材矮小",
+      "B": "甲狀腺功能低下的病人，血中促甲狀腺素（TSH）濃度都會升高",
+      "C": "甲狀腺功能亢進的病人，血中T3、T4和TSH濃度都會升高",
+      "D": "甲狀腺功能低下和生長激素分泌不足，在新生兒都可造成智能障礙"
+    },
+    "answer": "A",
+    "explanation": "甲狀腺功能低下在新生兒期會導致呆小症，影響身體和智力發育，而生長激素缺乏主要影響身材發育。兩者都可造成身材矮小，但對智力的影響不同。\n(A) 正確，甲狀腺功能低下和生長激素分泌不足在新生兒都可造成身材矮小\n(B) 錯誤，續發性甲狀腺功能低下（如下視丘或腦下腺問題）時，TSH濃度可能正常或偏低\n(C) 錯誤，甲狀腺功能亢進時T3、T4升高，但TSH會因負回饋而降低\n(D) 錯誤，生長激素分泌不足主要影響身材，不會造成智能障礙",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1763"
+  },
+  {
+    "id": 1112172,
+    "question": "72. 黃體生成素（luteinizing hormone, LH）主要作用於何種卵巢細胞，以促進何種荷爾蒙的分泌？",
+    "options": {
+      "A": "濾泡膜細胞（theca cells）→睪固酮（testosterone）",
+      "B": "濾泡膜細胞（theca cells）→雌二醇（estradiol）",
+      "C": "顆粒細胞（granulosa cells）→雌二醇（estradiol）",
+      "D": "顆粒細胞（granulosa cells）→睪固酮（testosterone）"
+    },
+    "answer": "A",
+    "explanation": "黃體生成素在卵巢中的作用涉及性荷爾蒙的合成。LH主要刺激濾泡膜細胞產生雄性激素前驅物，這些前驅物隨後被顆粒細胞轉化為雌激素。\n(A) 正確，黃體生成素（LH）主要作用於濾泡膜細胞（theca cells），促進睪固酮（testosterone）的分泌\n(B) 錯誤，濾泡膜細胞主要產生睪固酮，不是直接產生雌二醇\n(C) 錯誤，顆粒細胞主要受FSH刺激產生雌二醇，而非LH的主要目標\n(D) 錯誤，顆粒細胞不產生睪固酮",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1764"
+  },
+  {
+    "id": 1112173,
+    "question": "73. 有關卵子形成（oogenesis）的敘述，下列何者正確？",
+    "options": {
+      "A": "第一次減數分裂開始於胚胎期",
+      "B": "出生後卵原細胞（oogonia）會進行有絲分裂（mitosis）",
+      "C": "幼童期會完成第一次減數分裂形成次級卵母細胞（secondary oocyte）",
+      "D": "排卵前會完成第二次減數分裂形成卵子（ovum）"
+    },
+    "answer": "A",
+    "explanation": "卵子形成是一個跨越整個生殖期的長期過程。第一次減數分裂在胚胎期就已開始，但會停止在前期I直到排卵時才完成。\n(A) 正確，第一次減數分裂開始於胚胎期，但停止在前期I\n(B) 錯誤，出生後卵原細胞不再進行有絲分裂，在胚胎期就已停止增殖\n(C) 錯誤，第一次減數分裂在排卵時才完成，形成次級卵母細胞\n(D) 錯誤，第二次減數分裂在受精時才完成，排卵前尚未開始",
+    "tags": [
+      "111-2(一)",
+      "生理"
+    ],
+    "group_id": "group_1765"
+  },
+  {
+    "id": 1112174,
+    "question": "74. 下列那一個胺基酸在中性環境下（pH=7），其支鏈（side-chain）會帶正電？",
+    "options": {
+      "A": "丙胺酸（alanine）",
+      "B": "精胺酸（arginine）",
+      "C": "天門冬醯胺（asparagine）",
+      "D": "天門冬胺酸（aspartic acid）"
+    },
+    "answer": "B",
+    "explanation": "胺基酸的側鏈電荷狀態取決於其pKa值和環境pH值。在中性pH下，鹼性胺基酸的側鏈會帶正電。\n(A) 錯誤，丙胺酸（alanine）的側鏈是甲基，不帶電荷\n(B) 正確，精胺酸（arginine）的側鏈含有胍基，在中性環境下帶正電\n(C) 錯誤，天門冬醯胺（asparagine）的側鏈是醯胺基，不帶電荷\n(D) 錯誤，天門冬胺酸（aspartic acid）的側鏈是羧基，在中性環境下帶負電",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1766"
+  },
+  {
+    "id": 1112175,
+    "question": "75. 關於鐮形血球貧血症（sickle-cell disease）的敘述，下列何者正確？",
+    "options": {
+      "A": "血紅素的β血球蛋白（β globin）基因點突變造成",
+      "B": "患者體內缺少β血球蛋白造成（由γ血球蛋白取代）",
+      "C": "血紅素缺少α血球蛋白造成",
+      "D": "鐮形血球貧血症致死率高，在嬰兒期就會死亡"
+    },
+    "answer": "A",
+    "explanation": "鐮形血球貧血症是一種遺傳性疾病，由血紅素基因突變引起。這種突變導致血紅素結構異常，使紅血球變形成鐮刀狀。\n(A) 正確，鐮形血球貧血症由血紅素的β血球蛋白（β globin）基因點突變造成\n(B) 錯誤，患者體內β血球蛋白結構異常，不是缺少β血球蛋白\n(C) 錯誤，此病是β血球蛋白的問題，不是α血球蛋白缺少\n(D) 錯誤，雖然會影響健康，但不一定在嬰兒期死亡，許多患者可存活至成年",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1767"
+  },
+  {
+    "id": 1112176,
+    "question": "76. 在一個符合Michaelis-Menten equation的酵素催化反應中，當受質（substrate）濃度極小於Michaelis常數 （K<sub>m</sub>）時，此反應之速率常數應為下列何者？",
+    "options": {
+      "A": "V<sub>max</sub>",
+      "B": "k<sub>cat</sub>/K<sub>m</sub>",
+      "C": "1/k<sub>cat</sub>",
+      "D": "k<sub>cat</sub> * k<sub>m</sub>"
+    },
+    "answer": "B",
+    "explanation": "這題的解題關鍵在於理解Michaelis-Menten動力學方程式在低受質濃度條件下的行為。當[S] << Km時，反應變成一階動力學，此時反應速率與受質濃度成正比關係。<br> (A) 錯誤，Vmax是酵素達到飽和狀態時的最大反應速率，僅在受質濃度遠大於Km時才會接近此值，而非低受質濃度下的速率常數。<br> (B) 正確，當[S] << Km時，Michaelis-Menten方程式可簡化為v = (Vmax/Km) × [S]，而Vmax = kcat × [E]total，因此速率常數為kcat/Km，這也是催化效率（catalytic efficiency）的指標。<br> (C) 錯誤，1/kcat是催化常數（catalytic constant）的倒數，代表單一酵素分子完成一次催化循環所需的時間，與低受質濃度下的速率常數無關。<br> (D) 錯誤，kcat × Km並非有意義的動力學參數，且單位不符合速率常數的量綱要求。",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1768"
+  },
+  {
+    "id": 1112177,
+    "question": "77. Pyridoxal phosphate與aspartate aminotransferase活性中心的某胺基酸形成Schiff base來催化oxaloacetate形成 aspartate，此胺基酸是下列何者？",
+    "options": {
+      "A": "lysine",
+      "B": "cysteine",
+      "C": "serine",
+      "D": "arginine"
+    },
+    "answer": "A",
+    "explanation": "Pyridoxal phosphate（PLP）是胺基酸轉移酶的重要輔酶。PLP與活性中心的離胺酸殘基形成Schiff base，這是酵素催化機制的關鍵步驟。\n(A) 正確，lysine與pyridoxal phosphate形成Schiff base來催化反應\n(B) 錯誤，cysteine不參與此Schiff base的形成\n(C) 錯誤，serine不參與此Schiff base的形成\n(D) 錯誤，arginine不參與此Schiff base的形成",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1769"
+  },
+  {
+    "id": 1112178,
+    "question": "78. 胺基酸的代謝需要有多重輔因子（cofactors）參與，下列那一種輔因子不能作為單一碳基團（one carbon moiety）供給者或傳送者？",
+    "options": {
+      "A": "tetrahydrofolate",
+      "B": "biotin",
+      "C": "S-adenosylmethionine",
+      "D": "pyridoxal phosphate"
+    },
+    "answer": "D",
+    "explanation": "單一碳基團的代謝涉及多種輔因子的參與。Pyridoxal phosphate主要參與胺基酸代謝，不作為單一碳基團的供給者或傳送者。\n(A) 錯誤，tetrahydrofolate是重要的單一碳基團載體\n(B) 錯誤，biotin參與羧化反應，可傳送CO2\n(C) 錯誤，S-adenosylmethionine是重要的甲基供給者\n(D) 正確，pyridoxal phosphate主要參與胺基酸代謝，不能作為單一碳基團供給者或傳送者",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1770"
+  },
+  {
+    "id": 1112179,
+    "question": "79. 去氧核糖核酸酶 I（deoxyribonuclease I, DNase I）為生物中重要的核酸內切酶（endonuclease），負責降解去 氧核糖核酸。DNase I酵素活性主要作用於下列何者？",
+    "options": {
+      "A": "糖苷鍵（glycosidic bond）",
+      "B": "華森克里克鍵結（Watson-Crick base pairing）",
+      "C": "磷酸二酯鍵（phosphodiester bond）",
+      "D": "非華森克里克鍵結（non-Watson-Crick base pairing）"
+    },
+    "answer": "C",
+    "explanation": "DNase I是重要的核酸內切酶，專門切割DNA的磷酸二酯骨架。這種酵素在DNA降解和細胞凋亡過程中發揮重要作用。\n(A) 錯誤，糖苷鍵（glycosidic bond）連接鹼基和糖，不是DNase I的作用位點\n(B) 錯誤，華森克里克鍵結是鹼基配對，不是共價鍵\n(C) 正確，DNase I主要作用於磷酸二酯鍵（phosphodiester bond），切割DNA骨架\n(D) 錯誤，非華森克里克鍵結不是DNase I的主要作用位點",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1771"
+  },
+  {
+    "id": 1112180,
+    "question": "80. 下列何種酵素與尿酸堆積及痛風發生最為相關？",
+    "options": {
+      "A": "adenine phosphoribosyltransferase",
+      "B": "5-phospho-α-D-ribosyl-1-pyrophosphate synthetase",
+      "C": "glucose 6-phosphatase",
+      "D": "orotate phosphoribosyltransferase"
+    },
+    "answer": "B",
+    "explanation": "痛風是由尿酸代謝異常引起的疾病。5-phospho-α-D-ribosyl-1-pyrophosphate synthetase催化PRPP的合成，是嘌呤合成的限速酶，其活性過高會導致尿酸過量產生。\n(A) 錯誤，adenine phosphoribosyltransferase參與嘌呤回收途徑\n(B) 正確，5-phospho-α-D-ribosyl-1-pyrophosphate synthetase活性過高與尿酸堆積及痛風發生最相關\n(C) 錯誤，glucose 6-phosphatase參與糖質新生，與尿酸代謝無直接關係\n(D) 錯誤，orotate phosphoribosyltransferase參與嘧啶合成",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1772"
+  },
+  {
+    "id": 1112181,
+    "question": "81. 下列那一個蛋白質只會參與在真核細胞染色體DNA複製？",
+    "options": {
+      "A": "引子RNA合成酶（primase）",
+      "B": "解螺旋酶（helicase）",
+      "C": "端粒酶（telomerase）",
+      "D": "拓樸異構酶（topoisomerase）"
+    },
+    "answer": "C",
+    "explanation": "真核細胞和原核細胞的DNA複製機制有許多共同點，但也有一些獨特的差異。端粒酶是真核細胞特有的酵素，用於解決染色體末端複製問題。\n(A) 錯誤，引子RNA合成酶在真核和原核細胞中都存在\n(B) 錯誤，解螺旋酶在真核和原核細胞中都存在\n(C) 正確，端粒酶（telomerase）只存在於真核細胞中，用於複製染色體末端\n(D) 錯誤，拓樸異構酶在真核和原核細胞中都存在",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1773"
+  },
+  {
+    "id": 1112182,
+    "question": "82. 真核細胞的DNA複製蛋白質PCNA（proliferating cell nuclear antigen）與大腸桿菌DNA聚合酶III的β次單元（β subunit）共通的特性為：",
+    "options": {
+      "A": "參與DNA校對（proofreading）",
+      "B": "增加DNA聚合酶酵素活性",
+      "C": "增加DNA聚合酶的持續合成能力（processivity）",
+      "D": "帶有3’→5’ DNA水解酵素活性"
+    },
+    "answer": "C",
+    "explanation": "PCNA和大腸桿菌DNA聚合酶III的β次單元都是滑動夾蛋白，主要功能是增加DNA聚合酶在模板上的穩定性和持續合成能力。\n(A) 錯誤，這些蛋白不直接參與DNA校對功能\n(B) 錯誤，它們不增加酵素活性，而是增加穩定性\n(C) 正確，兩者都增加DNA聚合酶的持續合成能力（processivity），防止酵素脫離模板\n(D) 錯誤，它們本身不具有3'→5' DNA水解酵素活性",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1774"
+  },
+  {
+    "id": 1112183,
+    "question": "83. 下列何者為鹼基切除修復（base-excision repair）過程中的第一個作用酶？",
+    "options": {
+      "A": "AP內切酶（AP endonuclease）",
+      "B": "DNA醣苷酶（DNA glycosylase）",
+      "C": "DNA連接酶（DNA ligase）",
+      "D": "DNA聚合酶（DNA polymerase）"
+    },
+    "answer": "B",
+    "explanation": "鹼基切除修復是修復DNA損傷的重要機制。修復過程的第一步是識別並移除受損的鹼基，這個工作由DNA醣苷酶完成。\n(A) 錯誤，AP內切酶是第二步，切割去嘌呤/去嘧啶位點\n(B) 正確，DNA醣苷酶（DNA glycosylase）是鹼基切除修復過程中的第一個作用酶，負責移除受損鹼基\n(C) 錯誤，DNA連接酶是最後一步，連接修復的DNA片段\n(D) 錯誤，DNA聚合酶在中間步驟填補缺口",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1775"
+  },
+  {
+    "id": 1112184,
+    "question": "84. 在真核細胞中，主要負責mRNA生成的聚合酶為：",
+    "options": {
+      "A": "RNA聚合酶 I",
+      "B": "RNA聚合酶 II",
+      "C": "RNA聚合酶 III",
+      "D": "RNA聚合酶 IV"
+    },
+    "answer": "B",
+    "explanation": "真核細胞有三種主要的RNA聚合酶，分別負責不同類型RNA的轉錄。RNA聚合酶II專門負責mRNA的轉錄。\n(A) 錯誤，RNA聚合酶I主要負責rRNA的轉錄\n(B) 正確，RNA聚合酶II主要負責mRNA的轉錄\n(C) 錯誤，RNA聚合酶III主要負責tRNA和其他小RNA的轉錄\n(D) 錯誤，不存在RNA聚合酶IV（植物中存在，但此處討論真核細胞一般情況）",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1776"
+  },
+  {
+    "id": 1112185,
+    "question": "85. 依賴泛素（ubiquitin）之蛋白質降解途徑，對於調節細胞過程和消除有缺陷的蛋白質非常重要。下列有關蛋白 質泛素化（ubiquitination）之敘述，何者錯誤？",
+    "options": {
+      "A": "泛素化過程中，泛素與E1活化酶（E1 activating enzyme）鍵結之反應需要ATP",
+      "B": "E2結合酶（E2 conjugating enzyme）上的泛素可經由E3連接酶（E3 ligase）轉移至欲分解之蛋白質",
+      "C": "蛋白質的lysine為發生泛素化的主要胺基酸",
+      "D": "泛素化的蛋白質（ubiquitinated proteins）主要經溶酶體（lysosome）分解"
+    },
+    "answer": "D",
+    "explanation": "泛素化是蛋白質降解的重要標記系統。被泛素標記的蛋白質主要由蛋白酶體降解，而不是溶酶體。\n(A) 正確，泛素化過程中E1酶活化泛素需要消耗ATP\n(B) 正確，E2酶上的泛素可經由E3連接酶轉移至目標蛋白質\n(C) 正確，蛋白質的lysine是發生泛素化的主要胺基酸\n(D) 錯誤，泛素化的蛋白質主要經蛋白酶體（proteasome）分解，不是溶酶體",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1777"
+  },
+  {
+    "id": 1112186,
+    "question": "86. 蛋白質轉譯延伸（translation elongation）作用包含以下步驟：①帶有胺基酸的轉運核糖核酸（tRNA）結合至 核糖體 ②形成胜肽鍵 ③轉位（translocation） ④轉運核糖核酸離開核糖體。下列先後順序何者最符合已 知機制？",
+    "options": {
+      "A": "①②③④",
+      "B": "③①④②",
+      "C": "③②①④",
+      "D": "①③②④"
+    },
+    "answer": "A",
+    "explanation": "這題的解題關鍵在於理解蛋白質轉譯延伸階段的循環機制，需要掌握核糖體上A位點（aminoacyl site）、P位點（peptidyl site）和E位點（exit site）的功能順序。轉譯延伸是一個重複性的循環過程，每個循環都遵循固定的步驟順序。<br>根據已知的轉譯延伸機制，正確的順序應為：<br>①帶有胺基酸的轉運核糖核酸結合至核糖體的A位點<br>→②形成胜肽鍵，將胜肽鏈從P位點的轉運核糖核酸轉移至A位點的轉運核糖核酸<br>→③轉位作用，核糖體沿著信使核糖核酸移動一個密碼子，使A位點的轉運核糖核酸移至P位點，P位點的轉運核糖核酸移至E位點<br>→④轉運核糖核酸從E位點離開核糖體。<br>此循環過程確保胺基酸按照信使核糖核酸上密碼子的順序正確添加至正在合成的蛋白質鏈上，每完成一個循環後，蛋白質鏈就增加一個胺基酸，核糖體則準備進行下一輪的延伸反應。",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1778"
+  },
+  {
+    "id": 1112187,
+    "question": "87. 下列何序列最可能含有真核細胞RNA polymerase II聚腺苷酸化訊號（polyadenylation signal）？",
+    "options": {
+      "A": "5'-AUUCAUGUGCGGCGCGCCGCAGCUCCUAGCUUUUU-3'",
+      "B": "5'-GUGCGGCGAUUCAUCGCCGCAGCUCCUAGCUUUUU-3'",
+      "C": "5'-GUGCGGCGAUUCAUCGCCGCUUUUUAGCUCCUAGC-3'",
+      "D": "5'-AAAAAUUUUUUAAUAAAAGGGGGGGGUUUUUUGG-3'"
+    },
+    "answer": "D",
+    "explanation": "真核細胞mRNA的3'端加工需要聚腺苷酸化訊號。典型的聚腺苷酸化訊號包含AAUAAA序列和富含U的下游元件。\n(A) 錯誤，缺乏典型的聚腺苷酸化訊號序列\n(B) 錯誤，缺乏典型的聚腺苷酸化訊號序列\n(C) 錯誤，缺乏典型的聚腺苷酸化訊號序列\n(D) 正確，含有AAUAAA類似序列和富含U的區域，最可能含有聚腺苷酸化訊號",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1779"
+  },
+  {
+    "id": 1112188,
+    "question": "88. 下列有關克氏循環（Krebs cycle，或稱TCA cycle）的敘述，何者正確？",
+    "options": {
+      "A": "克氏循環過程中沒有substrate-level phosphorylation",
+      "B": "一次完整的克氏循環會產生兩分子的CO<sub>2</sub>",
+      "C": "一次完整的克氏循環會產生兩分子的NADH",
+      "D": "一次完整的克氏循環會產生兩分子的FADH<sub>2</sub>"
+    },
+    "answer": "B",
+    "explanation": "克氏循環是細胞呼吸的核心代謝途徑。一次完整的循環會完全氧化一個乙醯基，產生兩個CO<sub>2</sub>分子。\n(A) 錯誤，克氏循環中有一次substrate-level phosphorylation（琥珀醯CoA→琥珀酸）\n(B) 正確，一次完整的克氏循環會產生兩分子的CO<sub>2</sub>\n(C) 錯誤，一次完整的克氏循環會產生三分子的NADH\n(D) 錯誤，一次完整的克氏循環會產生一分子的FADH<sub>2</sub>",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1780"
+  },
+  {
+    "id": 1112189,
+    "question": "89. 硫酸角質素（keratan sulfate）是角膜中的主要成分之一，其為下列那兩種單醣分子及其硫酸化衍生物的聚合 物？",
+    "options": {
+      "A": "galactose與glucose",
+      "B": "galactose與N-acetylglucosamine",
+      "C": "glucuronic acid與N-acetylglucosamine",
+      "D": "glucuronic acid與glucose"
+    },
+    "answer": "B",
+    "explanation": "硫酸角質素是糖胺聚糖的一種，主要存在於角膜等組織中。它由兩種主要的單醣單位重複排列組成。\n(A) 錯誤，不是galactose與glucose的組合\n(B) 正確，硫酸角質素由galactose與N-acetylglucosamine及其硫酸化衍生物組成\n(C) 錯誤，這是硫酸軟骨素的組成\n(D) 錯誤，不是glucuronic acid與glucose的組合",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1781"
+  },
+  {
+    "id": 1112190,
+    "question": "90. 細胞進行糖質新生（gluconeogenesis）時，需要下列那兩種酵素共同作用將pyruvate轉換為 phosphoenolpyruvate？",
+    "options": {
+      "A": "pyruvate kinase and pyruvate dehydrogenase",
+      "B": "pyruvate carboxylase and pyruvate kinase",
+      "C": "pyruvate carboxylase and phosphoenolpyruvate carboxykinase",
+      "D": "pyruvate dehydrogenease and phosphoenolpyruvate carboxykinase"
+    },
+    "answer": "C",
+    "explanation": "糖質新生中，pyruvate轉換為phosphoenolpyruvate需要繞過糖解中pyruvate kinase的不可逆反應。這個過程需要兩個酵素的協同作用。\n(A) 錯誤，pyruvate kinase和pyruvate dehydrogenase不參與此轉換\n(B) 錯誤，pyruvate kinase在糖質新生中被繞過\n(C) 正確，pyruvate carboxylase將pyruvate轉為oxaloacetate，phosphoenolpyruvate carboxykinase將oxaloacetate轉為phosphoenolpyruvate\n(D) 錯誤，pyruvate dehydrogenase將pyruvate轉為乙醯CoA，不參與此途徑",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1782"
+  },
+  {
+    "id": 1112191,
+    "question": "91. 有關aspirin的作用，下列何者錯誤？",
+    "options": {
+      "A": "抑制prostaglandin synthase活性",
+      "B": "利用甲基化（methylation）調控酵素",
+      "C": "降低血栓素（thromboxane A2）濃度",
+      "D": "為一種非特異性的（non-selective）non-steroidal anti-inflammatory drugs（NSAIDs）"
+    },
+    "answer": "B",
+    "explanation": "解題關鍵在於了解阿斯匹靈（aspirin）的作用機制，它是透過乙醯化（acetylation）而非甲基化來抑制環氧合酶（cyclooxygenase）活性。\n(A) 正確，阿斯匹靈會抑制前列腺素合成酶（prostaglandin synthase），也就是環氧合酶的活性。\n(B) 錯誤，阿斯匹靈是利用乙醯化（acetylation）而非甲基化來調控酵素活性，它會將乙醯基轉移到環氧合酶的絲胺酸殘基上。\n(C) 正確，阿斯匹靈透過抑制環氧合酶，減少花生四烯酸（arachidonic acid）轉換為血栓素A2，從而降低其濃度。\n(D) 正確，阿斯匹靈屬於非選擇性的非類固醇抗發炎藥物（NSAIDs），同時抑制COX-1和COX-2。\n",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1783"
+  },
+  {
+    "id": 1112192,
+    "question": "92. Integral membrane protein主要由下列何者幫助其鑲嵌於膜上？",
+    "options": {
+      "A": "translocon",
+      "B": "signal peptidase",
+      "C": "protein lipidation",
+      "D": "protein glycosylation",
+      "E": "一律給分"
+    },
+    "answer": "E",
+    "explanation": "解題關鍵在於理解整合膜蛋白（integral membrane protein）插入膜的機制，主要依賴轉位子（translocon）複合體的協助。\n(A) 正確，轉位子（translocon）是膜蛋白插入內質網膜的主要機制，幫助整合膜蛋白正確鑲嵌於膜上。\n(B) 錯誤，信號胜肽酶（signal peptidase）主要負責切除信號胜肽，而非直接幫助蛋白質鑲嵌於膜上。\n(C) 錯誤，蛋白質脂質化（protein lipidation）是蛋白質的後轉譯修飾，不是幫助整合膜蛋白鑲嵌的主要機制。\n(D) 錯誤，蛋白質糖基化（protein glycosylation）是後轉譯修飾過程，不直接參與膜蛋白的鑲嵌過程。\n",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1784"
+  },
+  {
+    "id": 1112193,
+    "question": "93. 下列何種脂肪酸在進行β-oxidation時，需要2,4-dienoyl-CoA reductase的參與？",
+    "options": {
+      "A": "laurate",
+      "B": "palmitoleate",
+      "C": "oleate",
+      "D": "linoleate"
+    },
+    "answer": "D",
+    "explanation": "解題關鍵在於了解不飽和脂肪酸進行β氧化時的特殊需求，多不飽和脂肪酸需要額外的酵素處理雙鍵位置。\n(A) 錯誤，月桂酸（laurate）是飽和脂肪酸，進行β氧化時不需要2,4-二烯醯輔酶A還原酶。\n(B) 錯誤，棕櫚油酸（palmitoleate）是單不飽和脂肪酸，只需要異構酶處理即可。\n(C) 錯誤，油酸（oleate）是單不飽和脂肪酸，不需要2,4-二烯醯輔酶A還原酶參與。\n(D) 正確，亞麻油酸（linoleate）是多不飽和脂肪酸，在β氧化過程中會產生2,4-二烯醯中間產物，需要2,4-二烯醯輔酶A還原酶將其還原。\n",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1785"
+  },
+  {
+    "id": 1112194,
+    "question": "94. 下列有關同半胱胺酸（homocysteine）之敘述，何者錯誤？",
+    "options": {
+      "A": "是心血管疾病的危險因子",
+      "B": "由精胺酸（arginine）轉換而來",
+      "C": "若缺乏cystathionine-β-synthase，會導致同半胱胺酸尿症（homocysteinuria）",
+      "D": "葉酸（folate）及維生素可作為同半胱胺酸代謝的輔酶"
+    },
+    "answer": "B",
+    "explanation": "解題關鍵在於了解同半胱胺酸（homocysteine）的代謝來源和臨床意義，它主要來自甲硫胺酸（methionine）代謝。\n(A) 正確，高同半胱胺酸血症確實是心血管疾病的獨立危險因子。\n(B) 錯誤，同半胱胺酸是由甲硫胺酸（methionine）而非精胺酸轉換而來，精胺酸主要參與一氧化氮和肌酸的合成。\n(C) 正確，胱硫醚β合成酶（cystathionine-β-synthase）缺乏會導致同半胱胺酸尿症。\n(D) 正確，葉酸和維生素B12、B6都是同半胱胺酸代謝過程中重要的輔酶。\n",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1786"
+  },
+  {
+    "id": 1112195,
+    "question": "95. 在動物中，血基質（heme）生合成之主要前驅物之一是：",
+    "options": {
+      "A": "色胺酸（tryptophan）",
+      "B": "酪胺酸（tyrosine）",
+      "C": "組胺酸（histidine）",
+      "D": "甘胺酸（glycine）"
+    },
+    "answer": "D",
+    "explanation": "解題關鍵在於了解血基質（heme）生合成的起始原料，需要從簡單的胺基酸和有機酸開始合成。\n(A) 錯誤，色胺酸主要用於血清素和菸鹼酸的合成，不是血基質的主要前驅物。\n(B) 錯誤，酪胺酸主要用於兒茶酚胺和甲狀腺素的合成。\n(C) 錯誤，組胺酸主要用於組織胺的合成和蛋白質結構。\n(D) 正確，甘胺酸與琥珀醯輔酶A（succinyl-CoA）結合形成δ-胺基乙醯丙酸（δ-aminolevulinic acid），是血基質生合成的關鍵起始步驟。\n",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1787"
+  },
+  {
+    "id": 1112196,
+    "question": "96. 某新物種中粒線體的complex V，其F0之 c-ring由12個c subunit所組成，而F1 complex中的αβ dimer共有6組。依 據目前已知complex V作用機轉，此物種的complex V每合成一個ATP最有可能需要幾個氫離子通過粒線體內膜 （inner membrane）？",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "6"
+    },
+    "answer": "A",
+    "explanation": "解題關鍵在於計算ATP合成酶的化學計量比，根據c-ring的subunit數目與ATP合成的比例關係。\n(A) 正確，c-ring有12個subunit，F1有6組αβ二聚體可同時合成6個ATP，因此每個ATP需要12÷6=2個氫離子。\n(B) 錯誤，這個比例適用於c-ring有18個subunit的情況。\n(C) 錯誤，這個比例需要c-ring有24個subunit。\n(D) 錯誤，這個比例需要c-ring有36個subunit。\n",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1788"
+  },
+  {
+    "id": 1112197,
+    "question": "97. 在細胞凋亡程序中的caspases為一種cysteine protease，其切割受質蛋白的位點位於下列何種胺基酸的C端？",
+    "options": {
+      "A": "絲胺酸（serine）",
+      "B": "胱胺酸（cysteine）",
+      "C": "天門冬胺酸（aspartic acid）",
+      "D": "酪胺酸（tyrosine）"
+    },
+    "answer": "C",
+    "explanation": "解題關鍵在於了解胱天蛋白酶（caspases）的專一性，它們專門切割天門冬胺酸殘基後的胜肽鍵。\n(A) 錯誤，胱天蛋白酶不在絲胺酸的C端切割。\n(B) 錯誤，雖然胱天蛋白酶是半胱胺酸蛋白酶，但切割位點不在胱胺酸的C端。\n(C) 正確，胱天蛋白酶專一性地切割天門冬胺酸殘基C端的胜肽鍵，這是其識別序列的特徵。\n(D) 錯誤，胱天蛋白酶不在酪胺酸的C端切割。\n",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1789"
+  },
+  {
+    "id": 1112198,
+    "question": "98. 完全分化的細胞（terminally differentiated cells）通常會停在細胞週期中的那一個時期（phase）？",
+    "options": {
+      "A": "G0",
+      "B": "G1",
+      "C": "G2",
+      "D": "S"
+    },
+    "answer": "A",
+    "explanation": "解題關鍵在於理解完全分化細胞的特性：這些細胞已經完成分化過程，不再進行細胞分裂，因此會退出活躍的細胞週期進入靜止狀態。\n(A) 正確，完全分化的細胞會進入G0期（靜止期），這是細胞週期外的靜止狀態。\n(B) 錯誤，G1期是細胞週期中的活躍期，細胞正在為DNA合成做準備。\n(C) 錯誤，G2期是DNA複製完成後、準備進入有絲分裂前的階段。\n(D) 錯誤，S期是DNA複製的階段，細胞正在進行遺傳物質的複製。\n",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1790"
+  },
+  {
+    "id": 1112199,
+    "question": "99. Receptor tyrosine kinases（RTKs）是一類重要的細胞傳訊受體，其可在tyrosine residue上進行磷酸化來傳遞訊息。下列何者不屬於RTKs？",
+    "options": {
+      "A": "epidermal growth factor receptor（EGFR）",
+      "B": "fibroblast growth factor receptor（FGFR）",
+      "C": "phosphoinositide 3-kinase（PI3K）",
+      "D": "insulin receptor（INSR）"
+    },
+    "answer": "C",
+    "explanation": "解題關鍵在於區分受體酪胺酸激酶（RTKs）和其下游信號分子，RTKs是跨膜受體蛋白而非細胞內激酶。\n(A) 正確，表皮生長因子受體（EGFR）是典型的受體酪胺酸激酶。\n(B) 正確，纖維母細胞生長因子受體（FGFR）屬於受體酪胺酸激酶家族。\n(C) 錯誤，磷脂醯肌醇3激酶（PI3K）是細胞內的信號傳導酵素，不是跨膜的受體酪胺酸激酶，而是RTKs的下游效應分子。\n(D) 正確，胰島素受體（INSR）是受體酪胺酸激酶的重要成員。\n",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1791"
+  },
+  {
+    "id": 1112100,
+    "question": "100. 下列何者為桑格定序法（Sanger sequencing method）的關鍵分子？",
+    "options": {
+      "A": "1', 2'-雙脫氧核苷酸（1', 2'-dideoxyribonucleotides）",
+      "B": "2', 3'-雙脫氧核苷酸（2', 3'-dideoxyribonucleotides）",
+      "C": "2', 4'-雙脫氧核苷酸（2', 4'-dideoxyribonucleotides）",
+      "D": "2', 5'-雙脫氧核苷酸（2', 5'-dideoxyribonucleotides）"
+    },
+    "answer": "B",
+    "explanation": "解題關鍵在於了解桑格定序法的終止原理，需要缺乏3'-OH基團的核苷酸來終止DNA合成。\n(A) 錯誤，1',2'-雙脫氧核苷酸仍保有3'-OH基團，無法終止DNA合成。\n(B) 正確，2',3'-雙脫氧核苷酸（ddNTPs）缺乏3'-OH基團，一旦加入就無法繼續延伸DNA鏈，這是桑格定序法的核心原理。\n(C) 錯誤，2',4'-雙脫氧核苷酸仍保有3'-OH基團。\n(D) 錯誤，2',5'-雙脫氧核苷酸仍保有3'-OH基團。\n",
+    "tags": [
+      "111-2(一)",
+      "生化"
+    ],
+    "group_id": "group_1792"
+  }
+]
