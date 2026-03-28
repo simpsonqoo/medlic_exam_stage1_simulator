@@ -2355,8 +2355,13 @@
     quiz = [];
     subjectOrder.forEach(subject => {
       const subjectQuestions = finalQuiz.filter(q => q.tags.includes(subject));
-      // 按題目 id 排序（原始順序）
-      const sortedSubjectQuestions = subjectQuestions.sort((a, b) => (a.id || 0) - (b.id || 0));
+      // 按題目 id 排序（原始順序），末兩位 00 視為第 100 題排在 99 之後
+      const normalizeId = id => {
+        if (!id) return 0;
+        const last2 = id % 100;
+        return last2 === 0 ? id + 99.5 : id;
+      };
+      const sortedSubjectQuestions = subjectQuestions.sort((a, b) => normalizeId(a.id) - normalizeId(b.id));
       // 按 group_id 分組並保持組內順序
       const groupedQuestions = groupQuestionsByGroupId(sortedSubjectQuestions, true);
       quiz = quiz.concat(groupedQuestions);
