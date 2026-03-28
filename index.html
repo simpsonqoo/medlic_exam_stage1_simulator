@@ -1331,6 +1331,7 @@
         <div id="yearTag1" class="checkbox-group">
           <strong>醫學(一)</strong><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="all1" onchange="handleSelectAll('year1')">全選</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="115-1(一)">115-1(一)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114-2(一)">114-2(一)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114-1(一)">114-1(一)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="113-2(一)">113-2(一)</div><br>
@@ -1358,6 +1359,7 @@
         <div id="yearTag2" class="checkbox-group">
           <strong>醫學(二)</strong><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="all2" onchange="handleSelectAll('year2')">全選</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="115-1(二)">115-1(二)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114-2(二)">114-2(二)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114-1(二)">114-1(二)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="113-2(二)">113-2(二)</div><br>
@@ -3143,6 +3145,13 @@
     // 生成年度列表
     function generateYearList() {
       const years = [];
+      // 115年
+      years.push({
+        year: 115,
+        term: 1,
+        medicine1: "115-1(一)",
+        medicine2: "115-1(二)"
+      });
       // 114年
       years.push({
         year: 114,
