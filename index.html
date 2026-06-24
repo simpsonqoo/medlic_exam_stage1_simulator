@@ -1288,6 +1288,32 @@
     }
 
     }
+
+    /* 錯題模式樣式 */
+    .wrong-mode-bar { margin-top: 8px; }
+    .wrong-mode-toggle-btn { padding: 5px 14px; font-size: 13px; font-weight: bold; border: 2px solid #dc3545; border-radius: 6px; background-color: #fff; color: #dc3545; cursor: pointer; }
+    .wrong-mode-toggle-btn.active { background-color: #dc3545; color: white; }
+    .wrong-mode-toggle-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .wrong-mode-panel { display: none; background-color: #fff8f8; border: 1px solid #f5c6cb; border-radius: 6px; padding: 8px 10px; margin-top: 6px; }
+    .wrong-mode-panel.open { display: block; }
+    .wrong-mode-count { font-size: 12px; color: #666; margin-bottom: 6px; }
+    .wrong-sub-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+    .wrong-sub-btn { padding: 5px 12px; font-size: 13px; border: 2px solid #fd7e14; border-radius: 6px; background-color: #fff; color: #fd7e14; cursor: pointer; font-weight: bold; }
+    .wrong-sub-btn.active { background-color: #fd7e14; color: white; }
+    .wrong-sub-btn:disabled { border-color: #ccc; color: #ccc; cursor: not-allowed; background-color: #fff; }
+    .checkboxes-disabled .visual-checkbox { pointer-events: none; opacity: 0.4; }
+    /* 視覺化 Tab 樣式 */
+    .visualization-tab-bar { display: flex; align-items: flex-end; background-color: #f0f2f5; border-bottom: 2px solid #dee2e6; padding: 10px 20px 0 20px; gap: 8px; }
+    .vis-tab-btn { padding: 8px 24px; border: 2px solid #007bff; border-bottom: none; border-radius: 8px 8px 0 0; background-color: #fff; color: #007bff; cursor: pointer; font-size: 14px; font-weight: bold; }
+    .vis-tab-btn.active { background-color: #007bff; color: white; }
+    .vis-detail-toggle { margin-left: auto; display: flex; align-items: center; gap: 8px; padding-bottom: 6px; font-size: 13px; cursor: pointer; color: #495057; }
+    .vis-toggle-track { width: 46px; height: 24px; background-color: #adb5bd; border-radius: 12px; position: relative; transition: background-color 0.2s; cursor: pointer; flex-shrink: 0; }
+    .vis-toggle-track.detailed { background-color: #6f42c1; }
+    .vis-toggle-knob { width: 20px; height: 20px; background-color: white; border-radius: 50%; position: absolute; top: 2px; left: 2px; transition: left 0.2s; }
+    .vis-toggle-track.detailed .vis-toggle-knob { left: 24px; }
+    .vis-exam-section { display: none; }
+    .vis-exam-section.active { display: block; }
+    .vis-chosen-letter { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid #dc3545; color: #dc3545; font-size: 0.7em; font-weight: 700; }
 </style>
 </head>
 <body>
@@ -1339,6 +1365,16 @@
       <div class="year-section">
         <div id="yearTag1" class="checkbox-group">
           <strong>醫學(一)</strong><br>
+          <div class="wrong-mode-bar" id="wrongModeBar1">
+            <button class="wrong-mode-toggle-btn" id="wrongModeBtn1" onclick="toggleWrongMode(1)">錯題模式</button>
+            <div class="wrong-mode-panel" id="wrongModePanel1">
+              <div class="wrong-mode-count" id="wrongModeCount1">尚未載入記錄檔案</div>
+              <div class="wrong-sub-btns">
+                <button class="wrong-sub-btn" id="wrongSubEver1" onclick="selectWrongSubMode(1, 'ever')">曾經答錯</button>
+                <button class="wrong-sub-btn" id="wrongSubRecent1" onclick="selectWrongSubMode(1, 'recent')">最近答錯</button>
+              </div>
+            </div>
+          </div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="all1" onchange="handleSelectAll('year1')">全選</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="115-1(一)">115-1(一)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114-2(一)">114-2(一)</div><br>
@@ -1367,6 +1403,16 @@
         
         <div id="yearTag2" class="checkbox-group">
           <strong>醫學(二)</strong><br>
+          <div class="wrong-mode-bar" id="wrongModeBar2">
+            <button class="wrong-mode-toggle-btn" id="wrongModeBtn2" onclick="toggleWrongMode(2)">錯題模式</button>
+            <div class="wrong-mode-panel" id="wrongModePanel2">
+              <div class="wrong-mode-count" id="wrongModeCount2">尚未載入記錄檔案</div>
+              <div class="wrong-sub-btns">
+                <button class="wrong-sub-btn" id="wrongSubEver2" onclick="selectWrongSubMode(2, 'ever')">曾經答錯</button>
+                <button class="wrong-sub-btn" id="wrongSubRecent2" onclick="selectWrongSubMode(2, 'recent')">最近答錯</button>
+              </div>
+            </div>
+          </div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="all2" onchange="handleSelectAll('year2')">全選</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="115-1(二)">115-1(二)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114-2(二)">114-2(二)</div><br>
@@ -1609,6 +1655,11 @@
     let hasLoadedProgress = false;  // 是否已載入記錄
     // 記錄檔更新相關變數
     let loadedFileName = '';  // 載入的檔案名稱
+    // 視覺化相關狀態
+    let visDetailedMode = false;
+    let visCurrentTab = 1;
+    // 錯題模式狀態
+    let wrongModeState = { exam: null, subMode: null };
 
     // 載入答題記錄
     function loadUserProgress(file) {
@@ -1727,9 +1778,9 @@
         if (isBonusQuestion) {
           result = 1; // 送分題，有答就對
         } else {
-          result = isAnswerCorrect(q.userAnswer, q.answer) ? 1 : 0; // 正確=1, 錯誤=0
+          result = isAnswerCorrect(q.userAnswer, q.answer) ? 1 : (q.userAnswer || 0); // 正確=1, 錯誤=選項字母
         }
-        
+
         // 初始化該題目的記錄陣列（如果不存在）
         if (!userProgress[q.id]) {
           userProgress[q.id] = [];
@@ -1782,9 +1833,9 @@
           if (isBonusQuestion) {
             result = 1; // 送分題，有答就對
           } else {
-            result = isAnswerCorrect(q.userAnswer, q.answer) ? 1 : 0; // 正確=1, 錯誤=0
+            result = isAnswerCorrect(q.userAnswer, q.answer) ? 1 : (q.userAnswer || 0); // 正確=1, 錯誤=選項字母
           }
-          
+
           currentTestProgress[q.id] = [result];
           currentTestCount++;
         }
@@ -2211,6 +2262,12 @@
     }
 
     async function startQuiz() {
+  // 若錯題模式已啟用且選定子模式，直接進入錯題測驗
+  if (wrongModeState.exam !== null) {
+    await startWrongModeQuiz();
+    return;
+  }
+
   // 隱藏首頁記錄區域
   const homepageSection = document.getElementById('homepageRecordSection');
   if (homepageSection) {
@@ -2881,6 +2938,8 @@
     }
 
     function resetQuiz() {
+      deactivateWrongMode();
+
       // 保存首頁記錄狀態
       const savedHomepageState = { ...homepageRecordState };
       const savedUserProgress = { ...userProgress };
@@ -3260,6 +3319,7 @@
 
       // 生成視覺化（移除統計資訊）
       generateVisualizationDisplay(parsedQuestions);
+      switchVisualTab(visCurrentTab);
     }
 
 
@@ -3268,18 +3328,22 @@
     function generateVisualizationDisplay(parsedQuestions) {
       const container = document.getElementById('visualizationContent');
       const yearList = generateYearList();
-      
+
       // 分離醫學(一)和醫學(二)
       const medicine1Years = yearList.map(y => y.medicine1);
       const medicine2Years = yearList.map(y => y.medicine2);
 
       let html = '';
 
-      // 醫學(一)部分
+      // 醫學(一)部分（Tab 1）
+      html += '<div class="vis-exam-section" id="visSection1">';
       html += generateVisualizationExamSection('醫學(一)', medicine1Years, parsedQuestions);
-      
-      // 醫學(二)部分
+      html += '</div>';
+
+      // 醫學(二)部分（Tab 2）
+      html += '<div class="vis-exam-section" id="visSection2">';
       html += generateVisualizationExamSection('醫學(二)', medicine2Years, parsedQuestions, true);
+      html += '</div>';
 
       container.innerHTML = html;
     }
@@ -3328,14 +3392,16 @@
     // 生成題目行
     function generateVisualizationQuestionRow(questionNum, attempts) {
       let answerHistory = '';
-      
+
       if (attempts.length === 0) {
         answerHistory = '<span style="color: #dee2e6;">—</span>';
       } else {
         attempts.forEach(attempt => {
           if (attempt === 1) {
             answerHistory += '<span class="answer-symbol correct-symbol">✅</span>';
-          } else if (attempt === 0) {
+          } else if (typeof attempt === 'string' && visDetailedMode) {
+            answerHistory += `<span class="answer-symbol incorrect-symbol"><span class="vis-chosen-letter">${attempt}</span></span>`;
+          } else {
             answerHistory += '<span class="answer-symbol incorrect-symbol">❌</span>';
           }
         });
@@ -3352,6 +3418,192 @@
 
 
   
+    // ========== 視覺化 Tab 與詳細模式 ==========
+
+    function switchVisualTab(tab) {
+      visCurrentTab = tab;
+      document.querySelectorAll('.vis-exam-section').forEach(sec => sec.classList.remove('active'));
+      const activeSection = document.getElementById(`visSection${tab}`);
+      if (activeSection) activeSection.classList.add('active');
+      document.querySelectorAll('.vis-tab-btn').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById(`visTab${tab}`);
+      if (activeBtn) activeBtn.classList.add('active');
+    }
+
+    function toggleVisDetailMode() {
+      visDetailedMode = !visDetailedMode;
+      const track = document.getElementById('visToggleTrack');
+      if (track) track.classList.toggle('detailed', visDetailedMode);
+      const label = document.getElementById('visToggleLabel');
+      if (label) label.textContent = visDetailedMode ? '詳細' : '簡易';
+      processVisualizationData();
+    }
+
+    // ========== 錯題模式功能 ==========
+
+    function hasValidRecord() {
+      return userProgress && Object.keys(userProgress).filter(k => k !== 'metadata').length > 0;
+    }
+
+    function getWrongQuestionIds(exam, subMode) {
+      const ids = [];
+      for (const [idStr, attempts] of Object.entries(userProgress)) {
+        if (idStr === 'metadata') continue;
+        if (idStr.length < 7) continue;
+        if (parseInt(idStr[4]) !== exam) continue;
+        if (!Array.isArray(attempts) || attempts.length === 0) continue;
+        if (subMode === 'ever') {
+          if (attempts.some(a => a !== 1)) ids.push(idStr);
+        } else if (subMode === 'recent') {
+          if (attempts[attempts.length - 1] !== 1) ids.push(idStr);
+        }
+      }
+      return ids;
+    }
+
+    function updateWrongModeCounts() {
+      [1, 2].forEach(exam => {
+        const countEl = document.getElementById(`wrongModeCount${exam}`);
+        if (!countEl) return;
+        if (!hasValidRecord()) {
+          countEl.textContent = '尚未載入記錄檔案';
+          return;
+        }
+        const everCount = getWrongQuestionIds(exam, 'ever').length;
+        const recentCount = getWrongQuestionIds(exam, 'recent').length;
+        countEl.textContent = `曾經答錯：${everCount} 題 ／ 最近答錯：${recentCount} 題`;
+      });
+    }
+
+    function updateWrongModeToggleStates() {
+      updateWrongModeCounts();
+    }
+
+    function updateWrongPanelState(exam) {
+      const panel = document.getElementById(`wrongModePanel${exam}`);
+      const btn = document.getElementById(`wrongModeBtn${exam}`);
+      const isActive = wrongModeState.exam === exam;
+      if (panel) panel.classList.toggle('open', isActive);
+      if (btn) btn.classList.toggle('active', isActive);
+
+      const hasRecord = hasValidRecord();
+      const everBtn = document.getElementById(`wrongSubEver${exam}`);
+      const recentBtn = document.getElementById(`wrongSubRecent${exam}`);
+      if (everBtn) {
+        everBtn.disabled = !hasRecord;
+        everBtn.classList.toggle('active', isActive && hasRecord && wrongModeState.subMode === 'ever');
+      }
+      if (recentBtn) {
+        recentBtn.disabled = !hasRecord;
+        recentBtn.classList.toggle('active', isActive && hasRecord && wrongModeState.subMode === 'recent');
+      }
+    }
+
+    function setCheckboxesDisabled(disabled) {
+      ['yearTag1', 'yearTag2', 'subjectTag'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.toggle('checkboxes-disabled', disabled);
+      });
+    }
+
+    function deactivateWrongMode() {
+      wrongModeState = { exam: null, subMode: null };
+      [1, 2].forEach(exam => updateWrongPanelState(exam));
+      setCheckboxesDisabled(false);
+    }
+
+    function toggleWrongMode(exam) {
+      if (wrongModeState.exam === exam) {
+        deactivateWrongMode();
+      } else {
+        wrongModeState = { exam: exam, subMode: null };
+        const otherExam = exam === 1 ? 2 : 1;
+        const otherPanel = document.getElementById(`wrongModePanel${otherExam}`);
+        const otherBtn = document.getElementById(`wrongModeBtn${otherExam}`);
+        if (otherPanel) otherPanel.classList.remove('open');
+        if (otherBtn) otherBtn.classList.remove('active');
+        updateWrongPanelState(exam);
+        setCheckboxesDisabled(true);
+      }
+    }
+
+    function selectWrongSubMode(exam, subMode) {
+      if (!hasValidRecord()) return;
+      wrongModeState = { exam: exam, subMode: subMode };
+      updateWrongPanelState(exam);
+    }
+
+    function getAllYearFilesForExam(exam) {
+      const tagId = exam === 1 ? 'yearTag1' : 'yearTag2';
+      const allCheckboxes = document.querySelectorAll(`#${tagId} input[type="checkbox"]:not([value^="all"])`);
+      return Array.from(allCheckboxes).map(cb => cb.value);
+    }
+
+    async function startWrongModeQuiz() {
+      const { exam, subMode } = wrongModeState;
+      if (!subMode) {
+        alert('請選擇錯題模式（曾經答錯 或 最近答錯）');
+        return;
+      }
+
+      const wrongIds = getWrongQuestionIds(exam, subMode);
+      if (wrongIds.length === 0) {
+        const modeLabel = subMode === 'ever' ? '曾經答錯' : '最近答錯';
+        const examLabel = exam === 1 ? '醫學(一)' : '醫學(二)';
+        alert(`${examLabel} 沒有${modeLabel}的題目`);
+        return;
+      }
+
+      const yearFiles = getAllYearFilesForExam(exam);
+      let allLoadedQuestions = [];
+      for (const yearValue of yearFiles) {
+        const filename = `./exam/${yearValue.replace('(一)', '-1').replace('(二)', '-2')}.json`;
+        try {
+          const response = await fetch(filename);
+          if (!response.ok) continue;
+          const questionsData = await response.json();
+          questionsData.forEach(q => {
+            if (!q.tags) q.tags = [];
+            if (!q.tags.includes(yearValue)) q.tags.push(yearValue);
+          });
+          allLoadedQuestions.push(...questionsData);
+        } catch (error) {
+          console.error(`載入 ${filename} 發生錯誤：`, error);
+        }
+      }
+
+      const wrongSet = new Set(wrongIds);
+      let filteredQuestions = allLoadedQuestions.filter(q => wrongSet.has(q.id));
+
+      if (filteredQuestions.length === 0) {
+        alert('找不到對應的錯題，請確認題目檔案已載入');
+        return;
+      }
+
+      const homepageSection = document.getElementById('homepageRecordSection');
+      if (homepageSection) homepageSection.style.display = 'none';
+
+      quiz = [...filteredQuestions];
+      currentQuestion = 0;
+      correct = 0;
+      isStepMode = true;
+      canUseSpacebar = true;
+      hasWarned = false;
+      showingWrongAnswersOnly = false;
+      wrongQuestionIndices = [];
+
+      document.getElementById('result').innerText = '';
+      document.getElementById('quiz').innerHTML = '';
+      document.getElementById('setupSection').classList.add('hidden');
+      document.getElementById('headerSection').classList.add('hidden');
+      document.getElementById('progressInfo').classList.remove('hidden');
+      document.getElementById('stepControls').classList.remove('hidden');
+      document.getElementById('submitBtn').classList.add('hidden');
+      document.getElementById('totalQuestions').innerText = quiz.length;
+
+      showQuestion(currentQuestion);
+    }
+
     // ========== 首頁記錄檔管理功能 ==========
     
     // 首頁記錄檔狀態
@@ -3391,9 +3643,10 @@
         }
         
         updateHomepageVisualizationButton();
+        updateWrongModeToggleStates();
       }, 200);
     }
-    
+
     // 更新首頁記錄狀態顯示
     function updateHomepageRecordStatus(type, message) {
       const statusElement = document.getElementById('homepageRecordStatus');
@@ -3458,6 +3711,17 @@
       <div class="visualization-header">
         <h2>📊 答題狀況視覺化分析</h2>
         <button class="close-visualization" onclick="closeVisualization()">✕</button>
+      </div>
+      <div class="visualization-tab-bar">
+        <button class="vis-tab-btn active" id="visTab1" onclick="switchVisualTab(1)">醫學(一)</button>
+        <button class="vis-tab-btn" id="visTab2" onclick="switchVisualTab(2)">醫學(二)</button>
+        <div class="vis-detail-toggle" onclick="toggleVisDetailMode()">
+          <span id="visToggleLabel">簡易</span>
+          <div class="vis-toggle-track" id="visToggleTrack">
+            <div class="vis-toggle-knob"></div>
+          </div>
+          <span>詳細</span>
+        </div>
       </div>
       <div class="visualization-body" id="visualizationBody">
         <div id="visualizationContent">
