@@ -3592,7 +3592,7 @@
       }
 
       const wrongSet = new Set(wrongIds);
-      let filteredQuestions = allLoadedQuestions.filter(q => wrongSet.has(q.id));
+      let filteredQuestions = allLoadedQuestions.filter(q => wrongSet.has(String(q.id)));
 
       if (filteredQuestions.length === 0) {
         alert('找不到對應的錯題，請確認題目檔案已載入');
