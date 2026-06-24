@@ -1301,6 +1301,8 @@
     .wrong-sub-btn { padding: 5px 12px; font-size: 13px; border: 2px solid #fd7e14; border-radius: 6px; background-color: #fff; color: #fd7e14; cursor: pointer; font-weight: bold; }
     .wrong-sub-btn.active { background-color: #fd7e14; color: white; }
     .wrong-sub-btn:disabled { border-color: #ccc; color: #ccc; cursor: not-allowed; background-color: #fff; }
+    .wrong-count-row { margin-top: 8px; font-size: 13px; color: #555; display: flex; align-items: center; gap: 4px; }
+    .wrong-count-row input[type="number"] { width: 58px; padding: 2px 4px; border: 1px solid #ccc; border-radius: 4px; text-align: center; }
     .checkboxes-disabled .visual-checkbox { pointer-events: none; opacity: 0.4; }
     /* 視覺化 Tab 樣式 */
     .visualization-tab-bar { display: flex; align-items: flex-end; background-color: #f0f2f5; border-bottom: 2px solid #dee2e6; padding: 10px 20px 0 20px; gap: 8px; }
@@ -1373,6 +1375,9 @@
                 <button class="wrong-sub-btn" id="wrongSubEver1" onclick="selectWrongSubMode(1, 'ever')">曾經答錯</button>
                 <button class="wrong-sub-btn" id="wrongSubRecent1" onclick="selectWrongSubMode(1, 'recent')">最近答錯</button>
               </div>
+              <div class="wrong-count-row" id="wrongCountRow1" style="display:none;">
+                題數：<input type="number" id="wrongCountInput1" min="1" value="1"> / <span id="wrongCountMax1">0</span> 題
+              </div>
             </div>
           </div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="all1" onchange="handleSelectAll('year1')">全選</div><br>
@@ -1410,6 +1415,9 @@
               <div class="wrong-sub-btns">
                 <button class="wrong-sub-btn" id="wrongSubEver2" onclick="selectWrongSubMode(2, 'ever')">曾經答錯</button>
                 <button class="wrong-sub-btn" id="wrongSubRecent2" onclick="selectWrongSubMode(2, 'recent')">最近答錯</button>
+              </div>
+              <div class="wrong-count-row" id="wrongCountRow2" style="display:none;">
+                題數：<input type="number" id="wrongCountInput2" min="1" value="1"> / <span id="wrongCountMax2">0</span> 題
               </div>
             </div>
           </div><br>
@@ -3497,6 +3505,11 @@
         recentBtn.disabled = !hasRecord;
         recentBtn.classList.toggle('active', isActive && hasRecord && wrongModeState.subMode === 'recent');
       }
+
+      const countRow = document.getElementById(`wrongCountRow${exam}`);
+      if (countRow) {
+        countRow.style.display = (isActive && hasRecord && wrongModeState.subMode !== null) ? 'flex' : 'none';
+      }
     }
 
     function setCheckboxesDisabled(disabled) {
@@ -3531,6 +3544,12 @@
       if (!hasValidRecord()) return;
       wrongModeState = { exam: exam, subMode: subMode };
       updateWrongPanelState(exam);
+      // 更新題數最大值並預設為最大
+      const maxCount = getWrongQuestionIds(exam, subMode).length;
+      const countInput = document.getElementById(`wrongCountInput${exam}`);
+      const countMax = document.getElementById(`wrongCountMax${exam}`);
+      if (countInput) { countInput.max = maxCount; countInput.value = maxCount; }
+      if (countMax) countMax.textContent = maxCount;
     }
 
     function getAllYearFilesForExam(exam) {
@@ -3580,10 +3599,18 @@
         return;
       }
 
+      // 讀取使用者設定的題數，隨機取樣後依出題順序排列
+      const countInput = document.getElementById(`wrongCountInput${exam}`);
+      const requestedCount = countInput ? Math.max(1, parseInt(countInput.value) || filteredQuestions.length) : filteredQuestions.length;
+      const actualCount = Math.min(requestedCount, filteredQuestions.length);
+      const sampled = [...filteredQuestions].sort(() => Math.random() - 0.5).slice(0, actualCount);
+      const questionOrder = document.getElementById('questionOrder').value;
+      quiz = questionOrder === 'sequential'
+        ? sampled.sort((a, b) => normalizeId(a.id) - normalizeId(b.id))
+        : sampled;
+
       const homepageSection = document.getElementById('homepageRecordSection');
       if (homepageSection) homepageSection.style.display = 'none';
-
-      quiz = [...filteredQuestions];
       currentQuestion = 0;
       correct = 0;
       isStepMode = true;
