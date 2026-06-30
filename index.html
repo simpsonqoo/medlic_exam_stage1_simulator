@@ -1942,6 +1942,14 @@
       }
     });
 
+    function shuffleArray(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
     function selectQuestionsByGroup(questions, targetCount) {
       // 按 group_id 分組
       const groupMap = new Map();
@@ -1956,7 +1964,7 @@
       
       // 將分組轉換為陣列並隨機排序
       const groups = Array.from(groupMap.values());
-      const shuffledGroups = groups.sort(() => Math.random() - 0.5);
+      const shuffledGroups = shuffleArray(groups);
       
       // 依序加入題目直到達到目標數量
       let selectedQuestions = [];
@@ -2042,7 +2050,7 @@
         });
       } else {
         // 隨機排列各組的順序
-        finalGroups = groups.sort(() => Math.random() - 0.5);
+        finalGroups = shuffleArray(groups);
       }
       
       // 將各組依序加入，保持組內題目連續
