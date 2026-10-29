@@ -1369,6 +1369,7 @@
             </div>
           </div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="all1" onchange="handleSelectAll('year1')">全選</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="115-2(一)">115-2(一)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="115-1(一)">115-1(一)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114-2(一)">114-2(一)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114-1(一)">114-1(一)</div><br>
@@ -1410,6 +1411,7 @@
             </div>
           </div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="all2" onchange="handleSelectAll('year2')">全選</div><br>
+          <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="115-2(二)">115-2(二)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="115-1(二)">115-1(二)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114-2(二)">114-2(二)</div><br>
           <div class="visual-checkbox" onclick="toggleVisualCheckbox(this)"><input type="checkbox" value="114-1(二)">114-1(二)</div><br>
@@ -1926,7 +1928,7 @@
     }
 
     // 定義已知的年份和科目標籤
-    const yearTags = ["114-2(一)", "114-1(一)", "113-2(一)", "113-1(一)", "112-2(一)", "112-1(一)", "111-2(一)", "111-1(一)", "110-2(一)", "110-1(一)", "109-2(一)", "109-1(一)", "108-2(一)", "108-1(一)", "107-2(一)", "107-1(一)", "106-2(一)", "106-1(一)", "105-2(一)", "105-1(一)", "104-2(一)", "104-1(一)", "114-2(二)", "114-1(二)", "113-2(二)", "113-1(二)", "112-2(二)", "112-1(二)", "111-2(二)", "111-1(二)", "110-2(二)", "110-1(二)", "109-2(二)", "109-1(二)", "108-2(二)", "108-1(二)", "107-2(二)", "107-1(二)", "106-2(二)", "106-1(二)", "105-2(二)", "105-1(二)", "104-2(二)", "104-1(二)"];
+    const yearTags = ["115-2(一)", "115-1(一)", "114-2(一)", "114-1(一)", "113-2(一)", "113-1(一)", "112-2(一)", "112-1(一)", "111-2(一)", "111-1(一)", "110-2(一)", "110-1(一)", "109-2(一)", "109-1(一)", "108-2(一)", "108-1(一)", "107-2(一)", "107-1(一)", "106-2(一)", "106-1(一)", "105-2(一)", "105-1(一)", "104-2(一)", "104-1(一)", "115-2(二)", "115-1(二)", "114-2(二)", "114-1(二)", "113-2(二)", "113-1(二)", "112-2(二)", "112-1(二)", "111-2(二)", "111-1(二)", "110-2(二)", "110-1(二)", "109-2(二)", "109-1(二)", "108-2(二)", "108-1(二)", "107-2(二)", "107-1(二)", "106-2(二)", "106-1(二)", "105-2(二)", "105-1(二)", "104-2(二)", "104-1(二)"];
     const subjectTags = ["解剖", "胚胎", "組織", "生理", "生化", "微生物", "免疫", "寄生蟲", "公衛", "藥理", "病理"];
 
     // 添加鍵盤事件監聽器
@@ -3218,6 +3220,12 @@
     function generateYearList() {
       const years = [];
       // 115年
+      years.push({
+        year: 115,
+        term: 2,
+        medicine1: "115-2(一)",
+        medicine2: "115-2(二)"
+      });
       years.push({
         year: 115,
         term: 1,

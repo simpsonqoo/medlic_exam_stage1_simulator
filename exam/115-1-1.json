@@ -1113,7 +1113,10 @@
       "C": "麩醯胺酸（glutamine）在腎臟中的代謝量，會因為代謝性酸中毒而增加",
       "D": "尿素（urea）的再吸收是初級主動運輸通道表現上升，促使尿素的再吸收"
     },
-    "answer": "A,D",
+    "answer": [
+      "A",
+      "D"
+    ],
     "explanation": "此題為雙答題，考查氨（ammonia）代謝及排泄的正確知識，其中A和D的描述均有錯誤。<br>(A) 錯誤，肝臟將氨轉變為尿素（urea）及麩醯胺酸（glutamine）均正確，但麩醯胺酸（glutamine）在腎臟中代謝後以NH₄⁺形式直接由尿液排出，而非以麩醯胺酸本身排出；尿素則主要由腎臟過濾後排出尿液<br>(B) 正確，血管加壓素（vasopressin，ADH）促進集尿管（collecting duct）對水分及尿素的再吸收，ADH表現增加會使尿素在腎髓質再吸收增加，從尿液排出的尿素量下降<br>(C) 正確，代謝性酸中毒（metabolic acidosis）時腎臟需排出更多H⁺，麩醯胺酸（glutamine）在腎臟的代謝量增加，產生NH₃結合H⁺形成NH₄⁺排出，有助於酸鹼調節<br>(D) 錯誤，尿素（urea）的再吸收是透過尿素轉運子（urea transporter，UT）進行的協助擴散（facilitated diffusion），而非初級主動運輸（primary active transport）；ADH可上調UT-A1及UT-A3的表現，促進髓質集尿管的尿素再吸收",
     "tags": [
       "115-1(一)",
