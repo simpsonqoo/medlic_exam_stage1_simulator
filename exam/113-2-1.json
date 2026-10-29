@@ -1055,7 +1055,7 @@
   },
   {
     "id": 1132163,
-    "question": "63. 相較於健康者，肺氣腫（emphysema）的病患有下列那些特徵？①呼吸道阻力（airway resistance）增加 ②肺臟順應性（lung compliance）減少 ③生理無效腔（physiological dead space）增加 ④體動脈（systemic artery）血中血氧飽和度百分比（oxygen saturation percentage, ）不變",
+    "question": "63. 相較於健康者，肺氣腫（emphysema）的病患有下列那些特徵？①呼吸道阻力（airway resistance）增加 ②肺臟順應性（lung compliance）減少 ③生理無效腔（physiological dead space）增加 ④體動脈（systemic artery）血中血氧飽和度百分比（oxygen saturation percentage, ）不變",
     "options": {
       "A": "①②③④",
       "B": "僅①③",
@@ -1076,7 +1076,7 @@
     "options": {
       "A": "膽囊收縮素（cholecystokinin, CCK）主要促進胃排空（gastric emptying），並可促進胃結腸反射 （gastrocolic reflex）",
       "B": "膽囊收縮素（cholecystokinin, CCK）可因感受腸道酸鹼值（pH）下降而分泌，主要促進奧迪氏括約肌 （sphincter of Oddi）收縮",
-      "C": "胰泌素（secretin）主要促進胰臟碳酸根離子（）釋放，並抑制胃部氫離子（H+）分泌",
+      "C": "胰泌素（secretin）主要促進胰臟碳酸根離子（HCO<sub>3</sub><sup>-</sup>）釋放，並抑制胃部氫離子（H+）分泌",
       "D": "胰泌素（secretin）可因感受腸道中之酸鹼值（pH）上升而分泌，主要促進胰臟製造消化酵素"
     },
     "answer": "C",
@@ -1110,7 +1110,7 @@
     "options": {
       "A": "腹瀉而造成流失碳酸鹽（bicarbonate）",
       "B": "換氣不足（hypoventilation）",
-      "C": "腎臟排除銨離子（）",
+      "C": "腎臟排除銨離子（NH<sub>4</sub><sup>+</sup>）",
       "D": "由蛋白質及其他有機物在代謝過程中產生非揮發性酸（nonvolatile acid）"
     },
     "answer": "C",
@@ -1315,7 +1315,7 @@
       "A": "vitamin D3作為類固醇激素，經代謝後可調節鈣和磷的體內平衡",
       "B": "vitamin D3可經由陽光照射皮膚中的7-dehydrocholesterol來生成",
       "C": "vitamin E具有抗氧化功能",
-      "D": "vitamin K參與血液凝結及結合"
+      "D": "vitamin K參與血液凝結及K<sup>+</sup>結合"
     },
     "answer": "D",
     "explanation": "脂溶性維生素各有特定的生理功能，維生素K主要參與凝血功能。\n(A) 正確，維生素D3經代謝後成為活性激素，調節鈣磷平衡\n(B) 正確，維生素D3可由皮膚中的7-脫氫膽固醇在紫外線照射下生成\n(C) 正確，維生素E（生育酚）具有抗氧化功能，保護細胞膜\n(D) 錯誤，維生素K主要參與血液凝結過程中凝血因子的γ-羧化反應，不是參與結合反應",

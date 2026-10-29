@@ -1604,7 +1604,7 @@
     "id": 1041294,
     "question": "94. 一位 20 歲女性，因為肚子痛而至急診，腹部超音波發現胰臟有一直徑約 8 公分的腫瘤，腫瘤內有囊 狀結構。經手術切除腫瘤，組織學檢查腫瘤內有一些囊狀結構內充滿出血，腫瘤細胞生長方式為成 片排列或者為乳突狀突起。則下列何者為最可能的診斷？",
     "options": {
-      "A": "congenital cyst of pancreas of pancreas",
+      "A": "congenital cyst of pancreas",
       "B": "pancreas divisum",
       "C": "solid-pseudopapillary neoplasm",
       "D": "pancreatic pseudocyst"
@@ -1711,8 +1711,8 @@
     "options": {
       "A": "縱膈腔的卵黃囊腫瘤（yolk sac tumor）",
       "B": "睪丸的精細胞瘤（seminoma）",
-      "C": "卵巢的 dysgerminoma dysgerminoma",
-      "D": "松果腺地區的 germinoma germinoma"
+      "C": "卵巢的 dysgerminoma",
+      "D": "松果腺地區的 germinoma"
     },
     "answer": "A",
     "explanation": "生殖細胞腫瘤在不同部位有相似的組織學特徵，但卵黃囊腫瘤較特殊。\n(A) 正確，卵黃囊腫瘤（yolk sac tumor）具有特殊的網狀結構和Schiller-Duval小體，組織學型態與其他生殖細胞腫瘤差異最大\n(B) 錯誤，精細胞瘤（seminoma）與dysgerminoma和germinoma組織學相似\n(C) 錯誤，卵巢的無性細胞瘤（dysgerminoma）與精細胞瘤組織學相似\n(D) 錯誤，松果腺的生殖細胞瘤（germinoma）與精細胞瘤組織學相似",

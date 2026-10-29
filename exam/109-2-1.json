@@ -4,7 +4,7 @@
     "question": "1. 有關中樞神經系統內下行徑路的敘述，下列何者錯誤?",
     "options": {
       "A": "前庭脊髓徑(vestibulospinal tract)主要支配軀幹與肢體之伸肌群(extensor muscle)",
-      "B": "網狀系統接受多方面傳入之訊息且發出網狀脊髓徑(eticulospinaltract)調控運動系統",
+      "B": "網狀系統接受多方面傳入之訊息且發出網狀脊髓徑(reticulospinaltract)調控運動系統",
       "C": "在人體，紅核脊髓徑(rubrospinaltract)支配上下肢之屈肌群",
       "D": "腹側大腦皮質脊髓徑(ventral corticospinaltract)主要支配軀幹之肌群"
     },
@@ -20,7 +20,7 @@
     "id": 1092102,
     "question": "2. 有關內耳外淋巴(perilymph)的敘述，下列何者錯誤?",
     "options": {
-      "A": "存在於連接回窗(round window)與卵圓窗 (oval window)間的管道",
+      "A": "存在於連接圓窗(round window)與卵圓窗 (oval window)間的管道",
       "B": "存於耳蝸的前庭階(scala vestibuli)內",
       "C": "與蛛網膜下腔(subarachnoid space)相交通",
       "D": "存於膜性迷路(membranous labyrinth)內"
@@ -35,12 +35,12 @@
   },
   {
     "id": 1092103,
-    "question": "3. 有關內頸動脈(intenal carotid artery)的敘述，下列何者錯誤?",
+    "question": "3. 有關內頸動脈(internal carotid artery)的敘述，下列何者錯誤?",
     "options": {
       "A": "起源於總頸動脈",
       "B": "在頸部它走於內頸靜脈的內側",
-      "C": "於破裂孔(foramen lacerum)處轉向後方進入頗腔",
-      "D": "與外旋神經(abducent nerve)共同穿過海綿寳(cavernous sinus)"
+      "C": "於破裂孔(foramen lacerum)處轉向後方進入顱腔",
+      "D": "與外旋神經(abducent nerve)共同穿過海綿竇(cavernous sinus)"
     },
     "answer": "C",
     "explanation": "此題考查內頸動脈（internal carotid artery）的解剖走向。內頸動脈在破裂孔處是轉向前內方，不是後方。\n(A) 正確，內頸動脈起源於總頸動脈分叉處\n(B) 正確，在頸部內頸動脈走於內頸靜脈的內側\n(C) 錯誤，內頸動脈於破裂孔（foramen lacerum）處轉向前內方進入顱腔，不是後方\n(D) 正確，內頸動脈與外旋神經（abducent nerve）共同穿過海綿竇（cavernous sinus）",
@@ -52,7 +52,7 @@
   },
   {
     "id": 1092104,
-    "question": "4. 在一般情況下，奇靜脈(azygos veim)在下列何處造成壓跡?",
+    "question": "4. 在一般情況下，奇靜脈(azygos vein)在下列何處造成壓跡?",
     "options": {
       "A": "右肺上葉(right lung， superior lobe )",
       "B": "左肺上葉 (left lung， superior lobe )",
@@ -77,7 +77,7 @@
       "A": "食道",
       "B": "胃",
       "C": "空腸",
-      "D": "横結腸"
+      "D": "橫結腸"
     },
     "answer": "B",
     "explanation": "此題考查消化道管壁的組織學特徵。胃壁內層有特殊的縱走皺摺結構稱為胃摺。\n(A) 錯誤，食道管壁內沒有明顯的縱走皺摺\n(B) 正確，胃壁內有縱走皺摺（gastric folds或gastric rugae），有助於胃的擴張\n(C) 錯誤，空腸有環狀皺摺（circular folds），不是縱走皺摺\n(D) 錯誤，橫結腸沒有明顯的縱走皺摺",
@@ -123,7 +123,7 @@
   },
   {
     "id": 1092108,
-    "question": "8. 直腸梳狀線(pectinatelin)下方之淋巴，最常直接匯流至下列何處?",
+    "question": "8. 直腸梳狀線(pectinatelin)e下方之淋巴，最常直接匯流至下列何處?",
     "options": {
       "A": "髂內淋巴結(internal iliac lymph nodes )",
       "B": "髂外淋巴結(external iliac lymph nodes )",
@@ -162,7 +162,7 @@
       "A": "白膜(tunica albuginea)",
       "B": "鞘膜(tunica vaginalis )",
       "C": "闊韌帶 broad ligament )",
-      "D": "懸制帶(suspensory ligament )"
+      "D": "懸韌帶(suspensory ligament )"
     },
     "answer": "A",
     "explanation": "此題考查腹膜的衍生結構。腹膜在胚胎發育過程中形成多種支持性結構。\n(A) 正確，白膜（tunica albuginea）是睪丸的纖維外殼，不是腹膜衍生物\n(B) 錯誤，鞘膜（tunica vaginalis）是腹膜下降形成的結構\n(C) 錯誤，闊韌帶（broad ligament）是子宮的腹膜韌帶\n(D) 錯誤，懸韌帶（suspensory ligament）是卵巢的腹膜懸韌帶",
@@ -176,10 +176,10 @@
     "id": 1092111,
     "question": "11. 下列何者是直接連接子宮與卵巢的支持構造?",
     "options": {
-      "A": "卵巢繋膜(ovarian mesovarium)",
+      "A": "卵巢繫膜(ovarian mesovarium)",
       "B": "卵巢韌帶(ovarian ligament)",
       "C": "子宮圓韌帶(round ligament of the uterus )",
-      "D": "輸卵管繋膜(mesosalpinx)"
+      "D": "輸卵管繫膜(mesosalpinx)"
     },
     "answer": "B",
     "explanation": "此題考查子宮和卵巢之間的解剖連接結構。卵巢韌帶是直接連接這兩個器官的重要結構。\n(A) 錯誤，卵巢繫膜（ovarian mesovarium）是卵巢的腹膜覆蓋，不是連接子宮的結構\n(B) 正確，卵巢韌帶（ovarian ligament）直接連接子宮角與卵巢內側端\n(C) 錯誤，子宮圓韌帶（round ligament of the uterus）連接子宮與腹股溝管，不連接卵巢\n(D) 錯誤，輸卵管繫膜（mesosalpinx）是輸卵管的腹膜覆蓋結構",
@@ -191,10 +191,10 @@
   },
   {
     "id": 1092112,
-    "question": "12. 下列前臂(foearm)的肌肉中，那一塊附著在手腕的豆狀母(pisiform bone)上?",
+    "question": "12. 下列前臂(forearm)的肌肉中，那一塊附著在手腕的豆狀骨(pisiform bone)上?",
     "options": {
       "A": "旋前圓肌(pronator teres )",
-      "B": "橈側屈腕肌(fexor carpi radialis )",
+      "B": "橈側屈腕肌(flexor carpi radialis )",
       "C": "掌長肌 (palmaris longus )",
       "D": "尺側屈腕肌(flexor carpi ulnaris)"
     },
@@ -210,10 +210,10 @@
     "id": 1092113,
     "question": "13. 有關頸椎關節的敘述，下列何者正確?",
     "options": {
-      "A": "寰枕開節(atlanto-occiptaljoint)主要提供頭部左右轉動",
-      "B": "翼靭帶(alar ligament)主要連結樞椎(axis)的齒突(dens)與寰椎(atlas)",
+      "A": "寰枕關節(atlanto-occipitaljoint)主要提供頭部左右轉動",
+      "B": "翼韌帶(alar ligament)主要連結樞椎(axis)的齒突(dens)與寰椎(atlas)",
       "C": "樞椎的齒突主要與寰椎前結節(anterior tubercle)的後表面形成關節",
-      "D": "横突(transverse process)上有肋關節面 (costal facet)"
+      "D": "橫突(transverse process)上有肋關節面 (costal facet)"
     },
     "answer": "C",
     "explanation": "此題考查頸椎關節的解剖結構和運動功能。寰枕關節和寰樞關節有不同的運動特性。\n(A) 錯誤，寰枕關節（atlanto-occipital joint）主要提供頭部前後點頭動作，左右轉動主要由寰樞關節負責\n(B) 錯誤，翼韌帶（alar ligament）連接樞椎齒突與枕骨，不是與寰椎連接\n(C) 正確，樞椎的齒突（dens）與寰椎前弓的後表面形成寰樞正中關節\n(D) 錯誤，頸椎橫突上沒有肋關節面，肋關節面存在於胸椎",
@@ -259,7 +259,7 @@
   },
   {
     "id": 1092116,
-    "question": "16. 下列何構造不屬於外側嗅覺區(lateral olfactoryarca)?",
+    "question": "16. 下列何構造不屬於外側嗅覺區(lateral olfactoryarea)?",
     "options": {
       "A": "前隔區 (septal area)",
       "B": "鉤迴(uncus)",
@@ -344,7 +344,7 @@
   },
   {
     "id": 1092121,
-    "question": "21. 横顏面動脈(transverse facial artery)是下列那一動脈的分支?",
+    "question": "21. 橫顏面動脈(transverse facial artery)是下列那一動脈的分支?",
     "options": {
       "A": "顏面動脈(facial artery)",
       "B": "上頜動脈 (maxillary artery)",
@@ -361,12 +361,12 @@
   },
   {
     "id": 1092122,
-    "question": "22. 下列何者與心臟纖維骨架(fibrous skelectasis)的功能，最不相關?",
+    "question": "22. 下列何者與心臟纖維骨架(fibrous skeleton)的功能，最不相關?",
     "options": {
       "A": "提供瓣膜附著處",
       "B": "使心房心室不同時收縮",
       "C": "冠狀動脈供血區域之分界線",
-      "D": "使辦膜出口不會隨血流量改變而過分擴張"
+      "D": "使瓣膜出口不會隨血流量改變而過分擴張"
     },
     "answer": "C",
     "explanation": "心臟纖維骨架（fibrous skeleton）主要功能是提供結構支撐和電傳導隔離，與冠狀動脈供血區域分界無關。\n(A) 錯誤，纖維骨架確實提供瓣膜附著處\n(B) 錯誤，纖維骨架在心房心室間形成絕緣層，使其不同時收縮\n(C) 正確，冠狀動脈供血區域之分界線與心臟纖維骨架（fibrous skeleton）的功能最不相關\n(D) 錯誤，纖維骨架確實使瓣膜出口不會隨血流量改變而過分擴張",
@@ -398,8 +398,8 @@
     "question": "24. 內胸動脈 (internal thoracic artery) 走在:",
     "options": {
       "A": "壁層肋膜 (parietal pleura)內側",
-      "B": "壁層肋膜(parietal pleura)與胸横肌(transversus thoracis)之間",
-      "C": "胸横肌(transversus thoracis)與肋軟骨之間",
+      "B": "壁層肋膜(parietal pleura)與胸橫肌(transversus thoracis)之間",
+      "C": "胸橫肌(transversus thoracis)與肋軟骨之間",
       "D": "胸骨正下方"
     },
     "answer": "C",
@@ -417,7 +417,7 @@
       "A": "椎間關節(intervertebraljoint)屬滑液關節(synovialjoint)",
       "B": "第一胸肋關節(sternocostaljoint)屬滑液關節(synovialjoint)",
       "C": "第二到第七胸肋關節(sternocostaljoint)屬軟骨關節cartilaginousjoint)",
-      "D": "胸鎖關節(sternoclavicularjint)屬滑液關節(synovialjoint)"
+      "D": "胸鎖關節(sternoclavicularjoint)屬滑液關節(synovialjoint)"
     },
     "answer": "D",
     "explanation": "關節分類中，胸鎖關節屬於滑液關節，具有關節囊和滑液腔。\n(A) 錯誤，椎間關節（intervertebral joint）應為椎間盤關節，屬軟骨關節，不是滑液關節\n(B) 錯誤，第一胸肋關節（sternocostal joint）屬軟骨關節，不是滑液關節\n(C) 錯誤，第二到第七胸肋關節（sternocostal joint）屬滑液關節，不是軟骨關節\n(D) 正確，胸鎖關節（sternoclavicular joint）屬滑液關節（synovial joint）",
@@ -429,7 +429,7 @@
   },
   {
     "id": 1092126,
-    "question": "26. 有關肋間隙(intercostal space)之敘迹，下列何者正確?",
+    "question": "26. 有關肋間隙(intercostal space)之敘述，下列何者正確?",
     "options": {
       "A": "第五肋間是指介於第四及第五肋骨間的間隙",
       "B": "共有11個肋間隙",
@@ -550,10 +550,10 @@
     "id": 1092133,
     "question": "33. 中腸環(midgut loop)的旋轉，以下列何者為軸心?",
     "options": {
-      "A": "卵黄柄(yolk stalk)",
+      "A": "卵黃柄(yolk stalk)",
       "B": "腹腔動脈 (celiac artery)",
       "C": "腸繫膜上動脈(superior mesenteric artery)",
-      "D": "腸繋膜下動脈(inferior mesenteric artery)"
+      "D": "腸繫膜下動脈(inferior mesenteric artery)"
     },
     "answer": "C",
     "explanation": "中腸環（midgut loop）的旋轉以腸繫膜上動脈為軸心進行270度順時針旋轉。\n(A) 錯誤，卵黃柄（yolk stalk）不是旋轉軸心\n(B) 錯誤，腹腔動脈（celiac artery）供應前腸，不是中腸旋轉軸心\n(C) 正確，中腸環（midgut loop）的旋轉，以腸繫膜上動脈（superior mesenteric artery）為軸心\n(D) 錯誤，腸繫膜下動脈（inferior mesenteric artery）供應後腸，不是中腸旋轉軸心",
@@ -603,7 +603,7 @@
     "options": {
       "A": "第一與第二咽弓pharyngeal arch)之間葉組織(mesenchyme)",
       "B": "第一咽囊 (pharyngeal pouch) 之內胚層 (endoderm)",
-      "C": "神經外胚層(ncuroectoderm)",
+      "C": "神經外胚層(neuroectoderm)",
       "D": "第一咽溝(pharyngeal groove)之外胚層(ectoderm)"
     },
     "answer": "C",
@@ -616,7 +616,7 @@
   },
   {
     "id": 1092137,
-    "question": "37. 在骨髂肌(skeletal muscle)中，每一個肌肉細胞(muscle cell)又稱為:",
+    "question": "37. 在骨骼肌(skeletal muscle)中，每一個肌肉細胞(muscle cell)又稱為:",
     "options": {
       "A": "肌原纖維(myofibril)",
       "B": "肌纖維(muscle fiber)",
@@ -633,7 +633,7 @@
   },
   {
     "id": 1092138,
-    "question": "38. 下列何者不是平滑肌細胞(smooth muscle cell)的特徴?",
+    "question": "38. 下列何者不是平滑肌細胞(smooth muscle cell)的特徵?",
     "options": {
       "A": "緻密體 (dense body)",
       "B": "細胞膜小凹(caveolae)",
@@ -652,7 +652,7 @@
     "id": 1092139,
     "question": "39. 在正常情形下，下列有關人類血液(blood)之敘述，何者正確?",
     "options": {
-      "A": "巨核細胞/紅血球前驅細胞(megakaryocyte/erythrocyte progenitor，MEP)是血小板(platelet)和紅血球 (erythrocytce)的共同前驅細胞",
+      "A": "巨核細胞/紅血球前驅細胞(megakaryocyte/erythrocyte progenitor，MEP)是血小板(platelet)和紅血球 (erythrocyte)的共同前驅細胞",
       "B": "紅血球(erythrocyte)在血液中的含量是最少的，其平均直徑約10〜12 μm，壽命大約180天",
       "C": "白血球(white blood cell)分為許多種類，其中數目最少的是嗜酸性球 (eosinophil)",
       "D": "血小板內有細胞核(nucleus)與許多顆粒(granule)能協助血塊(blood clot)的形成"
@@ -669,9 +669,9 @@
     "id": 1092140,
     "question": "40. 下列有關血-腦屏障(blood-brain barrier)的敘述，何者錯誤?",
     "options": {
-      "A": "其組成主要包括星狀膠細胞(astroyte)與連續型微血管",
+      "A": "其組成主要包括星狀膠細胞(astrocyte)與連續型微血管",
       "B": "微血管的內皮細胞之間具有緊密接合(tightjunction)",
-      "C": "大腦(cerbrum)是唯一具有血-腦屏障的腦部組織",
+      "C": "大腦(cerebrum)是唯一具有血-腦屏障的腦部組織",
       "D": "正常功能的星狀膠細胞(astrocyte)有助於血-腦屏障的維持"
     },
     "answer": "C",
@@ -718,7 +718,7 @@
   },
   {
     "id": 1092143,
-    "question": "43. 下列何者位於肌外層(muscularis externa)調節腸端動(peristalsis)?",
+    "question": "43. 下列何者位於肌外層(muscularis externa)調節腸蠕動(peristalsis)?",
     "options": {
       "A": "梅斯納氏小體(Meissner's corpuscle)",
       "B": "梅斯納氏神經叢(Meissner's plexus)",
@@ -755,7 +755,7 @@
     "question": "45. 關於男性陰莖(penis)結構的敘述，何者正確?",
     "options": {
       "A": "由疏鬆結締組織的白膜(tunica albuginea)包覆陰莖海綿體(corpora cavernosa)",
-      "B": "陰莖海綿體(corpora cavemosa)中具有許多不規則的血管腔，血管腔外圍有平滑肌束(smooth muscle bundle)",
+      "B": "陰莖海綿體(corpora cavernosa)中具有許多不規則的血管腔，血管腔外圍有平滑肌束(smooth muscle bundle)",
       "C": "血管組成都是由小動脈(arteriole)至微血管(capillary)後，再連接小靜脈(venule)",
       "D": "陰莖龜頭 (glans penis)的皮下組織含有豐富的脂肪組織"
     },
@@ -807,7 +807,7 @@
     "options": {
       "A": "弓狀束(arcuate fasciculus)受損會導致傳導性失語症(conduction aphasia)",
       "B": "Broca's area受損的病人，可能展現流利的口語能力，但語言內容卻無意義",
-      "C": "慣用右手的人，他的Wemicke's area一般也都在右大腦皮質",
+      "C": "慣用右手的人，他的Wernicke's area一般也都在右大腦皮質",
       "D": "語言皮質都位於大腦的頂葉(parietal lobe )"
     },
     "answer": "A",
@@ -839,10 +839,10 @@
     "id": 1092150,
     "question": "50. Basal ganglia如何影響motor cortex的活性?",
     "options": {
-      "A": "透過direct pathway降低motor cortex的活性，透過indirect pathway增增 強motor cortex的活性",
+      "A": "透過direct pathway降低motor cortex的活性，透過indirect pathway增 強motor cortex的活性",
       "B": "透過direct pathway增強motor cortex的活性，透過indirect pathway降低motor cortex的活性",
       "C": "direct pathway與 indirect pathway均降 低motor cortex的活性",
-      "D": "direct pathway與indireet pathway均增強motor cortex的活性"
+      "D": "direct pathway與indirect pathway均增強motor cortex的活性"
     },
     "answer": "B",
     "explanation": "此題考查基底核（basal ganglia）對運動皮質的調節機制。基底核透過直接和間接徑路調節運動。\n(A) 錯誤，直接徑路是促進運動，間接徑路是抑制運動\n(B) 正確，透過直接徑路（direct pathway）增強運動皮質（motor cortex）的活性，透過間接徑路（indirect pathway）降低運動皮質的活性\n(C) 錯誤，兩條徑路作用相反，不是都降低活性\n(D) 錯誤，兩條徑路作用相反，不是都增強活性",
@@ -854,7 +854,7 @@
   },
   {
     "id": 1092151,
-    "question": "51. 梅尼爾氏症候群出現眩暈感(vertig)的症狀，最可能是因為下列何處受到異常刺激?",
+    "question": "51. 梅尼爾氏症候群出現眩暈感(vertig)o的症狀，最可能是因為下列何處受到異常刺激?",
     "options": {
       "A": "內耳",
       "B": "聽覺皮質",
@@ -905,11 +905,11 @@
   },
   {
     "id": 1092154,
-    "question": "54. 下列有開單一單位(single-unit)與多單位multi-unit)平滑肌的差異，何者正確?",
+    "question": "54. 下列有關單一單位(single-unit)與多單位multi-unit)平滑肌的差異，何者正確?",
     "options": {
       "A": "single-unit在無任何外在刺激下仍維持低程度張力(tone)，而multi-unit則不會",
-      "B": "single-unit不曾産生自發性動作電位(spontaneous action potential)而multi-unit則會",
-      "C": "single-unit被拉長時不會產生收縮，而multi-umit則會",
+      "B": "single-unit不會產生自發性動作電位(spontaneous action potential)而multi-unit則會",
+      "C": "single-unit被拉長時不會產生收縮，而multi-unit則會",
       "D": "single-unit肌肉收縮強度會受激素(hormones)調節，而multi-unit則不會"
     },
     "answer": "A",
@@ -922,7 +922,7 @@
   },
   {
     "id": 1092155,
-    "question": "55. 下列那一種疾病起因於缺少菸鹼酸膽鹼型受器(nicotiic cholincrgiceceptor)，並可以用乙醯膽鹼分解酶抑制劑(acetylcholinesterase inhibitor)加以治療?",
+    "question": "55. 下列那一種疾病起因於缺少菸鹼酸膽鹼型受器(nicotinic cholinergicreceptor)，並可以用乙醯膽鹼分解酶抑制劑(acetylcholinesterase inhibitor)加以治療?",
     "options": {
       "A": "muscle cramps",
       "B": "hypocalcemic tetany",
@@ -960,7 +960,7 @@
     "options": {
       "A": "心臟",
       "B": "動脈",
-      "C": "静脈",
+      "C": "靜脈",
       "D": "微血管"
     },
     "answer": "C",
@@ -995,10 +995,10 @@
     "id": 1092159,
     "question": "59. 從事舉重運動時，造成運動者當下血管周邊總阻力(total peripheralresistance;TPR)上升的最主要原因為 何?",
     "options": {
-      "A": "肌肉收缩壓迫血管",
+      "A": "肌肉收縮壓迫血管",
       "B": "心輸出量增加，血壓上升",
       "C": "肌肉局部代謝物因子增加",
-      "D": "感壓受器反射(baroreceptor reflex)作用増加"
+      "D": "感壓受器反射(baroreceptor reflex)作用增加"
     },
     "answer": "A",
     "explanation": "此題考查舉重運動時血管阻力變化的生理機制。舉重是等長收縮運動。\n(A) 正確，舉重時肌肉強力收縮壓迫血管，造成血管周邊總阻力（total peripheral resistance, TPR）上升\n(B) 錯誤，心輸出量增加本身不會直接造成周邊阻力上升\n(C) 錯誤，肌肉代謝物質增加通常會造成局部血管擴張\n(D) 錯誤，感壓受器反射主要調節血壓，不是造成阻力上升的主因",
@@ -1010,7 +1010,7 @@
   },
   {
     "id": 1092160,
-    "question": "60. 下列有關肺部界面活性劑(surfatant)之敘述，何者錯誤?",
+    "question": "60. 下列有關肺部界面活性劑(surfactant)之敘述，何者錯誤?",
     "options": {
       "A": "為第二型肺泡細胞(type II alveolar cells)所分泌",
       "B": "其缺乏時，肺泡不易擴張",
@@ -1080,10 +1080,10 @@
     "id": 1092164,
     "question": "64. 下列何者為直接刺激胰臟分泌消化酵素之最主要激素(hormone)?",
     "options": {
-      "A": "膽囊收缩素(cholecystokinin)",
+      "A": "膽囊收縮素(cholecystokinin)",
       "B": "胃泌素(gastrin)",
       "C": "胰泌素(secretin)",
-      "D": "體抑索(somatostatin)"
+      "D": "體抑素(somatostatin)"
     },
     "answer": "A",
     "explanation": "膽囊收縮素是刺激胰臟分泌消化酵素的主要激素，由十二指腸I細胞分泌。\n(A) 正確，膽囊收縮素（cholecystokinin, CCK）是直接刺激胰臟分泌消化酵素之最主要激素\n(B) 錯誤，胃泌素（gastrin）主要刺激胃酸分泌\n(C) 錯誤，胰泌素（secretin）主要刺激胰臟分泌碳酸氫鈉，不是消化酵素\n(D) 錯誤，體抑素（somatostatin）是抑制性激素",
@@ -1100,7 +1100,7 @@
       "A": "亨利氏彎管的細下降枝(thin descending limb)",
       "B": "亨利氏彎管的細上升枝(thin ascending limb )",
       "C": "亨利氏彎管的粗上升枝(thick ascending limb)",
-      "D": "集尿管(collecting duct)的髓質部(iner medullary portion )"
+      "D": "集尿管(collecting duct)的髓質部(inner medullary portion )"
     },
     "answer": "A",
     "explanation": "亨利氏彎管的細下降枝對水分通透性最大，是腎臟濃縮尿液的重要部位。\n(A) 正確，亨利氏彎管的細下降枝（thin descending limb）對水分的通透性最大\n(B) 錯誤，亨利氏彎管的細上升枝對水分不通透\n(C) 錯誤，亨利氏彎管的粗上升枝對水分不通透\n(D) 錯誤，集尿管髓質部的水分通透性受ADH調節，但不是最大的",
@@ -1112,7 +1112,7 @@
   },
   {
     "id": 1092166,
-    "question": "66. 嚴格限制澱粉和肉類的攝取量，只吃水果和蔬菜，每日的鉀攝取量由65 mmoliday 遠增到130mmol/day三週 后身體內最可能發生的生理變化為何?",
+    "question": "66. 嚴格限制澱粉和肉類的攝取量，只吃水果和蔬菜，每日的鉀攝取量由65 mmol/day 遽增到130 mmol/day。三週後身體內最可能發生的生理變化為何?",
     "options": {
       "A": "血中的鉀離子濃度會大幅度上升(＞1 mmol/L)",
       "B": "鈉離子的排出速率(sodium excretion rate)會大幅度上升",
@@ -1129,7 +1129,7 @@
   },
   {
     "id": 1092167,
-    "question": "67. 將雄鼠之腦下垂體前葉(anterior pituitary)移植到另一隻雄鼠之腎臟包膜(renal capsule)內，數週後移植的腦下重體前葉生長情況良好，則接受移植之雄鼠其血中激素與沒接受移植之雄性對照鼠的比較，其變化之情形最接近下列何者?(FSH：follicle stimulating hormone；LH : luteinizing hormone ; TSH : thyroid-stimulating hormone; PRL : prolactin；↑：明顯増加；-：幾乎不變)",
+    "question": "67. 將雄鼠之腦下垂體前葉(anterior pituitary)移植到另一隻雄鼠之腎臟包膜(renal capsule)內，數週後移植的腦下垂體前葉生長情況良好，則接受移植之雄鼠其血中激素與沒接受移植之雄性對照鼠的比較，其變化之情形最接近下列何者?(FSH：follicle stimulating hormone；LH : luteinizing hormone ; TSH : thyroid-stimulating hormone; PRL : prolactin；↑：明顯增加；-：幾乎不變)",
     "options": {
       "A": "FSH↑ ; LH↑ ; TSH↑ ; PRL↑",
       "B": "FSH- ; LH- : TSH- ; PRL-",
@@ -1149,7 +1149,7 @@
     "question": "68. 下列何種激素(hormone)是屬於最典型的tropic hormone?",
     "options": {
       "A": "thyroxine",
-      "B": "insulin-like growth factor-I(IGF-1)",
+      "B": "insulin-like growth factor-1(IGF-1)",
       "C": "prostaglandin E2",
       "D": "thyroid stimulating hormone (TSH)"
     },
@@ -1231,7 +1231,7 @@
   },
   {
     "id": 1092173,
-    "question": "73. 承上題，該病患向醫師表示，近半年來性慾(libid)及陰莖勃起功能(crectile functio)都變差。經檢測血液樣本，發現某一激素的濃度偏高此血中濃度偏高之激素，最有可能為下列何者?",
+    "question": "73. 承上題，該病患向醫師表示，近半年來性慾(libid)o及陰莖勃起功能(erectile functio)n都變差。經檢測血液樣本，發現某一激素的濃度偏高此血中濃度偏高之激素，最有可能為下列何者?",
     "options": {
       "A": "adrenocorticotropic hormone ( ACTH)",
       "B": "prolactin",
@@ -1268,9 +1268,9 @@
     "question": "75. 配體(Ligand)與蛋白質之同向異位性作用(homotropic allostericinteraction)的定義為何?",
     "options": {
       "A": "一分子的配體與蛋白質上的結合位點(binding site)結合後，會影響第二個相同的配體分子結合到同一位點",
-      "B": "一分子的配體與蛋白質上的結合位點(binding site)結合後，會影響該蛋白質其他配體結合位點與配體的結合能力",
+      "B": "上一分子的配體與蛋白質上的結合位點(binding site)結合後，會影響該蛋白質其他配體結合位點與配體的結合能力",
       "C": "二個不同的配體能與同一個蛋白質結合位點(binding site)結合",
-      "D": "配體與蛋白質結合位點(binding site)結合後，不曾造成該蛋白質其他部分的結構變化(conformational change )"
+      "D": "配體與蛋白質結合位點(binding site)結合後，不會造成該蛋白質其他部分的結構變化(conformational change )"
     },
     "answer": "B",
     "explanation": "同向異位性作用是指相同配體結合影響其他位點配體結合能力的現象。\n(A) 錯誤，這描述的是合作性結合，不是異位性作用\n(B) 正確，同向異位性作用（homotropic allosteric interaction）是一分子配體結合後，影響該蛋白質其他配體結合位點與配體的結合能力\n(C) 錯誤，這描述的是競爭性結合\n(D) 錯誤，異位性作用必然涉及構象變化",
@@ -1282,7 +1282,7 @@
   },
   {
     "id": 1092176,
-    "question": "76. 一合乎Michaeli-Menten動力學之酵素，若其反應的初速度(initial reaction rate)為 0.8 V<sub>max</sub>時，受質的濃度應為：",
+    "question": "76. 一合乎Michaeli-sMenten動力學之酵素，若其反應的初速度(initial reaction rate)為 0.8 V<sub>max</sub>時，受質的濃度應為：",
     "options": {
       "A": "2 K<sub>m</sub>",
       "B": "3 K<sub>m</sub>",
@@ -1303,7 +1303,7 @@
     "options": {
       "A": "methyl group",
       "B": "acyl group",
-      "C": "aldchyde group",
+      "C": "aldehyde group",
       "D": "carboxyl group"
     },
     "answer": "C",
@@ -1335,10 +1335,10 @@
     "id": 1092179,
     "question": "79. 下列何種反應是一種deamination的作用?",
     "options": {
-      "A": "胞嘧啶 (cytosine)變成次黃嘌吟(hypoxanthine)",
+      "A": "胞嘧啶 (cytosine)變成次黃嘌呤(hypoxanthine)",
       "B": "5'-甲基胞嘧啶(5'-methylcytosine)變成胸腺嘧啶(thymine)",
-      "C": "腺嘌吟(adenine)變成黃嘌吟(xanthine)",
-      "D": "鳥糞嘌吟(guanine)變成尿嘧啶(uracil)"
+      "C": "腺嘌呤(adenine)變成黃嘌呤(xanthine)",
+      "D": "鳥糞嘌呤(guanine)變成尿嘧啶(uracil)"
     },
     "answer": "B",
     "explanation": "5-甲基胞嘧啶脫胺基變成胸腺嘧啶是典型的脫胺基反應，也是DNA突變的重要機制。\n(A) 錯誤，胞嘧啶脫胺基變成尿嘧啶，不是次黃嘌呤\n(B) 正確，5'-甲基胞嘧啶（5'-methylcytosine）變成胸腺嘧啶（thymine）是deamination（脫胺基）作用\n(C) 錯誤，腺嘌呤脫胺基變成次黃嘌呤，不是黃嘌呤\n(D) 錯誤，鳥糞嘌呤不會脫胺基變成尿嘧啶",
@@ -1388,7 +1388,7 @@
     "options": {
       "A": "DNA解旋酶(helicase)具內切酶活性，切割DNA",
       "B": "引子合成酶 (primase) 合成RNA引子",
-      "C": "DNA拓樸異構酶I(topoisomerase1)具外切酶活性，切割DNA",
+      "C": "DNA拓樸異構酶I(topoisomeraseI)具外切酶活性，切割DNA",
       "D": "DNA聚合酶II (DNA polymerase II) 合成DNA"
     },
     "answer": "B",
@@ -1401,10 +1401,10 @@
   },
   {
     "id": 1092183,
-    "question": "83. 胺醯-tRNA合成酶(aminoacyl-RNA synthetase)的功能為何?",
+    "question": "83. 胺醯-tRNA合成酶(aminoacyl-tRNA synthetase)的功能為何?",
     "options": {
-      "A": "能使RNA和相對應的胺基酸進行酯化作用(esterification)",
-      "B": "能與特定的蛋白質結合後，間接促進RNA與胺基酸進行酯化作用(esterification)",
+      "A": "能使tRNA和相對應的胺基酸進行酯化作用(esterification)",
+      "B": "能與特定的蛋白質結合後，間接促進tRNA與胺基酸進行酯化作用(esterification)",
       "C": "存在於核糖體(ribosome)中，促進胜肽鍵(peptide bond)的合成",
       "D": "需要GTP的作用才能活化胺基酸"
     },
@@ -1421,9 +1421,9 @@
     "question": "84. 下列何者是原核細胞蛋白質合成之延伸期(elongation)的最佳敘述?",
     "options": {
       "A": "每一胜肽鍵的合成只需消耗二個高能磷酸組(high-energy phosphoryl groups)",
-      "B": "胺醯-tRNA (aminoacyl-RNA)首先進人核糖體的P位(P site)",
-      "C": "EF-Tu延伸因子(clongation factor EF-Tu)是有利於蛋白質合成時核糖體的移位作用(tanslocation)",
-      "D": "肽基轉移酶(peptidyl-transerase)是一種ribozyme"
+      "B": "胺醯-tRNA (aminoacyl-tRNA)首先進入核糖體的P位(P site)",
+      "C": "EF-Tu延伸因子(elongation factor EF-Tu)是有利於蛋白質合成時核糖體的移位作用(translocation)",
+      "D": "肽基轉移酶(peptidyl-transferase)是一種ribozyme"
     },
     "answer": "D",
     "explanation": "此題考查原核細胞蛋白質合成延伸期的過程。核糖體的胜肽轉移反應由rRNA催化。\n(A) 錯誤，每一胜肽鍵的合成需要消耗多個高能磷酸鍵，包括胺醯-tRNA形成和延伸因子作用\n(B) 錯誤，胺醯-tRNA首先進入核糖體的A位（A site），然後移至P位（P site）\n(C) 錯誤，EF-Tu延伸因子主要協助胺醯-tRNA進入A位，EF-G才負責移位作用（translocation）\n(D) 正確，肽基轉移酶（peptidyl transferase）是一種核糖體RNA酶（ribozyme），由rRNA催化胜肽鍵形成",
@@ -1452,7 +1452,7 @@
   },
   {
     "id": 1092186,
-    "question": "86. 蛋白質的降解可經由ubiquitin-proteasome的路徑，下列何者是催化將ubiqitin直接結合至待降解之蛋白質上的主要酵素?",
+    "question": "86. 蛋白質的降解可經由ubiquitin-proteasome的路徑，下列何者是催化將ubiquitin直接結合至待降解之蛋白質上的主要酵素?",
     "options": {
       "A": "E1",
       "B": "E2",
@@ -1469,12 +1469,12 @@
   },
   {
     "id": 1092187,
-    "question": "87. 下列有關葡萄糖氧化的五碳糖磷酸途徑(pentose phosphate pathway)功能之敘迹，何者正確?",
+    "question": "87. 下列有關葡萄糖氧化的五碳糖磷酸途徑(pentose phosphate pathway)功能之敘述，何者正確?",
     "options": {
       "A": "負責催化每莫耳葡萄糖產生36莫耳ATP",
-      "B": "負責催化每莫耳葡萄糖産生5莫耳CO<sub>2</sub>",
-      "C": "供應合成核苷酸(ucleotide)所需要之核糖(ribose)的來源",
-      "D": "主要功能是產生NADH及FADH<sub>2</sub>進入呼吸鏈氧化産生能量"
+      "B": "負責催化每莫耳葡萄糖產生5莫耳CO<sub>2</sub>",
+      "C": "供應合成核苷酸(nucleotide)所需要之核糖(ribose)的來源",
+      "D": "主要功能是產生NADH及FADH<sub>2</sub>進入呼吸鏈氧化產生能量"
     },
     "answer": "C",
     "explanation": "此題考查五碳糖磷酸途徑（pentose phosphate pathway）的主要功能。此途徑提供核苷酸合成所需的原料。\n(A) 錯誤，五碳糖磷酸途徑不直接產生ATP，主要產生NADPH\n(B) 錯誤，每莫耳葡萄糖在此途徑中產生1莫耳CO<sub>2</sub>，不是5莫耳\n(C) 正確，此途徑供應合成核苷酸（nucleotide）所需的核糖（ribose）來源\n(D) 錯誤，此途徑主要產生NADPH和核糖，不是產生NADH和FADH<sub>2</sub>",
@@ -1486,7 +1486,7 @@
   },
   {
     "id": 1092188,
-    "question": "88. 下列那一種黏多醣類(mucopolysaccharide)含有alpha1一4糖苷鍵(glycosidicbond)，臨床上用來當抗凝血 劑 (anticoagulant)?",
+    "question": "88. 下列那一種黏多醣類(mucopolysaccharide)含有alpha 1→4糖苷鍵(glycosidicbond)，臨床上用來當抗凝血 劑 (anticoagulant)?",
     "options": {
       "A": "chondroitin sulfate A",
       "B": "heparin",
@@ -1503,7 +1503,7 @@
   },
   {
     "id": 1092189,
-    "question": "89. 經由糖解作用(glycolysis)產生的丙酮酸(pyruvat)必須直接先被轉換為下列何種分子，才能繼續以克式循環 (Krebs cyclc ，亦稱citric acid cycle 或 TCA cyclc)進行氧化?",
+    "question": "89. 經由糖解作用(glycolysis)產生的丙酮酸(pyruvat)e必須直接先被轉換為下列何種分子，才能繼續以克式循環 (Krebs cycle ，亦稱citric acid cycle 或 TCA cycle)進行氧化?",
     "options": {
       "A": "lactic acid",
       "B": "acetyl-CoA",
@@ -1537,7 +1537,7 @@
   },
   {
     "id": 1092191,
-    "question": "91. Carnitine palmitoyl transferases(CPTs)的損壞最可能會導致下列何種物質無法直接進人粒線體中?",
+    "question": "91. Carnitine palmitoyl transferases(CPTs)的損壞最可能會導致下列何種物質無法直接進入粒線體中?",
     "options": {
       "A": "NADH",
       "B": "succinyl CoA",
@@ -1571,11 +1571,11 @@
   },
   {
     "id": 1092193,
-    "question": "93. Aspartate-argininosuccinate shum是代謝胺基酸之重要途徑，其與下列那兩種代謝環之連結有關?",
+    "question": "93. Aspartate-argininosuccinate shunt是代謝胺基酸之重要途徑，其與下列那兩種代謝環之連結有關?",
     "options": {
       "A": "citric acid cycle和urea cycle",
       "B": "urea cycle和Cori cycle",
-      "C": "citric acid cycle glyoxylate cycle",
+      "C": "citric acid cycle 和glyoxylate cycle",
       "D": "glucose-alanine cycle和urea cycle"
     },
     "answer": "A",
@@ -1605,7 +1605,7 @@
   },
   {
     "id": 1092195,
-    "question": "95. 下列那一種克式循環(Krebs cycle，亦稱citric acid cycle或TCA cycle)的中間產物可以不經由NADH的產生，而將其電子直接傅遞給電子傅遞鏈中的複合體II(complex II)進行氧化?",
+    "question": "95. 下列那一種克式循環(Krebs cycle，亦稱citric acid cycle或TCA cycle)的中間產物可以不經由NADH的產生，而將其電子直接傳遞給電子傳遞鏈中的複合體II(complex II)進行氧化?",
     "options": {
       "A": "succinate",
       "B": "citrate",
@@ -1661,7 +1661,7 @@
       "A": "細胞內大部分的鈣離子皆與蛋白質結合",
       "B": "鈣離子濃度在細胞內質網內高於在細胞外液",
       "C": "鈣離子透過與攜鈣素(calmodulin)結合進而調節多重細胞功能",
-      "D": "鈣離子為次級訊息傳遞者(secondary messeger)，其與二醯基甘油(dicylglycerol)對protein kinase C活性的調節作用是相反的"
+      "D": "鈣離子為次級訊息傳遞者(secondary messenger)，其與二醯基甘油(diacylglycerol)對protein kinase C活性的調節作用是相反的"
     },
     "answer": "D",
     "explanation": "此題考查肌肉細胞質中鈣離子的調節機制。鈣離子和二醯基甘油對蛋白激酶C有協同作用。\n(A) 正確，細胞內大部分鈣離子與蛋白質結合，維持低濃度的游離鈣離子\n(B) 正確，肌漿網（sarcoplasmic reticulum）內鈣離子濃度高於細胞外液\n(C) 正確，鈣離子透過與鈣調蛋白（calmodulin）結合調節多種細胞功能\n(D) 錯誤，鈣離子與二醯基甘油（diacylglycerol）對蛋白激酶C（protein kinase C）的活性調節是協同的，不是相反的",

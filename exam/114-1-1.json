@@ -1298,10 +1298,11 @@
       "A": "",
       "B": "",
       "C": "",
-      "D": ""
+      "D": "",
+      "E": "一律給分"
     },
-    "answer": "D",
-    "explanation": "解題關鍵在於理解NAD<sup>+</sup>（菸鹼醯胺腺嘌呤二核苷酸，nicotinamide adenine dinucleotide）的化學結構組成。NAD<sup>+</sup>是由兩個核苷酸透過磷酸基團連接而成，包含腺嘌呤鹼基、核糖、磷酸基團，以及菸鹼醯胺部分。\n(A) 錯誤，此結構為AMP（腺苷單磷酸，adenosine monophosphate），僅含有腺嘌呤、核糖和單一磷酸基團，缺少NAD<sup>+</sup>特有的雙核苷酸結構和菸鹼醯胺基團。\n(B) 錯誤，此結構為維生素B<sub>6</sub>（vitamin B<sub>6</sub>），屬於水溶性維生素，具有吡哆醇結構，與NAD<sup>+</sup>的核苷酸結構完全不同。\n(C) 錯誤，此結構為FAD（黃素腺嘌呤二核苷酸，flavin adenine dinucleotide），雖然同樣是雙核苷酸結構，但含有黃素基團而非菸鹼醯胺基團，與NAD<sup>+</sup>結構不符。\n(D) 正確，此結構完整呈現NAD<sup>+</sup>的分子組成，包含腺嘌呤鹼基、兩個核糖分子、連接的磷酸基團，以及特徵性的菸鹼醯胺基團，符合NAD<sup>+</sup>的標準化學結構。",
+    "answer": "E",
+    "explanation": "此題經申覆後更正為一律給分（原公布答案：D）。以下為原題解析：\n解題關鍵在於理解NAD<sup>+</sup>（菸鹼醯胺腺嘌呤二核苷酸，nicotinamide adenine dinucleotide）的化學結構組成。NAD<sup>+</sup>是由兩個核苷酸透過磷酸基團連接而成，包含腺嘌呤鹼基、核糖、磷酸基團，以及菸鹼醯胺部分。\n(A) 錯誤，此結構為AMP（腺苷單磷酸，adenosine monophosphate），僅含有腺嘌呤、核糖和單一磷酸基團，缺少NAD<sup>+</sup>特有的雙核苷酸結構和菸鹼醯胺基團。\n(B) 錯誤，此結構為維生素B<sub>6</sub>（vitamin B<sub>6</sub>），屬於水溶性維生素，具有吡哆醇結構，與NAD<sup>+</sup>的核苷酸結構完全不同。\n(C) 錯誤，此結構為FAD（黃素腺嘌呤二核苷酸，flavin adenine dinucleotide），雖然同樣是雙核苷酸結構，但含有黃素基團而非菸鹼醯胺基團，與NAD<sup>+</sup>結構不符。\n(D) 正確，此結構完整呈現NAD<sup>+</sup>的分子組成，包含腺嘌呤鹼基、兩個核糖分子、連接的磷酸基團，以及特徵性的菸鹼醯胺基團，符合NAD<sup>+</sup>的標準化學結構。\n(E) 正確，此題一律給分",
     "tags": [
       "114-1(一)",
       "生化"
@@ -1309,6 +1310,7 @@
     "images": [
       "./image/114-1-77A.jpg",
       "./image/114-1-77B.jpg",
+      "./image/114-1-77C.jpg",
       "./image/114-1-77D.jpg"
     ],
     "group_id": "group_2169"
@@ -1655,7 +1657,7 @@
   },
   {
     "id": 1141198,
-    "question": "98. 如果想要將一特定基因的單股多聚核苷酸（polynucleotide）製作成偵測此特定基因的探針 （probe），通常會利用多聚核苷酸激酶（polynucleotide kinase）在其5'端標記具有放射性的 ，進行該反應時，需加入下列何種材料來進行標記？",
+    "question": "98. 如果想要將一特定基因的單股多聚核苷酸（polynucleotide）製作成偵測此特定基因的探針 （probe），通常會利用多聚核苷酸激酶（polynucleotide kinase）在其5'端標記具有放射性的<sup>32</sup>P，進行該反應時，需加入下列何種材料來進行標記？",
     "options": {
       "A": "α-<sup>32</sup>P-dATP",
       "B": "β-<sup>32</sup>P-dATP",

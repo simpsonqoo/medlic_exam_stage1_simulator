@@ -1043,7 +1043,7 @@
   },
   {
     "id": 1131162,
-    "question": "62. 某健康者在海平面呼吸一般空氣，正常情況下，比較各處氧分壓（ ）的大小關係，下列排序何者正確？ ①吸入的氣體（inspired air，在鼻腔中測量） ②肺泡內氣體（alveolar air） ③呼出的氣體 （expired air，在鼻腔中測量）",
+    "question": "62. 某健康者在海平面呼吸一般空氣，正常情況下，比較各處氧分壓（PO<sub>2</sub>）的大小關係，下列排序何者正確？ ①吸入的氣體（inspired air，在鼻腔中測量） ②肺泡內氣體（alveolar air） ③呼出的氣體 （expired air，在鼻腔中測量）",
     "options": {
       "A": "①＞②＞③",
       "B": "①＞③＞②",
@@ -1434,7 +1434,7 @@
   },
   {
     "id": 1131185,
-    "question": "85. 擺動假說（wobble hypothesis）允許某些tRNA識別多個密碼子（codon）。在酵母菌中，一個具有反密碼子（anticodon）(5')ICG，此tRNAArg應可識別下列那一個精胺酸（arginine）密碼子？",
+    "question": "85. 擺動假說（wobble hypothesis）允許某些tRNA識別多個密碼子（codon）。在酵母菌中，一個tRNA<sup>Arg</sup>具有反密碼子（anticodon）(5')ICG，此tRNAArg應可識別下列那一個精胺酸（arginine）密碼子？",
     "options": {
       "A": "(5')CGA",
       "B": "(5')AGC",

@@ -307,7 +307,7 @@
   },
   {
     "id": 1151119,
-    "question": "19. 主胰管（main pancreatic duct）及膽管（bile duct）會藉由何種結構共同開口於十二指腸下降段",
+    "question": "19. 主胰管（main pancreatic duct）及膽管（bile duct）會藉由何種結構共同開口於十二指腸下降段（descending part of duodenum）？",
     "options": {
       "A": "肝管（hepatic duct）",
       "B": "大十二指腸乳頭（major duodenal papilla）",
@@ -515,7 +515,7 @@
     "options": {
       "A": "脛前肌（tibialis anterior）",
       "B": "脛後肌（tibialis posterior）",
-      "C": "屈 長肌（flexor hallucis longus）",
+      "C": "屈拇長肌（flexor hallucis longus）",
       "D": "屈趾長肌（flexor digitorum longus）"
     },
     "answer": "A",
@@ -1040,10 +1040,10 @@
     "id": 1151162,
     "question": "62. 當肺內某區域的肺小動脈（pulmonary arteriole）發生局部血管阻塞時，最可能會導致下列何種反應？",
     "options": {
-      "A": "此區域的肺泡內二氧化碳分壓（ ）升高，進入此區域肺泡之通氣量（ventilation, VA）增加",
-      "B": "此區域的肺泡內二氧化碳分壓（ ）升高，進入此區域肺泡之通氣量（ventilation, VA）減少",
-      "C": "此區域的肺泡內二氧化碳分壓（ ）降低，進入此區域肺泡之通氣量（ventilation, VA）增加",
-      "D": "此區域的肺泡內二氧化碳分壓（ ）降低，進入此區域肺泡之通氣量（ventilation, VA）減少"
+      "A": "此區域的肺泡內二氧化碳分壓（P<sub>A</sub>CO<sub>2</sub>）升高，進入此區域肺泡之通氣量（ventilation, VA）增加",
+      "B": "此區域的肺泡內二氧化碳分壓（P<sub>A</sub>CO<sub>2</sub>）升高，進入此區域肺泡之通氣量（ventilation, VA）減少",
+      "C": "此區域的肺泡內二氧化碳分壓（P<sub>A</sub>CO<sub>2</sub>）降低，進入此區域肺泡之通氣量（ventilation, VA）增加",
+      "D": "此區域的肺泡內二氧化碳分壓（P<sub>A</sub>CO<sub>2</sub>）降低，進入此區域肺泡之通氣量（ventilation, VA）減少"
     },
     "answer": "D",
     "explanation": "當肺小動脈（pulmonary arteriole）發生局部阻塞時，該區域血流中斷，肺泡無法獲得CO₂補充，導致肺泡內CO₂分壓（PaCO₂）降低；CO₂降低使局部支氣管收縮（bronchoconstriction），通氣量（ventilation，VA）隨之減少，使通氣與血流比值（V/Q ratio）的改變得以部分代償。<br>(A) 錯誤，血流阻塞後無血流帶來CO₂，肺泡CO₂分壓應降低而非升高，且通氣量應減少<br>(B) 錯誤，肺泡CO₂分壓升高的描述錯誤，血流阻塞後CO₂來源中斷，肺泡CO₂應降低<br>(C) 錯誤，CO₂分壓降低的描述正確，但CO₂降低會使局部支氣管收縮，通氣量應減少而非增加<br>(D) 正確，局部血流阻塞→無CO₂補充→肺泡CO₂分壓降低→局部支氣管收縮（bronchoconstriction）→通氣量（VA）減少，為肺臟的局部代償機制以維持V/Q比值",
@@ -1483,9 +1483,8 @@
   },
   {
     "id": 1151188,
-    "question": "88. 大腸桿菌（",
+    "question": "88. 大腸桿菌（E. coli）處於富含乳糖且缺乏葡萄糖的環境時，其乳糖操縱組（lac operon）的基因調控模式，主要有下列那兩種類型？①透過減少抑制蛋白結合而活化轉錄 ②通過增加抑制蛋白結合而抑制轉錄 ③通過增加活化蛋白結合而活化轉錄 ④通過減少活化蛋白結合而抑制轉錄",
     "options": {
-      "E": "coli）處於富含乳糖且缺乏葡萄糖的環境時，其乳糖操縱組（lac operon）的基因調控模式，主要有下列那兩種類型？①透過減少抑制蛋白結合而活化轉錄 ②通過增加抑制蛋白結合而抑制轉錄 ③通過增加活化蛋白結合而活化轉錄 ④通過減少活化蛋白結合而抑制轉錄",
       "A": "①④",
       "B": "②③",
       "C": "②④",
@@ -1569,7 +1568,7 @@
   },
   {
     "id": 1151193,
-    "question": "93. 使葡萄糖經糖解作用（glycolysis）後的產物直接進入克氏循環（Krebs cycle，亦稱 citric acid cycle 或",
+    "question": "93. 使葡萄糖經糖解作用（glycolysis）後的產物直接進入克氏循環（Krebs cycle，亦稱 citric acid cycle 或 TCA cycle）的關鍵酵素為何？",
     "options": {
       "A": "succinate dehydrogenase complex",
       "B": "isocitrate dehydrogenase complex",

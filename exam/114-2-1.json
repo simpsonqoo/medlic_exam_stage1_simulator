@@ -490,6 +490,9 @@
       "114-2(一)",
       "解剖"
     ],
+    "images": [
+      "./image/114-2-1-29.jpg"
+    ],
     "group_id": "group_4228"
   },
   {
@@ -1010,9 +1013,9 @@
     "question": "60. 對於心室肌細胞和SA node細胞電位的比較，下列那一敘述最為適當？",
     "options": {
       "A": "兩種細胞皆有穩定的靜止膜電位（steady resting membrane potential），均約為-90 mV",
-      "B": "兩種細胞產生的動作電位皆有平原期（plateau phase），主要均是因為打開L-type  channels",
-      "C": "兩種細胞動作電位的去極化，主要都是因為打開 channels，使得流入細胞而造成",
-      "D": "兩種細胞動作電位的再極化，主要都是因為打開 channels，使得流出細胞而造成"
+      "B": "兩種細胞產生的動作電位皆有平原期（plateau phase），主要均是因為打開L-type Ca<sup>2+</sup> channels",
+      "C": "兩種細胞動作電位的去極化，主要都是因為打開Na<sup>+</sup> channels，使得Na<sup>+</sup>流入細胞而造成",
+      "D": "兩種細胞動作電位的再極化，主要都是因為打開K<sup>+</sup> channels，使得K<sup>+</sup>流出細胞而造成"
     },
     "answer": "D",
     "explanation": "解題關鍵是比較心室肌細胞和竇房結細胞的電生理特性差異。<br>(A) 錯誤，竇房結細胞沒有穩定的靜止膜電位，而是有自動性的緩慢去極化；心室肌約-90mV，但竇房結約-60mV<br>(B) 錯誤，竇房結細胞的動作電位沒有明顯的平原期<br>(C) 錯誤，心室肌的去極化主要由快鈉通道，竇房結主要由L型鈣通道<br>(D) 正確，兩種細胞的再極化都主要是由於鉀離子通道打開，鉀離子流出細胞造成",
@@ -1163,7 +1166,7 @@
     "question": "69. 下列那兩個激素與甲促素（thyroid-stimulating hormone）具有相同的alpha蛋白次單元 （subunit）？",
     "options": {
       "A": "生長激素（growth hormone）與泌乳素（prolactin）",
-      "B": "腎皮促素（adrenocorticotropic hormone）與濾泡刺激素",
+      "B": "腎皮促素（adrenocorticotropic hormone）與濾泡刺激素（follicle-stimulating hormone）",
       "C": "抗利尿激素（antidiuretic hormone）與催產素（oxytocin）",
       "D": "黃體生成素（luteinizing hormone）與人類絨毛性腺刺激素（human chorionic gonadotropin）"
     },
@@ -1432,7 +1435,7 @@
   },
   {
     "id": 1142185,
-    "question": "85. 原核生物中，調控基因表現的操縱組（operon）其中操作子（operator）序列主要是由下列何種分",
+    "question": "85. 原核生物中，調控基因表現的操縱組（operon）其中操作子（operator）序列主要是由下列何種分子進行結合？",
     "options": {
       "A": "suppressor tRNA",
       "B": "miRNA",
@@ -1483,7 +1486,7 @@
   },
   {
     "id": 1142188,
-    "question": "88. 下列何者為結構型多醣（structural polysaccharide）而非儲存型多醣（storage",
+    "question": "88. 下列何者為結構型多醣（structural polysaccharide）而非儲存型多醣（storage polysaccharide）？",
     "options": {
       "A": "cellulose",
       "B": "amylose",
@@ -1553,10 +1556,10 @@
     "id": 1142192,
     "question": "92. 在人體尿素代謝循環（urea cycle）過程中，下列何者論述最適切？",
     "options": {
-      "A": "麩胺酸（glutamate）釋放出氨離子（）的代謝作用發生在肝臟粒線體（mitochondria）中， 4 尿素（urea）的產生是在肝臟細胞質（cytosol）中進行",
-      "B": "麩胺酸（glutamate）釋放出氨離子（）的代謝作用發生在肝臟過氧化體（peroxisome）中， 4 尿素（urea）的產生是在肝臟的粒線體（mitochondria）中進行",
-      "C": "麩胺酸（glutamate）釋放出氨離子（）和尿素（urea）產生的一連串代謝作用均在肝臟的粒 4 線體（mitochondria）中進行。製造出的尿素（urea），主要經由囊泡（vesicle）運送機制至細胞外",
-      "D": "麩胺酸（glutamate）釋放出氨離子（）和尿素（urea）產生的分解作用，一連串的代謝作用 4 均在肝臟的過氧化體（peroxisome）中進行。製造出的尿素（urea），須經由內質網 （endoplasmic reticulum）和囊泡（vesicle）共同運送機制至細胞外"
+      "A": "麩胺酸（glutamate）釋放出氨離子（NH<sub>4</sub><sup>+</sup>）的代謝作用發生在肝臟粒線體（mitochondria）中，尿素（urea）的產生是在肝臟細胞質（cytosol）中進行",
+      "B": "麩胺酸（glutamate）釋放出氨離子（NH<sub>4</sub><sup>+</sup>）的代謝作用發生在肝臟過氧化體（peroxisome）中，尿素（urea）的產生是在肝臟的粒線體（mitochondria）中進行",
+      "C": "麩胺酸（glutamate）釋放出氨離子（NH<sub>4</sub><sup>+</sup>）和尿素（urea）產生的一連串代謝作用均在肝臟的粒線體（mitochondria）中進行。製造出的尿素（urea），主要經由囊泡（vesicle）運送機制至細胞外",
+      "D": "麩胺酸（glutamate）釋放出氨離子（NH<sub>4</sub><sup>+</sup>）和尿素（urea）產生的分解作用，一連串的代謝作用均在肝臟的過氧化體（peroxisome）中進行。製造出的尿素（urea），須經由內質網 （endoplasmic reticulum）和囊泡（vesicle）共同運送機制至細胞外"
     },
     "answer": "A",
     "explanation": "解題關鍵是了解尿素循環（urea cycle）的細胞內位置，部分反應在粒線體，部分在細胞質進行。<br>(A) 正確，麩胺酸脫胺作用發生在肝臟粒線體中，尿素循環的後半段在肝臟細胞質中進行<br>(B) 錯誤，麩胺酸脫胺作用發生在粒線體而非過氧化體，尿素產生涉及粒線體和細胞質兩處<br>(C) 錯誤，尿素循環並非全部在粒線體中進行，而是跨越粒線體和細胞質<br>(D) 錯誤，這些代謝作用不是在過氧化體中進行，而是在粒線體和細胞質中",
@@ -1568,7 +1571,7 @@
   },
   {
     "id": 1142193,
-    "question": "93. 糖尿病患者或在飢餓狀態時會利用下列何種生酮胺基酸（ketogenic amino acid）代謝產生能量提",
+    "question": "93. 糖尿病患者或在飢餓狀態時會利用下列何種生酮胺基酸（ketogenic amino acid）代謝產生能量提供使用？",
     "options": {
       "A": "白胺酸（leucine）",
       "B": "精胺酸（arginine）",
@@ -1585,7 +1588,7 @@
   },
   {
     "id": 1142194,
-    "question": "94. 參與粒線體呼吸鏈（或稱電子傳遞鏈）的蛋白質複合體在傳遞電子的同時，也同時扮演氫離子幫浦",
+    "question": "94. 參與粒線體呼吸鏈（或稱電子傳遞鏈）的蛋白質複合體在傳遞電子的同時，也同時扮演氫離子幫浦（hydrogen pump）的角色。下列敘述何者正確？",
     "options": {
       "A": "complex Ⅰ會將4個氫離子移轉到粒線體基質（matrix）",
       "B": "complex Ⅲ會將4個氫離子移轉到粒線體基質（matrix）",
@@ -1605,7 +1608,7 @@
   },
   {
     "id": 1142195,
-    "question": "95. 關於胰島素（insulin）訊息如何活化肝臟細胞的肝醣合成酶（glycogen synthase, GS）的活性，",
+    "question": "95. 關於胰島素（insulin）訊息如何活化肝臟細胞的肝醣合成酶（glycogen synthase, GS）的活性，下列描述何者最合理？",
     "options": {
       "A": "造成肝醣合成激酶3（glycogen synthase kinase 3, GSK3）去磷酸化，提高GSK3激酶活性，活化 GS",
       "B": "造成肝醣合成激酶3（glycogen synthase kinase 3, GSK3）磷酸化，提高GSK3激酶活性，活化GS",
@@ -1656,7 +1659,7 @@
   },
   {
     "id": 1142198,
-    "question": "98. 研究人員需要選殖（cloning）大片段的DNA進行相關研究時，下列載體（cloning vector）何者可",
+    "question": "98. 研究人員需要選殖（cloning）大片段的DNA進行相關研究時，下列載體（cloning vector）何者可以承載最大的DNA片段？",
     "options": {
       "A": "pBR322質體（pBR322 plasmid）",
       "B": "酵母菌人工染色體（yeast artificial chromosome, YAC）",
@@ -1673,7 +1676,7 @@
   },
   {
     "id": 1142199,
-    "question": "99. 在哺乳動物細胞中，RNA干擾作用（RNA interference, RNAi）是由小干擾RNA（small",
+    "question": "99. 在哺乳動物細胞中，RNA干擾作用（RNA interference, RNAi）是由小干擾RNA（small interfering RNA, siRNA）所誘發，siRNA一般由幾個核苷酸組成？",
     "options": {
       "A": "11～13",
       "B": "21～23",
